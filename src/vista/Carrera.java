@@ -62,7 +62,7 @@ public class Carrera extends JFrame {
 		btnNPosicion.setBounds(31, 44, 46, 50);
 		contentPane.add(btnNPosicion);
 		
-		JLabel lblNombrePiloto = new JLabel("Fernando Alonso");
+		JLabel lblNombrePiloto = new JLabel("");
 		lblNombrePiloto.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNombrePiloto.setBounds(135, 44, 105, 50);
 		contentPane.add(lblNombrePiloto);
