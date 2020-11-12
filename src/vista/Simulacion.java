@@ -48,7 +48,7 @@ public class Simulacion extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 770, 480);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.RED);
+		contentPane.setBackground(new Color(153, 51, 51));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -70,7 +70,7 @@ public class Simulacion extends JFrame {
 		JSlider slider = new JSlider();
 		slider.setMaximum(3);
 		slider.setValue(2);
-		slider.setBackground(Color.RED);
+		slider.setBackground(new Color(153, 51, 51));
 		slider.setForeground(Color.RED);
 		slider.setBounds(494, 267, 200, 26);
 		contentPane.add(slider);
