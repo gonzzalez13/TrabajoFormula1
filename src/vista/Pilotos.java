@@ -15,7 +15,6 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 
 public class Pilotos extends JFrame {
-
 	private JPanel contentPane;
 
 	/**
