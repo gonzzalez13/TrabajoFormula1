@@ -12,6 +12,7 @@ import javax.swing.JSlider;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Toolkit;
 
 public class Simulacion extends JFrame {
 
@@ -37,6 +38,8 @@ public class Simulacion extends JFrame {
 	 * Create the frame.
 	 */
 	public Simulacion() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\alu01-dam2\\eclipse-workspace\\Formula1\\src\\img\\F1.png"));
+		setTitle("Simulaci\u00F3n");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 770, 480);
