@@ -83,7 +83,7 @@ public class Inicio extends JFrame {
 		panel.add(btnNewButton_5);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
+		lblNewLabel_4.setIcon(new ImageIcon("src/Imagenes/F1-logo.png"));
 		lblNewLabel_4.setBounds(0, 0, 133, 35);
 		panel.add(lblNewLabel_4);
 		

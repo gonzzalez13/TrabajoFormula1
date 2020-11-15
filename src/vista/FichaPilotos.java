@@ -17,6 +17,11 @@ import javax.swing.JButton;
 
 public class FichaPilotos extends JFrame {
 	private JPanel contentPane;
+	private JTextField txtNombre;
+	private JTextField txtNacionalidad;
+	private JTextField txtEdad;
+	private JTextField txtPalmares;
+	private JTextField txtEscuderia;
 
 	
 	/**
@@ -78,7 +83,7 @@ public class FichaPilotos extends JFrame {
 		PanelMenu.add(btnNewButton_5);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
+		lblNewLabel_4.setIcon(new ImageIcon("src/Imagenes/F1-logo.png"));
 		lblNewLabel_4.setBounds(0, 0, 133, 35);
 		PanelMenu.add(lblNewLabel_4);
 		
@@ -115,5 +120,70 @@ public class FichaPilotos extends JFrame {
 		lblNewLabel_3.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\maxresdefault.jpg"));
 		lblNewLabel_3.setBounds(10, 62, 268, 206);
 		panel.add(lblNewLabel_3);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNombre.setBounds(400, 125, 60, 20);
+		contentPane.add(lblNombre);
+		
+		txtNombre = new JTextField();
+		txtNombre.setBackground(Color.WHITE);
+		txtNombre.setEditable(false);
+		txtNombre.setBounds(500, 127, 170, 20);
+		txtNombre.setBorder(null);
+		contentPane.add(txtNombre);
+		txtNombre.setColumns(10);
+		
+		JLabel lblNacionalidad = new JLabel("Nacionalidad:");
+		lblNacionalidad.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNacionalidad.setBounds(400, 158, 90, 20);
+		contentPane.add(lblNacionalidad);
+		
+		txtNacionalidad = new JTextField();
+		txtNacionalidad.setBackground(Color.WHITE);
+		txtNacionalidad.setEditable(false);
+		txtNacionalidad.setColumns(10);
+		txtNacionalidad.setBorder(null);
+		txtNacionalidad.setBounds(500, 158, 170, 20);
+		contentPane.add(txtNacionalidad);
+		
+		JLabel lblEdad = new JLabel("Edad:");
+		lblEdad.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblEdad.setBounds(400, 189, 60, 20);
+		contentPane.add(lblEdad);
+		
+		txtEdad = new JTextField();
+		txtEdad.setBackground(Color.WHITE);
+		txtEdad.setEditable(false);
+		txtEdad.setColumns(10);
+		txtEdad.setBorder(null);
+		txtEdad.setBounds(500, 191, 170, 20);
+		contentPane.add(txtEdad);
+		
+		JLabel lblPalmares = new JLabel("Palmares:");
+		lblPalmares.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblPalmares.setBounds(400, 222, 90, 20);
+		contentPane.add(lblPalmares);
+		
+		txtPalmares = new JTextField();
+		txtPalmares.setBackground(Color.WHITE);
+		txtPalmares.setEditable(false);
+		txtPalmares.setColumns(10);
+		txtPalmares.setBorder(null);
+		txtPalmares.setBounds(500, 222, 170, 20);
+		contentPane.add(txtPalmares);
+		
+		JLabel lblEscuderia = new JLabel("Escuderia:");
+		lblEscuderia.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblEscuderia.setBounds(400, 253, 90, 20);
+		contentPane.add(lblEscuderia);
+		
+		txtEscuderia = new JTextField();
+		txtEscuderia.setBackground(Color.WHITE);
+		txtEscuderia.setEditable(false);
+		txtEscuderia.setColumns(10);
+		txtEscuderia.setBorder(null);
+		txtEscuderia.setBounds(500, 253, 170, 20);
+		contentPane.add(txtEscuderia);
 	}
 }
