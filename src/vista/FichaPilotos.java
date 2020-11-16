@@ -89,7 +89,7 @@ public class FichaPilotos extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
-		panel.setBounds(10, 68, 288, 269);
+		panel.setBounds(10, 46, 288, 320);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -98,28 +98,30 @@ public class FichaPilotos extends JFrame {
 		panel.add(separator);
 		
 		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(10, 49, 268, 2);
+		separator_1.setBounds(10, 82, 268, 2);
 		panel.add(separator_1);
 		
-		JLabel lblNewLabel = new JLabel("LEWIS HAMILTON");
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\Formula1\\src\\Imagenes\\Logo.png"));
 		lblNewLabel.setFont(new Font("Bauhaus 93", Font.PLAIN, 17));
-		lblNewLabel.setBounds(20, 24, 160, 14);
+		lblNewLabel.setBounds(205, 11, 73, 73);
 		panel.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\N\u00BAHamil.png"));
-		lblNewLabel_1.setBounds(205, 11, 73, 40);
-		panel.add(lblNewLabel_1);
-		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\piloto.png"));
-		lblNewLabel_2.setBounds(44, 62, 206, 206);
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\Formula1\\src\\Imagenes\\piloto.png"));
+		lblNewLabel_2.setBounds(43, 103, 206, 206);
 		panel.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\maxresdefault.jpg"));
-		lblNewLabel_3.setBounds(10, 62, 268, 206);
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\Formula1\\src\\Imagenes\\maxresdefault.jpg"));
+		lblNewLabel_3.setBounds(10, 103, 268, 206);
 		panel.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\Formula1\\src\\Imagenes\\Casco.png"));
+		lblNewLabel_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 17));
+		lblNewLabel_1.setBounds(10, 11, 100, 73);
+		panel.add(lblNewLabel_1);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
 		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 15));
