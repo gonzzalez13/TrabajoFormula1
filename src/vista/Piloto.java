@@ -18,6 +18,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
 import javax.swing.JSeparator;
 import java.awt.Font;
+import javax.swing.UIManager;
 
 public class Piloto extends JFrame {
 
@@ -44,50 +45,15 @@ public class Piloto extends JFrame {
 	 */
 	public Piloto() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 770, 480);
+		setBounds(100, 100, 865, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel PanelMenu = new JPanel();
-		PanelMenu.setLayout(null);
-		PanelMenu.setBackground(Color.WHITE);
-		PanelMenu.setBounds(0, 0, 754, 35);
-		contentPane.add(PanelMenu);
-		
-		JButton btnNewButton_4 = new JButton("Inicio");
-		btnNewButton_4.setBounds(132, 0, 74, 35);
-		PanelMenu.add(btnNewButton_4);
-		
-		JButton btnNewButton_3 = new JButton("Escuderias");
-		btnNewButton_3.setBounds(217, 0, 98, 35);
-		PanelMenu.add(btnNewButton_3);
-		
-		JButton btnNewButton_2 = new JButton("Pilotos");
-		btnNewButton_2.setBounds(325, 0, 74, 35);
-		PanelMenu.add(btnNewButton_2);
-		
-		JButton btnNewButton_1 = new JButton("Gran Premio");
-		btnNewButton_1.setBounds(409, 0, 112, 35);
-		PanelMenu.add(btnNewButton_1);
-		
-		JButton btnNewButton = new JButton("Clasificaciones");
-		btnNewButton.setBounds(531, 0, 122, 35);
-		PanelMenu.add(btnNewButton);
-		
-		JButton btnNewButton_5 = new JButton("Login");
-		btnNewButton_5.setBounds(663, 0, 89, 35);
-		PanelMenu.add(btnNewButton_5);
-		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("src/Imagenes/F1-logo.png"));
-		lblNewLabel_4.setBounds(0, 0, 133, 35);
-		PanelMenu.add(lblNewLabel_4);
-		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(Color.WHITE);
-		panel_1.setBounds(0, 34, 754, 407);
+		panel_1.setBackground(UIManager.getColor("Button.background"));
+		panel_1.setBounds(0, 66, 849, 545);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		panel_1.setPreferredSize(new Dimension(850, 430));
@@ -398,5 +364,92 @@ public class Piloto extends JFrame {
 		JSeparator separatorGROSJEAN = new JSeparator();
 		separatorGROSJEAN.setBounds(0, 53, 207, 6);
 		panelGROSJEAN.add(separatorGROSJEAN);
+		
+		JPanel panelGROSJEAN_1 = new JPanel();
+		panelGROSJEAN_1.setLayout(null);
+		panelGROSJEAN_1.setBackground(Color.WHITE);
+		panelGROSJEAN_1.setBounds(10, 401, 207, 60);
+		panel_1.add(panelGROSJEAN_1);
+		
+		JButton btnGROSJEAN_1 = new JButton(" Romain Grosjean  >");
+		btnGROSJEAN_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnGROSJEAN_1.setBorder(null);
+		btnGROSJEAN_1.setBackground(Color.WHITE);
+		btnGROSJEAN_1.setBounds(0, 11, 207, 37);
+		panelGROSJEAN_1.add(btnGROSJEAN_1);
+		
+		JSeparator separatorGROSJEAN_1 = new JSeparator();
+		separatorGROSJEAN_1.setBounds(0, 53, 207, 6);
+		panelGROSJEAN_1.add(separatorGROSJEAN_1);
+		
+		JPanel panelGROSJEAN_2 = new JPanel();
+		panelGROSJEAN_2.setLayout(null);
+		panelGROSJEAN_2.setBackground(Color.WHITE);
+		panelGROSJEAN_2.setBounds(255, 401, 207, 60);
+		panel_1.add(panelGROSJEAN_2);
+		
+		JButton btnGROSJEAN_2 = new JButton(" Romain Grosjean  >");
+		btnGROSJEAN_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnGROSJEAN_2.setBorder(null);
+		btnGROSJEAN_2.setBackground(Color.WHITE);
+		btnGROSJEAN_2.setBounds(0, 11, 207, 37);
+		panelGROSJEAN_2.add(btnGROSJEAN_2);
+		
+		JSeparator separatorGROSJEAN_2 = new JSeparator();
+		separatorGROSJEAN_2.setBounds(0, 53, 207, 6);
+		panelGROSJEAN_2.add(separatorGROSJEAN_2);
+		
+		JPanel PanelMenu = new JPanel();
+		PanelMenu.setLayout(null);
+		PanelMenu.setBackground(Color.LIGHT_GRAY);
+		PanelMenu.setBounds(0, 0, 849, 71);
+		contentPane.add(PanelMenu);
+		
+		JButton btnNewButton_4 = new JButton("Inicio");
+		btnNewButton_4.setBackground(Color.DARK_GRAY);
+		btnNewButton_4.setForeground(Color.RED);
+		btnNewButton_4.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_4.setBounds(144, 11, 74, 48);
+		PanelMenu.add(btnNewButton_4);
+		
+		JButton btnNewButton_3 = new JButton("Escuderias");
+		btnNewButton_3.setBackground(Color.DARK_GRAY);
+		btnNewButton_3.setForeground(Color.RED);
+		btnNewButton_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_3.setBounds(226, 11, 112, 48);
+		PanelMenu.add(btnNewButton_3);
+		
+		JButton btnNewButton_2 = new JButton("Pilotos");
+		btnNewButton_2.setBackground(Color.DARK_GRAY);
+		btnNewButton_2.setForeground(Color.RED);
+		btnNewButton_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_2.setBounds(348, 11, 94, 48);
+		PanelMenu.add(btnNewButton_2);
+		
+		JButton btnNewButton_1 = new JButton("Gran Premio");
+		btnNewButton_1.setForeground(Color.RED);
+		btnNewButton_1.setBackground(Color.DARK_GRAY);
+		btnNewButton_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_1.setBounds(452, 11, 130, 48);
+		PanelMenu.add(btnNewButton_1);
+		
+		JButton btnNewButton = new JButton("Clasificaciones");
+		btnNewButton.setBackground(Color.DARK_GRAY);
+		btnNewButton.setForeground(Color.RED);
+		btnNewButton.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton.setBounds(592, 11, 145, 48);
+		PanelMenu.add(btnNewButton);
+		
+		JButton btnNewButton_5 = new JButton("Login");
+		btnNewButton_5.setForeground(Color.RED);
+		btnNewButton_5.setBackground(Color.DARK_GRAY);
+		btnNewButton_5.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_5.setBounds(747, 11, 92, 48);
+		PanelMenu.add(btnNewButton_5);
+		
+		JLabel lblNewLabel_4 = new JLabel("");
+		lblNewLabel_4.setIcon(new ImageIcon("src/Imagenes/F1-logo.png"));
+		lblNewLabel_4.setBounds(0, 11, 134, 48);
+		PanelMenu.add(lblNewLabel_4);
 	}
 }
