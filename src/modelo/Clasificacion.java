@@ -2,6 +2,7 @@ package modelo;
 
 public class Clasificacion {
 	private long p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20;
+	private long []p;
 	@Override
 	public String toString() {
 		return "Clasificacion [p1=" + p1 + ", p2=" + p2 + ", p3=" + p3 + ", p4=" + p4 + ", p5=" + p5 + ", p6=" + p6
