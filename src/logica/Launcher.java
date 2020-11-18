@@ -5,29 +5,39 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import modelo.Piloto;
+
 public class Launcher {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		ConectionHelper connection = new ConectionHelper();
+		Connection c=null;
+		Piloto p=null;
 		try {
-			Connection c=connection.createConection();
-			connection.createConnectionByProperties();
-			connection.disconnect(c);
+			p=connection.consultaPiloto("Lewis Hamilton");
+			System.out.println(p.toString());
+			
 		} catch (ClassNotFoundException |SQLException e) {
 			e.printStackTrace();
-		} 
-	double pilotoAbilidad=	(Math.random()*100+1);
+		} finally {
+			connection.disconnect(c);
+		}
+	double pilotoAbilidad=	(Math.random()*80+1);
 	double diestroCurvoso=5;
-	double piloto2=(Math.random()*100+1)+diestroCurvoso;
+	double borracho =-5;
+	double piloto2=(Math.random()*50+1)+diestroCurvoso;
 	
-	ArrayList<Double> c =new ArrayList<Double>();
-	c.add(pilotoAbilidad);
-	c.add(piloto2);
+	ArrayList<Double> cc =new ArrayList<Double>();
+	cc.add(pilotoAbilidad);
+	cc.add(piloto2);
+	if (piloto2>pilotoAbilidad) {
+		System.out.println("piloto2 adelanta");
+		
+	}
+	Collections.sort(cc, Collections.reverseOrder());
 	
-	Collections.sort(c, Collections.reverseOrder());
 	
-	
-		System.out.println(c);
+		System.out.println(cc);
 	
 	
 	}
