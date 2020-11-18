@@ -10,6 +10,8 @@ import java.awt.Color;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import java.awt.Font;
 
 public class Clasificacion extends JFrame {
 
@@ -35,9 +37,8 @@ public class Clasificacion extends JFrame {
 	 * Create the frame.
 	 */
 	public Clasificacion() {
-		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 770, 480);
+		setBounds(100, 100, 865, 650);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.RED);
 		contentPane.setForeground(Color.BLACK);
@@ -46,7 +47,7 @@ public class Clasificacion extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(25, 33, 40, 24);
+		panel.setBounds(25, 138, 40, 24);
 		contentPane.add(panel);
 		
 		JLabel label = new JLabel("1");
@@ -54,21 +55,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(0, 206, 209));
-		panel_1.setBounds(64, 33, 25, 24);
+		panel_1.setBounds(64, 138, 25, 24);
 		contentPane.add(panel_1);
 		
 		JLabel lblNewLabel = new JLabel("Lewis Hamilton");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(89, 33, 100, 24);
+		lblNewLabel.setBounds(89, 138, 100, 24);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("95");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(229, 33, 46, 24);
+		lblNewLabel_1.setBounds(229, 138, 46, 24);
 		contentPane.add(lblNewLabel_1);
 		
 		JPanel panel_2 = new JPanel();
-		panel_2.setBounds(25, 55, 40, 24);
+		panel_2.setBounds(25, 161, 40, 24);
 		contentPane.add(panel_2);
 		
 		JLabel label_1 = new JLabel("2");
@@ -76,16 +77,16 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(new Color(0, 0, 128));
-		panel_1_1.setBounds(64, 55, 25, 24);
+		panel_1_1.setBounds(64, 161, 25, 24);
 		contentPane.add(panel_1_1);
 		
 		JLabel lblMVerstappen = new JLabel("M. Verstappen");
 		lblMVerstappen.setHorizontalAlignment(SwingConstants.CENTER);
-		lblMVerstappen.setBounds(89, 55, 100, 24);
+		lblMVerstappen.setBounds(89, 161, 100, 24);
 		contentPane.add(lblMVerstappen);
 		
 		JPanel panel_3 = new JPanel();
-		panel_3.setBounds(25, 79, 40, 24);
+		panel_3.setBounds(25, 184, 40, 24);
 		contentPane.add(panel_3);
 		
 		JLabel label_2 = new JLabel("3");
@@ -93,26 +94,26 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_2 = new JPanel();
 		panel_1_2.setBackground(new Color(255, 0, 0));
-		panel_1_2.setBounds(64, 79, 25, 24);
+		panel_1_2.setBounds(64, 184, 25, 24);
 		contentPane.add(panel_1_2);
 		
 		JLabel lblCLeclerc = new JLabel("C. Leclerc");
 		lblCLeclerc.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCLeclerc.setBounds(89, 79, 100, 24);
+		lblCLeclerc.setBounds(89, 184, 100, 24);
 		contentPane.add(lblCLeclerc);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("82");
 		lblNewLabel_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_1.setBounds(229, 58, 46, 24);
+		lblNewLabel_1_1.setBounds(229, 161, 46, 24);
 		contentPane.add(lblNewLabel_1_1);
 		
 		JLabel lblNewLabel_1_1_1 = new JLabel("79");
 		lblNewLabel_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_1_1.setBounds(229, 79, 46, 24);
+		lblNewLabel_1_1_1.setBounds(229, 184, 46, 24);
 		contentPane.add(lblNewLabel_1_1_1);
 		
 		JPanel panel_4 = new JPanel();
-		panel_4.setBounds(25, 103, 40, 24);
+		panel_4.setBounds(25, 207, 40, 24);
 		contentPane.add(panel_4);
 		
 		JLabel label_3 = new JLabel("4");
@@ -120,21 +121,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3 = new JPanel();
 		panel_1_3.setBackground(new Color(0, 206, 209));
-		panel_1_3.setBounds(64, 103, 25, 24);
+		panel_1_3.setBounds(64, 207, 25, 24);
 		contentPane.add(panel_1_3);
 		
 		JLabel lblVBottas = new JLabel("V. Bottas");
 		lblVBottas.setHorizontalAlignment(SwingConstants.CENTER);
-		lblVBottas.setBounds(89, 103, 100, 24);
+		lblVBottas.setBounds(89, 207, 100, 24);
 		contentPane.add(lblVBottas);
 		
 		JLabel lblNewLabel_1_2 = new JLabel("72");
 		lblNewLabel_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2.setBounds(229, 103, 46, 24);
+		lblNewLabel_1_2.setBounds(229, 207, 46, 24);
 		contentPane.add(lblNewLabel_1_2);
 		
 		JPanel panel_4_1 = new JPanel();
-		panel_4_1.setBounds(25, 126, 40, 24);
+		panel_4_1.setBounds(25, 229, 40, 24);
 		contentPane.add(panel_4_1);
 		
 		JLabel label_3_1 = new JLabel("5");
@@ -142,21 +143,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_1 = new JPanel();
 		panel_1_3_1.setBackground(new Color(255, 255, 0));
-		panel_1_3_1.setBounds(64, 126, 25, 24);
+		panel_1_3_1.setBounds(64, 229, 25, 24);
 		contentPane.add(panel_1_3_1);
 		
 		JLabel lblNewLabel_4_1 = new JLabel("D. Ricciardo");
 		lblNewLabel_4_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_1.setBounds(89, 126, 100, 24);
+		lblNewLabel_4_1.setBounds(89, 229, 100, 24);
 		contentPane.add(lblNewLabel_4_1);
 		
 		JLabel lblNewLabel_1_2_1 = new JLabel("69");
 		lblNewLabel_1_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_1.setBounds(229, 126, 46, 24);
+		lblNewLabel_1_2_1.setBounds(229, 229, 46, 24);
 		contentPane.add(lblNewLabel_1_2_1);
 		
 		JPanel panel_4_2 = new JPanel();
-		panel_4_2.setBounds(25, 150, 40, 24);
+		panel_4_2.setBounds(25, 253, 40, 24);
 		contentPane.add(panel_4_2);
 		
 		JLabel label_3_2 = new JLabel("6");
@@ -164,21 +165,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_2 = new JPanel();
 		panel_1_3_2.setBackground(new Color(0, 206, 209));
-		panel_1_3_2.setBounds(64, 150, 25, 24);
+		panel_1_3_2.setBounds(64, 253, 25, 24);
 		contentPane.add(panel_1_3_2);
 		
 		JLabel lblNewLabel_4_2 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_2.setBounds(89, 150, 100, 24);
+		lblNewLabel_4_2.setBounds(89, 253, 100, 24);
 		contentPane.add(lblNewLabel_4_2);
 		
 		JLabel lblNewLabel_1_2_2 = new JLabel("95");
 		lblNewLabel_1_2_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_2.setBounds(229, 150, 46, 24);
+		lblNewLabel_1_2_2.setBounds(229, 253, 46, 24);
 		contentPane.add(lblNewLabel_1_2_2);
 		
 		JPanel panel_4_3 = new JPanel();
-		panel_4_3.setBounds(25, 174, 40, 24);
+		panel_4_3.setBounds(25, 277, 40, 24);
 		contentPane.add(panel_4_3);
 		
 		JLabel label_3_3 = new JLabel("7");
@@ -186,21 +187,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_3 = new JPanel();
 		panel_1_3_3.setBackground(new Color(0, 206, 209));
-		panel_1_3_3.setBounds(64, 174, 25, 24);
+		panel_1_3_3.setBounds(64, 277, 25, 24);
 		contentPane.add(panel_1_3_3);
 		
 		JLabel lblNewLabel_4_3 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_3.setBounds(89, 174, 100, 24);
+		lblNewLabel_4_3.setBounds(89, 277, 100, 24);
 		contentPane.add(lblNewLabel_4_3);
 		
 		JLabel lblNewLabel_1_2_3 = new JLabel("95");
 		lblNewLabel_1_2_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_3.setBounds(229, 174, 46, 24);
+		lblNewLabel_1_2_3.setBounds(229, 277, 46, 24);
 		contentPane.add(lblNewLabel_1_2_3);
 		
 		JPanel panel_4_4 = new JPanel();
-		panel_4_4.setBounds(25, 197, 40, 24);
+		panel_4_4.setBounds(25, 299, 40, 24);
 		contentPane.add(panel_4_4);
 		
 		JLabel label_3_4 = new JLabel("8");
@@ -208,21 +209,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_4 = new JPanel();
 		panel_1_3_4.setBackground(new Color(0, 206, 209));
-		panel_1_3_4.setBounds(64, 197, 25, 24);
+		panel_1_3_4.setBounds(64, 299, 25, 24);
 		contentPane.add(panel_1_3_4);
 		
 		JLabel lblNewLabel_4_4 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_4.setBounds(89, 197, 100, 24);
+		lblNewLabel_4_4.setBounds(89, 299, 100, 24);
 		contentPane.add(lblNewLabel_4_4);
 		
 		JLabel lblNewLabel_1_2_4 = new JLabel("95");
 		lblNewLabel_1_2_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_4.setBounds(229, 197, 46, 24);
+		lblNewLabel_1_2_4.setBounds(229, 299, 46, 24);
 		contentPane.add(lblNewLabel_1_2_4);
 		
 		JPanel panel_4_5 = new JPanel();
-		panel_4_5.setBounds(25, 219, 40, 24);
+		panel_4_5.setBounds(25, 320, 40, 24);
 		contentPane.add(panel_4_5);
 		
 		JLabel label_3_5 = new JLabel("9");
@@ -230,21 +231,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_5 = new JPanel();
 		panel_1_3_5.setBackground(new Color(0, 206, 209));
-		panel_1_3_5.setBounds(64, 219, 25, 24);
+		panel_1_3_5.setBounds(64, 320, 25, 24);
 		contentPane.add(panel_1_3_5);
 		
 		JLabel lblNewLabel_4_5 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5.setBounds(89, 219, 100, 24);
+		lblNewLabel_4_5.setBounds(89, 320, 100, 24);
 		contentPane.add(lblNewLabel_4_5);
 		
 		JLabel lblNewLabel_1_2_5 = new JLabel("95");
 		lblNewLabel_1_2_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5.setBounds(229, 219, 46, 24);
+		lblNewLabel_1_2_5.setBounds(229, 320, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5);
 		
 		JPanel panel_4_5_1 = new JPanel();
-		panel_4_5_1.setBounds(25, 243, 40, 24);
+		panel_4_5_1.setBounds(25, 344, 40, 24);
 		contentPane.add(panel_4_5_1);
 		
 		JLabel label_3_5_1 = new JLabel("10");
@@ -252,56 +253,56 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_5_1 = new JPanel();
 		panel_1_3_5_1.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1.setBounds(64, 243, 25, 24);
+		panel_1_3_5_1.setBounds(64, 344, 25, 24);
 		contentPane.add(panel_1_3_5_1);
 		
 		JLabel lblNewLabel_4_5_1 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1.setBounds(89, 243, 100, 24);
+		lblNewLabel_4_5_1.setBounds(89, 344, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1);
 		
 		JLabel lblNewLabel_1_2_5_1 = new JLabel("95");
 		lblNewLabel_1_2_5_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1.setBounds(229, 243, 46, 24);
+		lblNewLabel_1_2_5_1.setBounds(229, 344, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1);
 		
 		JPanel panel_4_5_1_1 = new JPanel();
-		panel_4_5_1_1.setBounds(25, 267, 40, 24);
+		panel_4_5_1_1.setBounds(25, 366, 40, 24);
 		contentPane.add(panel_4_5_1_1);
 		
 		JLabel label_3_5_1_1 = new JLabel("11");
 		panel_4_5_1_1.add(label_3_5_1_1);
 		
 		JPanel panel_4_5_1_2 = new JPanel();
-		panel_4_5_1_2.setBounds(25, 291, 40, 24);
+		panel_4_5_1_2.setBounds(25, 387, 40, 24);
 		contentPane.add(panel_4_5_1_2);
 		
 		JLabel label_3_5_1_2 = new JLabel("12");
 		panel_4_5_1_2.add(label_3_5_1_2);
 		
 		JPanel panel_4_5_1_3 = new JPanel();
-		panel_4_5_1_3.setBounds(25, 315, 40, 24);
+		panel_4_5_1_3.setBounds(25, 409, 40, 24);
 		contentPane.add(panel_4_5_1_3);
 		
 		JLabel label_3_5_1_3 = new JLabel("13");
 		panel_4_5_1_3.add(label_3_5_1_3);
 		
 		JPanel panel_4_5_1_4 = new JPanel();
-		panel_4_5_1_4.setBounds(25, 339, 40, 24);
+		panel_4_5_1_4.setBounds(25, 433, 40, 24);
 		contentPane.add(panel_4_5_1_4);
 		
 		JLabel label_3_5_1_4 = new JLabel("14");
 		panel_4_5_1_4.add(label_3_5_1_4);
 		
 		JPanel panel_4_5_1_5 = new JPanel();
-		panel_4_5_1_5.setBounds(25, 363, 40, 24);
+		panel_4_5_1_5.setBounds(25, 456, 40, 24);
 		contentPane.add(panel_4_5_1_5);
 		
 		JLabel label_3_5_1_5 = new JLabel("15");
 		panel_4_5_1_5.add(label_3_5_1_5);
 		
 		JPanel panel_4_5_1_6 = new JPanel();
-		panel_4_5_1_6.setBounds(25, 387, 40, 24);
+		panel_4_5_1_6.setBounds(25, 480, 40, 24);
 		contentPane.add(panel_4_5_1_6);
 		
 		JLabel label_3_5_1_6 = new JLabel("16");
@@ -309,116 +310,111 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_3_5_1_1 = new JPanel();
 		panel_1_3_5_1_1.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_1.setBounds(64, 267, 25, 24);
+		panel_1_3_5_1_1.setBounds(64, 366, 25, 24);
 		contentPane.add(panel_1_3_5_1_1);
 		
 		JPanel panel_1_3_5_1_2 = new JPanel();
 		panel_1_3_5_1_2.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_2.setBounds(64, 291, 25, 24);
+		panel_1_3_5_1_2.setBounds(64, 387, 25, 24);
 		contentPane.add(panel_1_3_5_1_2);
 		
 		JPanel panel_1_3_5_1_3 = new JPanel();
 		panel_1_3_5_1_3.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_3.setBounds(64, 315, 25, 24);
+		panel_1_3_5_1_3.setBounds(64, 409, 25, 24);
 		contentPane.add(panel_1_3_5_1_3);
 		
 		JPanel panel_1_3_5_1_4 = new JPanel();
 		panel_1_3_5_1_4.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_4.setBounds(64, 339, 25, 24);
+		panel_1_3_5_1_4.setBounds(64, 433, 25, 24);
 		contentPane.add(panel_1_3_5_1_4);
 		
 		JPanel panel_1_3_5_1_5 = new JPanel();
 		panel_1_3_5_1_5.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_5.setBounds(64, 363, 25, 24);
+		panel_1_3_5_1_5.setBounds(64, 456, 25, 24);
 		contentPane.add(panel_1_3_5_1_5);
 		
 		JPanel panel_1_3_5_1_6 = new JPanel();
 		panel_1_3_5_1_6.setBackground(new Color(0, 206, 209));
-		panel_1_3_5_1_6.setBounds(64, 387, 25, 24);
+		panel_1_3_5_1_6.setBounds(64, 480, 25, 24);
 		contentPane.add(panel_1_3_5_1_6);
 		
 		JLabel lblNewLabel_4_5_1_1 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_1.setBounds(89, 267, 100, 24);
+		lblNewLabel_4_5_1_1.setBounds(89, 366, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_1);
 		
 		JLabel lblNewLabel_4_5_1_2 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_2.setBounds(89, 291, 100, 24);
+		lblNewLabel_4_5_1_2.setBounds(89, 387, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_2);
 		
 		JLabel lblNewLabel_4_5_1_3 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_3.setBounds(89, 315, 100, 24);
+		lblNewLabel_4_5_1_3.setBounds(89, 409, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_3);
 		
 		JLabel lblNewLabel_4_5_1_4 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_4.setBounds(89, 339, 100, 24);
+		lblNewLabel_4_5_1_4.setBounds(89, 433, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_4);
 		
 		JLabel lblNewLabel_4_5_1_5 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_5.setBounds(89, 363, 100, 24);
+		lblNewLabel_4_5_1_5.setBounds(89, 456, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_5);
 		
 		JLabel lblNewLabel_4_5_1_6 = new JLabel("Lewis Hamilton");
 		lblNewLabel_4_5_1_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_5_1_6.setBounds(89, 387, 100, 24);
+		lblNewLabel_4_5_1_6.setBounds(89, 480, 100, 24);
 		contentPane.add(lblNewLabel_4_5_1_6);
 		
 		JLabel lblNewLabel_1_2_5_1_1 = new JLabel("95");
 		lblNewLabel_1_2_5_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_1.setBounds(229, 267, 46, 24);
+		lblNewLabel_1_2_5_1_1.setBounds(229, 366, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_1);
 		
 		JLabel lblNewLabel_1_2_5_1_2 = new JLabel("95");
 		lblNewLabel_1_2_5_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_2.setBounds(229, 291, 46, 24);
+		lblNewLabel_1_2_5_1_2.setBounds(229, 387, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_2);
 		
 		JLabel lblNewLabel_1_2_5_1_3 = new JLabel("95");
 		lblNewLabel_1_2_5_1_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_3.setBounds(229, 315, 46, 24);
+		lblNewLabel_1_2_5_1_3.setBounds(229, 409, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_3);
 		
 		JLabel lblNewLabel_1_2_5_1_4 = new JLabel("95");
 		lblNewLabel_1_2_5_1_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_4.setBounds(229, 339, 46, 24);
+		lblNewLabel_1_2_5_1_4.setBounds(229, 433, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_4);
 		
 		JLabel lblNewLabel_1_2_5_1_5 = new JLabel("95");
 		lblNewLabel_1_2_5_1_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_5.setBounds(229, 363, 46, 24);
+		lblNewLabel_1_2_5_1_5.setBounds(229, 456, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_5);
 		
 		JLabel lblNewLabel_1_2_5_1_6 = new JLabel("95");
 		lblNewLabel_1_2_5_1_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_2_5_1_6.setBounds(229, 387, 46, 24);
+		lblNewLabel_1_2_5_1_6.setBounds(229, 480, 46, 24);
 		contentPane.add(lblNewLabel_1_2_5_1_6);
-		
-		JTextArea textArea = new JTextArea();
-		textArea.setEditable(false);
-		textArea.setBounds(25, 34, 250, 377);
-		contentPane.add(textArea);
 		
 		JLabel lblNewLabel_2 = new JLabel("P");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(25, 11, 40, 24);
+		lblNewLabel_2.setBounds(25, 110, 40, 24);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_4 = new JLabel("NP");
 		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4.setBounds(89, 16, 100, 14);
+		lblNewLabel_4.setBounds(89, 108, 100, 29);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblPts = new JLabel("PTS");
 		lblPts.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPts.setBounds(229, 16, 46, 14);
+		lblPts.setBounds(229, 108, 46, 29);
 		contentPane.add(lblPts);
 		
 		JPanel panel_5 = new JPanel();
-		panel_5.setBounds(441, 33, 40, 24);
+		panel_5.setBounds(441, 138, 40, 24);
 		contentPane.add(panel_5);
 		
 		JLabel label_4 = new JLabel("1");
@@ -426,21 +422,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4 = new JPanel();
 		panel_1_4.setBackground(new Color(0, 206, 209));
-		panel_1_4.setBounds(478, 33, 25, 24);
+		panel_1_4.setBounds(478, 138, 25, 24);
 		contentPane.add(panel_1_4);
 		
 		JLabel lblAmgMercedes = new JLabel("AMG Mercedes");
 		lblAmgMercedes.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes.setBounds(502, 33, 100, 24);
+		lblAmgMercedes.setBounds(502, 138, 100, 24);
 		contentPane.add(lblAmgMercedes);
 		
 		JLabel lblNewLabel_1_3 = new JLabel("95");
 		lblNewLabel_1_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3.setBounds(645, 33, 46, 24);
+		lblNewLabel_1_3.setBounds(645, 138, 46, 24);
 		contentPane.add(lblNewLabel_1_3);
 		
 		JPanel panel_5_1 = new JPanel();
-		panel_5_1.setBounds(441, 55, 40, 24);
+		panel_5_1.setBounds(441, 161, 40, 24);
 		contentPane.add(panel_5_1);
 		
 		JLabel label_4_1 = new JLabel("1");
@@ -448,21 +444,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_1 = new JPanel();
 		panel_1_4_1.setBackground(new Color(0, 206, 209));
-		panel_1_4_1.setBounds(478, 55, 25, 24);
+		panel_1_4_1.setBounds(478, 161, 25, 24);
 		contentPane.add(panel_1_4_1);
 		
 		JLabel lblAmgMercedes_1 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_1.setBounds(502, 55, 100, 24);
+		lblAmgMercedes_1.setBounds(502, 161, 100, 24);
 		contentPane.add(lblAmgMercedes_1);
 		
 		JLabel lblNewLabel_1_3_1 = new JLabel("95");
 		lblNewLabel_1_3_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_1.setBounds(645, 55, 46, 24);
+		lblNewLabel_1_3_1.setBounds(645, 161, 46, 24);
 		contentPane.add(lblNewLabel_1_3_1);
 		
 		JPanel panel_5_2 = new JPanel();
-		panel_5_2.setBounds(441, 79, 40, 24);
+		panel_5_2.setBounds(441, 184, 40, 24);
 		contentPane.add(panel_5_2);
 		
 		JLabel label_4_2 = new JLabel("1");
@@ -470,21 +466,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_2 = new JPanel();
 		panel_1_4_2.setBackground(new Color(0, 206, 209));
-		panel_1_4_2.setBounds(478, 79, 25, 24);
+		panel_1_4_2.setBounds(478, 184, 25, 24);
 		contentPane.add(panel_1_4_2);
 		
 		JLabel lblAmgMercedes_2 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_2.setBounds(502, 79, 100, 24);
+		lblAmgMercedes_2.setBounds(502, 184, 100, 24);
 		contentPane.add(lblAmgMercedes_2);
 		
 		JLabel lblNewLabel_1_3_2 = new JLabel("95");
 		lblNewLabel_1_3_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_2.setBounds(645, 79, 46, 24);
+		lblNewLabel_1_3_2.setBounds(645, 184, 46, 24);
 		contentPane.add(lblNewLabel_1_3_2);
 		
 		JPanel panel_5_3 = new JPanel();
-		panel_5_3.setBounds(441, 103, 40, 24);
+		panel_5_3.setBounds(441, 207, 40, 24);
 		contentPane.add(panel_5_3);
 		
 		JLabel label_4_3 = new JLabel("1");
@@ -492,21 +488,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_3 = new JPanel();
 		panel_1_4_3.setBackground(new Color(0, 206, 209));
-		panel_1_4_3.setBounds(478, 103, 25, 24);
+		panel_1_4_3.setBounds(478, 207, 25, 24);
 		contentPane.add(panel_1_4_3);
 		
 		JLabel lblAmgMercedes_3 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_3.setBounds(502, 103, 100, 24);
+		lblAmgMercedes_3.setBounds(502, 207, 100, 24);
 		contentPane.add(lblAmgMercedes_3);
 		
 		JLabel lblNewLabel_1_3_3 = new JLabel("95");
 		lblNewLabel_1_3_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_3.setBounds(645, 103, 46, 24);
+		lblNewLabel_1_3_3.setBounds(645, 207, 46, 24);
 		contentPane.add(lblNewLabel_1_3_3);
 		
 		JPanel panel_5_4 = new JPanel();
-		panel_5_4.setBounds(441, 126, 40, 24);
+		panel_5_4.setBounds(441, 229, 40, 24);
 		contentPane.add(panel_5_4);
 		
 		JLabel label_4_4 = new JLabel("1");
@@ -514,21 +510,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_4 = new JPanel();
 		panel_1_4_4.setBackground(new Color(0, 206, 209));
-		panel_1_4_4.setBounds(478, 126, 25, 24);
+		panel_1_4_4.setBounds(478, 229, 25, 24);
 		contentPane.add(panel_1_4_4);
 		
 		JLabel lblAmgMercedes_4 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4.setBounds(502, 126, 100, 24);
+		lblAmgMercedes_4.setBounds(502, 229, 100, 24);
 		contentPane.add(lblAmgMercedes_4);
 		
 		JLabel lblNewLabel_1_3_4 = new JLabel("95");
 		lblNewLabel_1_3_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4.setBounds(645, 126, 46, 24);
+		lblNewLabel_1_3_4.setBounds(645, 229, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4);
 		
 		JPanel panel_5_4_1 = new JPanel();
-		panel_5_4_1.setBounds(441, 150, 40, 24);
+		panel_5_4_1.setBounds(441, 253, 40, 24);
 		contentPane.add(panel_5_4_1);
 		
 		JLabel label_4_4_1 = new JLabel("1");
@@ -536,21 +532,21 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_4_1 = new JPanel();
 		panel_1_4_4_1.setBackground(new Color(0, 206, 209));
-		panel_1_4_4_1.setBounds(478, 150, 25, 24);
+		panel_1_4_4_1.setBounds(478, 253, 25, 24);
 		contentPane.add(panel_1_4_4_1);
 		
 		JLabel lblAmgMercedes_4_1 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_1.setBounds(502, 150, 100, 24);
+		lblAmgMercedes_4_1.setBounds(502, 253, 100, 24);
 		contentPane.add(lblAmgMercedes_4_1);
 		
 		JLabel lblNewLabel_1_3_4_1 = new JLabel("95");
 		lblNewLabel_1_3_4_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4_1.setBounds(645, 150, 46, 24);
+		lblNewLabel_1_3_4_1.setBounds(645, 253, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4_1);
 		
 		JPanel panel_5_4_2 = new JPanel();
-		panel_5_4_2.setBounds(441, 174, 40, 24);
+		panel_5_4_2.setBounds(441, 277, 40, 24);
 		contentPane.add(panel_5_4_2);
 		
 		JLabel label_4_4_2 = new JLabel("1");
@@ -558,35 +554,35 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_4_2 = new JPanel();
 		panel_1_4_4_2.setBackground(new Color(0, 206, 209));
-		panel_1_4_4_2.setBounds(478, 174, 25, 24);
+		panel_1_4_4_2.setBounds(478, 277, 25, 24);
 		contentPane.add(panel_1_4_4_2);
 		
 		JLabel lblAmgMercedes_4_2 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_2.setBounds(502, 174, 100, 24);
+		lblAmgMercedes_4_2.setBounds(502, 277, 100, 24);
 		contentPane.add(lblAmgMercedes_4_2);
 		
 		JLabel lblNewLabel_1_3_4_2 = new JLabel("95");
 		lblNewLabel_1_3_4_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4_2.setBounds(645, 174, 46, 24);
+		lblNewLabel_1_3_4_2.setBounds(645, 277, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4_2);
 		
 		JPanel panel_5_4_3 = new JPanel();
-		panel_5_4_3.setBounds(441, 197, 40, 24);
+		panel_5_4_3.setBounds(441, 301, 40, 24);
 		contentPane.add(panel_5_4_3);
 		
 		JLabel label_4_4_3 = new JLabel("1");
 		panel_5_4_3.add(label_4_4_3);
 		
 		JPanel panel_5_4_4 = new JPanel();
-		panel_5_4_4.setBounds(441, 219, 40, 24);
+		panel_5_4_4.setBounds(441, 325, 40, 24);
 		contentPane.add(panel_5_4_4);
 		
 		JLabel label_4_4_4 = new JLabel("1");
 		panel_5_4_4.add(label_4_4_4);
 		
 		JPanel panel_5_4_5 = new JPanel();
-		panel_5_4_5.setBounds(441, 243, 40, 24);
+		panel_5_4_5.setBounds(441, 348, 40, 24);
 		contentPane.add(panel_5_4_5);
 		
 		JLabel label_4_4_5 = new JLabel("1");
@@ -594,122 +590,256 @@ public class Clasificacion extends JFrame {
 		
 		JPanel panel_1_4_4_3 = new JPanel();
 		panel_1_4_4_3.setBackground(new Color(0, 206, 209));
-		panel_1_4_4_3.setBounds(478, 197, 25, 24);
+		panel_1_4_4_3.setBounds(478, 301, 25, 24);
 		contentPane.add(panel_1_4_4_3);
 		
 		JPanel panel_1_4_4_4 = new JPanel();
 		panel_1_4_4_4.setBackground(new Color(0, 206, 209));
-		panel_1_4_4_4.setBounds(478, 219, 25, 24);
+		panel_1_4_4_4.setBounds(478, 325, 25, 24);
 		contentPane.add(panel_1_4_4_4);
 		
 		JPanel panel_1_4_4_5 = new JPanel();
 		panel_1_4_4_5.setBackground(new Color(0, 206, 209));
-		panel_1_4_4_5.setBounds(478, 243, 25, 24);
+		panel_1_4_4_5.setBounds(478, 348, 25, 24);
 		contentPane.add(panel_1_4_4_5);
-		
-		JLabel lblAmgMercedes_4_3 = new JLabel("AMG Mercedes");
-		lblAmgMercedes_4_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_3.setBounds(502, 150, 100, 24);
-		contentPane.add(lblAmgMercedes_4_3);
-		
-		JLabel lblAmgMercedes_4_4 = new JLabel("AMG Mercedes");
-		lblAmgMercedes_4_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_4.setBounds(502, 174, 100, 24);
-		contentPane.add(lblAmgMercedes_4_4);
 		
 		JLabel lblAmgMercedes_4_5 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_5.setBounds(502, 197, 100, 24);
+		lblAmgMercedes_4_5.setBounds(502, 301, 100, 24);
 		contentPane.add(lblAmgMercedes_4_5);
 		
 		JLabel lblAmgMercedes_4_6 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_6.setBounds(502, 219, 100, 24);
+		lblAmgMercedes_4_6.setBounds(502, 325, 100, 24);
 		contentPane.add(lblAmgMercedes_4_6);
 		
 		JLabel lblAmgMercedes_4_7 = new JLabel("AMG Mercedes");
 		lblAmgMercedes_4_7.setHorizontalAlignment(SwingConstants.CENTER);
-		lblAmgMercedes_4_7.setBounds(502, 243, 100, 24);
+		lblAmgMercedes_4_7.setBounds(502, 348, 100, 24);
 		contentPane.add(lblAmgMercedes_4_7);
 		
 		JLabel lblNewLabel_1_3_4_2_1 = new JLabel("95");
 		lblNewLabel_1_3_4_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4_2_1.setBounds(645, 197, 46, 24);
+		lblNewLabel_1_3_4_2_1.setBounds(645, 299, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4_2_1);
 		
 		JLabel lblNewLabel_1_3_4_2_1_1 = new JLabel("95");
 		lblNewLabel_1_3_4_2_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4_2_1_1.setBounds(645, 219, 46, 24);
+		lblNewLabel_1_3_4_2_1_1.setBounds(645, 325, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4_2_1_1);
 		
 		JLabel lblNewLabel_1_3_4_2_1_2 = new JLabel("95");
 		lblNewLabel_1_3_4_2_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1_3_4_2_1_2.setBounds(645, 243, 46, 24);
+		lblNewLabel_1_3_4_2_1_2.setBounds(645, 348, 46, 24);
 		contentPane.add(lblNewLabel_1_3_4_2_1_2);
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setEditable(false);
-		textArea_1.setBounds(441, 33, 250, 234);
+		textArea_1.setBounds(441, 138, 250, 234);
 		contentPane.add(textArea_1);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("P");
 		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2_1.setBounds(441, 11, 40, 24);
+		lblNewLabel_2_1.setBounds(441, 110, 40, 24);
 		contentPane.add(lblNewLabel_2_1);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("CE");
 		lblNewLabel_3_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3_1.setBounds(478, 16, 25, 14);
+		lblNewLabel_3_1.setBounds(478, 115, 25, 19);
 		contentPane.add(lblNewLabel_3_1);
 		
 		JLabel lblNewLabel_4_6 = new JLabel("NE");
 		lblNewLabel_4_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4_6.setBounds(502, 16, 100, 14);
+		lblNewLabel_4_6.setBounds(502, 115, 100, 19);
 		contentPane.add(lblNewLabel_4_6);
 		
 		JLabel lblPts_1 = new JLabel("PTS");
 		lblPts_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPts_1.setBounds(645, 16, 46, 14);
+		lblPts_1.setBounds(645, 115, 46, 19);
 		contentPane.add(lblPts_1);
 		
 		JLabel lblNewLabel_5 = new JLabel("Siglas");
 		lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_5.setBounds(441, 277, 250, 24);
+		lblNewLabel_5.setBounds(441, 463, 250, 24);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("P = Puesto");
 		lblNewLabel_6.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_6.setBounds(441, 301, 250, 22);
+		lblNewLabel_6.setBounds(441, 482, 250, 22);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_3_1_1 = new JLabel("CE");
 		lblNewLabel_3_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3_1_1.setBounds(64, 16, 25, 14);
+		lblNewLabel_3_1_1.setBounds(64, 108, 25, 29);
 		contentPane.add(lblNewLabel_3_1_1);
 		
 		JLabel lblNewLabel_6_1 = new JLabel("CE= Color Escuderia");
 		lblNewLabel_6_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_6_1.setBounds(441, 320, 250, 22);
+		lblNewLabel_6_1.setBounds(441, 505, 250, 22);
 		contentPane.add(lblNewLabel_6_1);
 		
 		JLabel lblNewLabel_6_2_1 = new JLabel("NE = Nombre Escuderia");
 		lblNewLabel_6_2_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_6_2_1.setBounds(441, 368, 250, 22);
+		lblNewLabel_6_2_1.setBounds(441, 551, 250, 22);
 		contentPane.add(lblNewLabel_6_2_1);
 		
 		JLabel lblNewLabel_6_2 = new JLabel("NP = Nombre Piloto");
 		lblNewLabel_6_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_6_2.setBounds(441, 344, 250, 22);
+		lblNewLabel_6_2.setBounds(441, 526, 250, 22);
 		contentPane.add(lblNewLabel_6_2);
 		
 		JLabel lblNewLabel_6_2_1_1 = new JLabel("PTS = Puntos");
 		lblNewLabel_6_2_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_6_2_1_1.setBounds(441, 389, 250, 22);
+		lblNewLabel_6_2_1_1.setBounds(441, 574, 250, 22);
 		contentPane.add(lblNewLabel_6_2_1_1);
 		
 		JTextArea textArea_2 = new JTextArea();
 		textArea_2.setEditable(false);
-		textArea_2.setBounds(441, 278, 250, 133);
+		textArea_2.setBounds(441, 463, 250, 133);
 		contentPane.add(textArea_2);
+		
+		JPanel panel_4_5_1_6_1 = new JPanel();
+		panel_4_5_1_6_1.setBounds(25, 572, 40, 24);
+		contentPane.add(panel_4_5_1_6_1);
+		
+		JLabel label_3_5_1_6_1 = new JLabel("20");
+		panel_4_5_1_6_1.add(label_3_5_1_6_1);
+		
+		JPanel panel_1_3_5_1_6_1 = new JPanel();
+		panel_1_3_5_1_6_1.setBackground(new Color(0, 206, 209));
+		panel_1_3_5_1_6_1.setBounds(64, 572, 25, 24);
+		contentPane.add(panel_1_3_5_1_6_1);
+		
+		JLabel lblNewLabel_4_5_1_6_1 = new JLabel("Lewis Hamilton");
+		lblNewLabel_4_5_1_6_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4_5_1_6_1.setBounds(89, 572, 100, 24);
+		contentPane.add(lblNewLabel_4_5_1_6_1);
+		
+		JLabel lblNewLabel_1_2_5_1_6_1 = new JLabel("95");
+		lblNewLabel_1_2_5_1_6_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1_2_5_1_6_1.setBounds(229, 572, 46, 24);
+		contentPane.add(lblNewLabel_1_2_5_1_6_1);
+		
+		JPanel panel_4_5_1_6_2 = new JPanel();
+		panel_4_5_1_6_2.setBounds(25, 549, 40, 24);
+		contentPane.add(panel_4_5_1_6_2);
+		
+		JLabel label_3_5_1_6_2 = new JLabel("19");
+		panel_4_5_1_6_2.add(label_3_5_1_6_2);
+		
+		JPanel panel_1_3_5_1_6_2 = new JPanel();
+		panel_1_3_5_1_6_2.setBackground(new Color(0, 206, 209));
+		panel_1_3_5_1_6_2.setBounds(64, 549, 25, 24);
+		contentPane.add(panel_1_3_5_1_6_2);
+		
+		JLabel lblNewLabel_4_5_1_6_2 = new JLabel("Lewis Hamilton");
+		lblNewLabel_4_5_1_6_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4_5_1_6_2.setBounds(89, 549, 100, 24);
+		contentPane.add(lblNewLabel_4_5_1_6_2);
+		
+		JLabel lblNewLabel_1_2_5_1_6_2 = new JLabel("95");
+		lblNewLabel_1_2_5_1_6_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1_2_5_1_6_2.setBounds(229, 549, 46, 24);
+		contentPane.add(lblNewLabel_1_2_5_1_6_2);
+		
+		JPanel panel_4_5_1_6_3 = new JPanel();
+		panel_4_5_1_6_3.setBounds(25, 526, 40, 24);
+		contentPane.add(panel_4_5_1_6_3);
+		
+		JLabel label_3_5_1_6_3 = new JLabel("18");
+		panel_4_5_1_6_3.add(label_3_5_1_6_3);
+		
+		JPanel panel_1_3_5_1_6_3 = new JPanel();
+		panel_1_3_5_1_6_3.setBackground(new Color(0, 206, 209));
+		panel_1_3_5_1_6_3.setBounds(64, 526, 25, 24);
+		contentPane.add(panel_1_3_5_1_6_3);
+		
+		JLabel lblNewLabel_4_5_1_6_3 = new JLabel("Lewis Hamilton");
+		lblNewLabel_4_5_1_6_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4_5_1_6_3.setBounds(89, 526, 100, 24);
+		contentPane.add(lblNewLabel_4_5_1_6_3);
+		
+		JLabel lblNewLabel_1_2_5_1_6_3 = new JLabel("95");
+		lblNewLabel_1_2_5_1_6_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1_2_5_1_6_3.setBounds(229, 526, 46, 24);
+		contentPane.add(lblNewLabel_1_2_5_1_6_3);
+		
+		JPanel panel_4_5_1_6_4 = new JPanel();
+		panel_4_5_1_6_4.setBounds(25, 503, 40, 24);
+		contentPane.add(panel_4_5_1_6_4);
+		
+		JLabel label_3_5_1_6_4 = new JLabel("17");
+		panel_4_5_1_6_4.add(label_3_5_1_6_4);
+		
+		JPanel panel_1_3_5_1_6_4 = new JPanel();
+		panel_1_3_5_1_6_4.setBackground(new Color(0, 206, 209));
+		panel_1_3_5_1_6_4.setBounds(64, 503, 25, 24);
+		contentPane.add(panel_1_3_5_1_6_4);
+		
+		JLabel lblNewLabel_4_5_1_6_4 = new JLabel("Lewis Hamilton");
+		lblNewLabel_4_5_1_6_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_4_5_1_6_4.setBounds(89, 503, 100, 24);
+		contentPane.add(lblNewLabel_4_5_1_6_4);
+		
+		JLabel lblNewLabel_1_2_5_1_6_4 = new JLabel("95");
+		lblNewLabel_1_2_5_1_6_4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1_2_5_1_6_4.setBounds(229, 503, 46, 24);
+		contentPane.add(lblNewLabel_1_2_5_1_6_4);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setEditable(false);
+		textArea.setBounds(25, 138, 250, 458);
+		contentPane.add(textArea);
+		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBounds(0, 0, 859, 71);
+		contentPane.add(panel_6);
+		panel_6.setLayout(null);
+		
+		JLabel lblNewLabel_4_7 = new JLabel("");
+		lblNewLabel_4_7.setBounds(10, 11, 134, 48);
+		panel_6.add(lblNewLabel_4_7);
+		
+		JButton btnNewButton_4 = new JButton("Inicio");
+		btnNewButton_4.setForeground(Color.RED);
+		btnNewButton_4.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_4.setBackground(Color.DARK_GRAY);
+		btnNewButton_4.setBounds(154, 11, 74, 48);
+		panel_6.add(btnNewButton_4);
+		
+		JButton btnNewButton_3 = new JButton("Escuderias");
+		btnNewButton_3.setForeground(Color.RED);
+		btnNewButton_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_3.setBackground(Color.DARK_GRAY);
+		btnNewButton_3.setBounds(238, 11, 112, 48);
+		panel_6.add(btnNewButton_3);
+		
+		JButton btnNewButton_2 = new JButton("Pilotos");
+		btnNewButton_2.setForeground(Color.RED);
+		btnNewButton_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_2.setBackground(Color.DARK_GRAY);
+		btnNewButton_2.setBounds(360, 11, 94, 48);
+		panel_6.add(btnNewButton_2);
+		
+		JButton btnNewButton_1 = new JButton("Gran Premio");
+		btnNewButton_1.setForeground(Color.RED);
+		btnNewButton_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_1.setBackground(Color.DARK_GRAY);
+		btnNewButton_1.setBounds(464, 11, 130, 48);
+		panel_6.add(btnNewButton_1);
+		
+		JButton btnNewButton = new JButton("Clasificaciones");
+		btnNewButton.setForeground(Color.RED);
+		btnNewButton.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton.setBackground(Color.DARK_GRAY);
+		btnNewButton.setBounds(604, 11, 145, 48);
+		panel_6.add(btnNewButton);
+		
+		JButton btnNewButton_5 = new JButton("Login");
+		btnNewButton_5.setForeground(Color.RED);
+		btnNewButton_5.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_5.setBackground(Color.DARK_GRAY);
+		btnNewButton_5.setBounds(759, 11, 92, 48);
+		panel_6.add(btnNewButton_5);
 	}
 }
