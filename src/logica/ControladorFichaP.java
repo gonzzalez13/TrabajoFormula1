@@ -1,12 +1,13 @@
 package logica;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 
 import vista.Clasificacion;
 import vista.Escuderia;
 import vista.FichaPilotos;
-import vista.GranPremio;
+import vista.GrandesPremios;
 import vista.Inicio;
 import vista.Login;
 import vista.Piloto;
@@ -46,7 +47,7 @@ public class ControladorFichaP implements ActionListener {
 			piloto.setVisible(true);
 			Fp.setVisible(false);
 		}else if(e.getSource() == Fp.btnGranPre) {
-			GranPremio Gp = new GranPremio();
+			GrandesPremios Gp = new GrandesPremios();
 			Gp.setVisible(true);
 			Fp.setVisible(false);
 		}else if(e.getSource() == Fp.btnClasi) {
