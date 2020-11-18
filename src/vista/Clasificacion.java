@@ -791,55 +791,56 @@ public class Clasificacion extends JFrame {
 		textArea.setBounds(25, 138, 250, 458);
 		contentPane.add(textArea);
 		
-		JPanel panel_6 = new JPanel();
-		panel_6.setBounds(0, 0, 859, 71);
-		contentPane.add(panel_6);
-		panel_6.setLayout(null);
-		
-		JLabel lblNewLabel_4_7 = new JLabel("");
-		lblNewLabel_4_7.setBounds(10, 11, 134, 48);
-		panel_6.add(lblNewLabel_4_7);
+		JPanel PanelMenu = new JPanel();
+		PanelMenu.setLayout(null);
+		PanelMenu.setBackground(Color.LIGHT_GRAY);
+		PanelMenu.setBounds(0, 0, 849, 71);
+		contentPane.add(PanelMenu);
 		
 		JButton btnNewButton_4 = new JButton("Inicio");
 		btnNewButton_4.setForeground(Color.RED);
 		btnNewButton_4.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_4.setBackground(Color.DARK_GRAY);
-		btnNewButton_4.setBounds(154, 11, 74, 48);
-		panel_6.add(btnNewButton_4);
+		btnNewButton_4.setBounds(144, 11, 74, 48);
+		PanelMenu.add(btnNewButton_4);
 		
 		JButton btnNewButton_3 = new JButton("Escuderias");
 		btnNewButton_3.setForeground(Color.RED);
 		btnNewButton_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_3.setBackground(Color.DARK_GRAY);
-		btnNewButton_3.setBounds(238, 11, 112, 48);
-		panel_6.add(btnNewButton_3);
+		btnNewButton_3.setBounds(226, 11, 112, 48);
+		PanelMenu.add(btnNewButton_3);
 		
 		JButton btnNewButton_2 = new JButton("Pilotos");
 		btnNewButton_2.setForeground(Color.RED);
 		btnNewButton_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_2.setBackground(Color.DARK_GRAY);
-		btnNewButton_2.setBounds(360, 11, 94, 48);
-		panel_6.add(btnNewButton_2);
+		btnNewButton_2.setBounds(348, 11, 94, 48);
+		PanelMenu.add(btnNewButton_2);
 		
 		JButton btnNewButton_1 = new JButton("Gran Premio");
 		btnNewButton_1.setForeground(Color.RED);
 		btnNewButton_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_1.setBackground(Color.DARK_GRAY);
-		btnNewButton_1.setBounds(464, 11, 130, 48);
-		panel_6.add(btnNewButton_1);
+		btnNewButton_1.setBounds(452, 11, 130, 48);
+		PanelMenu.add(btnNewButton_1);
 		
 		JButton btnNewButton = new JButton("Clasificaciones");
 		btnNewButton.setForeground(Color.RED);
 		btnNewButton.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton.setBackground(Color.DARK_GRAY);
-		btnNewButton.setBounds(604, 11, 145, 48);
-		panel_6.add(btnNewButton);
+		btnNewButton.setBounds(592, 11, 145, 48);
+		PanelMenu.add(btnNewButton);
 		
 		JButton btnNewButton_5 = new JButton("Login");
 		btnNewButton_5.setForeground(Color.RED);
 		btnNewButton_5.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_5.setBackground(Color.DARK_GRAY);
-		btnNewButton_5.setBounds(759, 11, 92, 48);
-		panel_6.add(btnNewButton_5);
+		btnNewButton_5.setBounds(747, 11, 92, 48);
+		PanelMenu.add(btnNewButton_5);
+		
+		JLabel lblNewLabel_4_7 = new JLabel("");
+		lblNewLabel_4_7.setBounds(0, 11, 134, 48);
+		PanelMenu.add(lblNewLabel_4_7);
 	}
 }
