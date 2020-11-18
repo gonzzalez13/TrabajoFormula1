@@ -9,6 +9,8 @@ import java.awt.Color;
 import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 
 public class GrandesPremios extends JFrame {
 
@@ -92,5 +94,25 @@ public class GrandesPremios extends JFrame {
 		JLabel lblNewLabel_4 = new JLabel("");
 		lblNewLabel_4.setBounds(0, 11, 134, 48);
 		PanelMenu.add(lblNewLabel_4);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 82, 207, 60);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JButton btnNewButton_6 = new JButton("Melborne >");
+		btnNewButton_6.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6.setBackground(Color.WHITE);
+		btnNewButton_6.setBounds(0, 0, 148, 49);
+		panel.add(btnNewButton_6);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Australia.png"));
+		lblNewLabel.setBounds(147, 0, 60, 49);
+		panel.add(lblNewLabel);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(10, 132, 207, 10);
+		contentPane.add(panel_1);
 	}
 }
