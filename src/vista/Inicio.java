@@ -6,6 +6,10 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -16,8 +20,12 @@ import java.awt.Window.Type;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.awt.event.ActionEvent;
 import javax.swing.JSlider;
+import javax.sound.sampled.AudioInputStream;
 import javax.swing.ImageIcon;
 
 public class Inicio extends JFrame {
@@ -27,18 +35,25 @@ public class Inicio extends JFrame {
 
 	/**
 	 * Launch the application.
+	 * @throws FileNotFoundException 
+	 * @throws JavaLayerException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException, JavaLayerException {
+		String sonido = "C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\audios\\intro.mp3";
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					Inicio frame = new Inicio();
 					frame.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
+		FileInputStream fileInputStream = new FileInputStream(sonido);
+		Player player = new Player(fileInputStream);
+		player.play();
 	}
 
 	/**

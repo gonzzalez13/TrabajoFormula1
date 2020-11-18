@@ -96,23 +96,423 @@ public class GrandesPremios extends JFrame {
 		PanelMenu.add(lblNewLabel_4);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 82, 207, 60);
+		panel.setBounds(50, 102, 207, 60);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JButton btnNewButton_6 = new JButton("Melborne >");
+		JButton btnNewButton_6 = new JButton("Albert Park >");
 		btnNewButton_6.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnNewButton_6.setBackground(Color.WHITE);
 		btnNewButton_6.setBounds(0, 0, 148, 49);
 		panel.add(btnNewButton_6);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Australia.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Australia.png"));
 		lblNewLabel.setBounds(147, 0, 60, 49);
 		panel.add(lblNewLabel);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(10, 132, 207, 10);
-		contentPane.add(panel_1);
+		panel_1.setBounds(0, 50, 207, 10);
+		panel.add(panel_1);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setLayout(null);
+		panel_2.setBounds(322, 102, 207, 60);
+		contentPane.add(panel_2);
+		
+		JButton btnNewButton_6_1 = new JButton("Bahr\u00E9in >");
+		btnNewButton_6_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1.setBackground(Color.WHITE);
+		btnNewButton_6_1.setBounds(0, 0, 148, 49);
+		panel_2.add(btnNewButton_6_1);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Bahrein.png"));
+		lblNewLabel_1.setBounds(147, 0, 60, 49);
+		panel_2.add(lblNewLabel_1);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBounds(0, 50, 207, 10);
+		panel_2.add(panel_1_1);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setLayout(null);
+		panel_2_1.setBounds(589, 102, 207, 60);
+		contentPane.add(panel_2_1);
+		
+		JButton btnNewButton_6_1_1 = new JButton("Hanoi >");
+		btnNewButton_6_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_1.setBounds(0, 0, 148, 49);
+		panel_2_1.add(btnNewButton_6_1_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("");
+		lblNewLabel_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Vietnam.png"));
+		lblNewLabel_1_1.setBounds(147, 0, 60, 49);
+		panel_2_1.add(lblNewLabel_1_1);
+		
+		JPanel panel_1_2 = new JPanel();
+		panel_1_2.setBounds(0, 50, 207, 10);
+		panel_2_1.add(panel_1_2);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setLayout(null);
+		panel_3.setBounds(50, 173, 207, 60);
+		contentPane.add(panel_3);
+		
+		JButton btnNewButton_6_2 = new JButton("Shangh\u00E1i >");
+		btnNewButton_6_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_2.setBackground(Color.WHITE);
+		btnNewButton_6_2.setBounds(0, 0, 148, 49);
+		panel_3.add(btnNewButton_6_2);
+		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\China.png"));
+		lblNewLabel_2.setBounds(147, 0, 60, 49);
+		panel_3.add(lblNewLabel_2);
+		
+		JPanel panel_1_3 = new JPanel();
+		panel_1_3.setBounds(0, 50, 207, 10);
+		panel_3.add(panel_1_3);
+		
+		JPanel panel_3_1 = new JPanel();
+		panel_3_1.setLayout(null);
+		panel_3_1.setBounds(322, 173, 207, 60);
+		contentPane.add(panel_3_1);
+		
+		JButton btnNewButton_6_2_1 = new JButton("Zandvoort >");
+		btnNewButton_6_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_2_1.setBackground(Color.WHITE);
+		btnNewButton_6_2_1.setBounds(0, 0, 148, 49);
+		panel_3_1.add(btnNewButton_6_2_1);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("");
+		lblNewLabel_2_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Paises Bajos.png"));
+		lblNewLabel_2_1.setBounds(147, 0, 60, 49);
+		panel_3_1.add(lblNewLabel_2_1);
+		
+		JPanel panel_1_3_1 = new JPanel();
+		panel_1_3_1.setBounds(0, 50, 207, 10);
+		panel_3_1.add(panel_1_3_1);
+		
+		JPanel panel_2_2 = new JPanel();
+		panel_2_2.setLayout(null);
+		panel_2_2.setBounds(589, 173, 207, 60);
+		contentPane.add(panel_2_2);
+		
+		JButton btnNewButton_6_1_2 = new JButton("Barcelona >");
+		btnNewButton_6_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2.setBackground(Color.WHITE);
+		btnNewButton_6_1_2.setBounds(0, 0, 148, 49);
+		panel_2_2.add(btnNewButton_6_1_2);
+		
+		JLabel lblNewLabel_1_2 = new JLabel("");
+		lblNewLabel_1_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Espa\u00F1a.png"));
+		lblNewLabel_1_2.setBounds(147, 0, 60, 49);
+		panel_2_2.add(lblNewLabel_1_2);
+		
+		JPanel panel_1_1_1 = new JPanel();
+		panel_1_1_1.setBounds(0, 50, 207, 10);
+		panel_2_2.add(panel_1_1_1);
+		
+		JPanel panel_2_2_1 = new JPanel();
+		panel_2_2_1.setLayout(null);
+		panel_2_2_1.setBounds(50, 244, 207, 60);
+		contentPane.add(panel_2_2_1);
+		
+		JButton btnNewButton_6_1_2_1 = new JButton("M\u00F3naco >");
+		btnNewButton_6_1_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_1.setBounds(0, 0, 148, 49);
+		panel_2_2_1.add(btnNewButton_6_1_2_1);
+		
+		JLabel lblNewLabel_1_2_1 = new JLabel("");
+		lblNewLabel_1_2_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Monaco.png"));
+		lblNewLabel_1_2_1.setBounds(147, 0, 60, 49);
+		panel_2_2_1.add(lblNewLabel_1_2_1);
+		
+		JPanel panel_1_1_1_1 = new JPanel();
+		panel_1_1_1_1.setBounds(0, 50, 207, 10);
+		panel_2_2_1.add(panel_1_1_1_1);
+		
+		JPanel panel_2_2_1_1 = new JPanel();
+		panel_2_2_1_1.setLayout(null);
+		panel_2_2_1_1.setBounds(322, 244, 207, 60);
+		contentPane.add(panel_2_2_1_1);
+		
+		JButton btnNewButton_6_1_2_1_1 = new JButton("Bak\u00FA >");
+		btnNewButton_6_1_2_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_1_1.setBounds(0, 0, 148, 49);
+		panel_2_2_1_1.add(btnNewButton_6_1_2_1_1);
+		
+		JLabel lblNewLabel_1_2_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Azerbaiy\u00E1n.png"));
+		lblNewLabel_1_2_1_1.setBounds(147, 0, 60, 49);
+		panel_2_2_1_1.add(lblNewLabel_1_2_1_1);
+		
+		JPanel panel_1_1_1_1_1 = new JPanel();
+		panel_1_1_1_1_1.setBounds(0, 50, 207, 10);
+		panel_2_2_1_1.add(panel_1_1_1_1_1);
+		
+		JPanel panel_2_2_1_1_1 = new JPanel();
+		panel_2_2_1_1_1.setLayout(null);
+		panel_2_2_1_1_1.setBounds(589, 244, 207, 60);
+		contentPane.add(panel_2_2_1_1_1);
+		
+		JButton btnNewButton_6_1_2_1_1_1 = new JButton("Gilles Villeneuve >");
+		btnNewButton_6_1_2_1_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_1_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_1_1_1.setBounds(0, 0, 148, 49);
+		panel_2_2_1_1_1.add(btnNewButton_6_1_2_1_1_1);
+		
+		JLabel lblNewLabel_1_2_1_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Canada.png"));
+		lblNewLabel_1_2_1_1_1.setBounds(147, 0, 60, 49);
+		panel_2_2_1_1_1.add(lblNewLabel_1_2_1_1_1);
+		
+		JPanel panel_1_1_1_1_1_1 = new JPanel();
+		panel_1_1_1_1_1_1.setBounds(0, 50, 207, 10);
+		panel_2_2_1_1_1.add(panel_1_1_1_1_1_1);
+		
+		JPanel panel_2_2_1_2 = new JPanel();
+		panel_2_2_1_2.setLayout(null);
+		panel_2_2_1_2.setBounds(50, 315, 207, 60);
+		contentPane.add(panel_2_2_1_2);
+		
+		JButton btnNewButton_6_1_2_1_2 = new JButton("Paul Ricard >");
+		btnNewButton_6_1_2_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_1_2.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_1_2.setBounds(0, 0, 148, 49);
+		panel_2_2_1_2.add(btnNewButton_6_1_2_1_2);
+		
+		JLabel lblNewLabel_1_2_1_2 = new JLabel("");
+		lblNewLabel_1_2_1_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Francia.png"));
+		lblNewLabel_1_2_1_2.setBounds(147, 0, 60, 49);
+		panel_2_2_1_2.add(lblNewLabel_1_2_1_2);
+		
+		JPanel panel_1_1_1_1_2 = new JPanel();
+		panel_1_1_1_1_2.setBounds(0, 50, 207, 10);
+		panel_2_2_1_2.add(panel_1_1_1_1_2);
+		
+		JPanel panel_2_1_1 = new JPanel();
+		panel_2_1_1.setLayout(null);
+		panel_2_1_1.setBounds(322, 315, 207, 60);
+		contentPane.add(panel_2_1_1);
+		
+		JButton btnNewButton_6_1_1_1 = new JButton("Red Bull Ring >");
+		btnNewButton_6_1_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_1.setBounds(0, 0, 148, 49);
+		panel_2_1_1.add(btnNewButton_6_1_1_1);
+		
+		JLabel lblNewLabel_1_1_1 = new JLabel("");
+		lblNewLabel_1_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Austria.png"));
+		lblNewLabel_1_1_1.setBounds(147, 0, 60, 49);
+		panel_2_1_1.add(lblNewLabel_1_1_1);
+		
+		JPanel panel_1_2_1 = new JPanel();
+		panel_1_2_1.setBounds(0, 50, 207, 10);
+		panel_2_1_1.add(panel_1_2_1);
+		
+		JPanel panel_2_1_1_1 = new JPanel();
+		panel_2_1_1_1.setLayout(null);
+		panel_2_1_1_1.setBounds(589, 315, 207, 60);
+		contentPane.add(panel_2_1_1_1);
+		
+		JButton btnNewButton_6_1_1_1_1 = new JButton("Hungaroring >");
+		btnNewButton_6_1_1_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_1_1.setBounds(0, 0, 148, 49);
+		panel_2_1_1_1.add(btnNewButton_6_1_1_1_1);
+		
+		JLabel lblNewLabel_1_1_1_1 = new JLabel("");
+		lblNewLabel_1_1_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Hungria.png"));
+		lblNewLabel_1_1_1_1.setBounds(147, 0, 60, 49);
+		panel_2_1_1_1.add(lblNewLabel_1_1_1_1);
+		
+		JPanel panel_1_2_1_1 = new JPanel();
+		panel_1_2_1_1.setBounds(0, 50, 207, 10);
+		panel_2_1_1_1.add(panel_1_2_1_1);
+		
+		JPanel panel_2_2_1_2_1 = new JPanel();
+		panel_2_2_1_2_1.setLayout(null);
+		panel_2_2_1_2_1.setBounds(50, 386, 207, 60);
+		contentPane.add(panel_2_2_1_2_1);
+		
+		JButton btnNewButton_6_1_2_1_2_1 = new JButton("Silverstone >");
+		btnNewButton_6_1_2_1_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_1_2_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_1_2_1.setBounds(0, 0, 148, 49);
+		panel_2_2_1_2_1.add(btnNewButton_6_1_2_1_2_1);
+		
+		JLabel lblNewLabel_1_2_1_2_1 = new JLabel("");
+		lblNewLabel_1_2_1_2_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Inglaterra.png"));
+		lblNewLabel_1_2_1_2_1.setBounds(147, 0, 60, 49);
+		panel_2_2_1_2_1.add(lblNewLabel_1_2_1_2_1);
+		
+		JPanel panel_1_1_1_1_2_1 = new JPanel();
+		panel_1_1_1_1_2_1.setBounds(0, 50, 207, 10);
+		panel_2_2_1_2_1.add(panel_1_1_1_1_2_1);
+		
+		JPanel panel_2_2_2 = new JPanel();
+		panel_2_2_2.setLayout(null);
+		panel_2_2_2.setBounds(322, 386, 207, 60);
+		contentPane.add(panel_2_2_2);
+		
+		JButton btnNewButton_6_1_2_2 = new JButton("Spa >");
+		btnNewButton_6_1_2_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_2_2.setBackground(Color.WHITE);
+		btnNewButton_6_1_2_2.setBounds(0, 0, 148, 49);
+		panel_2_2_2.add(btnNewButton_6_1_2_2);
+		
+		JLabel lblNewLabel_1_2_2 = new JLabel("");
+		lblNewLabel_1_2_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Belgica.png"));
+		lblNewLabel_1_2_2.setBounds(147, 0, 60, 49);
+		panel_2_2_2.add(lblNewLabel_1_2_2);
+		
+		JPanel panel_1_1_1_2 = new JPanel();
+		panel_1_1_1_2.setBounds(0, 50, 207, 10);
+		panel_2_2_2.add(panel_1_1_1_2);
+		
+		JPanel panel_2_1_2 = new JPanel();
+		panel_2_1_2.setLayout(null);
+		panel_2_1_2.setBounds(589, 386, 207, 60);
+		contentPane.add(panel_2_1_2);
+		
+		JButton btnNewButton_6_1_1_2 = new JButton("Monza >");
+		btnNewButton_6_1_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_2.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_2.setBounds(0, 0, 148, 49);
+		panel_2_1_2.add(btnNewButton_6_1_1_2);
+		
+		JLabel lblNewLabel_1_1_2 = new JLabel("");
+		lblNewLabel_1_1_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Italia.png"));
+		lblNewLabel_1_1_2.setBounds(147, 0, 60, 49);
+		panel_2_1_2.add(lblNewLabel_1_1_2);
+		
+		JPanel panel_1_2_2 = new JPanel();
+		panel_1_2_2.setBounds(0, 50, 207, 10);
+		panel_2_1_2.add(panel_1_2_2);
+		
+		JPanel panel_2_1_2_1 = new JPanel();
+		panel_2_1_2_1.setLayout(null);
+		panel_2_1_2_1.setBounds(50, 457, 207, 60);
+		contentPane.add(panel_2_1_2_1);
+		
+		JButton btnNewButton_6_1_1_2_1 = new JButton("Marina Bay >");
+		btnNewButton_6_1_1_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_2_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_2_1.setBounds(0, 0, 148, 49);
+		panel_2_1_2_1.add(btnNewButton_6_1_1_2_1);
+		
+		JLabel lblNewLabel_1_1_2_1 = new JLabel("");
+		lblNewLabel_1_1_2_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Singapur.png"));
+		lblNewLabel_1_1_2_1.setBounds(147, 0, 60, 49);
+		panel_2_1_2_1.add(lblNewLabel_1_1_2_1);
+		
+		JPanel panel_1_2_2_1 = new JPanel();
+		panel_1_2_2_1.setBounds(0, 50, 207, 10);
+		panel_2_1_2_1.add(panel_1_2_2_1);
+		
+		JPanel panel_2_1_2_1_1 = new JPanel();
+		panel_2_1_2_1_1.setLayout(null);
+		panel_2_1_2_1_1.setBounds(322, 457, 207, 60);
+		contentPane.add(panel_2_1_2_1_1);
+		
+		JButton btnNewButton_6_1_1_2_1_1 = new JButton("Sochi >");
+		btnNewButton_6_1_1_2_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_2_1_1.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_2_1_1.setBounds(0, 0, 148, 49);
+		panel_2_1_2_1_1.add(btnNewButton_6_1_1_2_1_1);
+		
+		JLabel lblNewLabel_1_1_2_1_1 = new JLabel("");
+		lblNewLabel_1_1_2_1_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Rusia.png"));
+		lblNewLabel_1_1_2_1_1.setBounds(147, 0, 60, 49);
+		panel_2_1_2_1_1.add(lblNewLabel_1_1_2_1_1);
+		
+		JPanel panel_1_2_2_1_1 = new JPanel();
+		panel_1_2_2_1_1.setBounds(0, 50, 207, 10);
+		panel_2_1_2_1_1.add(panel_1_2_2_1_1);
+		
+		JPanel panel_2_1_2_1_2 = new JPanel();
+		panel_2_1_2_1_2.setLayout(null);
+		panel_2_1_2_1_2.setBounds(589, 457, 207, 60);
+		contentPane.add(panel_2_1_2_1_2);
+		
+		JButton btnNewButton_6_1_1_2_1_2 = new JButton("Suzuka >");
+		btnNewButton_6_1_1_2_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_2_1_2.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_2_1_2.setBounds(0, 0, 148, 49);
+		panel_2_1_2_1_2.add(btnNewButton_6_1_1_2_1_2);
+		
+		JLabel lblNewLabel_1_1_2_1_2 = new JLabel("");
+		lblNewLabel_1_1_2_1_2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Japon.png"));
+		lblNewLabel_1_1_2_1_2.setBounds(147, 0, 60, 49);
+		panel_2_1_2_1_2.add(lblNewLabel_1_1_2_1_2);
+		
+		JPanel panel_1_2_2_1_2 = new JPanel();
+		panel_1_2_2_1_2.setBounds(0, 50, 207, 10);
+		panel_2_1_2_1_2.add(panel_1_2_2_1_2);
+		
+		JPanel panel_2_1_2_1_3 = new JPanel();
+		panel_2_1_2_1_3.setLayout(null);
+		panel_2_1_2_1_3.setBounds(50, 528, 207, 60);
+		contentPane.add(panel_2_1_2_1_3);
+		
+		JButton btnNewButton_6_1_1_2_1_3 = new JButton(" Las Am\u00E9ricas >");
+		btnNewButton_6_1_1_2_1_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_2_1_3.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_2_1_3.setBounds(0, 0, 148, 49);
+		panel_2_1_2_1_3.add(btnNewButton_6_1_1_2_1_3);
+		
+		JLabel lblNewLabel_1_1_2_1_3 = new JLabel("");
+		lblNewLabel_1_1_2_1_3.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\EEUU.png"));
+		lblNewLabel_1_1_2_1_3.setBounds(147, 0, 60, 49);
+		panel_2_1_2_1_3.add(lblNewLabel_1_1_2_1_3);
+		
+		JPanel panel_1_2_2_1_3 = new JPanel();
+		panel_1_2_2_1_3.setBounds(0, 50, 207, 10);
+		panel_2_1_2_1_3.add(panel_1_2_2_1_3);
+		
+		JPanel panel_2_3 = new JPanel();
+		panel_2_3.setLayout(null);
+		panel_2_3.setBounds(322, 528, 207, 60);
+		contentPane.add(panel_2_3);
+		
+		JButton btnNewButton_6_1_3 = new JButton("M\u00E9xico >");
+		btnNewButton_6_1_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_3.setBackground(Color.WHITE);
+		btnNewButton_6_1_3.setBounds(0, 0, 148, 49);
+		panel_2_3.add(btnNewButton_6_1_3);
+		
+		JLabel lblNewLabel_1_3 = new JLabel("");
+		lblNewLabel_1_3.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Mexico.png"));
+		lblNewLabel_1_3.setBounds(147, 0, 60, 49);
+		panel_2_3.add(lblNewLabel_1_3);
+		
+		JPanel panel_1_1_2 = new JPanel();
+		panel_1_1_2.setBounds(0, 50, 207, 10);
+		panel_2_3.add(panel_1_1_2);
+		
+		JPanel panel_2_1_3 = new JPanel();
+		panel_2_1_3.setLayout(null);
+		panel_2_1_3.setBounds(589, 528, 207, 60);
+		contentPane.add(panel_2_1_3);
+		
+		JButton btnNewButton_6_1_1_3 = new JButton("Brasil >");
+		btnNewButton_6_1_1_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNewButton_6_1_1_3.setBackground(Color.WHITE);
+		btnNewButton_6_1_1_3.setBounds(0, 0, 148, 49);
+		panel_2_1_3.add(btnNewButton_6_1_1_3);
+		
+		JLabel lblNewLabel_1_1_3 = new JLabel("");
+		lblNewLabel_1_1_3.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Brasil.png"));
+		lblNewLabel_1_1_3.setBounds(147, 0, 60, 49);
+		panel_2_1_3.add(lblNewLabel_1_1_3);
+		
+		JPanel panel_1_2_3 = new JPanel();
+		panel_1_2_3.setBounds(0, 50, 207, 10);
+		panel_2_1_3.add(panel_1_2_3);
 	}
 }
