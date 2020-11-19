@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import modelo.Escuderia;
 import modelo.Piloto;
 
 public class Launcher {
@@ -13,9 +14,13 @@ public class Launcher {
 		ConectionHelper connection = new ConectionHelper();
 		Connection c=null;
 		Piloto p=null;
+		Escuderia es=null;
 		try {
 			p=connection.consultaPiloto("Lewis Hamilton");
 			System.out.println(p.toString());
+			
+			es=connection.selectEscuderia("Mercedes AMG Petronas F1 TEAM");
+			System.out.println(es.toString());
 			
 		} catch (ClassNotFoundException |SQLException e) {
 			e.printStackTrace();
