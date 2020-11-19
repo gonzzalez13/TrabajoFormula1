@@ -7,7 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.18.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Spetsnaz/git/TrabajoFormula1/lib/basicplayer3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Spetsnaz/git/TrabajoFormula1/lib/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jl1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
