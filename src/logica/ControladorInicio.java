@@ -29,7 +29,10 @@ private Inicio inicio = new Inicio();
 	this.inicio.btnLogin.addActionListener(this);
 }
 
-
+public void llamar() {
+	inicio.setLocationRelativeTo(null);
+	inicio.setVisible(true);
+}
 
 	
 	
@@ -44,12 +47,14 @@ private Inicio inicio = new Inicio();
 			
 		}else if(e.getSource() == inicio.btnEscuderias) {
 			Escuderia escuderia = new Escuderia();
-			inicio.setVisible(false);
+			ControladorEscuderia Cescuderia = new ControladorEscuderia(escuderia);
+			Cescuderia.llamar();
 			escuderia.setVisible(true);
 			
 		}else if(e.getSource() == inicio.btnPilotos) {
 			Piloto piloto = new Piloto();
-			piloto.setVisible(true);
+			ControladorPiloto Cpiloto = new ControladorPiloto(piloto);
+			Cpiloto.llamar();
 			inicio.setVisible(false);
 			
 		}else if(e.getSource() == inicio.btnGranPre) {

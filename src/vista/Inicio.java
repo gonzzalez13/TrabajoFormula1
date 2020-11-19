@@ -38,8 +38,7 @@ public class Inicio extends JFrame {
 	 * @throws FileNotFoundException 
 	 * @throws JavaLayerException 
 	 */
-	public static void main(String[] args) throws FileNotFoundException, JavaLayerException {
-		String sonido = "C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\audios\\intro.mp3";
+	public static void main(String[] args) throws FileNotFoundException {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -51,9 +50,6 @@ public class Inicio extends JFrame {
 				}
 			}
 		});
-		FileInputStream fileInputStream = new FileInputStream(sonido);
-		Player player = new Player(fileInputStream);
-		player.play();
 	}
 
 	/**

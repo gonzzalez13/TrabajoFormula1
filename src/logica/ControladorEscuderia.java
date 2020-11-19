@@ -28,10 +28,46 @@ public class ControladorEscuderia  implements ActionListener {
 		this.escuderia.btnLogin.addActionListener(this);
 		
 	}
+	
+	public void llamar() {
+		escuderia.setLocationRelativeTo(null);
+		escuderia.setVisible(true);
+	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
+		if(e.getSource() == escuderia.btnInicio) {
+			Inicio inicio = new Inicio();
+			ControladorInicio CInicio = new ControladorInicio(inicio);
+			CInicio.llamar();
+			escuderia.setVisible(false);
+		}else if(e.getSource() == escuderia.btnEscuderias) {
+			Escuderia escuderia = new Escuderia(); 
+			ControladorEscuderia Cescuderia = new ControladorEscuderia(escuderia);
+			Cescuderia.llamar();
+			escuderia.setVisible(false);
+			
+		}else if(e.getSource() == escuderia.btnPilotos) {
+			Piloto piloto = new Piloto();
+			ControladorPiloto Cpiloto = new ControladorPiloto(piloto);
+			Cpiloto.llamar();
+			escuderia.setVisible(false);
+		}else if(e.getSource() == escuderia.btnGranPre) {
+			GrandesPremios Gp = new GrandesPremios();
+			Gp.setVisible(true);
+			escuderia.setVisible(false);
+		}else if(e.getSource() == escuderia.btnClasi) {
+			Clasificacion clasi = new Clasificacion();
+			clasi.setVisible(true);
+			escuderia.setVisible(false);
+		}else if(e.getSource() == escuderia.btnLogin) {
+			Login login = new Login();
+			login.setVisible(true);
+			escuderia.setVisible(false);
+			
+		}
 		
 	}
 	
