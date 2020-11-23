@@ -11,7 +11,7 @@ import vista.GrandesPremios;
 import vista.Inicio;
 import vista.Login;
 import vista.Piloto;
-
+/*
 public class ControladorInicio implements ActionListener {
 
 private Inicio inicio = new Inicio();
@@ -81,3 +81,4 @@ public void llamar() {
 	
 
 }
+*/

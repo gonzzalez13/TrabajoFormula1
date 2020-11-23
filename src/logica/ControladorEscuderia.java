@@ -11,7 +11,7 @@ import vista.Clasificacion;
 import vista.GrandesPremios;
 import vista.Login;
 
-
+/*
 public class ControladorEscuderia  implements ActionListener {
 
 	
@@ -73,5 +73,6 @@ public class ControladorEscuderia  implements ActionListener {
 	
 	
 	
-	
+
 }
+	*/

@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
 
@@ -28,6 +29,10 @@ public class FichaEscuderia extends JFrame {
 	private JTextField textJefeT;
 	private JTextField textField;
 	private JTextField textField_1;
+	
+	
+	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin,btnLogo;
+	private  JButton btnPiloto1,btnPiloto2;
 
 	/**
 	 * Launch the application.
@@ -62,50 +67,50 @@ public class FichaEscuderia extends JFrame {
 		PanelMenu.setBounds(0, 0, 849, 71);
 		contentPane.add(PanelMenu);
 		
-		JButton btnInicio = new JButton("Inicio");
+		btnInicio = new JButton("Inicio");
 		btnInicio.setForeground(Color.RED);
 		btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnInicio.setBackground(Color.DARK_GRAY);
 		btnInicio.setBounds(144, 11, 74, 48);
 		PanelMenu.add(btnInicio);
 		
-		JButton btnEscuderias = new JButton("Escuderias");
+		btnEscuderias = new JButton("Escuderias");
 		btnEscuderias.setForeground(Color.RED);
 		btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnEscuderias.setBackground(Color.DARK_GRAY);
 		btnEscuderias.setBounds(226, 11, 112, 48);
 		PanelMenu.add(btnEscuderias);
 		
-		JButton btnPilotos = new JButton("Pilotos");
+		btnPilotos = new JButton("Pilotos");
 		btnPilotos.setForeground(Color.RED);
 		btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnPilotos.setBackground(Color.DARK_GRAY);
 		btnPilotos.setBounds(348, 11, 94, 48);
 		PanelMenu.add(btnPilotos);
 		
-		JButton btnGranPre = new JButton("Gran Premio");
+		btnGranPre = new JButton("Gran Premio");
 		btnGranPre.setForeground(Color.RED);
 		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnGranPre.setBackground(Color.DARK_GRAY);
 		btnGranPre.setBounds(452, 11, 130, 48);
 		PanelMenu.add(btnGranPre);
 		
-		JButton btnClasi = new JButton("Clasificaciones");
+		btnClasi = new JButton("Clasificaciones");
 		btnClasi.setForeground(Color.RED);
 		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnClasi.setBackground(Color.DARK_GRAY);
 		btnClasi.setBounds(592, 11, 145, 48);
 		PanelMenu.add(btnClasi);
 		
-		JButton btnLogin = new JButton("Login");
+		btnLogin = new JButton("Login");
 		btnLogin.setForeground(Color.RED);
 		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnLogin.setBackground(Color.DARK_GRAY);
 		btnLogin.setBounds(747, 11, 92, 48);
 		PanelMenu.add(btnLogin);
 		
-		JButton btnLogo = new JButton("");
-		btnLogo.setIcon(new ImageIcon("src/Imagenes/F1-logo.png"));
+		btnLogo = new JButton("");
+		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
 		btnLogo.setForeground(new Color(192, 192, 192));
 		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnLogo.setBackground(Color.LIGHT_GRAY);
@@ -200,7 +205,7 @@ public class FichaEscuderia extends JFrame {
 		textJefeT.setBounds(185, 401, 125, 20);
 		panel.add(textJefeT);
 		
-		JButton btnPiloto1 = new JButton("");
+		btnPiloto1 = new JButton("");
 		btnPiloto1.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logos\\H15.jpg"));
 		btnPiloto1.setBounds(357, 40, 232, 232);
 		panel.add(btnPiloto1);
@@ -214,7 +219,7 @@ public class FichaEscuderia extends JFrame {
 		panel.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnPiloto2 = new JButton("");
+		btnPiloto2 = new JButton("");
 		btnPiloto2.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logos\\H25.jpg"));
 		btnPiloto2.setBounds(607, 40, 232, 232);
 		panel.add(btnPiloto2);
@@ -228,4 +233,80 @@ public class FichaEscuderia extends JFrame {
 		textField_1.setBounds(607, 283, 232, 30);
 		panel.add(textField_1);
 	}
+
+	public JButton getBtnInicio() {
+		return btnInicio;
+	}
+
+	public void setBtnInicio(JButton btnInicio) {
+		this.btnInicio = btnInicio;
+	}
+
+	public JButton getBtnEscuderias() {
+		return btnEscuderias;
+	}
+
+	public void setBtnEscuderias(JButton btnEscuderias) {
+		this.btnEscuderias = btnEscuderias;
+	}
+
+	public JButton getBtnPilotos() {
+		return btnPilotos;
+	}
+
+	public void setBtnPilotos(JButton btnPilotos) {
+		this.btnPilotos = btnPilotos;
+	}
+
+	public JButton getBtnGranPre() {
+		return btnGranPre;
+	}
+
+	public void setBtnGranPre(JButton btnGranPre) {
+		this.btnGranPre = btnGranPre;
+	}
+
+	public JButton getBtnClasi() {
+		return btnClasi;
+	}
+
+	public void setBtnClasi(JButton btnClasi) {
+		this.btnClasi = btnClasi;
+	}
+
+	public JButton getBtnLogin() {
+		return btnLogin;
+	}
+
+	public void setBtnLogin(JButton btnLogin) {
+		this.btnLogin = btnLogin;
+	}
+
+	public JButton getBtnLogo() {
+		return btnLogo;
+	}
+
+	public void setBtnLogo(JButton btnLogo) {
+		this.btnLogo = btnLogo;
+	}
+
+	public JButton getBtnPiloto1() {
+		return btnPiloto1;
+	}
+
+	public void setBtnPiloto1(JButton btnPiloto1) {
+		this.btnPiloto1 = btnPiloto1;
+	}
+
+	public JButton getBtnPiloto2() {
+		return btnPiloto2;
+	}
+
+	public void setBtnPiloto2(JButton btnPiloto2) {
+		this.btnPiloto2 = btnPiloto2;
+	}
+	
+	
+	
+	
 }

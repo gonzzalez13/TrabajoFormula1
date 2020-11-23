@@ -11,7 +11,7 @@ import vista.GrandesPremios;
 import vista.Inicio;
 import vista.Login;
 import vista.Piloto;
-
+/*
 public class ControladorPiloto implements ActionListener {
 	private Piloto pilotos = new Piloto();
 
@@ -74,3 +74,4 @@ public class ControladorPiloto implements ActionListener {
 	
 
 }
+*/

@@ -15,6 +15,7 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.awt.event.ActionEvent;
 
 public class FichaPilotos extends JFrame {
@@ -24,8 +25,8 @@ public class FichaPilotos extends JFrame {
 	private JTextField txtEdad;
 	private JTextField txtPalmares;
 	private JTextField txtEscuderia;
-	public  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin;
 
+	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin,btnLogo;
 	
 	/**
 	 * Launch the application.
@@ -159,7 +160,7 @@ public class FichaPilotos extends JFrame {
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
 		PanelMenu.setBackground(Color.LIGHT_GRAY);
-		PanelMenu.setBounds(0, -2, 849, 71);
+		PanelMenu.setBounds(0, 0, 849, 71);
 		contentPane.add(PanelMenu);
 		
 		btnInicio = new JButton("Inicio");
@@ -204,9 +205,73 @@ public class FichaPilotos extends JFrame {
 		btnLogin.setBounds(747, 11, 92, 48);
 		PanelMenu.add(btnLogin);
 		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
-		lblNewLabel_4.setBounds(0, 11, 134, 48);
-		PanelMenu.add(lblNewLabel_4);
+		btnLogo = new JButton("");
+		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
+		btnLogo.setForeground(Color.LIGHT_GRAY);
+		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnLogo.setBorder(null);
+		btnLogo.setBackground(Color.LIGHT_GRAY);
+		btnLogo.setBounds(10, 11, 124, 48);
+		PanelMenu.add(btnLogo);
 	}
+
+	public JButton getBtnInicio() {
+		return btnInicio;
+	}
+
+	public void setBtnInicio(JButton btnInicio) {
+		this.btnInicio = btnInicio;
+	}
+
+	public JButton getBtnEscuderias() {
+		return btnEscuderias;
+	}
+
+	public void setBtnEscuderias(JButton btnEscuderias) {
+		this.btnEscuderias = btnEscuderias;
+	}
+
+	public JButton getBtnPilotos() {
+		return btnPilotos;
+	}
+
+	public void setBtnPilotos(JButton btnPilotos) {
+		this.btnPilotos = btnPilotos;
+	}
+
+	public JButton getBtnGranPre() {
+		return btnGranPre;
+	}
+
+	public void setBtnGranPre(JButton btnGranPre) {
+		this.btnGranPre = btnGranPre;
+	}
+
+	public JButton getBtnClasi() {
+		return btnClasi;
+	}
+
+	public void setBtnClasi(JButton btnClasi) {
+		this.btnClasi = btnClasi;
+	}
+
+	public JButton getBtnLogin() {
+		return btnLogin;
+	}
+
+	public void setBtnLogin(JButton btnLogin) {
+		this.btnLogin = btnLogin;
+	}
+
+	public JButton getBtnLogo() {
+		return btnLogo;
+	}
+
+	public void setBtnLogo(JButton btnLogo) {
+		this.btnLogo = btnLogo;
+	}
+	
+	
+	
+	
 }
