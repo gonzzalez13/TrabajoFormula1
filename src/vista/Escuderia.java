@@ -282,6 +282,9 @@ public class Escuderia extends JFrame {
 		btnLogo.setBounds(10, 11, 124, 48);
 		PanelMenu.add(btnLogo);
 	}
+	public Escuderia getEscuderia() {
+		return this;
+	}
 
 	public JButton getBtnInicio() {
 		return btnInicio;

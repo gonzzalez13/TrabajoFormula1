@@ -27,15 +27,15 @@ public class Launcher {
 		} finally {
 			connection.disconnect(c);
 		}
-	double pilotoAbilidad=	(Math.random()*80+1);
+	double pilotoHabulydad=	(Math.random()*80+1);
 	double diestroCurvoso=5;
 	double borracho =-5;
 	double piloto2=(Math.random()*50+1)+diestroCurvoso;
 	
 	ArrayList<Double> cc =new ArrayList<Double>();
-	cc.add(pilotoAbilidad);
+	cc.add(pilotoHabulydad);
 	cc.add(piloto2);
-	if (piloto2>pilotoAbilidad) {
+	if (piloto2>pilotoHabulydad) {
 		System.out.println("piloto2 adelanta");
 		
 	}
