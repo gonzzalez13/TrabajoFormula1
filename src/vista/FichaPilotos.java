@@ -17,16 +17,20 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
 
 public class FichaPilotos extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtNombre;
 	private JTextField txtNacionalidad;
-	private JTextField txtEdad;
+	private JTextField txtNacimiento;
 	private JTextField txtPalmares;
 	private JTextField txtEscuderia;
 
-	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin,btnLogo;
+	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin;
+	private JTextField textEstado;
+	private JTextField textPodios;
+	private JLabel lblBiblo;
 	
 	/**
 	 * Launch the application.
@@ -100,7 +104,7 @@ public class FichaPilotos extends JFrame {
 		txtNombre = new JTextField();
 		txtNombre.setBackground(Color.WHITE);
 		txtNombre.setEditable(false);
-		txtNombre.setBounds(584, 127, 170, 20);
+		txtNombre.setBounds(628, 127, 170, 20);
 		txtNombre.setBorder(null);
 		contentPane.add(txtNombre);
 		txtNombre.setColumns(10);
@@ -115,21 +119,21 @@ public class FichaPilotos extends JFrame {
 		txtNacionalidad.setEditable(false);
 		txtNacionalidad.setColumns(10);
 		txtNacionalidad.setBorder(null);
-		txtNacionalidad.setBounds(584, 158, 170, 20);
+		txtNacionalidad.setBounds(628, 160, 170, 20);
 		contentPane.add(txtNacionalidad);
 		
-		JLabel lblEdad = new JLabel("Edad:");
-		lblEdad.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblEdad.setBounds(484, 189, 60, 20);
-		contentPane.add(lblEdad);
+		JLabel lblNacimiento = new JLabel("Fecha de nacimiento");
+		lblNacimiento.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNacimiento.setBounds(484, 189, 134, 20);
+		contentPane.add(lblNacimiento);
 		
-		txtEdad = new JTextField();
-		txtEdad.setBackground(Color.WHITE);
-		txtEdad.setEditable(false);
-		txtEdad.setColumns(10);
-		txtEdad.setBorder(null);
-		txtEdad.setBounds(584, 191, 170, 20);
-		contentPane.add(txtEdad);
+		txtNacimiento = new JTextField();
+		txtNacimiento.setBackground(Color.WHITE);
+		txtNacimiento.setEditable(false);
+		txtNacimiento.setColumns(10);
+		txtNacimiento.setBorder(null);
+		txtNacimiento.setBounds(628, 189, 170, 20);
+		contentPane.add(txtNacimiento);
 		
 		JLabel lblPalmares = new JLabel("Palmares:");
 		lblPalmares.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -141,12 +145,12 @@ public class FichaPilotos extends JFrame {
 		txtPalmares.setEditable(false);
 		txtPalmares.setColumns(10);
 		txtPalmares.setBorder(null);
-		txtPalmares.setBounds(584, 222, 170, 20);
+		txtPalmares.setBounds(628, 224, 170, 20);
 		contentPane.add(txtPalmares);
 		
 		JLabel lblEscuderia = new JLabel("Escuderia:");
 		lblEscuderia.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblEscuderia.setBounds(484, 253, 90, 20);
+		lblEscuderia.setBounds(484, 315, 90, 20);
 		contentPane.add(lblEscuderia);
 		
 		txtEscuderia = new JTextField();
@@ -154,8 +158,34 @@ public class FichaPilotos extends JFrame {
 		txtEscuderia.setEditable(false);
 		txtEscuderia.setColumns(10);
 		txtEscuderia.setBorder(null);
-		txtEscuderia.setBounds(584, 253, 170, 20);
+		txtEscuderia.setBounds(628, 317, 170, 20);
 		contentPane.add(txtEscuderia);
+		
+		JLabel lblESTADO = new JLabel("Estado");
+		lblESTADO.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblESTADO.setBounds(484, 253, 90, 20);
+		contentPane.add(lblESTADO);
+		
+		textEstado = new JTextField();
+		textEstado.setEditable(false);
+		textEstado.setColumns(10);
+		textEstado.setBorder(null);
+		textEstado.setBackground(Color.WHITE);
+		textEstado.setBounds(628, 255, 170, 20);
+		contentPane.add(textEstado);
+		
+		JLabel lblPodios = new JLabel("Podios");
+		lblPodios.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblPodios.setBounds(484, 284, 90, 20);
+		contentPane.add(lblPodios);
+		
+		textPodios = new JTextField();
+		textPodios.setEditable(false);
+		textPodios.setColumns(10);
+		textPodios.setBorder(null);
+		textPodios.setBackground(Color.WHITE);
+		textPodios.setBounds(628, 286, 170, 20);
+		contentPane.add(textPodios);
 		
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
@@ -205,14 +235,19 @@ public class FichaPilotos extends JFrame {
 		btnLogin.setBounds(747, 11, 92, 48);
 		PanelMenu.add(btnLogin);
 		
-		btnLogo = new JButton("");
-		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
-		btnLogo.setForeground(Color.LIGHT_GRAY);
-		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogo.setBorder(null);
-		btnLogo.setBackground(Color.LIGHT_GRAY);
-		btnLogo.setBounds(10, 11, 124, 48);
-		PanelMenu.add(btnLogo);
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
+		lblNewLabel_2.setBounds(10, 11, 130, 48);
+		PanelMenu.add(lblNewLabel_2);
+		
+		lblBiblo = new JLabel("Bibliografia");
+		lblBiblo.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblBiblo.setBounds(27, 462, 209, 40);
+		contentPane.add(lblBiblo);
+		
+		JTextPane txtBiblio = new JTextPane();
+		txtBiblio.setBounds(27, 513, 591, 87);
+		contentPane.add(txtBiblio);
 	}
 
 	public JButton getBtnInicio() {
@@ -270,8 +305,4 @@ public class FichaPilotos extends JFrame {
 	public void setBtnLogo(JButton btnLogo) {
 		this.btnLogo = btnLogo;
 	}
-	
-	
-	
-	
 }
