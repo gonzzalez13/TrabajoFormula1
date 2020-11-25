@@ -12,6 +12,7 @@ public class Controlador implements ActionListener {
 	private Piloto piloto=new Piloto();
 	private Escuderia escuderia =new Escuderia();
 	private String s;
+	
 
 
 	@Override
