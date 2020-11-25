@@ -236,7 +236,7 @@ public class FichaPilotos extends JFrame {
 		PanelMenu.add(btnLogin);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
+		lblNewLabel_2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
 		lblNewLabel_2.setBounds(10, 11, 130, 48);
 		PanelMenu.add(lblNewLabel_2);
 		
