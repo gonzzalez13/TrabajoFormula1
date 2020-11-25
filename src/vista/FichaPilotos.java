@@ -221,7 +221,7 @@ public class FichaPilotos extends JFrame {
 		btnGranPre.setBounds(452, 11, 130, 48);
 		PanelMenu.add(btnGranPre);
 		
-		btnClasi = new JButton("Clasificaciones");
+		btnClasi = new JButton("Simulacion");
 		btnClasi.setForeground(Color.RED);
 		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnClasi.setBackground(Color.DARK_GRAY);
@@ -298,11 +298,4 @@ public class FichaPilotos extends JFrame {
 		this.btnLogin = btnLogin;
 	}
 
-	public JButton getBtnLogo() {
-		return btnLogo;
-	}
-
-	public void setBtnLogo(JButton btnLogo) {
-		this.btnLogo = btnLogo;
-	}
 }
