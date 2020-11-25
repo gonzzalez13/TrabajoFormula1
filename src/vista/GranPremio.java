@@ -55,10 +55,10 @@ public class GranPremio extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Foto Gran Premio");
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(25, 85, 245, 282);
-		contentPane.add(lblNewLabel);
+		JLabel lblFoto = new JLabel("Foto Gran Premio");
+		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
+		lblFoto.setBounds(25, 85, 245, 282);
+		contentPane.add(lblFoto);
 		
 		JLabel lblNewLabel_1 = new JLabel("BIOGRAFIA");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
