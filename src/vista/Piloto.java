@@ -566,57 +566,5 @@ public class Piloto extends JFrame {
 		panelRussell.add(lblNº_18);
 	}
 	
-	public Piloto getPiloto() {
-		return this;
-	}
-
-	public JButton getBtnInicio() {
-		return btnInicio;
-	}
-
-	public void setBtnInicio(JButton btnInicio) {
-		this.btnInicio = btnInicio;
-	}
-
-	public JButton getBtnEscuderias() {
-		return btnEscuderias;
-	}
-
-	public void setBtnEscuderias(JButton btnEscuderias) {
-		this.btnEscuderias = btnEscuderias;
-	}
-
-	public JButton getBtnPilotos() {
-		return btnPilotos;
-	}
-
-	public void setBtnPilotos(JButton btnPilotos) {
-		this.btnPilotos = btnPilotos;
-	}
-
-	public JButton getBtnGranPre() {
-		return btnGranPre;
-	}
-
-	public void setBtnGranPre(JButton btnGranPre) {
-		this.btnGranPre = btnGranPre;
-	}
-
-	public JButton getBtnClasi() {
-		return btnClasi;
-	}
-
-	public void setBtnClasi(JButton btnClasi) {
-		this.btnClasi = btnClasi;
-	}
-
-	public JButton getBtnLogin() {
-		return btnLogin;
-	}
-
-	public void setBtnLogin(JButton btnLogin) {
-		this.btnLogin = btnLogin;
-	}
-
 	
 }
