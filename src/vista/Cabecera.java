@@ -14,7 +14,7 @@ import logica.Controlador;
 public class Cabecera extends JFrame{
 	protected JButton btnInicio, btnEscuderias, btnPilotos, btnGranPre, btnClasi, btnLogin, btnLogo;
 	protected JPanel menu,contentPane;
-	private Inicio inicio ;
+	private Inicio inicio;
 	private Escuderia escuderia;
 	public Cabecera() {
 
