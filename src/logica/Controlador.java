@@ -9,29 +9,65 @@ import vista.Piloto;
 
 public class Controlador implements ActionListener {
 	private Inicio inicio;
-	private Piloto piloto=new Piloto();
-	private Escuderia escuderia =new Escuderia();
-	private String s;
+	public Inicio getInicio() {
+		return inicio;
+	}
+
+
+	public void setInicio(Inicio inicio) {
+		this.inicio = inicio;
+	}
+
+
+
+
 	
+	private String salida;
+	
+
+
+	public String getS() {
+		return salida;
+	}
+
+
+
 
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 	
-		inicio.setVisible(false);
-		switch (s) {
-		case "escuderia":
-			escuderia.setVisible(true);
+		System.out.println(e.getActionCommand());
+		if (salida.equals(e.getActionCommand())) {
 			
 			
-			break;
-		case "piloto":
-			piloto.setVisible(true);
+		}else {
 			
-			break;
+			switch (e.getActionCommand()) {
+		
+			case "Escuderias":
+				
+				salida="Escuderias";
+				
+				inicio.escuderia(this);
+				inicio.setVisible(true);
+				
+				break;
+				
+			case "Inicio":
+				
+				salida="Inicio";
+				
+				inicio.inicio(this);
+				inicio.setVisible(true);
+			
+			
+				break;
+			
 
-		default:
-			break;
+			default:
+				break;
+			}
 		}
 	
 	}
@@ -40,7 +76,7 @@ public class Controlador implements ActionListener {
 	public Controlador(Inicio inicio,String s) {
 		super();
 		this.inicio = inicio;
-		this.s=s;
+		this.salida=s;
 		
 	}
 
