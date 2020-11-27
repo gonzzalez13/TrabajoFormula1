@@ -33,6 +33,7 @@ public class Escuderia extends Cabecera{
 		
 		
 		contentPane = new JPanel();
+		setBounds(100, 100, 990, 650);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);

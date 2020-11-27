@@ -18,6 +18,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
+import java.awt.SystemColor;
 
 public class FichaPilotos extends JFrame {
 	private JPanel contentPane;
@@ -66,34 +67,9 @@ public class FichaPilotos extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel_2_1 = new JLabel("");
-		lblNewLabel_2_1.setIcon(new ImageIcon("src/Imagenes/piloto.png"));
-		lblNewLabel_2_1.setBounds(39, 11, 206, 206);
-		panel.add(lblNewLabel_2_1);
-		
-		JSeparator separator = new JSeparator();
-		separator.setBounds(10, 236, 268, 2);
-		panel.add(separator);
-		
-		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(10, 307, 268, 2);
-		panel.add(separator_1);
-		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("src/Imagenes/Logo.png"));
-		lblNewLabel.setFont(new Font("Bauhaus 93", Font.PLAIN, 17));
-		lblNewLabel.setBounds(205, 236, 73, 73);
-		panel.add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("src/Imagenes/Casco.png"));
-		lblNewLabel_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 17));
-		lblNewLabel_1.setBounds(10, 236, 100, 73);
-		panel.add(lblNewLabel_1);
-		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("src/Imagenes/maxresdefault.jpg"));
-		lblNewLabel_3.setBounds(10, 11, 268, 206);
+		lblNewLabel_3.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichasPilotos\\vettel.PNG"));
+		lblNewLabel_3.setBounds(10, 11, 268, 298);
 		panel.add(lblNewLabel_3);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
@@ -297,5 +273,4 @@ public class FichaPilotos extends JFrame {
 	public void setBtnLogin(JButton btnLogin) {
 		this.btnLogin = btnLogin;
 	}
-
 }
