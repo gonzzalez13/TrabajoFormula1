@@ -92,11 +92,12 @@ public void  escuderia(Controlador controlador) {
 		lblAlphaTauri.setBounds(0, 0, 120, 19);
 		panelAlfaTauri.add(lblAlphaTauri);
 		
-		btnAlphaTauri = new JButton("");
+		btnAlphaTauri = new JButton("alpa");
 		btnAlphaTauri.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"AlphaTauri.png"));
 		btnAlphaTauri.setBorder(null);
 		btnAlphaTauri.setBackground(Color.WHITE);
 		btnAlphaTauri.setBounds(0, 24, 180, 46);
+		btnAlphaTauri.addActionListener(controlador);
 		panelAlfaTauri.add(btnAlphaTauri);
 		
 		JPanel panelFerrari = new JPanel();
