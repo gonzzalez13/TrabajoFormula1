@@ -197,7 +197,7 @@ public class Piloto extends JFrame {
 		panelRICCIARDO.setBounds(10, 94, 265, 60);
 		panel_1.add(panelRICCIARDO);
 		
-		JButton btnRICCIARDO = new JButton("Daniel Ricciardo  >");
+		JButton btnRICCIARDO = new JButton("Daniel Ricciardo");
 		btnRICCIARDO.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnRICCIARDO.setBorder(null);
 		btnRICCIARDO.setBackground(Color.WHITE);

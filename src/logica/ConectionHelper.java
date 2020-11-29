@@ -130,8 +130,8 @@ public class ConectionHelper {
 		}
 		return piloto;
 	}
-	public Escuderia selectEscuderia(String name) throws SQLException ,ClassNotFoundException {
-		String sql="SELECT E.ID_ESCUDERIA,E.NOMBRE,E.COLOR,E.NACIONALIDAD,E.PALMARES,E.SEDE,E.JEFE_EQUIPO,E.JEFE_TECNICO,E.ESTRENADA_F1 FROM ESCUDERIA E WHERE E.NOMBRE=? ";
+	public Escuderia selectEscuderia(long id) throws SQLException ,ClassNotFoundException {
+		String sql="SELECT E.ID_ESCUDERIA,E.NOMBRE,E.COLOR,E.NACIONALIDAD,E.PALMARES,E.SEDE,E.JEFE_EQUIPO,E.JEFE_TECNICO,E.ESTRENADA_F1 FROM ESCUDERIA E WHERE E.ID_ESCUDERIA=? ";
 	
 		PreparedStatement sentencia=null;
 		ResultSet resultado=null;
@@ -141,7 +141,7 @@ public class ConectionHelper {
 		try {
 			conexion=createConection();
 			sentencia=conexion.prepareStatement(sql);
-			sentencia.setString(1, name);
+			sentencia.setLong(1, id);
 			resultado=sentencia.executeQuery();
 			
 			if (resultado.next()) {
