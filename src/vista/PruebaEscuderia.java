@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.io.File;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -12,14 +13,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.ImageIcon;
 
 public class PruebaEscuderia extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
 
 	/**
 	 * Launch the application.
@@ -44,10 +42,11 @@ public class PruebaEscuderia extends JFrame {
 		Toolkit pantalla=Toolkit.getDefaultToolkit();
 		Dimension  tamano=pantalla.getScreenSize();
 		
-		int alto=tamano.height,ancho=tamano.width;
+		
+		int alto=(int)tamano.height+100,ancho=(int)tamano.width+2000;
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, ancho, alto);
+		setBounds(-10, 0, ancho,alto);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -56,7 +55,7 @@ public class PruebaEscuderia extends JFrame {
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
 		PanelMenu.setBackground(Color.LIGHT_GRAY);
-		PanelMenu.setBounds(0, 0, 974, 71);
+		PanelMenu.setBounds(0, 0, 1924, 71);
 		contentPane.add(PanelMenu);
 		
 		JLabel lblLogo = new JLabel("");
@@ -113,67 +112,13 @@ public class PruebaEscuderia extends JFrame {
 		PanelMenu.add(btnSimulacion);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.WHITE);
-		panel.setBounds(10, 82, 305, 110);
+		panel.setBounds(0, 71, 1924, 970);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblCoche = new JLabel("");
-		lblCoche.setBounds(0, 38, 305, 72);
-		panel.add(lblCoche);
-		
-		textField = new JTextField();
-		textField.setBounds(0, 0, 191, 37);
-		panel.add(textField);
-		textField.setColumns(10);
-		
-		JPanel panel_1 = new JPanel();
-		panel_1.setLayout(null);
-		panel_1.setBackground(Color.WHITE);
-		panel_1.setBounds(10, 203, 305, 110);
-		contentPane.add(panel_1);
-		
-		JLabel lblCoche_1 = new JLabel("");
-		lblCoche_1.setBounds(0, 38, 305, 72);
-		panel_1.add(lblCoche_1);
-		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(0, 0, 191, 37);
-		panel_1.add(textField_1);
-		
-		JPanel panel_2 = new JPanel();
-		panel_2.setLayout(null);
-		panel_2.setBackground(Color.WHITE);
-		panel_2.setBounds(10, 324, 305, 110);
-		contentPane.add(panel_2);
-		
-		JLabel lblCoche_2 = new JLabel("");
-		lblCoche_2.setBounds(0, 38, 305, 72);
-		panel_2.add(lblCoche_2);
-		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(0, 0, 191, 37);
-		panel_2.add(textField_2);
-		
-		JPanel panel_3 = new JPanel();
-		panel_3.setLayout(null);
-		panel_3.setBackground(Color.WHITE);
-		panel_3.setBounds(10, 445, 305, 125);
-		contentPane.add(panel_3);
-		
-		JLabel lblCoche_3 = new JLabel("");
-		lblCoche_3.setBounds(0, 53, 305, 72);
-		panel_3.add(lblCoche_3);
-		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(0, 0, 191, 53);
-		panel_3.add(textField_3);
-		
-		JLabel lbllMercedes = new JLabel("");
-		lbllMercedes.setBounds(193, 0, 112, 53);
-		panel_3.add(lbllMercedes);
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"fondo.jpg"));
+		lblFondo.setBounds(0, 0, 1924, 970);
+		panel.add(lblFondo);
 	}
 }
