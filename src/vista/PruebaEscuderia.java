@@ -1,16 +1,17 @@
 package vista;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import java.awt.Color;
-import javax.swing.JLabel;
-import javax.swing.JButton;
+import java.awt.Dimension;
+import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Toolkit;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class PruebaEscuderia extends JFrame {
 
@@ -40,8 +41,13 @@ public class PruebaEscuderia extends JFrame {
 	 * Create the frame.
 	 */
 	public PruebaEscuderia() {
+		Toolkit pantalla=Toolkit.getDefaultToolkit();
+		Dimension  tamano=pantalla.getScreenSize();
+		
+		int alto=tamano.height,ancho=tamano.width;
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
+		setBounds(0, 0, ancho, alto);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
