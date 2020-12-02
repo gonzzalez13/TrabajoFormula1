@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.ImageIcon;
+import javax.swing.JSeparator;
 
 public class PruebaEscuderia extends JFrame {
 
@@ -116,6 +117,117 @@ public class PruebaEscuderia extends JFrame {
 		panel.setBounds(0, 72, 974, 539);
 		contentPane.add(panel);
 		panel.setLayout(null);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.WHITE);
+		panel_1.setBounds(10, 11, 270, 121);
+		panel.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblCoche = new JLabel("");
+		lblCoche.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Cmercedes.png"));
+		lblCoche.setBounds(0, 46, 270, 75);
+		panel_1.add(lblCoche);
+		
+		JLabel lblFCoche = new JLabel("");
+		lblFCoche.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\fondco.png"));
+		lblFCoche.setBounds(0, 47, 270, 74);
+		panel_1.add(lblFCoche);
+		
+		JLabel lblNombre = new JLabel("MERCEDES\r\n\r\n");
+		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
+		lblNombre.setBounds(0, 0, 149, 47);
+		panel_1.add(lblNombre);
+		
+		JLabel lblLogEsc = new JLabel("");
+		lblLogEsc.setBounds(213, 0, 47, 47);
+		panel_1.add(lblLogEsc);
+		lblLogEsc.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logo.png"));
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(0, 46, 270, 8);
+		panel_1.add(separator);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setLayout(null);
+		panel_1_1.setBackground(Color.WHITE);
+		panel_1_1.setBounds(10, 143, 270, 121);
+		panel.add(panel_1_1);
+		
+		JLabel lblCoche_1 = new JLabel("");
+		lblCoche_1.setBounds(0, 46, 270, 75);
+		panel_1_1.add(lblCoche_1);
+		
+		JLabel lblFCoche_1 = new JLabel("");
+		lblFCoche_1.setBounds(0, 47, 270, 74);
+		panel_1_1.add(lblFCoche_1);
+		
+		JLabel lblNombre_1 = new JLabel("MERCEDES\r\n\r\n");
+		lblNombre_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
+		lblNombre_1.setBounds(0, 0, 149, 47);
+		panel_1_1.add(lblNombre_1);
+		
+		JLabel lblLogEsc_1 = new JLabel("");
+		lblLogEsc_1.setBounds(213, 0, 47, 47);
+		panel_1_1.add(lblLogEsc_1);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(0, 46, 270, 8);
+		panel_1_1.add(separator_1);
+		
+		JPanel panel_1_2 = new JPanel();
+		panel_1_2.setLayout(null);
+		panel_1_2.setBackground(Color.WHITE);
+		panel_1_2.setBounds(10, 275, 270, 121);
+		panel.add(panel_1_2);
+		
+		JLabel lblCoche_2 = new JLabel("");
+		lblCoche_2.setBounds(0, 46, 270, 75);
+		panel_1_2.add(lblCoche_2);
+		
+		JLabel lblFCoche_2 = new JLabel("");
+		lblFCoche_2.setBounds(0, 47, 270, 74);
+		panel_1_2.add(lblFCoche_2);
+		
+		JLabel lblNombre_2 = new JLabel("MERCEDES\r\n\r\n");
+		lblNombre_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
+		lblNombre_2.setBounds(0, 0, 149, 47);
+		panel_1_2.add(lblNombre_2);
+		
+		JLabel lblLogEsc_2 = new JLabel("");
+		lblLogEsc_2.setBounds(213, 0, 47, 47);
+		panel_1_2.add(lblLogEsc_2);
+		
+		JSeparator separator_2 = new JSeparator();
+		separator_2.setBounds(0, 46, 270, 8);
+		panel_1_2.add(separator_2);
+		
+		JPanel panel_1_3 = new JPanel();
+		panel_1_3.setLayout(null);
+		panel_1_3.setBackground(Color.WHITE);
+		panel_1_3.setBounds(10, 407, 270, 121);
+		panel.add(panel_1_3);
+		
+		JLabel lblCoche_3 = new JLabel("");
+		lblCoche_3.setBounds(0, 46, 270, 75);
+		panel_1_3.add(lblCoche_3);
+		
+		JLabel lblFCoche_3 = new JLabel("");
+		lblFCoche_3.setBounds(0, 47, 270, 74);
+		panel_1_3.add(lblFCoche_3);
+		
+		JLabel lblNombre_3 = new JLabel("MERCEDES\r\n\r\n");
+		lblNombre_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
+		lblNombre_3.setBounds(0, 0, 149, 47);
+		panel_1_3.add(lblNombre_3);
+		
+		JLabel lblLogEsc_3 = new JLabel("");
+		lblLogEsc_3.setBounds(213, 0, 47, 47);
+		panel_1_3.add(lblLogEsc_3);
+		
+		JSeparator separator_3 = new JSeparator();
+		separator_3.setBounds(0, 46, 270, 8);
+		panel_1_3.add(separator_3);
 		
 		JLabel lblFondo = new JLabel();
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
