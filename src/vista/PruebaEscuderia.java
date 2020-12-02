@@ -59,7 +59,7 @@ public class PruebaEscuderia extends JFrame {
 		contentPane.add(PanelMenu);
 		
 		JLabel lblLogo = new JLabel("");
-		lblLogo.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\F1-logo.png"));
+		lblLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
 		lblLogo.setBounds(10, 11, 133, 48);
 		PanelMenu.add(lblLogo);
 		
@@ -118,7 +118,7 @@ public class PruebaEscuderia extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblFondo = new JLabel();
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Fondos\\Fondo6.PNG"));
+		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
 		
 		lblFondo.setBounds(0, 0, 974, 539);
 		panel.add(lblFondo);
