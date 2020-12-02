@@ -118,7 +118,7 @@ public class PruebaEscuderia extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblFondo = new JLabel();
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\Cpu\\Downloads\\fondo6.PNG"));
+		lblFondo.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Fondos\\Fondo6.PNG"));
 		
 		lblFondo.setBounds(0, 0, 974, 539);
 		panel.add(lblFondo);
