@@ -125,12 +125,12 @@ public class PruebaEscuderia extends JFrame {
 		panel_1.setLayout(null);
 		
 		JLabel lblCoche = new JLabel("");
-		lblCoche.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Cmercedes.png"));
+		lblCoche.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Cmercedes.png"));
 		lblCoche.setBounds(0, 46, 270, 75);
 		panel_1.add(lblCoche);
 		
 		JLabel lblFCoche = new JLabel("");
-		lblFCoche.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\fondco.png"));
+		lblFCoche.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"fondco.png"));
 		lblFCoche.setBounds(0, 47, 270, 74);
 		panel_1.add(lblFCoche);
 		
@@ -142,7 +142,7 @@ public class PruebaEscuderia extends JFrame {
 		JLabel lblLogEsc = new JLabel("");
 		lblLogEsc.setBounds(213, 0, 47, 47);
 		panel_1.add(lblLogEsc);
-		lblLogEsc.setIcon(new ImageIcon("C:\\Users\\USUARIO\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logo.png"));
+		lblLogEsc.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Logo.png"));
 		
 		JSeparator separator = new JSeparator();
 		separator.setBounds(0, 46, 270, 8);
