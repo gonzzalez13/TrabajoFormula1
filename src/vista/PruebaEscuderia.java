@@ -15,6 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.ImageIcon;
 import javax.swing.JSeparator;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PruebaEscuderia extends JFrame {
 
@@ -124,29 +126,14 @@ public class PruebaEscuderia extends JFrame {
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JLabel lblCoche = new JLabel("");
-		lblCoche.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Cmercedes.png"));
-		lblCoche.setBounds(0, 46, 270, 75);
-		panel_1.add(lblCoche);
-		
-		JLabel lblFCoche = new JLabel("");
-		lblFCoche.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"fondco.png"));
-		lblFCoche.setBounds(0, 47, 270, 74);
-		panel_1.add(lblFCoche);
-		
-		JLabel lblNombre = new JLabel("MERCEDES\r\n\r\n");
-		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
-		lblNombre.setBounds(0, 0, 149, 47);
-		panel_1.add(lblNombre);
-		
-		JLabel lblLogEsc = new JLabel("");
-		lblLogEsc.setBounds(213, 0, 47, 47);
-		panel_1.add(lblLogEsc);
-		lblLogEsc.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Logo.png"));
-		
-		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 46, 270, 8);
-		panel_1.add(separator);
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Cpu\\Downloads\\Prueba.png"));
+		btnNewButton.setBounds(0, 0, 270, 121);
+		panel_1.add(btnNewButton);
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setLayout(null);
@@ -154,26 +141,10 @@ public class PruebaEscuderia extends JFrame {
 		panel_1_1.setBounds(10, 143, 270, 121);
 		panel.add(panel_1_1);
 		
-		JLabel lblCoche_1 = new JLabel("");
-		lblCoche_1.setBounds(0, 46, 270, 75);
-		panel_1_1.add(lblCoche_1);
-		
-		JLabel lblFCoche_1 = new JLabel("");
-		lblFCoche_1.setBounds(0, 47, 270, 74);
-		panel_1_1.add(lblFCoche_1);
-		
-		JLabel lblNombre_1 = new JLabel("MERCEDES\r\n\r\n");
-		lblNombre_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
-		lblNombre_1.setBounds(0, 0, 149, 47);
-		panel_1_1.add(lblNombre_1);
-		
-		JLabel lblLogEsc_1 = new JLabel("");
-		lblLogEsc_1.setBounds(213, 0, 47, 47);
-		panel_1_1.add(lblLogEsc_1);
-		
-		JSeparator separator_1 = new JSeparator();
-		separator_1.setBounds(0, 46, 270, 8);
-		panel_1_1.add(separator_1);
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\RedBull.png"));
+		btnNewButton_1.setBounds(0, 0, 270, 121);
+		panel_1_1.add(btnNewButton_1);
 		
 		JPanel panel_1_2 = new JPanel();
 		panel_1_2.setLayout(null);
@@ -181,58 +152,92 @@ public class PruebaEscuderia extends JFrame {
 		panel_1_2.setBounds(10, 275, 270, 121);
 		panel.add(panel_1_2);
 		
-		JLabel lblCoche_2 = new JLabel("");
-		lblCoche_2.setBounds(0, 46, 270, 75);
-		panel_1_2.add(lblCoche_2);
-		
-		JLabel lblFCoche_2 = new JLabel("");
-		lblFCoche_2.setBounds(0, 47, 270, 74);
-		panel_1_2.add(lblFCoche_2);
-		
-		JLabel lblNombre_2 = new JLabel("MERCEDES\r\n\r\n");
-		lblNombre_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
-		lblNombre_2.setBounds(0, 0, 149, 47);
-		panel_1_2.add(lblNombre_2);
-		
-		JLabel lblLogEsc_2 = new JLabel("");
-		lblLogEsc_2.setBounds(213, 0, 47, 47);
-		panel_1_2.add(lblLogEsc_2);
-		
-		JSeparator separator_2 = new JSeparator();
-		separator_2.setBounds(0, 46, 270, 8);
-		panel_1_2.add(separator_2);
+		JButton btnNewButton_2 = new JButton("New button");
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Mclaren.png"));
+		btnNewButton_2.setBounds(0, 0, 270, 121);
+		panel_1_2.add(btnNewButton_2);
 		
 		JPanel panel_1_3 = new JPanel();
 		panel_1_3.setLayout(null);
 		panel_1_3.setBackground(Color.WHITE);
-		panel_1_3.setBounds(10, 407, 270, 121);
+		panel_1_3.setBounds(10, 418, 270, 121);
 		panel.add(panel_1_3);
 		
-		JLabel lblCoche_3 = new JLabel("");
-		lblCoche_3.setBounds(0, 46, 270, 75);
-		panel_1_3.add(lblCoche_3);
-		
-		JLabel lblFCoche_3 = new JLabel("");
-		lblFCoche_3.setBounds(0, 47, 270, 74);
-		panel_1_3.add(lblFCoche_3);
-		
-		JLabel lblNombre_3 = new JLabel("MERCEDES\r\n\r\n");
-		lblNombre_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 23));
-		lblNombre_3.setBounds(0, 0, 149, 47);
-		panel_1_3.add(lblNombre_3);
-		
-		JLabel lblLogEsc_3 = new JLabel("");
-		lblLogEsc_3.setBounds(213, 0, 47, 47);
-		panel_1_3.add(lblLogEsc_3);
-		
-		JSeparator separator_3 = new JSeparator();
-		separator_3.setBounds(0, 46, 270, 8);
-		panel_1_3.add(separator_3);
+		JButton btnNewButton_3 = new JButton("New button");
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\RacingPoint.png"));
+		btnNewButton_3.setBounds(0, 0, 270, 121);
+		panel_1_3.add(btnNewButton_3);
 		
 		JLabel lblFondo = new JLabel();
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
 		
-		lblFondo.setBounds(0, 0, 974, 539);
+		lblFondo.setBounds(0, 11, 974, 539);
 		panel.add(lblFondo);
+		
+		JPanel panel_1_4 = new JPanel();
+		panel_1_4.setLayout(null);
+		panel_1_4.setBackground(Color.WHITE);
+		panel_1_4.setBounds(374, 11, 270, 121);
+		panel.add(panel_1_4);
+		
+		JButton btnNewButton_4 = new JButton("New button");
+		btnNewButton_4.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Renault.png"));
+		btnNewButton_4.setBounds(0, 0, 270, 121);
+		panel_1_4.add(btnNewButton_4);
+		
+		JPanel panel_1_5 = new JPanel();
+		panel_1_5.setLayout(null);
+		panel_1_5.setBackground(Color.WHITE);
+		panel_1_5.setBounds(374, 143, 270, 121);
+		panel.add(panel_1_5);
+		
+		JButton btnNewButton_5 = new JButton("New button");
+		btnNewButton_5.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\ferrari.png"));
+		btnNewButton_5.setBounds(0, 0, 270, 121);
+		panel_1_5.add(btnNewButton_5);
+		
+		JPanel panel_1_6 = new JPanel();
+		panel_1_6.setLayout(null);
+		panel_1_6.setBackground(Color.WHITE);
+		panel_1_6.setBounds(374, 275, 270, 121);
+		panel.add(panel_1_6);
+		
+		JButton btnNewButton_6 = new JButton("New button");
+		btnNewButton_6.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\AlphaTauri.png"));
+		btnNewButton_6.setBounds(0, 0, 270, 121);
+		panel_1_6.add(btnNewButton_6);
+		
+		JPanel panel_1_7 = new JPanel();
+		panel_1_7.setLayout(null);
+		panel_1_7.setBackground(Color.WHITE);
+		panel_1_7.setBounds(374, 418, 270, 121);
+		panel.add(panel_1_7);
+		
+		JButton btnNewButton_7 = new JButton("New button");
+		btnNewButton_7.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Alfa Romeo.PNG"));
+		btnNewButton_7.setBounds(0, 0, 270, 121);
+		panel_1_7.add(btnNewButton_7);
+		
+		JPanel panel_1_4_1 = new JPanel();
+		panel_1_4_1.setLayout(null);
+		panel_1_4_1.setBackground(Color.WHITE);
+		panel_1_4_1.setBounds(682, 11, 270, 121);
+		panel.add(panel_1_4_1);
+		
+		JButton btnNewButton_4_1 = new JButton("New button");
+		btnNewButton_4_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\haas.png"));
+		btnNewButton_4_1.setBounds(0, 0, 270, 121);
+		panel_1_4_1.add(btnNewButton_4_1);
+		
+		JPanel panel_1_4_1_1 = new JPanel();
+		panel_1_4_1_1.setLayout(null);
+		panel_1_4_1_1.setBackground(Color.WHITE);
+		panel_1_4_1_1.setBounds(682, 143, 270, 121);
+		panel.add(panel_1_4_1_1);
+		
+		JButton btnNewButton_4_1_1 = new JButton("New button");
+		btnNewButton_4_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Williams.png"));
+		btnNewButton_4_1_1.setBounds(0, 0, 270, 121);
+		panel_1_4_1_1.add(btnNewButton_4_1_1);
 	}
 }
