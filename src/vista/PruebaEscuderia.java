@@ -120,124 +120,123 @@ public class PruebaEscuderia extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(Color.WHITE);
-		panel_1.setBounds(10, 11, 270, 121);
-		panel.add(panel_1);
-		panel_1.setLayout(null);
+		JPanel panelMercedes = new JPanel();
+		panelMercedes.setBackground(Color.WHITE);
+		panelMercedes.setBounds(10, 11, 270, 121);
+		panel.add(panelMercedes);
+		panelMercedes.setLayout(null);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnMercedes = new JButton("New button");
+		btnMercedes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon("C:\\Users\\Cpu\\Downloads\\Prueba.png"));
-		btnNewButton.setBounds(0, 0, 270, 121);
-		panel_1.add(btnNewButton);
+		btnMercedes.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Mercedes.png"));
+		btnMercedes.setBounds(0, 0, 270, 121);
+		panelMercedes.add(btnMercedes);
 		
-		JPanel panel_1_1 = new JPanel();
-		panel_1_1.setLayout(null);
-		panel_1_1.setBackground(Color.WHITE);
-		panel_1_1.setBounds(10, 143, 270, 121);
-		panel.add(panel_1_1);
+		JPanel panelRedBull = new JPanel();
+		panelRedBull.setLayout(null);
+		panelRedBull.setBackground(Color.WHITE);
+		panelRedBull.setBounds(10, 143, 270, 121);
+		panel.add(panelRedBull);
 		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\RedBull.png"));
-		btnNewButton_1.setBounds(0, 0, 270, 121);
-		panel_1_1.add(btnNewButton_1);
+		JButton btnRedBull = new JButton();
+		btnRedBull.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"RedBull.png"));
+		btnRedBull.setBounds(0, 0, 270, 121);
+		panelRedBull.add(btnRedBull);
 		
-		JPanel panel_1_2 = new JPanel();
-		panel_1_2.setLayout(null);
-		panel_1_2.setBackground(Color.WHITE);
-		panel_1_2.setBounds(10, 275, 270, 121);
-		panel.add(panel_1_2);
+		JPanel panelMclaren = new JPanel();
+		panelMclaren.setLayout(null);
+		panelMclaren.setBackground(Color.WHITE);
+		panelMclaren.setBounds(10, 275, 270, 121);
+		panel.add(panelMclaren);
 		
-		JButton btnNewButton_2 = new JButton("New button");
-		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Mclaren.png"));
-		btnNewButton_2.setBounds(0, 0, 270, 121);
-		panel_1_2.add(btnNewButton_2);
+		JButton btnMclaren = new JButton("New button");
+		btnMclaren.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Mclaren.png"));
+		btnMclaren.setBounds(0, 0, 270, 121);
+		panelMclaren.add(btnMclaren);
 		
-		JPanel panel_1_3 = new JPanel();
-		panel_1_3.setLayout(null);
-		panel_1_3.setBackground(Color.WHITE);
-		panel_1_3.setBounds(10, 418, 270, 121);
-		panel.add(panel_1_3);
+		JPanel panelRacingPoint = new JPanel();
+		panelRacingPoint.setLayout(null);
+		panelRacingPoint.setBackground(Color.WHITE);
+		panelRacingPoint.setBounds(10, 407, 270, 121);
+		panel.add(panelRacingPoint);
 		
-		JButton btnNewButton_3 = new JButton("New button");
-		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\RacingPoint.png"));
-		btnNewButton_3.setBounds(0, 0, 270, 121);
-		panel_1_3.add(btnNewButton_3);
+		JButton btnRacingPoint = new JButton("New button");
+		btnRacingPoint.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"RacingPoint.png"));
+		btnRacingPoint.setBounds(0, 0, 270, 121);
+		panelRacingPoint.add(btnRacingPoint);
+		
+		JPanel panelRenault = new JPanel();
+		panelRenault.setLayout(null);
+		panelRenault.setBackground(Color.WHITE);
+		panelRenault.setBounds(355, 11, 270, 121);
+		panel.add(panelRenault);
+		
+		JButton btnRenault = new JButton("New button");
+		btnRenault.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Renault.png"));
+		btnRenault.setBounds(0, 0, 270, 121);
+		panelRenault.add(btnRenault);
+		
+		JPanel panelFerrari = new JPanel();
+		panelFerrari.setLayout(null);
+		panelFerrari.setBackground(Color.WHITE);
+		panelFerrari.setBounds(355, 143, 270, 121);
+		panel.add(panelFerrari);
+		
+		JButton btnFerrari = new JButton("New button");
+		btnFerrari.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"ferrari.png"));
+		btnFerrari.setBounds(0, 0, 270, 121);
+		panelFerrari.add(btnFerrari);
+		
+		JPanel panelAlphatauri = new JPanel();
+		panelAlphatauri.setLayout(null);
+		panelAlphatauri.setBackground(Color.WHITE);
+		panelAlphatauri.setBounds(355, 275, 270, 121);
+		panel.add(panelAlphatauri);
+		
+		JButton btnAlphatauri = new JButton("New button");
+		btnAlphatauri.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"AlphaTauri.png"));
+		btnAlphatauri.setBounds(0, 0, 270, 121);
+		panelAlphatauri.add(btnAlphatauri);
+		
+		JPanel panelAlfaRomeo = new JPanel();
+		panelAlfaRomeo.setLayout(null);
+		panelAlfaRomeo.setBackground(Color.WHITE);
+		panelAlfaRomeo.setBounds(355, 407, 270, 121);
+		panel.add(panelAlfaRomeo);
+		
+		JButton btnAlfaRomeo = new JButton("New button");
+		btnAlfaRomeo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Alfa Romeo.PNG"));
+		btnAlfaRomeo.setBounds(0, 0, 270, 121);
+		panelAlfaRomeo.add(btnAlfaRomeo);
+		
+		JPanel panelHaas = new JPanel();
+		panelHaas.setLayout(null);
+		panelHaas.setBackground(Color.WHITE);
+		panelHaas.setBounds(694, 11, 270, 121);
+		panel.add(panelHaas);
+		
+		JButton btnHaas = new JButton("New button");
+		btnHaas.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"haas.png"));
+		btnHaas.setBounds(0, 0, 270, 121);
+		panelHaas.add(btnHaas);
+		
+		JPanel panelWilliams = new JPanel();
+		panelWilliams.setLayout(null);
+		panelWilliams.setBackground(Color.WHITE);
+		panelWilliams.setBounds(694, 143, 270, 121);
+		panel.add(panelWilliams);
+		
+		JButton btnWilliams = new JButton("New button");
+		btnWilliams.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Williams.png"));
+		btnWilliams.setBounds(0, 0, 270, 121);
+		panelWilliams.add(btnWilliams);
 		
 		JLabel lblFondo = new JLabel();
+		lblFondo.setBounds(0, 72, 974, 539);
+		contentPane.add(lblFondo);
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
-		
-		lblFondo.setBounds(0, 11, 974, 539);
-		panel.add(lblFondo);
-		
-		JPanel panel_1_4 = new JPanel();
-		panel_1_4.setLayout(null);
-		panel_1_4.setBackground(Color.WHITE);
-		panel_1_4.setBounds(374, 11, 270, 121);
-		panel.add(panel_1_4);
-		
-		JButton btnNewButton_4 = new JButton("New button");
-		btnNewButton_4.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Renault.png"));
-		btnNewButton_4.setBounds(0, 0, 270, 121);
-		panel_1_4.add(btnNewButton_4);
-		
-		JPanel panel_1_5 = new JPanel();
-		panel_1_5.setLayout(null);
-		panel_1_5.setBackground(Color.WHITE);
-		panel_1_5.setBounds(374, 143, 270, 121);
-		panel.add(panel_1_5);
-		
-		JButton btnNewButton_5 = new JButton("New button");
-		btnNewButton_5.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\ferrari.png"));
-		btnNewButton_5.setBounds(0, 0, 270, 121);
-		panel_1_5.add(btnNewButton_5);
-		
-		JPanel panel_1_6 = new JPanel();
-		panel_1_6.setLayout(null);
-		panel_1_6.setBackground(Color.WHITE);
-		panel_1_6.setBounds(374, 275, 270, 121);
-		panel.add(panel_1_6);
-		
-		JButton btnNewButton_6 = new JButton("New button");
-		btnNewButton_6.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\AlphaTauri.png"));
-		btnNewButton_6.setBounds(0, 0, 270, 121);
-		panel_1_6.add(btnNewButton_6);
-		
-		JPanel panel_1_7 = new JPanel();
-		panel_1_7.setLayout(null);
-		panel_1_7.setBackground(Color.WHITE);
-		panel_1_7.setBounds(374, 418, 270, 121);
-		panel.add(panel_1_7);
-		
-		JButton btnNewButton_7 = new JButton("New button");
-		btnNewButton_7.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Alfa Romeo.PNG"));
-		btnNewButton_7.setBounds(0, 0, 270, 121);
-		panel_1_7.add(btnNewButton_7);
-		
-		JPanel panel_1_4_1 = new JPanel();
-		panel_1_4_1.setLayout(null);
-		panel_1_4_1.setBackground(Color.WHITE);
-		panel_1_4_1.setBounds(682, 11, 270, 121);
-		panel.add(panel_1_4_1);
-		
-		JButton btnNewButton_4_1 = new JButton("New button");
-		btnNewButton_4_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\haas.png"));
-		btnNewButton_4_1.setBounds(0, 0, 270, 121);
-		panel_1_4_1.add(btnNewButton_4_1);
-		
-		JPanel panel_1_4_1_1 = new JPanel();
-		panel_1_4_1_1.setLayout(null);
-		panel_1_4_1_1.setBackground(Color.WHITE);
-		panel_1_4_1_1.setBounds(682, 143, 270, 121);
-		panel.add(panel_1_4_1_1);
-		
-		JButton btnNewButton_4_1_1 = new JButton("New button");
-		btnNewButton_4_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\coches\\Williams.png"));
-		btnNewButton_4_1_1.setBounds(0, 0, 270, 121);
-		panel_1_4_1_1.add(btnNewButton_4_1_1);
 	}
 }
