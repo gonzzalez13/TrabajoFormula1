@@ -126,11 +126,7 @@ public class PruebaEscuderia extends JFrame {
 		panel.add(panelMercedes);
 		panelMercedes.setLayout(null);
 		
-		JButton btnMercedes = new JButton("New button");
-		btnMercedes.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
+		JButton btnMercedes = new JButton("1");
 		btnMercedes.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Mercedes.png"));
 		btnMercedes.setBounds(0, 0, 270, 121);
 		panelMercedes.add(btnMercedes);
@@ -141,7 +137,7 @@ public class PruebaEscuderia extends JFrame {
 		panelRedBull.setBounds(10, 143, 270, 121);
 		panel.add(panelRedBull);
 		
-		JButton btnRedBull = new JButton();
+		JButton btnRedBull = new JButton("2");
 		btnRedBull.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"RedBull.png"));
 		btnRedBull.setBounds(0, 0, 270, 121);
 		panelRedBull.add(btnRedBull);
@@ -152,7 +148,7 @@ public class PruebaEscuderia extends JFrame {
 		panelMclaren.setBounds(10, 275, 270, 121);
 		panel.add(panelMclaren);
 		
-		JButton btnMclaren = new JButton("New button");
+		JButton btnMclaren = new JButton("3");
 		btnMclaren.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Mclaren.png"));
 		btnMclaren.setBounds(0, 0, 270, 121);
 		panelMclaren.add(btnMclaren);
@@ -163,7 +159,7 @@ public class PruebaEscuderia extends JFrame {
 		panelRacingPoint.setBounds(10, 407, 270, 121);
 		panel.add(panelRacingPoint);
 		
-		JButton btnRacingPoint = new JButton("New button");
+		JButton btnRacingPoint = new JButton("4");
 		btnRacingPoint.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"RacingPoint.png"));
 		btnRacingPoint.setBounds(0, 0, 270, 121);
 		panelRacingPoint.add(btnRacingPoint);
@@ -174,7 +170,7 @@ public class PruebaEscuderia extends JFrame {
 		panelRenault.setBounds(355, 11, 270, 121);
 		panel.add(panelRenault);
 		
-		JButton btnRenault = new JButton("New button");
+		JButton btnRenault = new JButton("5");
 		btnRenault.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Renault.png"));
 		btnRenault.setBounds(0, 0, 270, 121);
 		panelRenault.add(btnRenault);
@@ -185,7 +181,7 @@ public class PruebaEscuderia extends JFrame {
 		panelFerrari.setBounds(355, 143, 270, 121);
 		panel.add(panelFerrari);
 		
-		JButton btnFerrari = new JButton("New button");
+		JButton btnFerrari = new JButton("6");
 		btnFerrari.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"ferrari.png"));
 		btnFerrari.setBounds(0, 0, 270, 121);
 		panelFerrari.add(btnFerrari);
@@ -196,7 +192,7 @@ public class PruebaEscuderia extends JFrame {
 		panelAlphatauri.setBounds(355, 275, 270, 121);
 		panel.add(panelAlphatauri);
 		
-		JButton btnAlphatauri = new JButton("New button");
+		JButton btnAlphatauri = new JButton("7");
 		btnAlphatauri.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"AlphaTauri.png"));
 		btnAlphatauri.setBounds(0, 0, 270, 121);
 		panelAlphatauri.add(btnAlphatauri);
@@ -207,7 +203,7 @@ public class PruebaEscuderia extends JFrame {
 		panelAlfaRomeo.setBounds(355, 407, 270, 121);
 		panel.add(panelAlfaRomeo);
 		
-		JButton btnAlfaRomeo = new JButton("New button");
+		JButton btnAlfaRomeo = new JButton("8");
 		btnAlfaRomeo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Alfa Romeo.PNG"));
 		btnAlfaRomeo.setBounds(0, 0, 270, 121);
 		panelAlfaRomeo.add(btnAlfaRomeo);
@@ -218,7 +214,7 @@ public class PruebaEscuderia extends JFrame {
 		panelHaas.setBounds(694, 11, 270, 121);
 		panel.add(panelHaas);
 		
-		JButton btnHaas = new JButton("New button");
+		JButton btnHaas = new JButton("9");
 		btnHaas.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"haas.png"));
 		btnHaas.setBounds(0, 0, 270, 121);
 		panelHaas.add(btnHaas);
@@ -229,7 +225,7 @@ public class PruebaEscuderia extends JFrame {
 		panelWilliams.setBounds(694, 143, 270, 121);
 		panel.add(panelWilliams);
 		
-		JButton btnWilliams = new JButton("New button");
+		JButton btnWilliams = new JButton("10");
 		btnWilliams.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"coches"+File.separator+"Williams.png"));
 		btnWilliams.setBounds(0, 0, 270, 121);
 		panelWilliams.add(btnWilliams);
