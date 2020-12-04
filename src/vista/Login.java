@@ -42,7 +42,7 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
-		setTitle("Log In\r\n");
+		setTitle("LogIn\r\n");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 452, 576);
 		contentPane = new JPanel();
@@ -51,6 +51,8 @@ public class Login extends JFrame {
 		contentPane.setLayout(null);
 		
 		tFContraseña = new JTextField();
+		tFContraseña.setForeground(Color.WHITE);
+		tFContraseña.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
 		tFContraseña.setOpaque(false);
 		tFContraseña.setColumns(10);
 		tFContraseña.setBorder(new MatteBorder(0, 0, 3, 0, (Color) Color.WHITE));
@@ -74,11 +76,13 @@ public class Login extends JFrame {
 		JLabel lblNewLabel_1_1 = new JLabel("CONTRASE\u00D1A");
 		lblNewLabel_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1_1.setForeground(Color.WHITE);
-		lblNewLabel_1_1.setFont(new Font("Bahnschrift", Font.PLAIN, 19));
+		lblNewLabel_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 19));
 		lblNewLabel_1_1.setBounds(144, 264, 139, 19);
 		contentPane.add(lblNewLabel_1_1);
 		
 		tFUsuario = new JTextField();
+		tFUsuario.setForeground(Color.WHITE);
+		tFUsuario.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
 		tFUsuario.setOpaque(false);
 		tFUsuario.setBorder(new MatteBorder(0, 0, 3, 0, (Color) Color.WHITE));
 		tFUsuario.setBounds(144, 202, 139, 19);
@@ -88,7 +92,7 @@ public class Login extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("USUARIO");
 		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setFont(new Font("Bahnschrift", Font.PLAIN, 19));
+		lblNewLabel_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 19));
 		lblNewLabel_1.setBounds(144, 173, 139, 19);
 		contentPane.add(lblNewLabel_1);
 		
