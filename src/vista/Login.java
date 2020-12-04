@@ -15,12 +15,14 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
+import javax.swing.JPasswordField;
+import java.awt.Toolkit;
 
 public class Login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField tFUsuario;
-	private JTextField tFContraseña;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -42,35 +44,35 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("LogIn\r\n");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 452, 576);
+		setBounds(100, 100, 452, 518);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		tFContraseña = new JTextField();
-		tFContraseña.setForeground(Color.WHITE);
-		tFContraseña.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
-		tFContraseña.setOpaque(false);
-		tFContraseña.setColumns(10);
-		tFContraseña.setBorder(new MatteBorder(0, 0, 3, 0, (Color) Color.WHITE));
-		tFContraseña.setBounds(144, 304, 139, 19);
-		contentPane.add(tFContraseña);
+		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		passwordField.setForeground(Color.WHITE);
+		passwordField.setOpaque(false);
+		passwordField.setBorder(new MatteBorder(0, 0, 3, 0, (Color) new Color(255, 255, 255)));
+		passwordField.setBounds(144, 301, 139, 26);
+		contentPane.add(passwordField);
 		
 		JButton btnCancelar = new JButton("CANCELAR");
 		btnCancelar.setForeground(Color.WHITE);
-		btnCancelar.setFont(new Font("Bahnschrift", Font.BOLD, 14));
+		btnCancelar.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btnCancelar.setBackground(Color.DARK_GRAY);
-		btnCancelar.setBounds(315, 487, 113, 42);
+		btnCancelar.setBounds(315, 429, 113, 42);
 		contentPane.add(btnCancelar);
 		
 		JButton btIniciarSesion = new JButton("INICIAR SESION");
 		btIniciarSesion.setForeground(Color.WHITE);
-		btIniciarSesion.setFont(new Font("Bahnschrift", Font.BOLD, 14));
+		btIniciarSesion.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btIniciarSesion.setBackground(Color.DARK_GRAY);
-		btIniciarSesion.setBounds(10, 487, 139, 42);
+		btIniciarSesion.setBounds(10, 429, 139, 42);
 		contentPane.add(btIniciarSesion);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("CONTRASE\u00D1A");
@@ -82,7 +84,7 @@ public class Login extends JFrame {
 		
 		tFUsuario = new JTextField();
 		tFUsuario.setForeground(Color.WHITE);
-		tFUsuario.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
+		tFUsuario.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		tFUsuario.setOpaque(false);
 		tFUsuario.setBorder(new MatteBorder(0, 0, 3, 0, (Color) Color.WHITE));
 		tFUsuario.setBounds(144, 202, 139, 19);
@@ -99,19 +101,19 @@ public class Login extends JFrame {
 		JButton btnNewButton = new JButton("AYUDA");
 		btnNewButton.setBackground(Color.DARK_GRAY);
 		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.setFont(new Font("Bahnschrift", Font.BOLD, 14));
+		btnNewButton.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btnNewButton.setBounds(10, 10, 101, 42);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblLogo = new JLabel("");
 		lblLogo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/F1-logo.png")));
-		lblLogo.setBounds(144, 59, 139, 104);
+		lblLogo.setBounds(134, 59, 149, 104);
 		contentPane.add(lblLogo);
 		
 		JLabel lblFondo = new JLabel("");
 		lblFondo.setHorizontalAlignment(SwingConstants.CENTER);
-		lblFondo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/Fondos/fondo3.jpg")));
-		lblFondo.setBounds(-12, 0, 461, 549);
+		lblFondo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/Fondos/Fondo6.PNG")));
+		lblFondo.setBounds(-12, 0, 461, 498);
 		contentPane.add(lblFondo);
 	}
 }
