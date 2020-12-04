@@ -21,17 +21,16 @@ import javax.swing.JTextPane;
 
 public class FichaPilotos extends JFrame {
 	private JPanel contentPane;
-	private JTextField txtNombre;
-	private JTextField txtNacionalidad;
-	private JTextField txtNacimiento;
-	private JTextField txtPalmares;
-	private JTextField txtEscuderia;
 
 	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin;
-	private JTextField textEstado;
-	private JTextField textPodios;
-	private JLabel lblBiblo;
 	private String ruta;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
 	/**
 	 * Launch the application.
 	 */
@@ -119,140 +118,133 @@ public class FichaPilotos extends JFrame {
 		btnSimulacion.setBounds(747, 11, 115, 48);
 		PanelMenu.add(btnSimulacion);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 72, 974, 539);
-		contentPane.add(panel);
-		panel.setLayout(null);
-		
-		JPanel Ficha = new JPanel();
-		panel.setBackground(Color.WHITE);
-		panel.setBounds(27, 95, 288, 320);
-		contentPane.add(panel);
-		panel.setLayout(null);
+		JPanel panel_FichaPiloto = new JPanel();
+		panel_FichaPiloto.setBounds(0, 72, 974, 539);
+		contentPane.add(panel_FichaPiloto);
+		panel_FichaPiloto.setLayout(null);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"Hamilton.PNG"));
-		lblNewLabel_3.setBounds(10, 11, 268, 298);
-		panel.add(lblNewLabel_3);
+		lblNewLabel_3.setBounds(27, 21, 268, 298);
+		panel_FichaPiloto.add(lblNewLabel_3);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
 		lblNombre.setForeground(Color.WHITE);
-		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNombre.setBounds(443, 125, 175, 20);
-		contentPane.add(lblNombre);
+		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNombre.setBounds(443, 53, 175, 20);
+		panel_FichaPiloto.add(lblNombre);
 		
-		txtNombre = new JTextField();
-		txtNombre.setEnabled(false);
-		txtNombre.setBackground(Color.WHITE);
-		txtNombre.setEditable(false);
-		txtNombre.setBounds(628, 127, 250, 20);
-		txtNombre.setBorder(null);
-		contentPane.add(txtNombre);
-		txtNombre.setColumns(10);
+		textField = new JTextField();
+		textField.setEnabled(false);
+		textField.setEditable(false);
+		textField.setColumns(10);
+		textField.setBorder(null);
+		textField.setBackground(Color.WHITE);
+		textField.setBounds(628, 55, 250, 20);
+		panel_FichaPiloto.add(textField);
 		
 		JLabel lblNacionalidad = new JLabel("Nacionalidad:");
 		lblNacionalidad.setForeground(Color.WHITE);
-		lblNacionalidad.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNacionalidad.setBounds(443, 158, 175, 20);
-		contentPane.add(lblNacionalidad);
+		lblNacionalidad.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNacionalidad.setBounds(443, 86, 175, 20);
+		panel_FichaPiloto.add(lblNacionalidad);
 		
-		txtNacionalidad = new JTextField();
-		txtNacionalidad.setBackground(Color.WHITE);
-		txtNacionalidad.setEditable(false);
-		txtNacionalidad.setColumns(10);
-		txtNacionalidad.setBorder(null);
-		txtNacionalidad.setBounds(628, 160, 250, 20);
-		contentPane.add(txtNacionalidad);
+		textField_1 = new JTextField();
+		textField_1.setEditable(false);
+		textField_1.setColumns(10);
+		textField_1.setBorder(null);
+		textField_1.setBackground(Color.WHITE);
+		textField_1.setBounds(628, 88, 250, 20);
+		panel_FichaPiloto.add(textField_1);
 		
 		JLabel lblNacimiento = new JLabel("Fecha de nacimiento:");
 		lblNacimiento.setForeground(Color.WHITE);
-		lblNacimiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNacimiento.setBounds(443, 189, 175, 20);
-		contentPane.add(lblNacimiento);
+		lblNacimiento.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNacimiento.setBounds(443, 117, 175, 20);
+		panel_FichaPiloto.add(lblNacimiento);
 		
-		txtNacimiento = new JTextField();
-		txtNacimiento.setBackground(Color.WHITE);
-		txtNacimiento.setEditable(false);
-		txtNacimiento.setColumns(10);
-		txtNacimiento.setBorder(null);
-		txtNacimiento.setBounds(628, 189, 250, 20);
-		contentPane.add(txtNacimiento);
+		textField_2 = new JTextField();
+		textField_2.setEditable(false);
+		textField_2.setColumns(10);
+		textField_2.setBorder(null);
+		textField_2.setBackground(Color.WHITE);
+		textField_2.setBounds(628, 117, 250, 20);
+		panel_FichaPiloto.add(textField_2);
 		
 		JLabel lblPalmares = new JLabel("Palmares:");
 		lblPalmares.setForeground(Color.WHITE);
-		lblPalmares.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblPalmares.setBounds(443, 222, 175, 20);
-		contentPane.add(lblPalmares);
+		lblPalmares.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblPalmares.setBounds(443, 150, 175, 20);
+		panel_FichaPiloto.add(lblPalmares);
 		
-		txtPalmares = new JTextField();
-		txtPalmares.setBackground(Color.WHITE);
-		txtPalmares.setEditable(false);
-		txtPalmares.setColumns(10);
-		txtPalmares.setBorder(null);
-		txtPalmares.setBounds(628, 224, 250, 20);
-		contentPane.add(txtPalmares);
+		textField_3 = new JTextField();
+		textField_3.setEditable(false);
+		textField_3.setColumns(10);
+		textField_3.setBorder(null);
+		textField_3.setBackground(Color.WHITE);
+		textField_3.setBounds(628, 152, 250, 20);
+		panel_FichaPiloto.add(textField_3);
 		
 		JLabel lblEscuderia = new JLabel("Escuderia:");
 		lblEscuderia.setForeground(Color.WHITE);
-		lblEscuderia.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblEscuderia.setBounds(443, 315, 175, 20);
-		contentPane.add(lblEscuderia);
+		lblEscuderia.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblEscuderia.setBounds(443, 243, 175, 20);
+		panel_FichaPiloto.add(lblEscuderia);
 		
-		txtEscuderia = new JTextField();
-		txtEscuderia.setBackground(Color.WHITE);
-		txtEscuderia.setEditable(false);
-		txtEscuderia.setColumns(10);
-		txtEscuderia.setBorder(null);
-		txtEscuderia.setBounds(628, 317, 250, 20);
-		contentPane.add(txtEscuderia);
+		textField_4 = new JTextField();
+		textField_4.setEditable(false);
+		textField_4.setColumns(10);
+		textField_4.setBorder(null);
+		textField_4.setBackground(Color.WHITE);
+		textField_4.setBounds(628, 245, 250, 20);
+		panel_FichaPiloto.add(textField_4);
 		
 		JLabel lblESTADO = new JLabel("Estado:");
 		lblESTADO.setForeground(Color.WHITE);
-		lblESTADO.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblESTADO.setBounds(443, 253, 175, 20);
-		contentPane.add(lblESTADO);
+		lblESTADO.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblESTADO.setBounds(443, 181, 175, 20);
+		panel_FichaPiloto.add(lblESTADO);
 		
-		textEstado = new JTextField();
-		textEstado.setEditable(false);
-		textEstado.setColumns(10);
-		textEstado.setBorder(null);
-		textEstado.setBackground(Color.WHITE);
-		textEstado.setBounds(628, 255, 250, 20);
-		contentPane.add(textEstado);
+		textField_5 = new JTextField();
+		textField_5.setEditable(false);
+		textField_5.setColumns(10);
+		textField_5.setBorder(null);
+		textField_5.setBackground(Color.WHITE);
+		textField_5.setBounds(628, 183, 250, 20);
+		panel_FichaPiloto.add(textField_5);
 		
 		JLabel lblPodios = new JLabel("Podios:");
 		lblPodios.setForeground(Color.WHITE);
-		lblPodios.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblPodios.setBounds(443, 284, 175, 20);
-		contentPane.add(lblPodios);
+		lblPodios.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblPodios.setBounds(443, 212, 175, 20);
+		panel_FichaPiloto.add(lblPodios);
 		
-		textPodios = new JTextField();
-		textPodios.setEditable(false);
-		textPodios.setColumns(10);
-		textPodios.setBorder(null);
-		textPodios.setBackground(Color.WHITE);
-		textPodios.setBounds(628, 286, 250, 20);
-		contentPane.add(textPodios);
+		textField_6 = new JTextField();
+		textField_6.setEditable(false);
+		textField_6.setColumns(10);
+		textField_6.setBorder(null);
+		textField_6.setBackground(Color.WHITE);
+		textField_6.setBounds(628, 214, 250, 20);
+		panel_FichaPiloto.add(textField_6);
 		
-		lblBiblo = new JLabel("Bibliografia");
+		JLabel lblBiblo = new JLabel("Bibliografia");
 		lblBiblo.setForeground(Color.WHITE);
 		lblBiblo.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblBiblo.setBounds(27, 450, 209, 40);
-		contentPane.add(lblBiblo);
+		lblBiblo.setBounds(27, 378, 209, 40);
+		panel_FichaPiloto.add(lblBiblo);
 		
 		JTextPane txtBiblio = new JTextPane();
-		txtBiblio.setEnabled(false);
 		txtBiblio.setToolTipText("");
-		txtBiblio.setEditable(false);
 		txtBiblio.setFont(new Font("Tahoma", Font.PLAIN, 11));
-		txtBiblio.setBounds(27, 501, 771, 87);
-		
-		contentPane.add(txtBiblio);
+		txtBiblio.setEnabled(false);
+		txtBiblio.setEditable(false);
+		txtBiblio.setBounds(27, 429, 771, 87);
+		panel_FichaPiloto.add(txtBiblio);
 		
 		JLabel lblFondo = new JLabel();
-		lblFondo.setBounds(0, 72, 974, 539);
-		contentPane.add(lblFondo);
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		lblFondo.setBounds(0, 0, 974, 539);
+		panel_FichaPiloto.add(lblFondo);
+		
+		JPanel Ficha = new JPanel();
 	}
-
 }
