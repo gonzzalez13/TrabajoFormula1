@@ -131,11 +131,12 @@ public class FichaPilotos extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(ruta));
+		lblNewLabel_3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"Hamilton.PNG"));
 		lblNewLabel_3.setBounds(10, 11, 268, 298);
 		panel.add(lblNewLabel_3);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setForeground(Color.WHITE);
 		lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNombre.setBounds(443, 125, 175, 20);
 		contentPane.add(lblNombre);
@@ -150,6 +151,7 @@ public class FichaPilotos extends JFrame {
 		txtNombre.setColumns(10);
 		
 		JLabel lblNacionalidad = new JLabel("Nacionalidad:");
+		lblNacionalidad.setForeground(Color.WHITE);
 		lblNacionalidad.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNacionalidad.setBounds(443, 158, 175, 20);
 		contentPane.add(lblNacionalidad);
@@ -162,7 +164,8 @@ public class FichaPilotos extends JFrame {
 		txtNacionalidad.setBounds(628, 160, 250, 20);
 		contentPane.add(txtNacionalidad);
 		
-		JLabel lblNacimiento = new JLabel("Fecha de nacimiento");
+		JLabel lblNacimiento = new JLabel("Fecha de nacimiento:");
+		lblNacimiento.setForeground(Color.WHITE);
 		lblNacimiento.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNacimiento.setBounds(443, 189, 175, 20);
 		contentPane.add(lblNacimiento);
@@ -176,6 +179,7 @@ public class FichaPilotos extends JFrame {
 		contentPane.add(txtNacimiento);
 		
 		JLabel lblPalmares = new JLabel("Palmares:");
+		lblPalmares.setForeground(Color.WHITE);
 		lblPalmares.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblPalmares.setBounds(443, 222, 175, 20);
 		contentPane.add(lblPalmares);
@@ -189,6 +193,7 @@ public class FichaPilotos extends JFrame {
 		contentPane.add(txtPalmares);
 		
 		JLabel lblEscuderia = new JLabel("Escuderia:");
+		lblEscuderia.setForeground(Color.WHITE);
 		lblEscuderia.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblEscuderia.setBounds(443, 315, 175, 20);
 		contentPane.add(lblEscuderia);
@@ -201,7 +206,8 @@ public class FichaPilotos extends JFrame {
 		txtEscuderia.setBounds(628, 317, 250, 20);
 		contentPane.add(txtEscuderia);
 		
-		JLabel lblESTADO = new JLabel("Estado");
+		JLabel lblESTADO = new JLabel("Estado:");
+		lblESTADO.setForeground(Color.WHITE);
 		lblESTADO.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblESTADO.setBounds(443, 253, 175, 20);
 		contentPane.add(lblESTADO);
@@ -214,7 +220,8 @@ public class FichaPilotos extends JFrame {
 		textEstado.setBounds(628, 255, 250, 20);
 		contentPane.add(textEstado);
 		
-		JLabel lblPodios = new JLabel("Podios");
+		JLabel lblPodios = new JLabel("Podios:");
+		lblPodios.setForeground(Color.WHITE);
 		lblPodios.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblPodios.setBounds(443, 284, 175, 20);
 		contentPane.add(lblPodios);
@@ -228,6 +235,7 @@ public class FichaPilotos extends JFrame {
 		contentPane.add(textPodios);
 		
 		lblBiblo = new JLabel("Bibliografia");
+		lblBiblo.setForeground(Color.WHITE);
 		lblBiblo.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblBiblo.setBounds(27, 450, 209, 40);
 		contentPane.add(lblBiblo);
