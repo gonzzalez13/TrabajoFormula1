@@ -54,257 +54,198 @@ public class FichaEscuderia extends JFrame {
 	 * Create the frame.
 	 */
 	public FichaEscuderia() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 865, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			setBounds(0, 0, 990,650);
+			contentPane = new JPanel();
+			contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+			setContentPane(contentPane);
+			contentPane.setLayout(null);
+			
+			JPanel PanelMenu = new JPanel();
+			PanelMenu.setLayout(null);
+			PanelMenu.setBackground(new Color(178,29,28));
+			PanelMenu.setBounds(0, 0, 974, 72);
+			contentPane.add(PanelMenu);
+			
+			JLabel lblLogo = new JLabel("");
+			lblLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
+			lblLogo.setBounds(10, 11, 133, 48);
+			PanelMenu.add(lblLogo);
+			
+			JButton btnInicio = new JButton("Inicio");
+			btnInicio.setForeground(new Color(255,255,255));
+			btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnInicio.setBackground(new Color(59,45,45));
+			btnInicio.setBounds(144, 11, 74, 48);
+			PanelMenu.add(btnInicio);
+			
+			JButton btnEscuderias = new JButton("Escuderias");
+			btnEscuderias.setForeground(new Color(255,255,255));
+			btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnEscuderias.setBackground(new Color(59,45,45));
+			btnEscuderias.setBounds(226, 11, 112, 48);
+			PanelMenu.add(btnEscuderias);
+			
+			JButton btnPilotos = new JButton("Pilotos");
+			btnPilotos.setForeground(new Color(255,255,255));
+			btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnPilotos.setBackground(new Color(59,45,45));
+			btnPilotos.setBounds(348, 11, 94, 48);
+			PanelMenu.add(btnPilotos);
+			
+			JButton btnGranPre = new JButton("Gran Premio");
+			btnGranPre.setForeground(new Color(255,255,255));
+			btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnGranPre.setBackground(new Color(59,45,45));
+			btnGranPre.setBounds(452, 11, 130, 48);
+			PanelMenu.add(btnGranPre);
+			
+			JButton btnClasi = new JButton("Clasificaciones");
+			btnClasi.setForeground(new Color(255,255,255));
+			btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnClasi.setBackground(new Color(59,45,45));
+			btnClasi.setBounds(592, 11, 145, 48);
+			PanelMenu.add(btnClasi);
+			
+			JButton btnLogin = new JButton("Login");
+			btnLogin.setForeground(new Color(255,255,255));
+			btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnLogin.setBackground(new Color(59,45,45));
+			btnLogin.setBounds(872, 11, 92, 48);
+			PanelMenu.add(btnLogin);
+			
+			JButton btnSimulacion = new JButton("Simulacion");
+			btnSimulacion.setForeground(new Color(255,255,255));
+			btnSimulacion.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			btnSimulacion.setBackground(new Color(59,45,45));
+			btnSimulacion.setBounds(747, 11, 115, 48);
+			PanelMenu.add(btnSimulacion);
+			
+			JPanel panel = new JPanel();
+			panel.setBounds(0, 70, 974, 541);
+			contentPane.add(panel);
+			panel.setLayout(null);
+			
+			JLabel lblMarca = new JLabel("");
+			lblMarca.setIcon(new ImageIcon());
+			lblMarca.setBounds(26, 40, 359, 125);
+			panel.add(lblMarca);
+			
+			JLabel lblNombre = new JLabel("Nombre completo");
+			lblNombre.setBounds(26, 176, 160, 26);
+			panel.add(lblNombre);
+			
+			textNombre = new JTextField();
+			textNombre.setEnabled(false);
+			textNombre.setEditable(false);
+			textNombre.setBounds(185, 179, 200, 20);
+			panel.add(textNombre);
+			textNombre.setColumns(10);
+			
+			JLabel lblNacionalidad = new JLabel("Nacionalidad");
+			lblNacionalidad.setBounds(26, 213, 160, 26);
+			panel.add(lblNacionalidad);
+			
+			textNacionalidad = new JTextField();
+			textNacionalidad.setEditable(false);
+			textNacionalidad.setEnabled(false);
+			textNacionalidad.setColumns(10);
+			textNacionalidad.setBounds(185, 216, 200, 20);
+			panel.add(textNacionalidad);
+			
+			JLabel lblBase = new JLabel("Base ");
+			lblBase.setBounds(26, 250, 160, 26);
+			panel.add(lblBase);
+			
+			textBase = new JTextField();
+			textBase.setEditable(false);
+			textBase.setEnabled(false);
+			textBase.setColumns(10);
+			textBase.setBounds(185, 253, 200, 20);
+			panel.add(textBase);
+			
+			JLabel lblAño = new JLabel("Primer A\u00F1o de competici\u00F3n");
+			lblAño.setBounds(26, 287, 160, 26);
+			panel.add(lblAño);
+			
+			textAño = new JTextField();
+			textAño.setEditable(false);
+			textAño.setEnabled(false);
+			textAño.setColumns(10);
+			textAño.setBounds(185, 287, 200, 20);
+			panel.add(textAño);
+			
+			JLabel lblPremios = new JLabel("Premios");
+			lblPremios.setBounds(26, 324, 160, 26);
+			panel.add(lblPremios);
+			
+			textPremios = new JTextField();
+			textPremios.setEditable(false);
+			textPremios.setEnabled(false);
+			textPremios.setColumns(10);
+			textPremios.setBounds(185, 327, 200, 20);
+			panel.add(textPremios);
+			
+			JLabel lblJefeE = new JLabel("Jefe de Equipo");
+			lblJefeE.setBounds(26, 361, 160, 26);
+			panel.add(lblJefeE);
+			
+			textJefeE = new JTextField();
+			textJefeE.setEditable(false);
+			textJefeE.setEnabled(false);
+			textJefeE.setColumns(10);
+			textJefeE.setBounds(185, 364, 200, 20);
+			panel.add(textJefeE);
+			
+			JLabel lblJefeT = new JLabel("Jefe T\u00E9cnico");
+			lblJefeT.setBounds(26, 398, 160, 26);
+			panel.add(lblJefeT);
+			
+			textJefeT = new JTextField();
+			textJefeT.setEditable(false);
+			textJefeT.setEnabled(false);
+			textJefeT.setColumns(10);
+			textJefeT.setBounds(185, 401, 200, 20);
+			panel.add(textJefeT);
+			
+			btnPiloto1 = new JButton("");
+			btnPiloto1.setIcon(new ImageIcon());
+			btnPiloto1.setBounds(440, 40, 232, 232);
+			panel.add(btnPiloto1);
+			
+			textField = new JTextField();
+			textField.setHorizontalAlignment(SwingConstants.CENTER);
+			textField.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			textField.setEnabled(false);
+			textField.setEditable(false);
+			textField.setBounds(440, 283, 232, 30);
+			panel.add(textField);
+			textField.setColumns(10);
+			
+			btnPiloto2 = new JButton("");
+			btnPiloto2.setIcon(new ImageIcon());
+			btnPiloto2.setBounds(710, 40, 232, 232);
+			panel.add(btnPiloto2);
+			
+			textField_1 = new JTextField();
+			textField_1.setHorizontalAlignment(SwingConstants.CENTER);
+			textField_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+			textField_1.setEnabled(false);
+			textField_1.setEditable(false);
+			textField_1.setColumns(10);
+			textField_1.setBounds(710, 283, 232, 30);
+			panel.add(textField_1);
+			
+			JLabel lblFondo = new JLabel();
+			lblFondo.setBounds(0, 72, 974, 539);
+			contentPane.add(lblFondo);
+			lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
 		
-		JPanel PanelMenu = new JPanel();
-		PanelMenu.setLayout(null);
-		PanelMenu.setBackground(Color.LIGHT_GRAY);
-		PanelMenu.setBounds(0, 0, 849, 71);
-		contentPane.add(PanelMenu);
 		
-		btnInicio = new JButton("Inicio");
-		btnInicio.setForeground(Color.RED);
-		btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnInicio.setBackground(Color.DARK_GRAY);
-		btnInicio.setBounds(144, 11, 74, 48);
-		PanelMenu.add(btnInicio);
 		
-		btnEscuderias = new JButton("Escuderias");
-		btnEscuderias.setForeground(Color.RED);
-		btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnEscuderias.setBackground(Color.DARK_GRAY);
-		btnEscuderias.setBounds(226, 11, 112, 48);
-		PanelMenu.add(btnEscuderias);
-		
-		btnPilotos = new JButton("Pilotos");
-		btnPilotos.setForeground(Color.RED);
-		btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnPilotos.setBackground(Color.DARK_GRAY);
-		btnPilotos.setBounds(348, 11, 94, 48);
-		PanelMenu.add(btnPilotos);
-		
-		btnGranPre = new JButton("Gran Premio");
-		btnGranPre.setForeground(Color.RED);
-		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnGranPre.setBackground(Color.DARK_GRAY);
-		btnGranPre.setBounds(452, 11, 130, 48);
-		PanelMenu.add(btnGranPre);
-		
-		btnClasi = new JButton("Clasificaciones");
-		btnClasi.setForeground(Color.RED);
-		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnClasi.setBackground(Color.DARK_GRAY);
-		btnClasi.setBounds(592, 11, 145, 48);
-		PanelMenu.add(btnClasi);
-		
-		btnLogin = new JButton("Login");
-		btnLogin.setForeground(Color.RED);
-		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogin.setBackground(Color.DARK_GRAY);
-		btnLogin.setBounds(747, 11, 92, 48);
-		PanelMenu.add(btnLogin);
-		
-		btnLogo = new JButton("");
-		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
-		btnLogo.setForeground(new Color(192, 192, 192));
-		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogo.setBackground(Color.LIGHT_GRAY);
-		btnLogo.setBounds(10, 11, 124, 48);
-		btnLogo.setBorder(null);
-		PanelMenu.add(btnLogo);
-		
-		JPanel panel = new JPanel();
-		panel.setBounds(0, 70, 849, 541);
-		contentPane.add(panel);
-		panel.setLayout(null);
-		
-		JLabel lblLogo = new JLabel("");
-		lblLogo.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logos\\Mercedes.jpg"));
-		lblLogo.setBounds(26, 40, 284, 125);
-		panel.add(lblLogo);
-		
-		JLabel lblNombre = new JLabel("Nombre completo");
-		lblNombre.setBounds(26, 176, 160, 26);
-		panel.add(lblNombre);
-		
-		textNombre = new JTextField();
-		textNombre.setEnabled(false);
-		textNombre.setEditable(false);
-		textNombre.setBounds(185, 179, 125, 20);
-		panel.add(textNombre);
-		textNombre.setColumns(10);
-		
-		JLabel lblNacionalidad = new JLabel("Nacionalidad");
-		lblNacionalidad.setBounds(26, 213, 160, 26);
-		panel.add(lblNacionalidad);
-		
-		textNacionalidad = new JTextField();
-		textNacionalidad.setEditable(false);
-		textNacionalidad.setEnabled(false);
-		textNacionalidad.setColumns(10);
-		textNacionalidad.setBounds(185, 216, 125, 20);
-		panel.add(textNacionalidad);
-		
-		JLabel lblBase = new JLabel("Base ");
-		lblBase.setBounds(26, 250, 160, 26);
-		panel.add(lblBase);
-		
-		textBase = new JTextField();
-		textBase.setEditable(false);
-		textBase.setEnabled(false);
-		textBase.setColumns(10);
-		textBase.setBounds(185, 253, 125, 20);
-		panel.add(textBase);
-		
-		JLabel lblAño = new JLabel("Primer A\u00F1o de competicion");
-		lblAño.setBounds(26, 287, 160, 26);
-		panel.add(lblAño);
-		
-		textAño = new JTextField();
-		textAño.setEditable(false);
-		textAño.setEnabled(false);
-		textAño.setColumns(10);
-		textAño.setBounds(185, 287, 125, 20);
-		panel.add(textAño);
-		
-		JLabel lblPremios = new JLabel("Premios");
-		lblPremios.setBounds(26, 324, 160, 26);
-		panel.add(lblPremios);
-		
-		textPremios = new JTextField();
-		textPremios.setEditable(false);
-		textPremios.setEnabled(false);
-		textPremios.setColumns(10);
-		textPremios.setBounds(185, 327, 125, 20);
-		panel.add(textPremios);
-		
-		JLabel lblJefeE = new JLabel("Jefe de Equipo");
-		lblJefeE.setBounds(26, 361, 160, 26);
-		panel.add(lblJefeE);
-		
-		textJefeE = new JTextField();
-		textJefeE.setEditable(false);
-		textJefeE.setEnabled(false);
-		textJefeE.setColumns(10);
-		textJefeE.setBounds(185, 364, 125, 20);
-		panel.add(textJefeE);
-		
-		JLabel lblJefeT = new JLabel("Jefe Tecnico");
-		lblJefeT.setBounds(26, 398, 160, 26);
-		panel.add(lblJefeT);
-		
-		textJefeT = new JTextField();
-		textJefeT.setEditable(false);
-		textJefeT.setEnabled(false);
-		textJefeT.setColumns(10);
-		textJefeT.setBounds(185, 401, 125, 20);
-		panel.add(textJefeT);
-		
-		btnPiloto1 = new JButton("");
-		btnPiloto1.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logos\\H15.jpg"));
-		btnPiloto1.setBounds(357, 40, 232, 232);
-		panel.add(btnPiloto1);
-		
-		textField = new JTextField();
-		textField.setHorizontalAlignment(SwingConstants.CENTER);
-		textField.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		textField.setEnabled(false);
-		textField.setEditable(false);
-		textField.setBounds(357, 283, 232, 30);
-		panel.add(textField);
-		textField.setColumns(10);
-		
-		btnPiloto2 = new JButton("");
-		btnPiloto2.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Logos\\H25.jpg"));
-		btnPiloto2.setBounds(607, 40, 232, 232);
-		panel.add(btnPiloto2);
-		
-		textField_1 = new JTextField();
-		textField_1.setHorizontalAlignment(SwingConstants.CENTER);
-		textField_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		textField_1.setEnabled(false);
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBounds(607, 283, 232, 30);
-		panel.add(textField_1);
 	}
 
-	public JButton getBtnInicio() {
-		return btnInicio;
-	}
-
-	public void setBtnInicio(JButton btnInicio) {
-		this.btnInicio = btnInicio;
-	}
-
-	public JButton getBtnEscuderias() {
-		return btnEscuderias;
-	}
-
-	public void setBtnEscuderias(JButton btnEscuderias) {
-		this.btnEscuderias = btnEscuderias;
-	}
-
-	public JButton getBtnPilotos() {
-		return btnPilotos;
-	}
-
-	public void setBtnPilotos(JButton btnPilotos) {
-		this.btnPilotos = btnPilotos;
-	}
-
-	public JButton getBtnGranPre() {
-		return btnGranPre;
-	}
-
-	public void setBtnGranPre(JButton btnGranPre) {
-		this.btnGranPre = btnGranPre;
-	}
-
-	public JButton getBtnClasi() {
-		return btnClasi;
-	}
-
-	public void setBtnClasi(JButton btnClasi) {
-		this.btnClasi = btnClasi;
-	}
-
-	public JButton getBtnLogin() {
-		return btnLogin;
-	}
-
-	public void setBtnLogin(JButton btnLogin) {
-		this.btnLogin = btnLogin;
-	}
-
-	public JButton getBtnLogo() {
-		return btnLogo;
-	}
-
-	public void setBtnLogo(JButton btnLogo) {
-		this.btnLogo = btnLogo;
-	}
-
-	public JButton getBtnPiloto1() {
-		return btnPiloto1;
-	}
-
-	public void setBtnPiloto1(JButton btnPiloto1) {
-		this.btnPiloto1 = btnPiloto1;
-	}
-
-	public JButton getBtnPiloto2() {
-		return btnPiloto2;
-	}
-
-	public void setBtnPiloto2(JButton btnPiloto2) {
-		this.btnPiloto2 = btnPiloto2;
-	}
+	
 	
 	
 	

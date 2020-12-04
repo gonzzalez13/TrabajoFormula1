@@ -50,7 +50,7 @@ public class Piloto extends JFrame {
 	 */
 	public Piloto() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
+		setBounds(0, 0, 990,650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
