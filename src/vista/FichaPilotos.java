@@ -24,13 +24,13 @@ public class FichaPilotos extends JFrame {
 
 	private  JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin;
 	private String ruta;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
+	private JTextField txtNombre;
+	private JTextField txtNacionalidad;
+	private JTextField txtFecha;
+	private JTextField txtPalmarres;
+	private JTextField txtEscuderia;
+	private JTextField txtEstado;
+	private JTextField txtPodios;
 	/**
 	 * Launch the application.
 	 */
@@ -123,9 +123,10 @@ public class FichaPilotos extends JFrame {
 		contentPane.add(panel_FichaPiloto);
 		panel_FichaPiloto.setLayout(null);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setBounds(27, 21, 268, 298);
-		panel_FichaPiloto.add(lblNewLabel_3);
+		JLabel lblFtoFicha = new JLabel("");
+		lblFtoFicha.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichasPilotos\\albon.PNG"));
+		lblFtoFicha.setBounds(27, 21, 268, 298);
+		panel_FichaPiloto.add(lblFtoFicha);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
 		lblNombre.setForeground(Color.WHITE);
@@ -133,14 +134,14 @@ public class FichaPilotos extends JFrame {
 		lblNombre.setBounds(443, 53, 175, 20);
 		panel_FichaPiloto.add(lblNombre);
 		
-		textField = new JTextField();
-		textField.setEnabled(false);
-		textField.setEditable(false);
-		textField.setColumns(10);
-		textField.setBorder(null);
-		textField.setBackground(Color.WHITE);
-		textField.setBounds(628, 55, 250, 20);
-		panel_FichaPiloto.add(textField);
+		txtNombre = new JTextField();
+		txtNombre.setEnabled(false);
+		txtNombre.setEditable(false);
+		txtNombre.setColumns(10);
+		txtNombre.setBorder(null);
+		txtNombre.setBackground(Color.WHITE);
+		txtNombre.setBounds(628, 55, 250, 20);
+		panel_FichaPiloto.add(txtNombre);
 		
 		JLabel lblNacionalidad = new JLabel("Nacionalidad:");
 		lblNacionalidad.setForeground(Color.WHITE);
@@ -148,13 +149,13 @@ public class FichaPilotos extends JFrame {
 		lblNacionalidad.setBounds(443, 86, 175, 20);
 		panel_FichaPiloto.add(lblNacionalidad);
 		
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBorder(null);
-		textField_1.setBackground(Color.WHITE);
-		textField_1.setBounds(628, 88, 250, 20);
-		panel_FichaPiloto.add(textField_1);
+		txtNacionalidad = new JTextField();
+		txtNacionalidad.setEditable(false);
+		txtNacionalidad.setColumns(10);
+		txtNacionalidad.setBorder(null);
+		txtNacionalidad.setBackground(Color.WHITE);
+		txtNacionalidad.setBounds(628, 88, 250, 20);
+		panel_FichaPiloto.add(txtNacionalidad);
 		
 		JLabel lblNacimiento = new JLabel("Fecha de nacimiento:");
 		lblNacimiento.setForeground(Color.WHITE);
@@ -162,13 +163,13 @@ public class FichaPilotos extends JFrame {
 		lblNacimiento.setBounds(443, 117, 175, 20);
 		panel_FichaPiloto.add(lblNacimiento);
 		
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		textField_2.setBorder(null);
-		textField_2.setBackground(Color.WHITE);
-		textField_2.setBounds(628, 117, 250, 20);
-		panel_FichaPiloto.add(textField_2);
+		txtFecha = new JTextField();
+		txtFecha.setEditable(false);
+		txtFecha.setColumns(10);
+		txtFecha.setBorder(null);
+		txtFecha.setBackground(Color.WHITE);
+		txtFecha.setBounds(628, 117, 250, 20);
+		panel_FichaPiloto.add(txtFecha);
 		
 		JLabel lblPalmares = new JLabel("Palmares:");
 		lblPalmares.setForeground(Color.WHITE);
@@ -176,13 +177,13 @@ public class FichaPilotos extends JFrame {
 		lblPalmares.setBounds(443, 150, 175, 20);
 		panel_FichaPiloto.add(lblPalmares);
 		
-		textField_3 = new JTextField();
-		textField_3.setEditable(false);
-		textField_3.setColumns(10);
-		textField_3.setBorder(null);
-		textField_3.setBackground(Color.WHITE);
-		textField_3.setBounds(628, 152, 250, 20);
-		panel_FichaPiloto.add(textField_3);
+		txtPalmarres = new JTextField();
+		txtPalmarres.setEditable(false);
+		txtPalmarres.setColumns(10);
+		txtPalmarres.setBorder(null);
+		txtPalmarres.setBackground(Color.WHITE);
+		txtPalmarres.setBounds(628, 152, 250, 20);
+		panel_FichaPiloto.add(txtPalmarres);
 		
 		JLabel lblEscuderia = new JLabel("Escuderia:");
 		lblEscuderia.setForeground(Color.WHITE);
@@ -190,13 +191,13 @@ public class FichaPilotos extends JFrame {
 		lblEscuderia.setBounds(443, 243, 175, 20);
 		panel_FichaPiloto.add(lblEscuderia);
 		
-		textField_4 = new JTextField();
-		textField_4.setEditable(false);
-		textField_4.setColumns(10);
-		textField_4.setBorder(null);
-		textField_4.setBackground(Color.WHITE);
-		textField_4.setBounds(628, 245, 250, 20);
-		panel_FichaPiloto.add(textField_4);
+		txtEscuderia = new JTextField();
+		txtEscuderia.setEditable(false);
+		txtEscuderia.setColumns(10);
+		txtEscuderia.setBorder(null);
+		txtEscuderia.setBackground(Color.WHITE);
+		txtEscuderia.setBounds(628, 245, 250, 20);
+		panel_FichaPiloto.add(txtEscuderia);
 		
 		JLabel lblESTADO = new JLabel("Estado:");
 		lblESTADO.setForeground(Color.WHITE);
@@ -204,13 +205,13 @@ public class FichaPilotos extends JFrame {
 		lblESTADO.setBounds(443, 181, 175, 20);
 		panel_FichaPiloto.add(lblESTADO);
 		
-		textField_5 = new JTextField();
-		textField_5.setEditable(false);
-		textField_5.setColumns(10);
-		textField_5.setBorder(null);
-		textField_5.setBackground(Color.WHITE);
-		textField_5.setBounds(628, 183, 250, 20);
-		panel_FichaPiloto.add(textField_5);
+		txtEstado = new JTextField();
+		txtEstado.setEditable(false);
+		txtEstado.setColumns(10);
+		txtEstado.setBorder(null);
+		txtEstado.setBackground(Color.WHITE);
+		txtEstado.setBounds(628, 183, 250, 20);
+		panel_FichaPiloto.add(txtEstado);
 		
 		JLabel lblPodios = new JLabel("Podios:");
 		lblPodios.setForeground(Color.WHITE);
@@ -218,13 +219,13 @@ public class FichaPilotos extends JFrame {
 		lblPodios.setBounds(443, 212, 175, 20);
 		panel_FichaPiloto.add(lblPodios);
 		
-		textField_6 = new JTextField();
-		textField_6.setEditable(false);
-		textField_6.setColumns(10);
-		textField_6.setBorder(null);
-		textField_6.setBackground(Color.WHITE);
-		textField_6.setBounds(628, 214, 250, 20);
-		panel_FichaPiloto.add(textField_6);
+		txtPodios = new JTextField();
+		txtPodios.setEditable(false);
+		txtPodios.setColumns(10);
+		txtPodios.setBorder(null);
+		txtPodios.setBackground(Color.WHITE);
+		txtPodios.setBounds(628, 214, 250, 20);
+		panel_FichaPiloto.add(txtPodios);
 		
 		JLabel lblBiblo = new JLabel("Bibliografia");
 		lblBiblo.setForeground(Color.WHITE);
@@ -245,6 +246,6 @@ public class FichaPilotos extends JFrame {
 		lblFondo.setBounds(0, 0, 974, 539);
 		panel_FichaPiloto.add(lblFondo);
 		
-		JPanel Ficha = new JPanel();
+		
 	}
 }

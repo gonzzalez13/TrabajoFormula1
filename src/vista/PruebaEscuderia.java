@@ -226,8 +226,8 @@ public class PruebaEscuderia extends JFrame {
 		panelWilliams.add(btnWilliams);
 		
 		JLabel lblFondo = new JLabel();
-		lblFondo.setBounds(0, 72, 974, 539);
-		contentPane.add(lblFondo);
+		lblFondo.setBounds(0, 0, 974, 539);
+		panel.add(lblFondo);
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
 	}
 }

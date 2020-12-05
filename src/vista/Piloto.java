@@ -57,11 +57,10 @@ public class Piloto extends JFrame {
 		contentPane.setLayout(null);
 		
 		
-		
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
-		PanelMenu.setBackground(Color.LIGHT_GRAY);
-		PanelMenu.setBounds(0, 0, 974, 71);
+		PanelMenu.setBackground(new Color(178,29,28));
+		PanelMenu.setBounds(0, 0, 974, 72);
 		contentPane.add(PanelMenu);
 		
 		JLabel lblLogo = new JLabel("");
@@ -69,67 +68,67 @@ public class Piloto extends JFrame {
 		lblLogo.setBounds(10, 11, 133, 48);
 		PanelMenu.add(lblLogo);
 		
-		btnInicio = new JButton("Inicio");
-		btnInicio.setForeground(Color.RED);
+		JButton btnInicio = new JButton("Inicio");
+		btnInicio.setForeground(new Color(255,255,255));
 		btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnInicio.setBackground(Color.DARK_GRAY);
+		btnInicio.setBackground(new Color(59,45,45));
 		btnInicio.setBounds(144, 11, 74, 48);
 		PanelMenu.add(btnInicio);
 		
-		btnEscuderias = new JButton("Escuderias");
-		btnEscuderias.setForeground(Color.RED);
+		JButton btnEscuderias = new JButton("Escuderias");
+		btnEscuderias.setForeground(new Color(255,255,255));
 		btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnEscuderias.setBackground(Color.DARK_GRAY);
+		btnEscuderias.setBackground(new Color(59,45,45));
 		btnEscuderias.setBounds(226, 11, 112, 48);
 		PanelMenu.add(btnEscuderias);
 		
-		btnPilotos = new JButton("Pilotos");
-		btnPilotos.setForeground(Color.RED);
+		JButton btnPilotos = new JButton("Pilotos");
+		btnPilotos.setForeground(new Color(255,255,255));
 		btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnPilotos.setBackground(Color.DARK_GRAY);
+		btnPilotos.setBackground(new Color(59,45,45));
 		btnPilotos.setBounds(348, 11, 94, 48);
 		PanelMenu.add(btnPilotos);
 		
-		btnGranPre = new JButton("Gran Premio");
-		btnGranPre.setForeground(Color.RED);
+		JButton btnGranPre = new JButton("Gran Premio");
+		btnGranPre.setForeground(new Color(255,255,255));
 		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnGranPre.setBackground(Color.DARK_GRAY);
+		btnGranPre.setBackground(new Color(59,45,45));
 		btnGranPre.setBounds(452, 11, 130, 48);
 		PanelMenu.add(btnGranPre);
 		
-		btnClasi = new JButton("Clasificaciones");
-		btnClasi.setForeground(Color.RED);
+		JButton btnClasi = new JButton("Clasificaciones");
+		btnClasi.setForeground(new Color(255,255,255));
 		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnClasi.setBackground(Color.DARK_GRAY);
+		btnClasi.setBackground(new Color(59,45,45));
 		btnClasi.setBounds(592, 11, 145, 48);
 		PanelMenu.add(btnClasi);
 		
-		btnLogin = new JButton("Login");
-		btnLogin.setForeground(Color.RED);
+		JButton btnLogin = new JButton("Login");
+		btnLogin.setForeground(new Color(255,255,255));
 		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogin.setBackground(Color.DARK_GRAY);
+		btnLogin.setBackground(new Color(59,45,45));
 		btnLogin.setBounds(872, 11, 92, 48);
 		PanelMenu.add(btnLogin);
 		
 		JButton btnSimulacion = new JButton("Simulacion");
-		btnSimulacion.setForeground(Color.RED);
+		btnSimulacion.setForeground(new Color(255,255,255));
 		btnSimulacion.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnSimulacion.setBackground(Color.DARK_GRAY);
+		btnSimulacion.setBackground(new Color(59,45,45));
 		btnSimulacion.setBounds(747, 11, 115, 48);
 		PanelMenu.add(btnSimulacion);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setLayout(null);
-		panel_1.setPreferredSize(new Dimension(850, 430));
-		panel_1.setBackground(SystemColor.menu);
-		panel_1.setBounds(0, 66, 974, 545);
-		contentPane.add(panel_1);
+		JPanel panelPilotos = new JPanel();
+		panelPilotos.setLayout(null);
+		panelPilotos.setPreferredSize(new Dimension(850, 430));
+		panelPilotos.setBackground(SystemColor.menu);
+		panelPilotos.setBounds(0, 72, 974, 539);
+		contentPane.add(panelPilotos);
 		
 		JPanel panelHAMILTON = new JPanel();
 		panelHAMILTON.setLayout(null);
 		panelHAMILTON.setBackground(Color.WHITE);
 		panelHAMILTON.setBounds(10, 23, 265, 60);
-		panel_1.add(panelHAMILTON);
+		panelPilotos.add(panelHAMILTON);
 		
 		JButton btnHAMILTON = new JButton("  Lewis Hamilton  >");
 		btnHAMILTON.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -143,7 +142,7 @@ public class Piloto extends JFrame {
 		panelHAMILTON.add(separatorHamilton);
 		
 		JLabel lblNº = new JLabel("");
-		lblNº.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Hamilton.png"));
+		lblNº.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Hamilton.png"));
 		lblNº.setBounds(180, 1, 85, 59);
 		panelHAMILTON.add(lblNº);
 		
@@ -151,7 +150,7 @@ public class Piloto extends JFrame {
 		panelBOTTAS.setLayout(null);
 		panelBOTTAS.setBackground(Color.WHITE);
 		panelBOTTAS.setBounds(310, 23, 265, 60);
-		panel_1.add(panelBOTTAS);
+		panelPilotos.add(panelBOTTAS);
 		
 		JButton btnBOTTAS = new JButton("  Valtteri Bottas  >");
 		btnBOTTAS.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -165,7 +164,7 @@ public class Piloto extends JFrame {
 		panelBOTTAS.add(separatorBOTTAS);
 		
 		JLabel lblNº_1 = new JLabel("");
-		lblNº_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Bottas.png"));
+		lblNº_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Bottas.png"));
 		lblNº_1.setBounds(180, 0, 85, 59);
 		panelBOTTAS.add(lblNº_1);
 		
@@ -173,7 +172,7 @@ public class Piloto extends JFrame {
 		panelVERSTAPPEN.setLayout(null);
 		panelVERSTAPPEN.setBackground(Color.WHITE);
 		panelVERSTAPPEN.setBounds(647, 23, 265, 60);
-		panel_1.add(panelVERSTAPPEN);
+		panelPilotos.add(panelVERSTAPPEN);
 		
 		JButton btnVERSTAPPEN = new JButton("  Max Verstappen  >");
 		btnVERSTAPPEN.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -187,7 +186,7 @@ public class Piloto extends JFrame {
 		panelVERSTAPPEN.add(separatorVERSTAPPEN);
 		
 		JLabel lblNº_2 = new JLabel("");
-		lblNº_2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Verstappen.png"));
+		lblNº_2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Verstappen.png"));
 		lblNº_2.setBounds(180, 0, 85, 59);
 		panelVERSTAPPEN.add(lblNº_2);
 		
@@ -195,7 +194,7 @@ public class Piloto extends JFrame {
 		panelRICCIARDO.setLayout(null);
 		panelRICCIARDO.setBackground(Color.WHITE);
 		panelRICCIARDO.setBounds(10, 94, 265, 60);
-		panel_1.add(panelRICCIARDO);
+		panelPilotos.add(panelRICCIARDO);
 		
 		JButton btnRICCIARDO = new JButton("Daniel Ricciardo");
 		btnRICCIARDO.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -209,7 +208,7 @@ public class Piloto extends JFrame {
 		panelRICCIARDO.add(separatorRICCIARDO);
 		
 		JLabel lblNº_3 = new JLabel("");
-		lblNº_3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Ricciardo.png"));
+		lblNº_3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Ricciardo.png"));
 		lblNº_3.setBounds(180, 0, 85, 59);
 		panelRICCIARDO.add(lblNº_3);
 		
@@ -217,7 +216,7 @@ public class Piloto extends JFrame {
 		panelLECLERC.setLayout(null);
 		panelLECLERC.setBackground(Color.WHITE);
 		panelLECLERC.setBounds(310, 94, 265, 60);
-		panel_1.add(panelLECLERC);
+		panelPilotos.add(panelLECLERC);
 		
 		JButton btnLECLERC = new JButton("  Charles Leclerc  >");
 		btnLECLERC.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -231,7 +230,7 @@ public class Piloto extends JFrame {
 		panelLECLERC.add(separatorLECLERC);
 		
 		JLabel lblNº_4 = new JLabel("");
-		lblNº_4.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Leclrec.png"));
+		lblNº_4.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Leclrec.png"));
 		lblNº_4.setBounds(180, 0, 85, 59);
 		panelLECLERC.add(lblNº_4);
 		
@@ -239,7 +238,7 @@ public class Piloto extends JFrame {
 		panelPEREZ.setLayout(null);
 		panelPEREZ.setBackground(Color.WHITE);
 		panelPEREZ.setBounds(647, 94, 265, 60);
-		panel_1.add(panelPEREZ);
+		panelPilotos.add(panelPEREZ);
 		
 		JButton btnPEREZ = new JButton(" Sergio Perez  >");
 		btnPEREZ.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -253,7 +252,7 @@ public class Piloto extends JFrame {
 		panelPEREZ.add(separatorPEREZ);
 		
 		JLabel lblNº_5 = new JLabel("");
-		lblNº_5.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Perez.png"));
+		lblNº_5.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Perez.png"));
 		lblNº_5.setBounds(180, 0, 85, 59);
 		panelPEREZ.add(lblNº_5);
 		
@@ -261,7 +260,7 @@ public class Piloto extends JFrame {
 		panelNORRIS.setLayout(null);
 		panelNORRIS.setBackground(Color.WHITE);
 		panelNORRIS.setBounds(10, 165, 265, 60);
-		panel_1.add(panelNORRIS);
+		panelPilotos.add(panelNORRIS);
 		
 		JButton btnNORRIS = new JButton("  Lando Norris  >");
 		btnNORRIS.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -275,7 +274,7 @@ public class Piloto extends JFrame {
 		panelNORRIS.add(separatorNORRIS);
 		
 		JLabel lblNº_6 = new JLabel("");
-		lblNº_6.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Norris.png"));
+		lblNº_6.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Norris.png"));
 		lblNº_6.setBounds(180, 0, 85, 59);
 		panelNORRIS.add(lblNº_6);
 		
@@ -283,7 +282,7 @@ public class Piloto extends JFrame {
 		panelSAINZ.setLayout(null);
 		panelSAINZ.setBackground(Color.WHITE);
 		panelSAINZ.setBounds(310, 165, 265, 60);
-		panel_1.add(panelSAINZ);
+		panelPilotos.add(panelSAINZ);
 		
 		JButton btnSAINZ = new JButton(" Carlos Sainz  >");
 		btnSAINZ.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -297,7 +296,7 @@ public class Piloto extends JFrame {
 		panelSAINZ.add(separatorSAINZ);
 		
 		JLabel lblNº_7 = new JLabel("");
-		lblNº_7.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Sainz.png"));
+		lblNº_7.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Sainz.png"));
 		lblNº_7.setBounds(180, 0, 85, 59);
 		panelSAINZ.add(lblNº_7);
 		
@@ -305,7 +304,7 @@ public class Piloto extends JFrame {
 		panelALBON.setLayout(null);
 		panelALBON.setBackground(Color.WHITE);
 		panelALBON.setBounds(647, 165, 265, 60);
-		panel_1.add(panelALBON);
+		panelPilotos.add(panelALBON);
 		
 		JButton btnALBON = new JButton("  Alexander Albon  >");
 		btnALBON.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -319,7 +318,7 @@ public class Piloto extends JFrame {
 		panelALBON.add(separatorALBON);
 		
 		JLabel lblNº_8 = new JLabel("");
-		lblNº_8.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Albon.png"));
+		lblNº_8.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Albon.png"));
 		lblNº_8.setBounds(180, 0, 85, 59);
 		panelALBON.add(lblNº_8);
 		
@@ -327,7 +326,7 @@ public class Piloto extends JFrame {
 		panelGASLY.setLayout(null);
 		panelGASLY.setBackground(Color.WHITE);
 		panelGASLY.setBounds(10, 236, 265, 60);
-		panel_1.add(panelGASLY);
+		panelPilotos.add(panelGASLY);
 		
 		JButton btnGASLY = new JButton(" Pierre Gasly  >");
 		btnGASLY.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -341,7 +340,7 @@ public class Piloto extends JFrame {
 		panelGASLY.add(separatorGASLY);
 		
 		JLabel lblNº_16_1 = new JLabel("");
-		lblNº_16_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Gasly.png"));
+		lblNº_16_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Gasly.png"));
 		lblNº_16_1.setBounds(180, 0, 85, 59);
 		panelGASLY.add(lblNº_16_1);
 		
@@ -349,7 +348,7 @@ public class Piloto extends JFrame {
 		panelSTROLL.setLayout(null);
 		panelSTROLL.setBackground(Color.WHITE);
 		panelSTROLL.setBounds(647, 378, 265, 60);
-		panel_1.add(panelSTROLL);
+		panelPilotos.add(panelSTROLL);
 		
 		JButton btnSTROLL = new JButton("  Lance Stroll  >");
 		btnSTROLL.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -363,7 +362,7 @@ public class Piloto extends JFrame {
 		panelSTROLL.add(separatorSTROLL);
 		
 		JLabel lblNº_17 = new JLabel("");
-		lblNº_17.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Stroll.png"));
+		lblNº_17.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Stroll.png"));
 		lblNº_17.setBounds(180, 0, 85, 49);
 		panelSTROLL.add(lblNº_17);
 		
@@ -371,7 +370,7 @@ public class Piloto extends JFrame {
 		panelOCON.setLayout(null);
 		panelOCON.setBackground(Color.WHITE);
 		panelOCON.setBounds(310, 378, 265, 60);
-		panel_1.add(panelOCON);
+		panelPilotos.add(panelOCON);
 		
 		JButton btnOCON = new JButton("  Esteban Ocon  >");
 		btnOCON.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -385,7 +384,7 @@ public class Piloto extends JFrame {
 		panelOCON.add(separatorOCON);
 		
 		JLabel lblNº_16 = new JLabel("");
-		lblNº_16.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Ocon.png"));
+		lblNº_16.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Ocon.png"));
 		lblNº_16.setBounds(180, 0, 85, 59);
 		panelOCON.add(lblNº_16);
 		
@@ -393,7 +392,7 @@ public class Piloto extends JFrame {
 		panelKVYAT.setLayout(null);
 		panelKVYAT.setBackground(Color.WHITE);
 		panelKVYAT.setBounds(310, 236, 265, 60);
-		panel_1.add(panelKVYAT);
+		panelPilotos.add(panelKVYAT);
 		
 		JButton btnKVYAT = new JButton(" Daniil Kvyat  >");
 		btnKVYAT.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -407,7 +406,7 @@ public class Piloto extends JFrame {
 		panelKVYAT.add(separatorKVYAT);
 		
 		JLabel lblNº_10 = new JLabel("");
-		lblNº_10.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Kvyat.png"));
+		lblNº_10.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Kvyat.png"));
 		lblNº_10.setBounds(180, 0, 85, 59);
 		panelKVYAT.add(lblNº_10);
 		
@@ -415,7 +414,7 @@ public class Piloto extends JFrame {
 		panelVETTEL.setLayout(null);
 		panelVETTEL.setBackground(Color.WHITE);
 		panelVETTEL.setBounds(647, 236, 265, 60);
-		panel_1.add(panelVETTEL);
+		panelPilotos.add(panelVETTEL);
 		
 		JButton btnVETTEL = new JButton("  Sebastian Vettel  >");
 		btnVETTEL.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -429,7 +428,7 @@ public class Piloto extends JFrame {
 		panelVETTEL.add(separatorVETTEL);
 		
 		JLabel lblNº_11 = new JLabel("");
-		lblNº_11.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Vettel.png"));
+		lblNº_11.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Vettel.png"));
 		lblNº_11.setBounds(180, 0, 85, 59);
 		panelVETTEL.add(lblNº_11);
 		
@@ -437,7 +436,7 @@ public class Piloto extends JFrame {
 		panelMAGNUSSEN.setLayout(null);
 		panelMAGNUSSEN.setBackground(Color.WHITE);
 		panelMAGNUSSEN.setBounds(10, 307, 265, 60);
-		panel_1.add(panelMAGNUSSEN);
+		panelPilotos.add(panelMAGNUSSEN);
 		
 		JButton btnMAGNUSSEN = new JButton("  Kevin Magnussen  >");
 		btnMAGNUSSEN.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -451,7 +450,7 @@ public class Piloto extends JFrame {
 		panelMAGNUSSEN.add(separatorMagnussen);
 		
 		JLabel lblNº_12 = new JLabel("");
-		lblNº_12.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Magnussen.png"));
+		lblNº_12.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Magnussen.png"));
 		lblNº_12.setBounds(180, 0, 85, 49);
 		panelMAGNUSSEN.add(lblNº_12);
 		
@@ -459,7 +458,7 @@ public class Piloto extends JFrame {
 		panelRÄIKKÖNEN.setLayout(null);
 		panelRÄIKKÖNEN.setBackground(Color.WHITE);
 		panelRÄIKKÖNEN.setBounds(310, 307, 265, 60);
-		panel_1.add(panelRÄIKKÖNEN);
+		panelPilotos.add(panelRÄIKKÖNEN);
 		
 		JButton btnRÄIKKÖNEN = new JButton(" Kimi Raikkonen  >");
 		btnRÄIKKÖNEN.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -475,13 +474,13 @@ public class Piloto extends JFrame {
 		JLabel lblNº_13 = new JLabel("");
 		lblNº_13.setBounds(190, -1, 75, 49);
 		panelRÄIKKÖNEN.add(lblNº_13);
-		lblNº_13.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Raikkonen.png"));
+		lblNº_13.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Raikkonen.png"));
 		
 		JPanel panelGIOVINAZZI = new JPanel();
 		panelGIOVINAZZI.setLayout(null);
 		panelGIOVINAZZI.setBackground(Color.WHITE);
 		panelGIOVINAZZI.setBounds(647, 307, 265, 60);
-		panel_1.add(panelGIOVINAZZI);
+		panelPilotos.add(panelGIOVINAZZI);
 		
 		JButton btnGIOVINAZZI = new JButton("  Antonio Giovinazzi  >");
 		btnGIOVINAZZI.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -495,7 +494,7 @@ public class Piloto extends JFrame {
 		panelGIOVINAZZI.add(separatorGIOVINAZZI);
 		
 		JLabel lblNº_14 = new JLabel("");
-		lblNº_14.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Giovinnazzi.png"));
+		lblNº_14.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Giovinnazzi.png"));
 		lblNº_14.setBounds(180, 0, 85, 59);
 		panelGIOVINAZZI.add(lblNº_14);
 		
@@ -503,7 +502,7 @@ public class Piloto extends JFrame {
 		panelGROSJEAN.setLayout(null);
 		panelGROSJEAN.setBackground(Color.WHITE);
 		panelGROSJEAN.setBounds(10, 378, 265, 60);
-		panel_1.add(panelGROSJEAN);
+		panelPilotos.add(panelGROSJEAN);
 		
 		JButton btnGROSJEAN = new JButton(" Romain Grosjean  >");
 		btnGROSJEAN.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -517,7 +516,7 @@ public class Piloto extends JFrame {
 		panelGROSJEAN.add(separatorGROSJEAN);
 		
 		JLabel lblNº_15 = new JLabel("");
-		lblNº_15.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Grosjean.png"));
+		lblNº_15.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Grosjean.png"));
 		lblNº_15.setBounds(180, 0, 85, 59);
 		panelGROSJEAN.add(lblNº_15);
 		
@@ -525,7 +524,7 @@ public class Piloto extends JFrame {
 		panelLatifi.setLayout(null);
 		panelLatifi.setBackground(Color.WHITE);
 		panelLatifi.setBounds(310, 449, 265, 60);
-		panel_1.add(panelLatifi);
+		panelPilotos.add(panelLatifi);
 		
 		JButton btnLatifi = new JButton(" Nicholas Latifi  >");
 		btnLatifi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -539,7 +538,7 @@ public class Piloto extends JFrame {
 		panelLatifi.add(separatorLatifi);
 		
 		JLabel lblNº_19 = new JLabel("");
-		lblNº_19.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Latifi.png"));
+		lblNº_19.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Latifi.png"));
 		lblNº_19.setBounds(180, 0, 85, 49);
 		panelLatifi.add(lblNº_19);
 		
@@ -547,7 +546,7 @@ public class Piloto extends JFrame {
 		panelRussell.setLayout(null);
 		panelRussell.setBackground(Color.WHITE);
 		panelRussell.setBounds(10, 449, 265, 60);
-		panel_1.add(panelRussell);
+		panelPilotos.add(panelRussell);
 		
 		JButton btnRussell = new JButton(" George Russell  >");
 		btnRussell.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
@@ -561,9 +560,14 @@ public class Piloto extends JFrame {
 		panelRussell.add(separatorRussell);
 		
 		JLabel lblNº_18 = new JLabel("");
-		lblNº_18.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numeros f1"+File.separator+"Numpilotos"+File.separator+"Russell.png"));
+		lblNº_18.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Numpilotos"+File.separator+"Russell.png"));
 		lblNº_18.setBounds(180, 0, 85, 49);
 		panelRussell.add(lblNº_18);
+		
+		JLabel lblFondo = new JLabel();
+		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		lblFondo.setBounds(0, 0, 974, 539);
+		panelPilotos.add(lblFondo);
 	}
 	
 	

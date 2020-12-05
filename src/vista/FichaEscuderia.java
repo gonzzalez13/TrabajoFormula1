@@ -223,7 +223,7 @@ public class FichaEscuderia extends JFrame {
 			panel_FichaEscuderia.add(textJefeT);
 			
 			btnPiloto1 = new JButton("");
-			btnPiloto1.setIcon(new ImageIcon());
+			btnPiloto1.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichaEscuderia\\Pilotos\\CarlosSainz2.jpg"));
 			btnPiloto1.setBounds(440, 40, 232, 232);
 			panel_FichaEscuderia.add(btnPiloto1);
 			
@@ -237,7 +237,7 @@ public class FichaEscuderia extends JFrame {
 			textField.setColumns(10);
 			
 			btnPiloto2 = new JButton("");
-			btnPiloto2.setIcon(new ImageIcon());
+			btnPiloto2.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichaEscuderia\\Pilotos\\H15.jpg"));
 			btnPiloto2.setBounds(710, 40, 232, 232);
 			panel_FichaEscuderia.add(btnPiloto2);
 			
