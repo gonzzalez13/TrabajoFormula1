@@ -64,8 +64,9 @@ public class Cabecera extends JFrame {
 		btnGranPre.setBounds(452, 11, 130, 48);
 		menu.add(btnGranPre);
 
-		JButton btnClasi = new JButton("Clasificaciones");
+		JButton btnClasi = new JButton("Clasificacion");
 		btnClasi.setForeground(new Color(255, 255, 255));
+		btnClasi.addActionListener(controlador);
 		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnClasi.setBackground(new Color(59, 45, 45));
 		btnClasi.setBounds(592, 11, 145, 48);

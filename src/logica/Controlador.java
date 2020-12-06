@@ -54,7 +54,6 @@ public class Controlador implements ActionListener {
 				inicio.setVisible(true);
 				
 				break;
-				
 			case "Inicio":
 				
 				salida="Inicio";
@@ -64,6 +63,78 @@ public class Controlador implements ActionListener {
 			
 			
 				break;
+				
+			case "1":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Mercedes.jpg";
+				sacarEscuderia(1, ruta);
+				
+				break;
+				
+			case "2":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Ferrari.jpg";
+				sacarEscuderia(2, ruta);
+				
+				break;
+				
+			case "3":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"RedBull.jpg";
+				sacarEscuderia(3, ruta);
+				
+				break;
+				
+			case "4":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"RacingPoint.jpg";
+				sacarEscuderia(4, ruta);
+				
+				break;
+				
+			case "5":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Mclaren.jpg";
+				sacarEscuderia(5, ruta);
+				
+				break;
+				
+			case "6":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Reanult.jpg";
+				sacarEscuderia(6, ruta);
+				
+				break;
+				
+			case "7":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"AlphaTauri.jpg";
+				sacarEscuderia(7, ruta);
+				
+				break;
+				
+			case "8":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"AlfaRomeo.jpg";
+				sacarEscuderia(8, ruta);
+				
+				break;
+				
+			case "9":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Haas.jpg";
+				sacarEscuderia(9, ruta);
+				
+				break;
+				
+			case "10":
+				salida =e.getActionCommand();
+				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Williams.jpg";
+				sacarEscuderia(10, ruta);
+				
+				break;
+				
+				
 			case "Pilotos":
 				salida="Pilotos";
 				inicio.piloto(this);
@@ -192,6 +263,15 @@ public class Controlador implements ActionListener {
 				sacarPiloto(e.getActionCommand(),ruta);
 				
 				break;
+				
+			case "Clasificacion":
+				
+				salida="Clasificacion";
+				inicio.clasificacion(this);;
+				inicio.setVisible(true);
+			
+			
+				break;
 			default:
 				
 				break;
@@ -214,6 +294,18 @@ public class Controlador implements ActionListener {
 		}
 	}
 
+	private void sacarEscuderia(int id,String ruta) {
+		try {
+			escuderia = concetion.selectEscuderia(id);
+			piloto= concetion.consultaPiloto(escuderia.getNombre());
+			inicio.FichaEscuderia(this, escuderia, piloto, ruta);
+			inicio.setVisible(true);
+		} catch (SQLException | ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
 
 	public Controlador(Inicio inicio,String s,ConectionHelper conection) {
 		super();

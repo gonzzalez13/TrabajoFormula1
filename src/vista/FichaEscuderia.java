@@ -127,103 +127,101 @@ public class FichaEscuderia extends JFrame {
 			panel_FichaEscuderia.setLayout(null);
 			
 			JLabel lblMarca = new JLabel("");
-			lblMarca.setIcon(new ImageIcon());
-			lblMarca.setBounds(26, 40, 359, 125);
+			lblMarca.setBounds(53, 17, 300, 191);
 			panel_FichaEscuderia.add(lblMarca);
 			
 			JLabel lblNombre = new JLabel("Nombre completo");
 			lblNombre.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblNombre.setForeground(Color.WHITE);
-			lblNombre.setBounds(10, 176, 176, 26);
+			lblNombre.setBounds(10, 213, 176, 26);
 			panel_FichaEscuderia.add(lblNombre);
 			
 			textNombre = new JTextField();
 			textNombre.setEnabled(false);
 			textNombre.setEditable(false);
-			textNombre.setBounds(205, 182, 200, 20);
+			textNombre.setBounds(205, 219, 200, 20);
 			panel_FichaEscuderia.add(textNombre);
 			textNombre.setColumns(10);
 			
 			JLabel lblNacionalidad = new JLabel("Nacionalidad");
 			lblNacionalidad.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblNacionalidad.setForeground(Color.WHITE);
-			lblNacionalidad.setBounds(10, 213, 176, 26);
+			lblNacionalidad.setBounds(10, 250, 176, 26);
 			panel_FichaEscuderia.add(lblNacionalidad);
 			
 			textNacionalidad = new JTextField();
 			textNacionalidad.setEditable(false);
 			textNacionalidad.setEnabled(false);
 			textNacionalidad.setColumns(10);
-			textNacionalidad.setBounds(205, 219, 200, 20);
+			textNacionalidad.setBounds(205, 256, 200, 20);
 			panel_FichaEscuderia.add(textNacionalidad);
 			
 			JLabel lblBase = new JLabel("Base ");
 			lblBase.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblBase.setForeground(Color.WHITE);
-			lblBase.setBounds(10, 250, 176, 26);
+			lblBase.setBounds(10, 287, 176, 26);
 			panel_FichaEscuderia.add(lblBase);
 			
 			textBase = new JTextField();
 			textBase.setEditable(false);
 			textBase.setEnabled(false);
 			textBase.setColumns(10);
-			textBase.setBounds(205, 256, 200, 20);
+			textBase.setBounds(205, 293, 200, 20);
 			panel_FichaEscuderia.add(textBase);
 			
 			JLabel lblAño = new JLabel("Primer A\u00F1o de competici\u00F3n");
 			lblAño.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblAño.setForeground(Color.WHITE);
-			lblAño.setBounds(10, 287, 176, 26);
+			lblAño.setBounds(10, 324, 176, 26);
 			panel_FichaEscuderia.add(lblAño);
 			
 			textAño = new JTextField();
 			textAño.setEditable(false);
 			textAño.setEnabled(false);
 			textAño.setColumns(10);
-			textAño.setBounds(205, 290, 200, 20);
+			textAño.setBounds(205, 327, 200, 20);
 			panel_FichaEscuderia.add(textAño);
 			
 			JLabel lblPremios = new JLabel("Premios");
 			lblPremios.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblPremios.setForeground(Color.WHITE);
-			lblPremios.setBounds(10, 324, 176, 26);
+			lblPremios.setBounds(10, 361, 176, 26);
 			panel_FichaEscuderia.add(lblPremios);
 			
 			textPremios = new JTextField();
 			textPremios.setEditable(false);
 			textPremios.setEnabled(false);
 			textPremios.setColumns(10);
-			textPremios.setBounds(205, 330, 200, 20);
+			textPremios.setBounds(205, 367, 200, 20);
 			panel_FichaEscuderia.add(textPremios);
 			
 			JLabel lblJefeE = new JLabel("Jefe de Equipo");
 			lblJefeE.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblJefeE.setForeground(Color.WHITE);
-			lblJefeE.setBounds(10, 361, 176, 26);
+			lblJefeE.setBounds(10, 398, 176, 26);
 			panel_FichaEscuderia.add(lblJefeE);
 			
 			textJefeE = new JTextField();
 			textJefeE.setEditable(false);
 			textJefeE.setEnabled(false);
 			textJefeE.setColumns(10);
-			textJefeE.setBounds(205, 367, 200, 20);
+			textJefeE.setBounds(205, 404, 200, 20);
 			panel_FichaEscuderia.add(textJefeE);
 			
 			JLabel lblJefeT = new JLabel("Jefe T\u00E9cnico");
 			lblJefeT.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			lblJefeT.setForeground(Color.WHITE);
-			lblJefeT.setBounds(10, 398, 176, 26);
+			lblJefeT.setBounds(10, 435, 176, 26);
 			panel_FichaEscuderia.add(lblJefeT);
 			
 			textJefeT = new JTextField();
 			textJefeT.setEditable(false);
 			textJefeT.setEnabled(false);
 			textJefeT.setColumns(10);
-			textJefeT.setBounds(205, 404, 200, 20);
+			textJefeT.setBounds(205, 441, 200, 20);
 			panel_FichaEscuderia.add(textJefeT);
 			
 			btnPiloto1 = new JButton("");
-			btnPiloto1.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichaEscuderia\\Pilotos\\CarlosSainz2.jpg"));
 			btnPiloto1.setBounds(440, 40, 232, 232);
 			panel_FichaEscuderia.add(btnPiloto1);
 			
@@ -237,7 +235,6 @@ public class FichaEscuderia extends JFrame {
 			textField.setColumns(10);
 			
 			btnPiloto2 = new JButton("");
-			btnPiloto2.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\FichaEscuderia\\Pilotos\\H15.jpg"));
 			btnPiloto2.setBounds(710, 40, 232, 232);
 			panel_FichaEscuderia.add(btnPiloto2);
 			
