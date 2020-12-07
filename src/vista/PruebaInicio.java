@@ -219,7 +219,7 @@ public class PruebaInicio extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblGP = new JLabel("");
-		lblGP.setIcon(new ImageIcon("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\Grandes Premios\\Portada\\Abudhabi.png"));
+		lblGP.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Portada"+File.separator+"Abudhabi.png"));
 		lblGP.setBounds(10, 11, 245, 180);
 		panel.add(lblGP);
 		
