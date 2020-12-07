@@ -40,12 +40,39 @@ public class GrandesPremios extends JFrame {
 	 * Create the frame.
 	 */
 	public GrandesPremios() {
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 865, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setLayout(null);
+		panel_2.setBounds(322, 102, 207, 60);
+		contentPane.add(panel_2);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("");
+		lblNewLabel_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\BahreinBarra.png"));
+		lblNewLabel_1_1.setBounds(0, 50, 207, 10);
+		panel_2.add(lblNewLabel_1_1);
+		
+		JButton btn2 = new JButton("Bahr\u00E9in >");
+		btn2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btn2.setBackground(Color.WHITE);
+		btn2.setBounds(0, 0, 148, 49);
+		panel_2.add(btn2);
+		
+		JLabel bandera2 = new JLabel("");
+		bandera2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Bahrein.png"));
+		bandera2.setBounds(147, 0, 60, 49);
+		panel_2.add(bandera2);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBounds(0, 50, 207, 10);
+		panel_2.add(panel_1_1);
+		panel_1_1.setLayout(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(50, 102, 207, 60);
@@ -63,29 +90,15 @@ public class GrandesPremios extends JFrame {
 		bandera1.setBounds(147, 0, 60, 49);
 		panel.add(bandera1);
 		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\AustraliaBarra.PNG"));
+		lblNewLabel_1.setBounds(0, 50, 207, 10);
+		panel.add(lblNewLabel_1);
+		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(0, 50, 207, 10);
 		panel.add(panel_1);
-		
-		JPanel panel_2 = new JPanel();
-		panel_2.setLayout(null);
-		panel_2.setBounds(322, 102, 207, 60);
-		contentPane.add(panel_2);
-		
-		JButton btn2 = new JButton("Bahr\u00E9in >");
-		btn2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn2.setBackground(Color.WHITE);
-		btn2.setBounds(0, 0, 148, 49);
-		panel_2.add(btn2);
-		
-		JLabel bandera2 = new JLabel("");
-		bandera2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Bahrein.png"));
-		bandera2.setBounds(147, 0, 60, 49);
-		panel_2.add(bandera2);
-		
-		JPanel panel_1_1 = new JPanel();
-		panel_1_1.setBounds(0, 50, 207, 10);
-		panel_2.add(panel_1_1);
+		panel_1.setLayout(null);
 		
 		JPanel panel_2_1 = new JPanel();
 		panel_2_1.setLayout(null);
@@ -102,6 +115,11 @@ public class GrandesPremios extends JFrame {
 		bandera3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Vietnam.png"));
 		bandera3.setBounds(147, 0, 60, 49);
 		panel_2_1.add(bandera3);
+		
+		JLabel lblNewLabel_1_2 = new JLabel("");
+		lblNewLabel_1_2.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\VietnamBarra.png"));
+		lblNewLabel_1_2.setBounds(0, 50, 207, 10);
+		panel_2_1.add(lblNewLabel_1_2);
 		
 		JPanel panel_1_2 = new JPanel();
 		panel_1_2.setBounds(0, 50, 207, 10);
@@ -124,8 +142,13 @@ public class GrandesPremios extends JFrame {
 		panel_3.add(bandera4);
 		
 		JPanel panel_1_3 = new JPanel();
+		panel_1_3.setLayout(null);
 		panel_1_3.setBounds(0, 50, 207, 10);
 		panel_3.add(panel_1_3);
+		
+		JLabel lblNewLabel_1_2_2 = new JLabel("");
+		lblNewLabel_1_2_2.setBounds(0, 0, 207, 10);
+		panel_1_3.add(lblNewLabel_1_2_2);
 		
 		JPanel panel_3_1 = new JPanel();
 		panel_3_1.setLayout(null);
@@ -146,6 +169,12 @@ public class GrandesPremios extends JFrame {
 		JPanel panel_1_3_1 = new JPanel();
 		panel_1_3_1.setBounds(0, 50, 207, 10);
 		panel_3_1.add(panel_1_3_1);
+		panel_1_3_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1 = new JLabel("");
+		lblNewLabel_1_2_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Paises BajosBarra.png"));
+		lblNewLabel_1_2_1.setBounds(0, 0, 207, 10);
+		panel_1_3_1.add(lblNewLabel_1_2_1);
 		
 		JPanel panel_2_2 = new JPanel();
 		panel_2_2.setLayout(null);
@@ -166,6 +195,12 @@ public class GrandesPremios extends JFrame {
 		JPanel panel_1_1_1 = new JPanel();
 		panel_1_1_1.setBounds(0, 50, 207, 10);
 		panel_2_2.add(panel_1_1_1);
+		panel_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Espa\u00F1aBarra.png"));
+		lblNewLabel_1_2_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1.add(lblNewLabel_1_2_1_1);
 		
 		JPanel panel_2_2_1 = new JPanel();
 		panel_2_2_1.setLayout(null);
@@ -186,6 +221,12 @@ public class GrandesPremios extends JFrame {
 		JPanel panel_1_1_1_1 = new JPanel();
 		panel_1_1_1_1.setBounds(0, 50, 207, 10);
 		panel_2_2_1.add(panel_1_1_1_1);
+		panel_1_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\MonacoBarra.png"));
+		lblNewLabel_1_2_1_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1_1.add(lblNewLabel_1_2_1_1_1);
 		
 		JPanel panel_2_2_1_1 = new JPanel();
 		panel_2_2_1_1.setLayout(null);
@@ -206,6 +247,12 @@ public class GrandesPremios extends JFrame {
 		JPanel panel_1_1_1_1_1 = new JPanel();
 		panel_1_1_1_1_1.setBounds(0, 50, 207, 10);
 		panel_2_2_1_1.add(panel_1_1_1_1_1);
+		panel_1_1_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Azerbaiy\u00E1nBarra.png"));
+		lblNewLabel_1_2_1_1_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1_1_1.add(lblNewLabel_1_2_1_1_1_1);
 		
 		JPanel panel_2_2_1_1_1 = new JPanel();
 		panel_2_2_1_1_1.setLayout(null);
@@ -523,5 +570,15 @@ public class GrandesPremios extends JFrame {
 		btnLogo.setBackground(Color.LIGHT_GRAY);
 		btnLogo.setBounds(10, 11, 124, 48);
 		PanelMenu.add(btnLogo);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBounds(0, 71, 849, 529);
+		contentPane.add(panel_4);
+		panel_4.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Fondos\\Fondo6.PNG"));
+		lblNewLabel.setBounds(0, 0, 849, 529);
+		panel_4.add(lblNewLabel);
 	}
 }
