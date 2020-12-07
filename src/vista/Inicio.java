@@ -24,6 +24,8 @@ import modelo.Escuderia;
 import modelo.Piloto;
 
 public class Inicio extends Cabecera {
+	public Inicio() {
+	}
 
 	private JButton btnAlfaRomeo, btnAlphaTauri, btnNFerrari, btnHaas, btnMclaren, btnMercedes, btnRacingPonit,
 			btnRedBull, btnRenault, btnWilliams;
