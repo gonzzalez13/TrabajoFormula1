@@ -297,7 +297,7 @@ public class Controlador implements ActionListener {
 	private void sacarEscuderia(int id,String ruta) {
 		try {
 			escuderia = concetion.selectEscuderia(id);
-			piloto= concetion.consultaPiloto(escuderia.getNombre());
+			piloto = concetion.consultaPiloto(escuderia.getNombre());
 			inicio.FichaEscuderia(this, escuderia, piloto, ruta);
 			inicio.setVisible(true);
 		} catch (SQLException | ClassNotFoundException e) {

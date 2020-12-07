@@ -64,6 +64,7 @@ public String getPalmares() {
 public void setPalmares(String palmares) {
 	this.palmares = palmares;
 }
+
 	public Escuderia() {
 	}
 
