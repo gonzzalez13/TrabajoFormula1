@@ -123,20 +123,20 @@ public class PruebaInicio extends JFrame {
 		panelInicio.add(panelNoticia1);
 		panelNoticia1.setLayout(null);
 		
-		JTextArea txtrBottaslosQue = new JTextArea();
-		txtrBottaslosQue.setEditable(false);
-		txtrBottaslosQue.setFont(new Font("Consolas", Font.BOLD, 15));
-		txtrBottaslosQue.setOpaque(false);
-		txtrBottaslosQue.setLineWrap(true);
-		txtrBottaslosQue.setWrapStyleWord(true);
-		txtrBottaslosQue.setText("Bottas: \"Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota\"");
-		txtrBottaslosQue.setBounds(31, 175, 270, 61);
-		panelNoticia1.add(txtrBottaslosQue);
+		JTextArea txtrNoticia1 = new JTextArea();
+		txtrNoticia1.setEditable(false);
+		txtrNoticia1.setFont(new Font("Consolas", Font.BOLD, 15));
+		txtrNoticia1.setOpaque(false);
+		txtrNoticia1.setLineWrap(true);
+		txtrNoticia1.setWrapStyleWord(true);
+		txtrNoticia1.setText("Bottas: \"Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota\"");
+		txtrNoticia1.setBounds(31, 175, 270, 61);
+		panelNoticia1.add(txtrNoticia1);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(PruebaInicio.class.getResource("/Imagenes/Noticias/Noticia.jpg")));
-		lblNewLabel.setBounds(31, 21, 270, 144);
-		panelNoticia1.add(lblNewLabel);
+		JLabel lblNoticia1 = new JLabel("");
+		lblNoticia1.setIcon(new ImageIcon(PruebaInicio.class.getResource("/Imagenes/Noticias/Noticia.jpg")));
+		lblNoticia1.setBounds(31, 21, 270, 144);
+		panelNoticia1.add(lblNoticia1);
 		
 		JButton btnLeerMas1 = new JButton("Leer m\u00E1s");
 		btnLeerMas1.setBorder(new CompoundBorder());
@@ -147,71 +147,28 @@ public class PruebaInicio extends JFrame {
 		JPanel panelNoticia2 = new JPanel();
 		panelNoticia2.setLayout(null);
 		panelNoticia2.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia2.setBounds(370, 11, 319, 387);
+		panelNoticia2.setBounds(370, 11, 319, 285);
 		panelInicio.add(panelNoticia2);
 		
-		JTextArea txtrMclarenReafirmaSu = new JTextArea();
-		txtrMclarenReafirmaSu.setEditable(false);
-		txtrMclarenReafirmaSu.setWrapStyleWord(true);
-		txtrMclarenReafirmaSu.setText("McLaren reafirma su estrategia");
-		txtrMclarenReafirmaSu.setOpaque(false);
-		txtrMclarenReafirmaSu.setFont(new Font("Consolas", Font.BOLD, 17));
-		txtrMclarenReafirmaSu.setBounds(27, 207, 293, 25);
-		panelNoticia2.add(txtrMclarenReafirmaSu);
+		JTextArea txtrNoticia2 = new JTextArea();
+		txtrNoticia2.setEditable(false);
+		txtrNoticia2.setWrapStyleWord(true);
+		txtrNoticia2.setText("McLaren reafirma su estrategia");
+		txtrNoticia2.setOpaque(false);
+		txtrNoticia2.setFont(new Font("Consolas", Font.BOLD, 17));
+		txtrNoticia2.setBounds(16, 188, 293, 25);
+		panelNoticia2.add(txtrNoticia2);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(PruebaInicio.class.getResource("/Imagenes/Noticias/Noticia2.jpg")));
-		lblNewLabel_1.setBounds(27, 26, 270, 152);
-		panelNoticia2.add(lblNewLabel_1);
+		JLabel lblNoticia2 = new JLabel("");
+		lblNoticia2.setIcon(new ImageIcon(PruebaInicio.class.getResource("/Imagenes/Noticias/Noticia2.jpg")));
+		lblNoticia2.setBounds(27, 26, 270, 152);
+		panelNoticia2.add(lblNoticia2);
 		
 		JButton btnLeerMas2 = new JButton("Leer m\u00E1s");
 		btnLeerMas2.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnLeerMas2.setBorder(new CompoundBorder());
-		btnLeerMas2.setBounds(214, 347, 95, 29);
+		btnLeerMas2.setBounds(213, 238, 96, 32);
 		panelNoticia2.add(btnLeerMas2);
-		
-		JTextArea txtrSeidlApoyaLa = new JTextArea();
-		txtrSeidlApoyaLa.setEditable(false);
-		txtrSeidlApoyaLa.setWrapStyleWord(true);
-		txtrSeidlApoyaLa.setText("Seidl apoya la doble parada en Sakhir que dej\u00F3 a Sainz cuarto, a un paso del podio. \"Checo estaba a otro nivel\", dice el jefe a AS. El MCL35 no puede con Racing Point.");
-		txtrSeidlApoyaLa.setOpaque(false);
-		txtrSeidlApoyaLa.setLineWrap(true);
-		txtrSeidlApoyaLa.setFont(new Font("Consolas", Font.PLAIN, 15));
-		txtrSeidlApoyaLa.setBounds(27, 234, 270, 118);
-		panelNoticia2.add(txtrSeidlApoyaLa);
-		
-		JPanel panelNoticia3 = new JPanel();
-		panelNoticia3.setLayout(null);
-		panelNoticia3.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia3.setBounds(27, 307, 328, 203);
-		panelInicio.add(panelNoticia3);
-		
-		JTextArea txtrMclarenReafirmaSu_1 = new JTextArea();
-		txtrMclarenReafirmaSu_1.setWrapStyleWord(true);
-		txtrMclarenReafirmaSu_1.setText("McLaren reafirma su estrategia");
-		txtrMclarenReafirmaSu_1.setOpaque(false);
-		txtrMclarenReafirmaSu_1.setFont(new Font("Consolas", Font.BOLD, 17));
-		txtrMclarenReafirmaSu_1.setBounds(27, 207, 293, 25);
-		panelNoticia3.add(txtrMclarenReafirmaSu_1);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("");
-		lblNewLabel_1_1.setBounds(10, 10, 270, 152);
-		panelNoticia3.add(lblNewLabel_1_1);
-		
-		JButton btnLeerMas2_1 = new JButton("Leer m\u00E1s");
-		btnLeerMas2_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas2_1.setBorder(new CompoundBorder());
-		btnLeerMas2_1.setBounds(223, 348, 95, 29);
-		panelNoticia3.add(btnLeerMas2_1);
-		
-		JTextArea txtrSeidlApoyaLa_1 = new JTextArea();
-		txtrSeidlApoyaLa_1.setWrapStyleWord(true);
-		txtrSeidlApoyaLa_1.setText("Seidl apoya la doble parada en Sakhir que dej\u00F3 a Sainz cuarto, a un paso del podio. \"Checo estaba a otro nivel\", dice el jefe a AS. El MCL35 no puede con Racing Point.");
-		txtrSeidlApoyaLa_1.setOpaque(false);
-		txtrSeidlApoyaLa_1.setLineWrap(true);
-		txtrSeidlApoyaLa_1.setFont(new Font("Consolas", Font.PLAIN, 15));
-		txtrSeidlApoyaLa_1.setBounds(27, 234, 270, 118);
-		panelNoticia3.add(txtrSeidlApoyaLa_1);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(699, 11, 265, 332);
@@ -247,9 +204,40 @@ public class PruebaInicio extends JFrame {
 		lblFecha.setBounds(57, 230, 116, 14);
 		panel.add(lblFecha);
 		
-		JLabel lblFondo = new JLabel();
-		lblFondo.setBounds(0, 0, 974, 539);
-		panelInicio.add(lblFondo);
-		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		JPanel panelNoticia3 = new JPanel();
+		panelNoticia3.setLayout(null);
+		panelNoticia3.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panelNoticia3.setBounds(27, 305, 662, 224);
+		panelInicio.add(panelNoticia3);
+		
+		JTextArea txtrNoticia3 = new JTextArea();
+		txtrNoticia3.setWrapStyleWord(true);
+		txtrNoticia3.setText("Mercedes se llena de dudas con Bottas y salpican a Hamilton");
+		txtrNoticia3.setOpaque(false);
+		txtrNoticia3.setLineWrap(true);
+		txtrNoticia3.setFont(new Font("Consolas", Font.BOLD, 19));
+		txtrNoticia3.setEditable(false);
+		txtrNoticia3.setBounds(287, 23, 350, 52);
+		panelNoticia3.add(txtrNoticia3);
+		
+		JLabel lblNoticia3 = new JLabel("");
+		lblNoticia3.setIcon(new ImageIcon(PruebaInicio.class.getResource("/Imagenes/Noticias/Noticia3.jpg")));
+		lblNoticia3.setBounds(21, 47, 241, 136);
+		panelNoticia3.add(lblNoticia3);
+		
+		JTextArea txtNoticia3 = new JTextArea();
+		txtNoticia3.setFont(new Font("Calibri", Font.PLAIN, 18));
+		txtNoticia3.setOpaque(false);
+		txtNoticia3.setWrapStyleWord(true);
+		txtNoticia3.setLineWrap(true);
+		txtNoticia3.setText("El a\u00F1o de los r\u00E9cords termina repleto de dudas en el garaje de Mercedes, y eso que una concatenaci\u00F3n de errores dej\u00F3 sin victoria a Russell con el coche de Hamilton. ");
+		txtNoticia3.setBounds(287, 81, 350, 102);
+		panelNoticia3.add(txtNoticia3);
+		
+		JButton btnLeerMas3 = new JButton("Leer m\u00E1s");
+		btnLeerMas3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		btnLeerMas3.setBorder(new CompoundBorder());
+		btnLeerMas3.setBounds(556, 182, 96, 32);
+		panelNoticia3.add(btnLeerMas3);
 	}
 }
