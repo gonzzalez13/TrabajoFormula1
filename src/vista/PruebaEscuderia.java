@@ -44,7 +44,7 @@ public class PruebaEscuderia extends JFrame {
 	public PruebaEscuderia() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 990,650);
+		setBounds(100, 100, 990, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
