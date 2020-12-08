@@ -219,6 +219,8 @@ public class GranPremio extends JFrame {
 		btnSimulacion.setBounds(747, 11, 115, 48);
 		PanelMenu.add(btnSimulacion);
 	}
+	
+	
 
 	public JButton getBtnSimular() {
 		return btnSimular;

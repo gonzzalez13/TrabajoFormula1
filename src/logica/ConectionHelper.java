@@ -239,6 +239,5 @@ public class ConectionHelper {
 		return escuderia;
 	}
 		
-	
 		
 }

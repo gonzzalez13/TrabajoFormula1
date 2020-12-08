@@ -9,10 +9,14 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.io.File;
+import javax.swing.SwingConstants;
+import java.awt.SystemColor;
 
 public class Simulacion extends JFrame {
 
@@ -48,13 +52,13 @@ public class Simulacion extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 990, 650);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(153, 51, 51));
+		contentPane.setBackground(Color.LIGHT_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JComboBox comboListaCircuitos = new JComboBox();
-		comboListaCircuitos.setBounds(494, 115, 200, 20);
+		comboListaCircuitos.setBounds(634, 116, 200, 20);
 		contentPane.add(comboListaCircuitos);
 		
 		JLabel lblFotoCircuito = new JLabel("");
@@ -64,22 +68,22 @@ public class Simulacion extends JFrame {
 		JLabel lblNVueltas = new JLabel("Numero de vueltas:");
 		lblNVueltas.setFont(new Font("Microsoft PhagsPa", Font.BOLD, 13));
 		lblNVueltas.setForeground(Color.WHITE);
-		lblNVueltas.setBounds(340, 340, 126, 26);
+		lblNVueltas.setBounds(494, 340, 126, 26);
 		contentPane.add(lblNVueltas);
 		
 		JSlider slider = new JSlider();
 		slider.setMaximum(3);
 		slider.setValue(2);
-		slider.setBackground(new Color(153, 51, 51));
+		slider.setBackground(new Color(119,29,28));
 		slider.setForeground(Color.RED);
-		slider.setBounds(494, 340, 200, 26);
+		slider.setBounds(634, 340, 200, 26);
 		contentPane.add(slider);
 		
-		JLabel lblCircuito = new JLabel("Circuito:");
+		JLabel lblCircuito = new JLabel("Gran Premio:");
 		lblCircuito.setFont(new Font("Microsoft PhagsPa", Font.BOLD, 13));
 		lblCircuito.setForeground(Color.WHITE);
 		lblCircuito.setBackground(Color.WHITE);
-		lblCircuito.setBounds(340, 112, 126, 26);
+		lblCircuito.setBounds(494, 112, 126, 26);
 		contentPane.add(lblCircuito);
 		
 		JButton btnSimularCarrera = new JButton("Simular carrera");
@@ -93,11 +97,11 @@ public class Simulacion extends JFrame {
 		lblTiempo.setForeground(Color.WHITE);
 		lblTiempo.setFont(new Font("Microsoft PhagsPa", Font.BOLD, 13));
 		lblTiempo.setBackground(Color.WHITE);
-		lblTiempo.setBounds(340, 224, 126, 26);
+		lblTiempo.setBounds(494, 224, 126, 26);
 		contentPane.add(lblTiempo);
 		
 		JComboBox comboTiempo = new JComboBox();
-		comboTiempo.setBounds(494, 227, 200, 20);
+		comboTiempo.setBounds(634, 228, 200, 20);
 		contentPane.add(comboTiempo);
 		
 		JPanel PanelMenu = new JPanel();
@@ -158,5 +162,18 @@ public class Simulacion extends JFrame {
 		btnSimulacion.setBackground(Color.DARK_GRAY);
 		btnSimulacion.setBounds(747, 11, 115, 48);
 		PanelMenu.add(btnSimulacion);
+		
+		JLabel lblNewLabel_1 = new JLabel("X10");
+		lblNewLabel_1.setForeground(SystemColor.text);
+		lblNewLabel_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(844, 340, 70, 26);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
+		lblNewLabel.setBounds(0, 71, 984, 550);
+		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		contentPane.add(lblNewLabel);
 	}
 }

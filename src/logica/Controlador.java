@@ -346,6 +346,7 @@ public class Controlador implements ActionListener {
 		
 		
 	}
+	
 
 	public Controlador(Inicio inicio,String s,ConectionHelper conection) {
 		super();
