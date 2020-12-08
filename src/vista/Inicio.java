@@ -207,7 +207,7 @@ public class Inicio extends Cabecera {
 		menu(controlador);
 	}
 	
-	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos, String ruta) {
+	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos, String ruta,String piloto1,String piloto2) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 990, 650);
 		contentPane = new JPanel();
@@ -319,6 +319,7 @@ public class Inicio extends Cabecera {
 		
 		btnPiloto1 = new JButton(pilotos.get(0).getNombre());
 		btnPiloto1.setBounds(440, 40, 232, 232);
+		btnPiloto1.setIcon(new ImageIcon(piloto1));
 		btnPiloto1.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto1);
 		
@@ -333,6 +334,7 @@ public class Inicio extends Cabecera {
 		
 		btnPiloto2 = new JButton(pilotos.get(1).getNombre());
 		btnPiloto2.setBounds(710, 40, 232, 232);
+		btnPiloto2.setIcon(new ImageIcon(piloto2));
 		btnPiloto2.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto2);
 		
@@ -1158,6 +1160,63 @@ public class Inicio extends Cabecera {
 		contentPane.setLayout(null);
 		
 		
+		JPanel PanelMenu = new JPanel();
+		PanelMenu.setLayout(null);
+		PanelMenu.setBackground(Color.LIGHT_GRAY);
+		PanelMenu.setBounds(0, 0, 849, 71);
+		contentPane.add(PanelMenu);
+		
+		btnInicio = new JButton("Inicio");
+		btnInicio.setForeground(Color.RED);
+		btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnInicio.setBackground(Color.DARK_GRAY);
+		btnInicio.setBounds(144, 11, 74, 48);
+		PanelMenu.add(btnInicio);
+		
+		btnEscuderias = new JButton("Escuderias");
+		btnEscuderias.setForeground(Color.RED);
+		btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnEscuderias.setBackground(Color.DARK_GRAY);
+		btnEscuderias.setBounds(226, 11, 112, 48);
+		PanelMenu.add(btnEscuderias);
+		
+		btnPilotos = new JButton("Pilotos");
+		btnPilotos.setForeground(Color.RED);
+		btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnPilotos.setBackground(Color.DARK_GRAY);
+		btnPilotos.setBounds(348, 11, 94, 48);
+		PanelMenu.add(btnPilotos);
+		
+		btnGranPre = new JButton("Gran Premio");
+		btnGranPre.setForeground(Color.RED);
+		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnGranPre.setBackground(Color.DARK_GRAY);
+		btnGranPre.setBounds(452, 11, 130, 48);
+		PanelMenu.add(btnGranPre);
+		
+		btnClasi = new JButton("Clasificaciones");
+		btnClasi.setForeground(Color.RED);
+		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnClasi.setBackground(Color.DARK_GRAY);
+		btnClasi.setBounds(592, 11, 145, 48);
+		PanelMenu.add(btnClasi);
+		
+		btnLogin = new JButton("Login");
+		btnLogin.setForeground(Color.RED);
+		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnLogin.setBackground(Color.DARK_GRAY);
+		btnLogin.setBounds(747, 11, 92, 48);
+		PanelMenu.add(btnLogin);
+		
+		btnLogo = new JButton("");
+		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
+		btnLogo.setForeground(Color.LIGHT_GRAY);
+		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnLogo.setBorder(null);
+		btnLogo.setBackground(Color.LIGHT_GRAY);
+		btnLogo.setBounds(10, 11, 124, 48);
+		PanelMenu.add(btnLogo);
+		
 		JPanel panelClasi = new JPanel();
 		panelClasi.setBounds(0, 70, 974, 541);
 		contentPane.add(panelClasi);
@@ -1206,7 +1265,7 @@ public class Inicio extends Cabecera {
 		lblMaxVerstappen.setBounds(165, 78, 130, 24);
 		panelClasi.add(lblMaxVerstappen);
 		
-		JLabel PTS2 = new JLabel("201");
+		JLabel PTS2 = new JLabel("203");
 		PTS2.setHorizontalAlignment(SwingConstants.CENTER);
 		PTS2.setBounds(305, 78, 46, 24);
 		panelClasi.add(PTS2);
@@ -1246,17 +1305,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC4 = new JPanel();
 		pPC4.setBackground(new Color(255, 245, 0));
-		pPC4.setBounds(140, 124, 25, 24);
+		pPC4.setBounds(140, 146, 25, 24);
 		panelClasi.add(pPC4);
 		
 		JLabel lblDanielRicciardo_1 = new JLabel(" Daniel Ricciardo");
 		lblDanielRicciardo_1.setHorizontalAlignment(SwingConstants.LEFT);
-		lblDanielRicciardo_1.setBounds(165, 124, 130, 24);
+		lblDanielRicciardo_1.setBounds(165, 146, 130, 24);
 		panelClasi.add(lblDanielRicciardo_1);
 		
-		JLabel PTS4 = new JLabel("102");
+		JLabel PTS4 = new JLabel("112");
 		PTS4.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS4.setBounds(305, 124, 46, 24);
+		PTS4.setBounds(305, 146, 46, 24);
 		panelClasi.add(PTS4);
 		
 		JPanel pP5 = new JPanel();
@@ -1270,17 +1329,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC5 = new JPanel();
 		pPC5.setBackground(new Color(245, 150, 200));
-		pPC5.setBounds(140, 146, 25, 24);
+		pPC5.setBounds(140, 124, 25, 24);
 		panelClasi.add(pPC5);
 		
 		JLabel lblDanielRicciardo = new JLabel(" Sergio Perez");
 		lblDanielRicciardo.setHorizontalAlignment(SwingConstants.LEFT);
-		lblDanielRicciardo.setBounds(165, 146, 130, 24);
+		lblDanielRicciardo.setBounds(165, 124, 130, 24);
 		panelClasi.add(lblDanielRicciardo);
 		
-		JLabel PTS5 = new JLabel("100");
+		JLabel PTS5 = new JLabel("125");
 		PTS5.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS5.setBounds(305, 146, 46, 24);
+		PTS5.setBounds(305, 124, 46, 24);
 		panelClasi.add(PTS5);
 		
 		JPanel pP6 = new JPanel();
@@ -1318,17 +1377,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC7 = new JPanel();
 		pPC7.setBackground(new Color(255, 135, 0));
-		pPC7.setBounds(140, 194, 25, 24);
+		pPC7.setBounds(140, 237, 25, 24);
 		panelClasi.add(pPC7);
 		
 		JLabel lblLandoNorris = new JLabel(" Lando Norris");
 		lblLandoNorris.setHorizontalAlignment(SwingConstants.LEFT);
-		lblLandoNorris.setBounds(165, 194, 130, 24);
+		lblLandoNorris.setBounds(165, 237, 130, 24);
 		panelClasi.add(lblLandoNorris);
 		
-		JLabel PTS7 = new JLabel("86");
+		JLabel PTS7 = new JLabel("87");
 		PTS7.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS7.setBounds(305, 194, 46, 24);
+		PTS7.setBounds(305, 237, 46, 24);
 		panelClasi.add(PTS7);
 		
 		JPanel pP8 = new JPanel();
@@ -1342,17 +1401,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC8 = new JPanel();
 		pPC8.setBackground(new Color(255, 135, 0));
-		pPC8.setBounds(140, 216, 25, 24);
+		pPC8.setBounds(140, 194, 25, 24);
 		panelClasi.add(pPC8);
 		
 		JLabel lblCarlosSainz = new JLabel(" Carlos Sainz");
 		lblCarlosSainz.setHorizontalAlignment(SwingConstants.LEFT);
-		lblCarlosSainz.setBounds(165, 216, 130, 24);
+		lblCarlosSainz.setBounds(165, 194, 130, 24);
 		panelClasi.add(lblCarlosSainz);
 		
-		JLabel PTS8 = new JLabel("85");
+		JLabel PTS8 = new JLabel("97");
 		PTS8.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS8.setBounds(305, 216, 46, 24);
+		PTS8.setBounds(305, 194, 46, 24);
 		panelClasi.add(PTS8);
 		
 		JPanel pP9 = new JPanel();
@@ -1366,17 +1425,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC9 = new JPanel();
 		pPC9.setBackground(new Color(0, 0, 128));
-		pPC9.setBounds(140, 237, 25, 24);
+		pPC9.setBounds(140, 216, 25, 24);
 		panelClasi.add(pPC9);
 		
 		JLabel lblAlexanderAlbon = new JLabel(" Alexander Albon");
 		lblAlexanderAlbon.setHorizontalAlignment(SwingConstants.LEFT);
-		lblAlexanderAlbon.setBounds(165, 237, 130, 24);
+		lblAlexanderAlbon.setBounds(165, 216, 130, 24);
 		panelClasi.add(lblAlexanderAlbon);
 		
-		JLabel PTS9 = new JLabel("85");
+		JLabel PTS9 = new JLabel("93");
 		PTS9.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS9.setBounds(305, 237, 46, 24);
+		PTS9.setBounds(305, 216, 46, 24);
 		panelClasi.add(PTS9);
 		
 		JPanel pP10 = new JPanel();
@@ -1390,17 +1449,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC10 = new JPanel();
 		pPC10.setBackground(new Color(255,255,255));
-		pPC10.setBounds(140, 261, 25, 24);
+		pPC10.setBounds(140, 283, 25, 24);
 		panelClasi.add(pPC10);
 		
 		JLabel lblPierreGasly = new JLabel(" Pierre Gasly");
 		lblPierreGasly.setHorizontalAlignment(SwingConstants.LEFT);
-		lblPierreGasly.setBounds(165, 261, 130, 24);
+		lblPierreGasly.setBounds(165, 283, 130, 24);
 		panelClasi.add(lblPierreGasly);
 		
 		JLabel PTS10 = new JLabel("71");
 		PTS10.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS10.setBounds(305, 261, 46, 24);
+		PTS10.setBounds(305, 283, 46, 24);
 		panelClasi.add(PTS10);
 		
 		JPanel pP11 = new JPanel();
@@ -1414,17 +1473,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC11 = new JPanel();
 		pPC11.setBackground(new Color(245, 150, 200));
-		pPC11.setBounds(140, 283, 25, 24);
+		pPC11.setBounds(140, 261, 25, 24);
 		panelClasi.add(pPC11);
 		
 		JLabel lblLanceStroll = new JLabel(" Lance Stroll");
 		lblLanceStroll.setHorizontalAlignment(SwingConstants.LEFT);
-		lblLanceStroll.setBounds(165, 283, 130, 24);
+		lblLanceStroll.setBounds(165, 261, 130, 24);
 		panelClasi.add(lblLanceStroll);
 		
-		JLabel PTS11 = new JLabel("59");
+		JLabel PTS11 = new JLabel("74");
 		PTS11.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS11.setBounds(305, 283, 46, 24);
+		PTS11.setBounds(305, 261, 46, 24);
 		panelClasi.add(PTS11);
 		
 		JPanel pP12 = new JPanel();
@@ -1446,7 +1505,7 @@ public class Inicio extends Cabecera {
 		lblEstebanOcon.setBounds(165, 304, 130, 24);
 		panelClasi.add(lblEstebanOcon);
 		
-		JLabel PTS12 = new JLabel("42");
+		JLabel PTS12 = new JLabel("60");
 		PTS12.setHorizontalAlignment(SwingConstants.CENTER);
 		PTS12.setBounds(305, 304, 46, 24);
 		panelClasi.add(PTS12);
@@ -1494,7 +1553,7 @@ public class Inicio extends Cabecera {
 		lblDaniilKvyat.setBounds(165, 350, 130, 24);
 		panelClasi.add(lblDaniilKvyat);
 		
-		JLabel PTS14 = new JLabel("26");
+		JLabel PTS14 = new JLabel("32");
 		PTS14.setHorizontalAlignment(SwingConstants.CENTER);
 		PTS14.setBounds(305, 350, 46, 24);
 		panelClasi.add(PTS14);
@@ -1558,17 +1617,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC17 = new JPanel();
 		pPC17.setBackground(new Color(120, 120, 120));
-		pPC17.setBounds(140, 420, 25, 24);
+		pPC17.setBounds(140, 443, 25, 24);
 		panelClasi.add(pPC17);
 		
 		JLabel lblRomainGrosjean = new JLabel(" Romain Grosjean");
 		lblRomainGrosjean.setHorizontalAlignment(SwingConstants.LEFT);
-		lblRomainGrosjean.setBounds(165, 420, 130, 24);
+		lblRomainGrosjean.setBounds(165, 443, 130, 24);
 		panelClasi.add(lblRomainGrosjean);
 		
 		JLabel PTS17 = new JLabel("2");
 		PTS17.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS17.setBounds(305, 420, 46, 24);
+		PTS17.setBounds(305, 443, 46, 24);
 		panelClasi.add(PTS17);
 		
 		JPanel pP18 = new JPanel();
@@ -1582,17 +1641,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC18 = new JPanel();
 		pPC18.setBackground(new Color(120, 120, 120));
-		pPC18.setBounds(140, 443, 25, 24);
+		pPC18.setBounds(140, 466, 25, 24);
 		panelClasi.add(pPC18);
 		
 		JLabel lblKevinMagnussen = new JLabel(" Kevin Magnussen");
 		lblKevinMagnussen.setHorizontalAlignment(SwingConstants.LEFT);
-		lblKevinMagnussen.setBounds(165, 443, 130, 24);
+		lblKevinMagnussen.setBounds(165, 466, 130, 24);
 		panelClasi.add(lblKevinMagnussen);
 		
 		JLabel PTS18 = new JLabel("1");
 		PTS18.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS18.setBounds(305, 443, 46, 24);
+		PTS18.setBounds(305, 466, 46, 24);
 		panelClasi.add(PTS18);
 		
 		JPanel pP19 = new JPanel();
@@ -1606,17 +1665,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC19 = new JPanel();
 		pPC19.setBackground(new Color(0, 130, 250));
-		pPC19.setBounds(140, 466, 25, 24);
+		pPC19.setBounds(140, 489, 25, 24);
 		panelClasi.add(pPC19);
 		
 		JLabel lblNicholasLatifi = new JLabel(" Nicholas Latifi");
 		lblNicholasLatifi.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNicholasLatifi.setBounds(165, 466, 130, 24);
+		lblNicholasLatifi.setBounds(165, 489, 130, 24);
 		panelClasi.add(lblNicholasLatifi);
 		
 		JLabel PTS19 = new JLabel("0");
 		PTS19.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS19.setBounds(305, 466, 46, 24);
+		PTS19.setBounds(305, 489, 46, 24);
 		panelClasi.add(PTS19);
 		
 		JPanel pP20 = new JPanel();
@@ -1630,17 +1689,17 @@ public class Inicio extends Cabecera {
 		
 		JPanel pPC20 = new JPanel();
 		pPC20.setBackground(new Color(0, 130, 250));
-		pPC20.setBounds(140, 489, 25, 24);
+		pPC20.setBounds(140, 420, 25, 24);
 		panelClasi.add(pPC20);
 		
 		JLabel lblLewisHamilton_1 = new JLabel(" Geroge Russell");
 		lblLewisHamilton_1.setHorizontalAlignment(SwingConstants.LEFT);
-		lblLewisHamilton_1.setBounds(165, 489, 130, 24);
+		lblLewisHamilton_1.setBounds(165, 420, 130, 24);
 		panelClasi.add(lblLewisHamilton_1);
 		
-		JLabel PTS20 = new JLabel("0");
+		JLabel PTS20 = new JLabel("3");
 		PTS20.setHorizontalAlignment(SwingConstants.CENTER);
-		PTS20.setBounds(305, 489, 46, 24);
+		PTS20.setBounds(305, 420, 46, 24);
 		panelClasi.add(PTS20);
 		
 		JLabel lblNewLabel_2 = new JLabel("P");
@@ -1680,7 +1739,7 @@ public class Inicio extends Cabecera {
 		lbl1.setBounds(578, 55, 100, 24);
 		panelClasi.add(lbl1);
 		
-		JLabel PTSE1 = new JLabel("533");
+		JLabel PTSE1 = new JLabel("540");
 		PTSE1.setHorizontalAlignment(SwingConstants.CENTER);
 		PTSE1.setBounds(721, 55, 46, 24);
 		panelClasi.add(PTSE1);
@@ -1701,7 +1760,7 @@ public class Inicio extends Cabecera {
 		lbl2.setBounds(578, 78, 100, 24);
 		panelClasi.add(lbl2);
 		
-		JLabel PTSE2 = new JLabel("274");
+		JLabel PTSE2 = new JLabel("282");
 		PTSE2.setHorizontalAlignment(SwingConstants.CENTER);
 		PTSE2.setBounds(721, 78, 46, 24);
 		panelClasi.add(PTSE2);
@@ -1715,16 +1774,16 @@ public class Inicio extends Cabecera {
 		
 		JPanel pC3 = new JPanel();
 		pC3.setBackground(new Color(255, 135, 0));
-		pC3.setBounds(554, 101, 25, 24);
+		pC3.setBounds(554, 124, 25, 24);
 		panelClasi.add(pC3);
 		
 		JLabel lbl3 = new JLabel("  Mclaren");
-		lbl3.setBounds(578, 101, 100, 24);
+		lbl3.setBounds(578, 124, 100, 24);
 		panelClasi.add(lbl3);
 		
-		JLabel PTSE3 = new JLabel("171");
+		JLabel PTSE3 = new JLabel("184");
 		PTSE3.setHorizontalAlignment(SwingConstants.CENTER);
-		PTSE3.setBounds(721, 101, 46, 24);
+		PTSE3.setBounds(721, 124, 46, 24);
 		panelClasi.add(PTSE3);
 		
 		JPanel p4 = new JPanel();
@@ -1736,16 +1795,16 @@ public class Inicio extends Cabecera {
 		
 		JPanel pC4 = new JPanel();
 		pC4.setBackground(new Color(245, 150, 200));
-		pC4.setBounds(554, 124, 25, 24);
+		pC4.setBounds(554, 101, 25, 24);
 		panelClasi.add(pC4);
 		
 		JLabel lbl4 = new JLabel("  Racing Point");
-		lbl4.setBounds(578, 124, 100, 24);
+		lbl4.setBounds(578, 101, 100, 24);
 		panelClasi.add(lbl4);
 		
-		JLabel PTSE4 = new JLabel("154");
+		JLabel PTSE4 = new JLabel("194");
 		PTSE4.setHorizontalAlignment(SwingConstants.CENTER);
-		PTSE4.setBounds(721, 124, 46, 24);
+		PTSE4.setBounds(721, 101, 46, 24);
 		panelClasi.add(PTSE4);
 		
 		JPanel p5 = new JPanel();
@@ -1764,7 +1823,7 @@ public class Inicio extends Cabecera {
 		lbl5.setBounds(578, 146, 100, 24);
 		panelClasi.add(lbl5);
 		
-		JLabel PTSE5 = new JLabel("144");
+		JLabel PTSE5 = new JLabel("172");
 		PTSE5.setHorizontalAlignment(SwingConstants.CENTER);
 		PTSE5.setBounds(721, 146, 46, 24);
 		panelClasi.add(PTSE5);
@@ -1806,7 +1865,7 @@ public class Inicio extends Cabecera {
 		lbl7.setBounds(578, 194, 100, 24);
 		panelClasi.add(lbl7);
 		
-		JLabel PTSE7 = new JLabel("97");
+		JLabel PTSE7 = new JLabel("103");
 		PTSE7.setHorizontalAlignment(SwingConstants.CENTER);
 		PTSE7.setBounds(721, 194, 46, 24);
 		panelClasi.add(PTSE7);
@@ -2163,10 +2222,6 @@ public class Inicio extends Cabecera {
 		panelMonza.setLayout(null);
 		
 		JButton btnMonza = new JButton("Monza");
-		btnMonza.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
 		btnMonza.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnMonza.setBackground(Color.WHITE);
 		btnMonza.setBounds(0, 0, 148, 49);
@@ -2312,7 +2367,7 @@ public class Inicio extends Cabecera {
 		panelGrandesPremios.add(panelBahrain);
 		panelBahrain.setLayout(null);
 		
-		JButton btnBahrain = new JButton("Bahrain");
+		JButton btnBahrain = new JButton("Bahrain I");
 		btnBahrain.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnBahrain.setBackground(Color.WHITE);
 		btnBahrain.setBounds(0, 0, 148, 49);
@@ -2332,7 +2387,7 @@ public class Inicio extends Cabecera {
 		panelGrandesPremios.add(panelBahrain1);
 		panelBahrain1.setLayout(null);
 		
-		JButton btnBahrain2 = new JButton("Bahrain");
+		JButton btnBahrain2 = new JButton("Bahrain II");
 		btnBahrain2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnBahrain2.setBackground(Color.WHITE);
 		btnBahrain2.setBounds(0, 0, 148, 49);
@@ -2392,6 +2447,128 @@ public class Inicio extends Cabecera {
 		lblNewLabel.setBounds(0, 0, 974, 539);
 		panelGrandesPremios.add(lblNewLabel);
 		
+		menu(controlador);
+	}
+	
+	public void fichaGranPremio(Controlador controlador) {
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 990, 650);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		/*
+		JPanel panelFichaPremio = new JPanel();
+		panelFichaPremio.setBounds(0, 71, 974, 540);
+		contentPane.add(panelFichaPremio);
+		panelFichaPremio.setLayout(null);
+		
+		JButton btnSimular = new JButton("Simular");
+		btnSimular.setForeground(Color.RED);
+		btnSimular.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSimular.setBackground(Color.DARK_GRAY);
+		btnSimular.setBounds(771, 470, 94, 48);
+		panelFichaPremio.add(btnSimular);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setForeground(Color.WHITE);
+		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNombre.setBounds(572, 41, 65, 30);
+		panelFichaPremio.add(lblNombre);
+		
+		JLabel label = new JLabel("");
+		label.setBounds(545, 79, 46, 14);
+		panelFichaPremio.add(label);
+		
+		JLabel lblLongitud = new JLabel("Longitud:");
+		lblLongitud.setForeground(Color.WHITE);
+		lblLongitud.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblLongitud.setBounds(572, 123, 65, 30);
+		panelFichaPremio.add(lblLongitud);
+		
+		JLabel lblCurvas = new JLabel("Curvas:");
+		lblCurvas.setForeground(Color.WHITE);
+		lblCurvas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblCurvas.setBounds(587, 205, 50, 30);
+		panelFichaPremio.add(lblCurvas);
+		
+		textField = new JTextField();
+		textField.setEditable(false);
+		textField.setColumns(10);
+		textField.setBackground(SystemColor.menu);
+		textField.setBounds(680, 47, 185, 20);
+		panelFichaPremio.add(textField);
+		
+		textField_1 = new JTextField();
+		textField_1.setEditable(false);
+		textField_1.setColumns(10);
+		textField_1.setBackground(SystemColor.menu);
+		textField_1.setBounds(680, 129, 185, 20);
+		panelFichaPremio.add(textField_1);
+		
+		textField_2 = new JTextField();
+		textField_2.setEditable(false);
+		textField_2.setColumns(10);
+		textField_2.setBackground(SystemColor.menu);
+		textField_2.setBounds(680, 211, 185, 20);
+		panelFichaPremio.add(textField_2);
+		
+		JLabel lblPrimerAño = new JLabel("Primer a\u00F1o:");
+		lblPrimerAño.setForeground(Color.WHITE);
+		lblPrimerAño.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblPrimerAño.setBounds(554, 82, 83, 30);
+		panelFichaPremio.add(lblPrimerAño);
+		
+		textField_3 = new JTextField();
+		textField_3.setEditable(false);
+		textField_3.setColumns(10);
+		textField_3.setBackground(SystemColor.menu);
+		textField_3.setBounds(680, 88, 185, 20);
+		panelFichaPremio.add(textField_3);
+		
+		JLabel lblDistanciaGp = new JLabel("Distancia GP:");
+		lblDistanciaGp.setForeground(Color.WHITE);
+		lblDistanciaGp.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblDistanciaGp.setBounds(541, 164, 96, 30);
+		panelFichaPremio.add(lblDistanciaGp);
+		
+		textField_4 = new JTextField();
+		textField_4.setEditable(false);
+		textField_4.setColumns(10);
+		textField_4.setBackground(SystemColor.menu);
+		textField_4.setBounds(680, 170, 185, 20);
+		panelFichaPremio.add(textField_4);
+		
+		JLabel lblVueltas = new JLabel("Vueltas:");
+		lblVueltas.setForeground(Color.WHITE);
+		lblVueltas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblVueltas.setBounds(587, 246, 65, 30);
+		panelFichaPremio.add(lblVueltas);
+		
+		textField_5 = new JTextField();
+		textField_5.setEditable(false);
+		textField_5.setColumns(10);
+		textField_5.setBackground(SystemColor.menu);
+		textField_5.setBounds(680, 252, 185, 20);
+		panelFichaPremio.add(textField_5);
+		
+		panel = new JPanel();
+		panel.setBounds(35, 47, 355, 309);
+		panelFichaPremio.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblFoto = new JLabel("");
+		lblFoto.setBounds(10, 24, 335, 282);
+		panel.add(lblFoto);
+		lblFoto.setIcon(new ImageIcon(Circuito));
+		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setBounds(0, 0, 974, 540);
+		panelFichaPremio.add(lblFondo);
+		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		*/
 		menu(controlador);
 	}
 

@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import modelo.Escuderia;
+import modelo.GranPremio;
 import modelo.Piloto;
+import vista.GrandesPremios;
 
 public class ConectionHelper {
 
@@ -239,5 +241,54 @@ public class ConectionHelper {
 		return escuderia;
 	}
 		
+	public GranPremio consultaGranPremio(String circuito) throws SQLException,ClassNotFoundException {
+		String sql="SELECT NOMBRE,CIRCUITO,AÑO_PRIMER_GP,LONGITUD,DISTANCIA_GP,CURVAS,VUELTAS FROM GRAN_PREMIO WHERE CIRCUITO=?";
+		PreparedStatement sentencia=null;
+		ResultSet resultado=null;
+		Connection conexion=null;
+		GranPremio granpremio = new GranPremio();
+		
+		
+		try {
+			conexion = createConection();
+			sentencia=conexion.prepareStatement(sql);
+			sentencia.setString(1, circuito);
+			resultado=sentencia.executeQuery();
+			
+			if (resultado.next()) {
+				granpremio.setNombre(resultado.getString("NOMBRE"));
+				granpremio.setCircuito(resultado.getString("CIRCUITO"));
+				granpremio.setAños_primer_gp(resultado.getInt("AÑO_PRIMER_GP"));
+				granpremio.setLongitud(resultado.getInt("LONGITUD"));
+				granpremio.setDistancia_gp(resultado.getInt("DISTANCIA_GP"));
+				granpremio.setCurvas(resultado.getInt("CURVAS"));
+				granpremio.setVueltas(resultado.getInt("VUELTAS"));
+			}
+			
+			conexion.commit();
+		} catch (SQLException | ClassNotFoundException e) {
+			conexion.rollback();
+			e.printStackTrace();
+			throw e;
+		}finally {
+			if (resultado != null) {
+				try {
+						resultado.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+				if (sentencia != null) {
+					try {
+						sentencia.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+			
+			disconnect(conexion);
+		}
+		return granpremio;
+	}
 		
 }

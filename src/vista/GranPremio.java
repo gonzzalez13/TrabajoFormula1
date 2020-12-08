@@ -22,14 +22,6 @@ import java.awt.event.ActionEvent;
 public class GranPremio extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textFieldNombre;
-	private JTextField textFieldLongitud;
-	private JTextField textFieldCurvas;
-	private JButton btnSimular;
-	private JTextField textFieldPrimerAño;
-	private JTextField textFieldDistanciaGp;
-	private JTextField textFieldVueltas;
-	private JLabel lblNewLabel;
 	private JPanel PanelMenu;
 	private JLabel lblLogo;
 	private JButton btnInicio_1;
@@ -39,6 +31,13 @@ public class GranPremio extends JFrame {
 	private JButton btnClasi_1;
 	private JButton btnLogin_1;
 	private JButton btnSimulacion;
+	private JTextField textNombre;
+	private JTextField textLogitud;
+	private JTextField textCurvas;
+	private JTextField textPrimerAño;
+	private JTextField textDistanciaGP;
+	private JTextField textVueltas;
+	private JPanel panel;
 
 	/**
 	 * Launch the application.
@@ -66,99 +65,6 @@ public class GranPremio extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JLabel lblFoto = new JLabel("Foto Gran Premio");
-		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
-		lblFoto.setBounds(25, 110, 245, 282);
-		contentPane.add(lblFoto);
-		
-		btnSimular = new JButton("Simular");
-		btnSimular.setForeground(Color.RED);
-		btnSimular.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnSimular.setBackground(Color.DARK_GRAY);
-		btnSimular.setBounds(771, 541, 94, 48);
-		contentPane.add(btnSimular);
-		
-		JLabel lblNombre = new JLabel("Nombre:");
-		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNombre.setBounds(572, 112, 65, 30);
-		contentPane.add(lblNombre);
-		
-		JLabel label = new JLabel("");
-		label.setBounds(545, 150, 46, 14);
-		contentPane.add(label);
-		
-		JLabel lblLongitud = new JLabel("Longitud:");
-		lblLongitud.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblLongitud.setBounds(572, 194, 65, 30);
-		contentPane.add(lblLongitud);
-		
-		JLabel lblCurvas = new JLabel("Curvas:");
-		lblCurvas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblCurvas.setBounds(587, 276, 50, 30);
-		contentPane.add(lblCurvas);
-		
-		textFieldNombre = new JTextField();
-		textFieldNombre.setEditable(false);
-		textFieldNombre.setBackground(SystemColor.control);
-		textFieldNombre.setBounds(680, 118, 185, 20);
-		contentPane.add(textFieldNombre);
-		textFieldNombre.setColumns(10);
-		
-		textFieldLongitud = new JTextField();
-		textFieldLongitud.setEditable(false);
-		textFieldLongitud.setColumns(10);
-		textFieldLongitud.setBackground(SystemColor.menu);
-		textFieldLongitud.setBounds(680, 200, 185, 20);
-		contentPane.add(textFieldLongitud);
-		
-		textFieldCurvas = new JTextField();
-		textFieldCurvas.setEditable(false);
-		textFieldCurvas.setColumns(10);
-		textFieldCurvas.setBackground(SystemColor.menu);
-		textFieldCurvas.setBounds(680, 282, 185, 20);
-		contentPane.add(textFieldCurvas);
-		
-		JLabel lblPrimerAño = new JLabel("Primer a\u00F1o:");
-		lblPrimerAño.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblPrimerAño.setBounds(554, 153, 83, 30);
-		contentPane.add(lblPrimerAño);
-		
-		textFieldPrimerAño = new JTextField();
-		textFieldPrimerAño.setEditable(false);
-		textFieldPrimerAño.setColumns(10);
-		textFieldPrimerAño.setBackground(SystemColor.menu);
-		textFieldPrimerAño.setBounds(680, 159, 185, 20);
-		contentPane.add(textFieldPrimerAño);
-		
-		JLabel lblDistanciaGp = new JLabel("Distancia GP:");
-		lblDistanciaGp.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblDistanciaGp.setBounds(541, 235, 96, 30);
-		contentPane.add(lblDistanciaGp);
-		
-		textFieldDistanciaGp = new JTextField();
-		textFieldDistanciaGp.setEditable(false);
-		textFieldDistanciaGp.setColumns(10);
-		textFieldDistanciaGp.setBackground(SystemColor.menu);
-		textFieldDistanciaGp.setBounds(680, 241, 185, 20);
-		contentPane.add(textFieldDistanciaGp);
-		
-		JLabel lblVueltas = new JLabel("Vueltas:");
-		lblVueltas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblVueltas.setBounds(587, 317, 65, 30);
-		contentPane.add(lblVueltas);
-		
-		textFieldVueltas = new JTextField();
-		textFieldVueltas.setEditable(false);
-		textFieldVueltas.setColumns(10);
-		textFieldVueltas.setBackground(SystemColor.menu);
-		textFieldVueltas.setBounds(680, 323, 185, 20);
-		contentPane.add(textFieldVueltas);
-		
-		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.png"));
-		lblNewLabel.setBounds(0, 71, 995, 540);
-		contentPane.add(lblNewLabel);
 		
 		PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
@@ -218,15 +124,116 @@ public class GranPremio extends JFrame {
 		btnSimulacion.setBackground(new Color(59, 45, 45));
 		btnSimulacion.setBounds(747, 11, 115, 48);
 		PanelMenu.add(btnSimulacion);
+		
+		JPanel panelFichaPremio = new JPanel();
+		panelFichaPremio.setBounds(0, 71, 974, 540);
+		contentPane.add(panelFichaPremio);
+		panelFichaPremio.setLayout(null);
+		
+		JButton btnSimular = new JButton("Simular");
+		btnSimular.setForeground(Color.RED);
+		btnSimular.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSimular.setBackground(Color.DARK_GRAY);
+		btnSimular.setBounds(771, 470, 94, 48);
+		panelFichaPremio.add(btnSimular);
+		
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setForeground(Color.WHITE);
+		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNombre.setBounds(572, 41, 65, 30);
+		panelFichaPremio.add(lblNombre);
+		
+		JLabel label = new JLabel("");
+		label.setBounds(545, 79, 46, 14);
+		panelFichaPremio.add(label);
+		
+		JLabel lblLongitud = new JLabel("Longitud:");
+		lblLongitud.setForeground(Color.WHITE);
+		lblLongitud.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblLongitud.setBounds(572, 123, 65, 30);
+		panelFichaPremio.add(lblLongitud);
+		
+		JLabel lblCurvas = new JLabel("Curvas:");
+		lblCurvas.setForeground(Color.WHITE);
+		lblCurvas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblCurvas.setBounds(587, 205, 50, 30);
+		panelFichaPremio.add(lblCurvas);
+		
+		textNombre = new JTextField();
+		textNombre.setEditable(false);
+		textNombre.setColumns(10);
+		textNombre.setBackground(SystemColor.menu);
+		textNombre.setBounds(680, 47, 185, 20);
+		panelFichaPremio.add(textNombre);
+		
+		textLogitud = new JTextField();
+		textLogitud.setEditable(false);
+		textLogitud.setColumns(10);
+		textLogitud.setBackground(SystemColor.menu);
+		textLogitud.setBounds(680, 129, 185, 20);
+		panelFichaPremio.add(textLogitud);
+		
+		textCurvas = new JTextField();
+		textCurvas.setEditable(false);
+		textCurvas.setColumns(10);
+		textCurvas.setBackground(SystemColor.menu);
+		textCurvas.setBounds(680, 211, 185, 20);
+		panelFichaPremio.add(textCurvas);
+		
+		JLabel lblPrimerAño = new JLabel("Primer a\u00F1o:");
+		lblPrimerAño.setForeground(Color.WHITE);
+		lblPrimerAño.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblPrimerAño.setBounds(554, 82, 83, 30);
+		panelFichaPremio.add(lblPrimerAño);
+		
+		textPrimerAño = new JTextField();
+		textPrimerAño.setEditable(false);
+		textPrimerAño.setColumns(10);
+		textPrimerAño.setBackground(SystemColor.menu);
+		textPrimerAño.setBounds(680, 88, 185, 20);
+		panelFichaPremio.add(textPrimerAño);
+		
+		JLabel lblDistanciaGp = new JLabel("Distancia GP:");
+		lblDistanciaGp.setForeground(Color.WHITE);
+		lblDistanciaGp.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblDistanciaGp.setBounds(541, 164, 96, 30);
+		panelFichaPremio.add(lblDistanciaGp);
+		
+		textDistanciaGP = new JTextField();
+		textDistanciaGP.setEditable(false);
+		textDistanciaGP.setColumns(10);
+		textDistanciaGP.setBackground(SystemColor.menu);
+		textDistanciaGP.setBounds(680, 170, 185, 20);
+		panelFichaPremio.add(textDistanciaGP);
+		
+		JLabel lblVueltas = new JLabel("Vueltas:");
+		lblVueltas.setForeground(Color.WHITE);
+		lblVueltas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblVueltas.setBounds(587, 246, 65, 30);
+		panelFichaPremio.add(lblVueltas);
+		
+		textVueltas = new JTextField();
+		textVueltas.setEditable(false);
+		textVueltas.setColumns(10);
+		textVueltas.setBackground(SystemColor.menu);
+		textVueltas.setBounds(680, 252, 185, 20);
+		panelFichaPremio.add(textVueltas);
+		
+		panel = new JPanel();
+		panel.setBounds(35, 47, 355, 309);
+		panelFichaPremio.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblFoto = new JLabel("");
+		lblFoto.setBounds(10, 24, 335, 282);
+		panel.add(lblFoto);
+		lblFoto.setIcon(new ImageIcon());
+		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setBounds(0, 0, 974, 540);
+		panelFichaPremio.add(lblFondo);
+		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
 	}
 	
-	
-
-	public JButton getBtnSimular() {
-		return btnSimular;
-	}
-
-	public void setBtnSimular(JButton btnSimular) {
-		this.btnSimular = btnSimular;
-	}
 }
