@@ -14,7 +14,7 @@ import java.util.Properties;
 import modelo.Escuderia;
 import modelo.GranPremio;
 import modelo.Piloto;
-import vista.GrandesPremios;
+
 
 public class ConectionHelper {
 

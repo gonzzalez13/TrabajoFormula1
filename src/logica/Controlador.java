@@ -453,7 +453,7 @@ public class Controlador implements ActionListener {
 					e1.printStackTrace();
 				}
 				
-				inicio.fichaSimulacion(this,sim.main());
+				inicio.fichaSimulacion(this,sim.main(),concetion);
 				inicio.setVisible(true);
 				break;
 			
