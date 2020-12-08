@@ -22,13 +22,13 @@ import java.awt.event.ActionEvent;
 public class GranPremio extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField textFieldNombre;
+	private JTextField textFieldLongitud;
+	private JTextField textFieldCurvas;
 	private JButton btnSimular;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
+	private JTextField textFieldPrimerAño;
+	private JTextField textFieldDistanciaGp;
+	private JTextField textFieldVueltas;
 	private JLabel lblNewLabel;
 	private JPanel PanelMenu;
 	private JLabel lblLogo;
@@ -79,85 +79,85 @@ public class GranPremio extends JFrame {
 		btnSimular.setBounds(771, 541, 94, 48);
 		contentPane.add(btnSimular);
 		
-		JLabel lblNewLabel_2 = new JLabel("Nombre:");
-		lblNewLabel_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2.setBounds(572, 112, 65, 30);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblNombre = new JLabel("Nombre:");
+		lblNombre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNombre.setBounds(572, 112, 65, 30);
+		contentPane.add(lblNombre);
 		
 		JLabel label = new JLabel("");
 		label.setBounds(545, 150, 46, 14);
 		contentPane.add(label);
 		
-		JLabel lblNewLabel_2_1 = new JLabel("Longitud:");
-		lblNewLabel_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1.setBounds(572, 194, 65, 30);
-		contentPane.add(lblNewLabel_2_1);
+		JLabel lblLongitud = new JLabel("Longitud:");
+		lblLongitud.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblLongitud.setBounds(572, 194, 65, 30);
+		contentPane.add(lblLongitud);
 		
-		JLabel lblNewLabel_2_1_1 = new JLabel("Curvas:");
-		lblNewLabel_2_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1_1.setBounds(587, 276, 50, 30);
-		contentPane.add(lblNewLabel_2_1_1);
+		JLabel lblCurvas = new JLabel("Curvas:");
+		lblCurvas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblCurvas.setBounds(587, 276, 50, 30);
+		contentPane.add(lblCurvas);
 		
-		textField = new JTextField();
-		textField.setEditable(false);
-		textField.setBackground(SystemColor.control);
-		textField.setBounds(680, 118, 185, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		textFieldNombre = new JTextField();
+		textFieldNombre.setEditable(false);
+		textFieldNombre.setBackground(SystemColor.control);
+		textFieldNombre.setBounds(680, 118, 185, 20);
+		contentPane.add(textFieldNombre);
+		textFieldNombre.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
-		textField_1.setBackground(SystemColor.menu);
-		textField_1.setBounds(680, 200, 185, 20);
-		contentPane.add(textField_1);
+		textFieldLongitud = new JTextField();
+		textFieldLongitud.setEditable(false);
+		textFieldLongitud.setColumns(10);
+		textFieldLongitud.setBackground(SystemColor.menu);
+		textFieldLongitud.setBounds(680, 200, 185, 20);
+		contentPane.add(textFieldLongitud);
 		
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		textField_2.setBackground(SystemColor.menu);
-		textField_2.setBounds(680, 282, 185, 20);
-		contentPane.add(textField_2);
+		textFieldCurvas = new JTextField();
+		textFieldCurvas.setEditable(false);
+		textFieldCurvas.setColumns(10);
+		textFieldCurvas.setBackground(SystemColor.menu);
+		textFieldCurvas.setBounds(680, 282, 185, 20);
+		contentPane.add(textFieldCurvas);
 		
-		JLabel lblNewLabel_2_1_2 = new JLabel("Primer a\u00F1o:");
-		lblNewLabel_2_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1_2.setBounds(554, 153, 83, 30);
-		contentPane.add(lblNewLabel_2_1_2);
+		JLabel lblPrimerAño = new JLabel("Primer a\u00F1o:");
+		lblPrimerAño.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblPrimerAño.setBounds(554, 153, 83, 30);
+		contentPane.add(lblPrimerAño);
 		
-		textField_3 = new JTextField();
-		textField_3.setEditable(false);
-		textField_3.setColumns(10);
-		textField_3.setBackground(SystemColor.menu);
-		textField_3.setBounds(680, 159, 185, 20);
-		contentPane.add(textField_3);
+		textFieldPrimerAño = new JTextField();
+		textFieldPrimerAño.setEditable(false);
+		textFieldPrimerAño.setColumns(10);
+		textFieldPrimerAño.setBackground(SystemColor.menu);
+		textFieldPrimerAño.setBounds(680, 159, 185, 20);
+		contentPane.add(textFieldPrimerAño);
 		
-		JLabel lblNewLabel_2_1_3 = new JLabel("Distancia GP:");
-		lblNewLabel_2_1_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1_3.setBounds(541, 235, 96, 30);
-		contentPane.add(lblNewLabel_2_1_3);
+		JLabel lblDistanciaGp = new JLabel("Distancia GP:");
+		lblDistanciaGp.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblDistanciaGp.setBounds(541, 235, 96, 30);
+		contentPane.add(lblDistanciaGp);
 		
-		textField_4 = new JTextField();
-		textField_4.setEditable(false);
-		textField_4.setColumns(10);
-		textField_4.setBackground(SystemColor.menu);
-		textField_4.setBounds(680, 241, 185, 20);
-		contentPane.add(textField_4);
+		textFieldDistanciaGp = new JTextField();
+		textFieldDistanciaGp.setEditable(false);
+		textFieldDistanciaGp.setColumns(10);
+		textFieldDistanciaGp.setBackground(SystemColor.menu);
+		textFieldDistanciaGp.setBounds(680, 241, 185, 20);
+		contentPane.add(textFieldDistanciaGp);
 		
-		JLabel lblNewLabel_2_1_1_1 = new JLabel("Vueltas:");
-		lblNewLabel_2_1_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1_1_1.setBounds(587, 317, 65, 30);
-		contentPane.add(lblNewLabel_2_1_1_1);
+		JLabel lblVueltas = new JLabel("Vueltas:");
+		lblVueltas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblVueltas.setBounds(587, 317, 65, 30);
+		contentPane.add(lblVueltas);
 		
-		textField_5 = new JTextField();
-		textField_5.setEditable(false);
-		textField_5.setColumns(10);
-		textField_5.setBackground(SystemColor.menu);
-		textField_5.setBounds(680, 323, 185, 20);
-		contentPane.add(textField_5);
+		textFieldVueltas = new JTextField();
+		textFieldVueltas.setEditable(false);
+		textFieldVueltas.setColumns(10);
+		textFieldVueltas.setBackground(SystemColor.menu);
+		textFieldVueltas.setBounds(680, 323, 185, 20);
+		contentPane.add(textFieldVueltas);
 		
-		lblNewLabel = new JLabel("New label");
+		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.png"));
-		lblNewLabel.setBounds(0, 71, 974, 540);
+		lblNewLabel.setBounds(21, 63, 974, 540);
 		contentPane.add(lblNewLabel);
 		
 		PanelMenu = new JPanel();
