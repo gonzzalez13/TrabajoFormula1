@@ -15,8 +15,13 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
+
+import logica.Controlador;
+
 import javax.swing.JPasswordField;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
@@ -27,6 +32,7 @@ public class Login extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -39,11 +45,11 @@ public class Login extends JFrame {
 			}
 		});
 	}
-
+/*
 	/**
 	 * Create the frame.
 	 */
-	public Login() {
+	public Login(Controlador controlador) {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("LogIn\r\n");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -62,6 +68,11 @@ public class Login extends JFrame {
 		contentPane.add(passwordField);
 		
 		JButton btnCancelar = new JButton("CANCELAR");
+		btnCancelar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
 		btnCancelar.setForeground(Color.WHITE);
 		btnCancelar.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btnCancelar.setBackground(Color.DARK_GRAY);

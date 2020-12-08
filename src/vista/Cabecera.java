@@ -2,6 +2,8 @@ package vista;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 
 import javax.swing.ImageIcon;
@@ -59,6 +61,7 @@ public class Cabecera extends JFrame {
 
 		JButton btnGranPre = new JButton("Gran Premio");
 		btnGranPre.setForeground(new Color(255, 255, 255));
+		btnGranPre.addActionListener(controlador);
 		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnGranPre.setBackground(new Color(59, 45, 45));
 		btnGranPre.setBounds(452, 11, 130, 48);
@@ -74,6 +77,12 @@ public class Cabecera extends JFrame {
 
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setForeground(new Color(255, 255, 255));
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Login login = new Login(controlador);
+				login.setVisible(true);
+			}
+		});
 		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnLogin.setBackground(new Color(59, 45, 45));
 		btnLogin.setBounds(872, 11, 92, 48);
@@ -81,6 +90,7 @@ public class Cabecera extends JFrame {
 
 		JButton btnSimulacion = new JButton("Simulacion");
 		btnSimulacion.setForeground(new Color(255, 255, 255));
+		btnSimulacion.addActionListener(controlador);
 		btnSimulacion.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnSimulacion.setBackground(new Color(59, 45, 45));
 		btnSimulacion.setBounds(747, 11, 115, 48);

@@ -40,90 +40,12 @@ public class GrandesPremios extends JFrame {
 	 * Create the frame.
 	 */
 	public GrandesPremios() {
-		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 865, 650);
+		setBounds(100, 100, 990,650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JPanel panel_3 = new JPanel();
-		panel_3.setLayout(null);
-		panel_3.setBounds(50, 173, 207, 60);
-		contentPane.add(panel_3);
-		
-		JButton btn4 = new JButton("Silverstone");
-		btn4.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn4.setBackground(Color.WHITE);
-		btn4.setBounds(0, 0, 148, 49);
-		panel_3.add(btn4);
-		
-		JLabel bandera4 = new JLabel("");
-		bandera4.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Gran Breta\u00F1a.png"));
-		bandera4.setBounds(147, 0, 60, 49);
-		panel_3.add(bandera4);
-		
-		JPanel panel_1_3 = new JPanel();
-		panel_1_3.setLayout(null);
-		panel_1_3.setBounds(0, 50, 207, 10);
-		panel_3.add(panel_1_3);
-		
-		JLabel lblNewLabel_1_2_2 = new JLabel("");
-		lblNewLabel_1_2_2.setBounds(0, 0, 207, 10);
-		panel_1_3.add(lblNewLabel_1_2_2);
-		
-		JPanel panel_3_1 = new JPanel();
-		panel_3_1.setLayout(null);
-		panel_3_1.setBounds(322, 173, 207, 60);
-		contentPane.add(panel_3_1);
-		
-		JButton btn5 = new JButton("Silverstone");
-		btn5.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn5.setBackground(Color.WHITE);
-		btn5.setBounds(0, 0, 148, 49);
-		panel_3_1.add(btn5);
-		
-		JLabel bandera5 = new JLabel("");
-		bandera5.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Gran Breta\u00F1a.png"));
-		bandera5.setBounds(147, 0, 60, 49);
-		panel_3_1.add(bandera5);
-		
-		JPanel panel_1_3_1 = new JPanel();
-		panel_1_3_1.setBounds(0, 50, 207, 10);
-		panel_3_1.add(panel_1_3_1);
-		panel_1_3_1.setLayout(null);
-		
-		JLabel lblNewLabel_1_2_1 = new JLabel("");
-		lblNewLabel_1_2_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Paises BajosBarra.png"));
-		lblNewLabel_1_2_1.setBounds(0, 0, 207, 10);
-		panel_1_3_1.add(lblNewLabel_1_2_1);
-		
-		JPanel panel_2_2 = new JPanel();
-		panel_2_2.setLayout(null);
-		panel_2_2.setBounds(589, 173, 207, 60);
-		contentPane.add(panel_2_2);
-		
-		JButton btn6 = new JButton("Barcelona");
-		btn6.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn6.setBackground(Color.WHITE);
-		btn6.setBounds(0, 0, 148, 49);
-		panel_2_2.add(btn6);
-		
-		JLabel bandera6 = new JLabel("");
-		bandera6.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Espa\u00F1a.png"));
-		bandera6.setBounds(147, 0, 60, 49);
-		panel_2_2.add(bandera6);
-		
-		JPanel panel_1_1_1 = new JPanel();
-		panel_1_1_1.setBounds(0, 50, 207, 10);
-		panel_2_2.add(panel_1_1_1);
-		panel_1_1_1.setLayout(null);
-		
-		JLabel lblNewLabel_1_2_1_1 = new JLabel("");
-		lblNewLabel_1_2_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Espa\u00F1aBarra.png"));
-		lblNewLabel_1_2_1_1.setBounds(0, 0, 207, 10);
-		panel_1_1_1.add(lblNewLabel_1_2_1_1);
 		
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
@@ -182,347 +104,424 @@ public class GrandesPremios extends JFrame {
 		btnLogo.setBounds(10, 11, 124, 48);
 		PanelMenu.add(btnLogo);
 		
-		JPanel panel_4 = new JPanel();
-		panel_4.setBounds(0, 71, 849, 550);
-		contentPane.add(panel_4);
-		panel_4.setLayout(null);
+		JPanel panelGrandesPremios = new JPanel();
+		panelGrandesPremios.setBounds(0, 71, 974, 540);
+		contentPane.add(panelGrandesPremios);
+		panelGrandesPremios.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Fondos\\Fondo6.PNG"));
-		lblNewLabel.setBounds(0, 0, 849, 550);
-		panel_4.add(lblNewLabel);
+		JPanel panelReBull1 = new JPanel();
+		panelReBull1.setBounds(53, 58, 207, 60);
+		panelGrandesPremios.add(panelReBull1);
+		panelReBull1.setLayout(null);
 		
-		JPanel panel_2_1_2_1_1 = new JPanel();
-		panel_2_1_2_1_1.setBounds(320, 455, 207, 60);
-		panel_4.add(panel_2_1_2_1_1);
-		panel_2_1_2_1_1.setLayout(null);
+		JButton btnRedBull1 = new JButton("Red bull Ring I");
+		btnRedBull1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnRedBull1.setBackground(Color.WHITE);
+		btnRedBull1.setBounds(0, 0, 148, 49);
+		panelReBull1.add(btnRedBull1);
 		
-		JButton btn17 = new JButton("Yas Marinas");
-		btn17.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn17.setBackground(Color.WHITE);
-		btn17.setBounds(0, 0, 148, 49);
-		panel_2_1_2_1_1.add(btn17);
+		JLabel bandera1 = new JLabel("");
+		bandera1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Austria.png"));
+		bandera1.setBounds(147, 0, 60, 49);
+		panelReBull1.add(bandera1);
 		
-		JLabel bandera17 = new JLabel("");
-		bandera17.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\EAU.png"));
-		bandera17.setBounds(147, 0, 60, 49);
-		panel_2_1_2_1_1.add(bandera17);
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon());
+		lblNewLabel_1.setBounds(0, 50, 207, 10);
+		panelReBull1.add(lblNewLabel_1);
 		
-		JPanel panel_1_2_2_1_1 = new JPanel();
-		panel_1_2_2_1_1.setBounds(0, 50, 207, 10);
-		panel_2_1_2_1_1.add(panel_1_2_2_1_1);
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(0, 50, 207, 10);
+		panelReBull1.add(panel_1);
+		panel_1.setLayout(null);
 		
-		JPanel panel_2_1_2_1 = new JPanel();
-		panel_2_1_2_1.setBounds(53, 455, 207, 60);
-		panel_4.add(panel_2_1_2_1);
-		panel_2_1_2_1.setLayout(null);
+		JPanel panelRedBull2 = new JPanel();
+		panelRedBull2.setBounds(375, 58, 207, 60);
+		panelGrandesPremios.add(panelRedBull2);
+		panelRedBull2.setLayout(null);
 		
-		JButton btn16 = new JButton("Bahrain");
-		btn16.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn16.setBackground(Color.WHITE);
-		btn16.setBounds(0, 0, 148, 49);
-		panel_2_1_2_1.add(btn16);
+		JButton btnRedBull2 = new JButton("Red bull Ring II");
+		btnRedBull2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnRedBull2.setBackground(Color.WHITE);
+		btnRedBull2.setBounds(0, 0, 148, 49);
+		panelRedBull2.add(btnRedBull2);
+		
+		JLabel bandera2 = new JLabel("");
+		bandera2.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Austria.png"));
+		bandera2.setBounds(147, 0, 60, 49);
+		panelRedBull2.add(bandera2);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("");
+		lblNewLabel_1_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"BahreinBarra.png"));
+		lblNewLabel_1_1.setBounds(0, 50, 207, 10);
+		panelRedBull2.add(lblNewLabel_1_1);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBounds(0, 50, 207, 10);
+		panelRedBull2.add(panel_1_1);
+		panel_1_1.setLayout(null);
+		
+		JPanel panelHungaroring = new JPanel();
+		panelHungaroring.setBounds(690, 58, 207, 60);
+		panelGrandesPremios.add(panelHungaroring);
+		panelHungaroring.setLayout(null);
+		
+		JButton btnHungaroring = new JButton("Hungaroring");
+		btnHungaroring.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnHungaroring.setBackground(Color.WHITE);
+		btnHungaroring.setBounds(0, 0, 148, 49);
+		panelHungaroring.add(btnHungaroring);
+		
+		JLabel bandera3 = new JLabel("");
+		bandera3.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Hungria.png"));
+		bandera3.setBounds(147, 0, 60, 49);
+		panelHungaroring.add(bandera3);
+		
+		JLabel lblNewLabel_1_2 = new JLabel("");
+		lblNewLabel_1_2.setIcon(new ImageIcon());
+		lblNewLabel_1_2.setBounds(0, 50, 207, 10);
+		panelHungaroring.add(lblNewLabel_1_2);
+		
+		JPanel panel_1_2 = new JPanel();
+		panel_1_2.setBounds(0, 50, 207, 10);
+		panelHungaroring.add(panel_1_2);
+		
+		JPanel panelSilverstone = new JPanel();
+		panelSilverstone.setBounds(53, 129, 207, 60);
+		panelGrandesPremios.add(panelSilverstone);
+		panelSilverstone.setLayout(null);
+		
+		JButton btnSilverstone = new JButton("Silverstone I");
+		btnSilverstone.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSilverstone.setBackground(Color.WHITE);
+		btnSilverstone.setBounds(0, 0, 148, 49);
+		panelSilverstone.add(btnSilverstone);
+		
+		JLabel bandera4 = new JLabel("");
+		bandera4.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Gran Bretaña.png"));
+		bandera4.setBounds(147, 0, 60, 49);
+		panelSilverstone.add(bandera4);
+		
+		JPanel panel_1_3 = new JPanel();
+		panel_1_3.setLayout(null);
+		panel_1_3.setBounds(0, 50, 207, 10);
+		panelSilverstone.add(panel_1_3);
+		
+		JLabel lblNewLabel_1_2_2 = new JLabel("");
+		lblNewLabel_1_2_2.setBounds(0, 0, 207, 10);
+		panel_1_3.add(lblNewLabel_1_2_2);
+		
+		JPanel panelSilverstoner2 = new JPanel();
+		panelSilverstoner2.setBounds(375, 129, 207, 60);
+		panelGrandesPremios.add(panelSilverstoner2);
+		panelSilverstoner2.setLayout(null);
+		
+		JButton btnSilverstone2 = new JButton("Silverstone II");
+		btnSilverstone2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSilverstone2.setBackground(Color.WHITE);
+		btnSilverstone2.setBounds(0, 0, 148, 49);
+		panelSilverstoner2.add(btnSilverstone2);
+		
+		JLabel bandera5 = new JLabel("");
+		bandera5.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Gran Bretaña.png"));
+		bandera5.setBounds(147, 0, 60, 49);
+		panelSilverstoner2.add(bandera5);
+		
+		JPanel panel_1_3_1 = new JPanel();
+		panel_1_3_1.setBounds(0, 50, 207, 10);
+		panelSilverstoner2.add(panel_1_3_1);
+		panel_1_3_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1 = new JLabel("");
+		lblNewLabel_1_2_1.setIcon(new ImageIcon());
+		lblNewLabel_1_2_1.setBounds(0, 0, 207, 10);
+		panel_1_3_1.add(lblNewLabel_1_2_1);
+		
+		JPanel panelBarcelona = new JPanel();
+		panelBarcelona.setBounds(690, 129, 207, 60);
+		panelGrandesPremios.add(panelBarcelona);
+		panelBarcelona.setLayout(null);
+		
+		JButton btnBarcelona = new JButton("Barcelona");
+		btnBarcelona.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnBarcelona.setBackground(Color.WHITE);
+		btnBarcelona.setBounds(0, 0, 148, 49);
+		panelBarcelona.add(btnBarcelona);
+		
+		JLabel bandera6 = new JLabel("");
+		bandera6.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"España.png"));
+		bandera6.setBounds(147, 0, 60, 49);
+		panelBarcelona.add(bandera6);
+		
+		JPanel panel_1_1_1 = new JPanel();
+		panel_1_1_1.setBounds(0, 50, 207, 10);
+		panelBarcelona.add(panel_1_1_1);
+		panel_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1.setIcon(new ImageIcon());
+		lblNewLabel_1_2_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1.add(lblNewLabel_1_2_1_1);
+		
+		JPanel panelSpa = new JPanel();
+		panelSpa.setBounds(53, 200, 207, 60);
+		panelGrandesPremios.add(panelSpa);
+		panelSpa.setLayout(null);
+		
+		JButton btnSpa = new JButton("Spa");
+		btnSpa.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSpa.setBackground(Color.WHITE);
+		btnSpa.setBounds(0, 0, 148, 49);
+		panelSpa.add(btnSpa);
+		
+		JLabel bandera7 = new JLabel("");
+		bandera7.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Belgica.png"));
+		bandera7.setBounds(147, 0, 60, 49);
+		panelSpa.add(bandera7);
+		
+		JPanel panel_1_1_1_1 = new JPanel();
+		panel_1_1_1_1.setBounds(0, 50, 207, 10);
+		panelSpa.add(panel_1_1_1_1);
+		panel_1_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1_1.setIcon(new ImageIcon());
+		lblNewLabel_1_2_1_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1_1.add(lblNewLabel_1_2_1_1_1);
+		
+		JPanel panelMonza = new JPanel();
+		panelMonza.setBounds(375, 200, 207, 60);
+		panelGrandesPremios.add(panelMonza);
+		panelMonza.setLayout(null);
+		
+		JButton btnMonza = new JButton("Monza");
+		btnMonza.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnMonza.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnMonza.setBackground(Color.WHITE);
+		btnMonza.setBounds(0, 0, 148, 49);
+		panelMonza.add(btnMonza);
+		
+		JLabel bandera8 = new JLabel("");
+		bandera8.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Italia.png"));
+		bandera8.setBounds(147, 0, 60, 49);
+		panelMonza.add(bandera8);
+		
+		JPanel panel_1_1_1_1_1 = new JPanel();
+		panel_1_1_1_1_1.setBounds(0, 50, 207, 10);
+		panelMonza.add(panel_1_1_1_1_1);
+		panel_1_1_1_1_1.setLayout(null);
+		
+		JLabel lblNewLabel_1_2_1_1_1_1 = new JLabel("");
+		lblNewLabel_1_2_1_1_1_1.setIcon(new ImageIcon());
+		lblNewLabel_1_2_1_1_1_1.setBounds(0, 0, 207, 10);
+		panel_1_1_1_1_1.add(lblNewLabel_1_2_1_1_1_1);
+		
+		JPanel panelTorcana = new JPanel();
+		panelTorcana.setBounds(690, 200, 207, 60);
+		panelGrandesPremios.add(panelTorcana);
+		panelTorcana.setLayout(null);
+		
+		JButton btntoscana = new JButton("La toscana");
+		btntoscana.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btntoscana.setBackground(Color.WHITE);
+		btntoscana.setBounds(0, 0, 148, 49);
+		panelTorcana.add(btntoscana);
+		
+		JLabel bandera9 = new JLabel("");
+		bandera9.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Italia.png"));
+		bandera9.setBounds(147, 0, 60, 49);
+		panelTorcana.add(bandera9);
+		
+		JPanel panel_1_1_1_1_1_1 = new JPanel();
+		panel_1_1_1_1_1_1.setBounds(0, 50, 207, 10);
+		panelTorcana.add(panel_1_1_1_1_1_1);
+		
+		JPanel panelSochi = new JPanel();
+		panelSochi.setBounds(53, 271, 207, 60);
+		panelGrandesPremios.add(panelSochi);
+		panelSochi.setLayout(null);
+		
+		JButton btnSochi = new JButton("Sochi");
+		btnSochi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSochi.setBackground(Color.WHITE);
+		btnSochi.setBounds(0, 0, 148, 49);
+		panelSochi.add(btnSochi);
+		
+		JLabel bandera10 = new JLabel("");
+		bandera10.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Rusia.png"));
+		bandera10.setBounds(147, 0, 60, 49);
+		panelSochi.add(bandera10);
+		
+		JPanel panel_1_1_1_1_2 = new JPanel();
+		panel_1_1_1_1_2.setBounds(0, 50, 207, 10);
+		panelSochi.add(panel_1_1_1_1_2);
+		
+		JPanel panelNurburgring = new JPanel();
+		panelNurburgring.setBounds(375, 271, 207, 60);
+		panelGrandesPremios.add(panelNurburgring);
+		panelNurburgring.setLayout(null);
+		
+		JButton btnNurburgring = new JButton("Nurburgring");
+		btnNurburgring.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnNurburgring.setBackground(Color.WHITE);
+		btnNurburgring.setBounds(0, 0, 148, 49);
+		panelNurburgring.add(btnNurburgring);
+		
+		JLabel bandera11 = new JLabel("");
+		bandera11.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Alemania.png"));
+		bandera11.setBounds(147, 0, 60, 49);
+		panelNurburgring.add(bandera11);
+		
+		JPanel panel_1_2_1 = new JPanel();
+		panel_1_2_1.setBounds(0, 50, 207, 10);
+		panelNurburgring.add(panel_1_2_1);
+		
+		JPanel panelPortimao = new JPanel();
+		panelPortimao.setBounds(690, 271, 207, 60);
+		panelGrandesPremios.add(panelPortimao);
+		panelPortimao.setLayout(null);
+		
+		JButton btnPortimao = new JButton("Portimao");
+		btnPortimao.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnPortimao.setBackground(Color.WHITE);
+		btnPortimao.setBounds(0, 0, 148, 49);
+		panelPortimao.add(btnPortimao);
+		
+		JLabel bandera12 = new JLabel("");
+		bandera12.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Portugal.png"));
+		bandera12.setBounds(147, 0, 60, 49);
+		panelPortimao.add(bandera12);
+		
+		JPanel panel_1_2_1_1 = new JPanel();
+		panel_1_2_1_1.setBounds(0, 50, 207, 10);
+		panelPortimao.add(panel_1_2_1_1);
+		
+		JPanel panelLmola = new JPanel();
+		panelLmola.setBounds(53, 342, 207, 60);
+		panelGrandesPremios.add(panelLmola);
+		panelLmola.setLayout(null);
+		
+		JButton btnImola = new JButton("Imola");
+		btnImola.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnImola.setBackground(Color.WHITE);
+		btnImola.setBounds(0, 0, 148, 49);
+		panelLmola.add(btnImola);
+		
+		JLabel bandera13 = new JLabel("");
+		bandera13.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Italia.png"));
+		bandera13.setBounds(147, 0, 60, 49);
+		panelLmola.add(bandera13);
+		
+		JPanel panel_1_1_1_1_2_1 = new JPanel();
+		panel_1_1_1_1_2_1.setBounds(0, 50, 207, 10);
+		panelLmola.add(panel_1_1_1_1_2_1);
+		
+		JPanel panelInstambulPark = new JPanel();
+		panelInstambulPark.setBounds(375, 342, 207, 60);
+		panelGrandesPremios.add(panelInstambulPark);
+		panelInstambulPark.setLayout(null);
+		
+		JButton btnInstambul = new JButton("Instambul Park");
+		btnInstambul.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnInstambul.setBackground(Color.WHITE);
+		btnInstambul.setBounds(0, 0, 148, 49);
+		panelInstambulPark.add(btnInstambul);
+		
+		JLabel bandera14 = new JLabel("");
+		bandera14.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Turquia.png"));
+		bandera14.setBounds(147, 0, 60, 49);
+		panelInstambulPark.add(bandera14);
+		
+		JPanel panel_1_1_1_2 = new JPanel();
+		panel_1_1_1_2.setBounds(0, 50, 207, 10);
+		panelInstambulPark.add(panel_1_1_1_2);
+		
+		JPanel panelBahrain = new JPanel();
+		panelBahrain.setBounds(690, 342, 207, 60);
+		panelGrandesPremios.add(panelBahrain);
+		panelBahrain.setLayout(null);
+		
+		JButton btnBahrain = new JButton("Bahrain");
+		btnBahrain.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnBahrain.setBackground(Color.WHITE);
+		btnBahrain.setBounds(0, 0, 148, 49);
+		panelBahrain.add(btnBahrain);
+		
+		JLabel bandera15 = new JLabel("");
+		bandera15.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Bahrein.png"));
+		bandera15.setBounds(147, 0, 60, 49);
+		panelBahrain.add(bandera15);
+		
+		JPanel panel_1_2_2 = new JPanel();
+		panel_1_2_2.setBounds(0, 50, 207, 10);
+		panelBahrain.add(panel_1_2_2);
+		
+		JPanel panelBahrain1 = new JPanel();
+		panelBahrain1.setBounds(53, 413, 207, 60);
+		panelGrandesPremios.add(panelBahrain1);
+		panelBahrain1.setLayout(null);
+		
+		JButton btnBahrain2 = new JButton("Bahrain");
+		btnBahrain2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnBahrain2.setBackground(Color.WHITE);
+		btnBahrain2.setBounds(0, 0, 148, 49);
+		panelBahrain1.add(btnBahrain2);
 		
 		JLabel bandera16 = new JLabel("");
-		bandera16.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Bahrein.png"));
+		bandera16.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Bahrein.png"));
 		bandera16.setBounds(147, 0, 60, 49);
-		panel_2_1_2_1.add(bandera16);
+		panelBahrain1.add(bandera16);
 		
 		JPanel panel_1_2_2_1 = new JPanel();
 		panel_1_2_2_1.setBounds(0, 50, 207, 10);
-		panel_2_1_2_1.add(panel_1_2_2_1);
+		panelBahrain1.add(panel_1_2_2_1);
 		
-		JPanel panel_2_1_2_1_1_1 = new JPanel();
-		panel_2_1_2_1_1_1.setLayout(null);
-		panel_2_1_2_1_1_1.setBounds(587, 455, 207, 60);
-		panel_4.add(panel_2_1_2_1_1_1);
+		JPanel panelYasMarina = new JPanel();
+		panelYasMarina.setBounds(375, 413, 207, 60);
+		panelGrandesPremios.add(panelYasMarina);
+		panelYasMarina.setLayout(null);
+		
+		JButton btnYasMarinas = new JButton("Yas Marinas");
+		btnYasMarinas.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnYasMarinas.setBackground(Color.WHITE);
+		btnYasMarinas.setBounds(0, 0, 148, 49);
+		panelYasMarina.add(btnYasMarinas);
+		
+		JLabel bandera17 = new JLabel("");
+		bandera17.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"EAU.png"));
+		bandera17.setBounds(147, 0, 60, 49);
+		panelYasMarina.add(bandera17);
+		
+		JPanel panel_1_2_2_1_1 = new JPanel();
+		panel_1_2_2_1_1.setBounds(0, 50, 207, 10);
+		panelYasMarina.add(panel_1_2_2_1_1);
+		
+		JPanel panelEfaMoratalaz = new JPanel();
+		panelEfaMoratalaz.setLayout(null);
+		panelEfaMoratalaz.setBounds(690, 413, 207, 60);
+		panelGrandesPremios.add(panelEfaMoratalaz);
 		
 		JButton btnEfaMoratalaz = new JButton("Efa Moratalaz");
 		btnEfaMoratalaz.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnEfaMoratalaz.setBackground(Color.WHITE);
 		btnEfaMoratalaz.setBounds(0, 0, 148, 49);
-		panel_2_1_2_1_1_1.add(btnEfaMoratalaz);
+		panelEfaMoratalaz.add(btnEfaMoratalaz);
 		
 		JLabel bandera17_1 = new JLabel("");
-		bandera17_1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Manuel.png"));
+		bandera17_1.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Paises"+File.separator+"Manuel.png"));
 		bandera17_1.setBounds(147, 0, 60, 49);
-		panel_2_1_2_1_1_1.add(bandera17_1);
+		panelEfaMoratalaz.add(bandera17_1);
 		
 		JPanel panel_1_2_2_1_1_1 = new JPanel();
 		panel_1_2_2_1_1_1.setBounds(0, 50, 207, 10);
-		panel_2_1_2_1_1_1.add(panel_1_2_2_1_1_1);
+		panelEfaMoratalaz.add(panel_1_2_2_1_1_1);
 		
-		JPanel panel_2_1_2 = new JPanel();
-		panel_2_1_2.setBounds(587, 363, 207, 60);
-		panel_4.add(panel_2_1_2);
-		panel_2_1_2.setLayout(null);
-		
-		JButton btn15 = new JButton("Bahrain");
-		btn15.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn15.setBackground(Color.WHITE);
-		btn15.setBounds(0, 0, 148, 49);
-		panel_2_1_2.add(btn15);
-		
-		JLabel bandera15 = new JLabel("");
-		bandera15.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Bahrein.png"));
-		bandera15.setBounds(147, 0, 60, 49);
-		panel_2_1_2.add(bandera15);
-		
-		JPanel panel_1_2_2 = new JPanel();
-		panel_1_2_2.setBounds(0, 50, 207, 10);
-		panel_2_1_2.add(panel_1_2_2);
-		
-		JPanel panel_2_2_2 = new JPanel();
-		panel_2_2_2.setBounds(320, 363, 207, 60);
-		panel_4.add(panel_2_2_2);
-		panel_2_2_2.setLayout(null);
-		
-		JButton btn14 = new JButton("Instambul Park");
-		btn14.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn14.setBackground(Color.WHITE);
-		btn14.setBounds(0, 0, 148, 49);
-		panel_2_2_2.add(btn14);
-		
-		JLabel bandera14 = new JLabel("");
-		bandera14.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Turquia.png"));
-		bandera14.setBounds(147, 0, 60, 49);
-		panel_2_2_2.add(bandera14);
-		
-		JPanel panel_1_1_1_2 = new JPanel();
-		panel_1_1_1_2.setBounds(0, 50, 207, 10);
-		panel_2_2_2.add(panel_1_1_1_2);
-		
-		JPanel panel_2_2_1_2_1 = new JPanel();
-		panel_2_2_1_2_1.setBounds(53, 363, 207, 60);
-		panel_4.add(panel_2_2_1_2_1);
-		panel_2_2_1_2_1.setLayout(null);
-		
-		JButton btn13 = new JButton("Imola");
-		btn13.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn13.setBackground(Color.WHITE);
-		btn13.setBounds(0, 0, 148, 49);
-		panel_2_2_1_2_1.add(btn13);
-		
-		JLabel bandera13 = new JLabel("");
-		bandera13.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Italia.png"));
-		bandera13.setBounds(147, 0, 60, 49);
-		panel_2_2_1_2_1.add(bandera13);
-		
-		JPanel panel_1_1_1_1_2_1 = new JPanel();
-		panel_1_1_1_1_2_1.setBounds(0, 50, 207, 10);
-		panel_2_2_1_2_1.add(panel_1_1_1_1_2_1);
-		
-		JPanel panel_2_1_1_1 = new JPanel();
-		panel_2_1_1_1.setBounds(587, 280, 207, 60);
-		panel_4.add(panel_2_1_1_1);
-		panel_2_1_1_1.setLayout(null);
-		
-		JButton btn12 = new JButton("Portimao");
-		btn12.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn12.setBackground(Color.WHITE);
-		btn12.setBounds(0, 0, 148, 49);
-		panel_2_1_1_1.add(btn12);
-		
-		JLabel bandera12 = new JLabel("");
-		bandera12.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Portugal.png"));
-		bandera12.setBounds(147, 0, 60, 49);
-		panel_2_1_1_1.add(bandera12);
-		
-		JPanel panel_1_2_1_1 = new JPanel();
-		panel_1_2_1_1.setBounds(0, 50, 207, 10);
-		panel_2_1_1_1.add(panel_1_2_1_1);
-		
-		JPanel panel_2_1_1 = new JPanel();
-		panel_2_1_1.setBounds(320, 280, 207, 60);
-		panel_4.add(panel_2_1_1);
-		panel_2_1_1.setLayout(null);
-		
-		JButton btn11 = new JButton("Nurburgring");
-		btn11.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn11.setBackground(Color.WHITE);
-		btn11.setBounds(0, 0, 148, 49);
-		panel_2_1_1.add(btn11);
-		
-		JLabel bandera11 = new JLabel("");
-		bandera11.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Alemania.png"));
-		bandera11.setBounds(147, 0, 60, 49);
-		panel_2_1_1.add(bandera11);
-		
-		JPanel panel_1_2_1 = new JPanel();
-		panel_1_2_1.setBounds(0, 50, 207, 10);
-		panel_2_1_1.add(panel_1_2_1);
-		
-		JPanel panel_2_2_1_2 = new JPanel();
-		panel_2_2_1_2.setBounds(53, 280, 207, 60);
-		panel_4.add(panel_2_2_1_2);
-		panel_2_2_1_2.setLayout(null);
-		
-		JButton btn10 = new JButton("Sochi");
-		btn10.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn10.setBackground(Color.WHITE);
-		btn10.setBounds(0, 0, 148, 49);
-		panel_2_2_1_2.add(btn10);
-		
-		JLabel bandera10 = new JLabel("");
-		bandera10.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Rusia.png"));
-		bandera10.setBounds(147, 0, 60, 49);
-		panel_2_2_1_2.add(bandera10);
-		
-		JPanel panel_1_1_1_1_2 = new JPanel();
-		panel_1_1_1_1_2.setBounds(0, 50, 207, 10);
-		panel_2_2_1_2.add(panel_1_1_1_1_2);
-		
-		JPanel panel_2_2_1_1_1 = new JPanel();
-		panel_2_2_1_1_1.setBounds(587, 192, 207, 60);
-		panel_4.add(panel_2_2_1_1_1);
-		panel_2_2_1_1_1.setLayout(null);
-		
-		JButton btn9 = new JButton("La toscana");
-		btn9.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn9.setBackground(Color.WHITE);
-		btn9.setBounds(0, 0, 148, 49);
-		panel_2_2_1_1_1.add(btn9);
-		
-		JLabel bandera9 = new JLabel("");
-		bandera9.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Italia.png"));
-		bandera9.setBounds(147, 0, 60, 49);
-		panel_2_2_1_1_1.add(bandera9);
-		
-		JPanel panel_1_1_1_1_1_1 = new JPanel();
-		panel_1_1_1_1_1_1.setBounds(0, 50, 207, 10);
-		panel_2_2_1_1_1.add(panel_1_1_1_1_1_1);
-		
-		JPanel panel_2_2_1_1 = new JPanel();
-		panel_2_2_1_1.setBounds(320, 192, 207, 60);
-		panel_4.add(panel_2_2_1_1);
-		panel_2_2_1_1.setLayout(null);
-		
-		JButton btn8 = new JButton("Monza");
-		btn8.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btn8.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn8.setBackground(Color.WHITE);
-		btn8.setBounds(0, 0, 148, 49);
-		panel_2_2_1_1.add(btn8);
-		
-		JLabel bandera8 = new JLabel("");
-		bandera8.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Italia.png"));
-		bandera8.setBounds(147, 0, 60, 49);
-		panel_2_2_1_1.add(bandera8);
-		
-		JPanel panel_1_1_1_1_1 = new JPanel();
-		panel_1_1_1_1_1.setBounds(0, 50, 207, 10);
-		panel_2_2_1_1.add(panel_1_1_1_1_1);
-		panel_1_1_1_1_1.setLayout(null);
-		
-		JLabel lblNewLabel_1_2_1_1_1_1 = new JLabel("");
-		lblNewLabel_1_2_1_1_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Azerbaiy\u00E1nBarra.png"));
-		lblNewLabel_1_2_1_1_1_1.setBounds(0, 0, 207, 10);
-		panel_1_1_1_1_1.add(lblNewLabel_1_2_1_1_1_1);
-		
-		JPanel panel_2_2_1 = new JPanel();
-		panel_2_2_1.setBounds(53, 192, 207, 60);
-		panel_4.add(panel_2_2_1);
-		panel_2_2_1.setLayout(null);
-		
-		JButton btn7 = new JButton("Spa");
-		btn7.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn7.setBackground(Color.WHITE);
-		btn7.setBounds(0, 0, 148, 49);
-		panel_2_2_1.add(btn7);
-		
-		JLabel bandera7 = new JLabel("");
-		bandera7.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Belgica.png"));
-		bandera7.setBounds(147, 0, 60, 49);
-		panel_2_2_1.add(bandera7);
-		
-		JPanel panel_1_1_1_1 = new JPanel();
-		panel_1_1_1_1.setBounds(0, 50, 207, 10);
-		panel_2_2_1.add(panel_1_1_1_1);
-		panel_1_1_1_1.setLayout(null);
-		
-		JLabel lblNewLabel_1_2_1_1_1 = new JLabel("");
-		lblNewLabel_1_2_1_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\MonacoBarra.png"));
-		lblNewLabel_1_2_1_1_1.setBounds(0, 0, 207, 10);
-		panel_1_1_1_1.add(lblNewLabel_1_2_1_1_1);
-		
-		JPanel panel_2_1 = new JPanel();
-		panel_2_1.setBounds(587, 23, 207, 60);
-		panel_4.add(panel_2_1);
-		panel_2_1.setLayout(null);
-		
-		JButton btn3 = new JButton("Hungaroring");
-		btn3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn3.setBackground(Color.WHITE);
-		btn3.setBounds(0, 0, 148, 49);
-		panel_2_1.add(btn3);
-		
-		JLabel bandera3 = new JLabel("");
-		bandera3.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Hungria.png"));
-		bandera3.setBounds(147, 0, 60, 49);
-		panel_2_1.add(bandera3);
-		
-		JLabel lblNewLabel_1_2 = new JLabel("");
-		lblNewLabel_1_2.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\VietnamBarra.png"));
-		lblNewLabel_1_2.setBounds(0, 50, 207, 10);
-		panel_2_1.add(lblNewLabel_1_2);
-		
-		JPanel panel_1_2 = new JPanel();
-		panel_1_2.setBounds(0, 50, 207, 10);
-		panel_2_1.add(panel_1_2);
-		
-		JPanel panel = new JPanel();
-		panel.setBounds(53, 23, 207, 60);
-		panel_4.add(panel);
-		panel.setLayout(null);
-		
-		JButton btn1 = new JButton("Red bull Ring");
-		btn1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn1.setBackground(Color.WHITE);
-		btn1.setBounds(0, 0, 148, 49);
-		panel.add(btn1);
-		
-		JLabel bandera1 = new JLabel("");
-		bandera1.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Austria.png"));
-		bandera1.setBounds(147, 0, 60, 49);
-		panel.add(bandera1);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\AustraliaBarra.PNG"));
-		lblNewLabel_1.setBounds(0, 50, 207, 10);
-		panel.add(lblNewLabel_1);
-		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(0, 50, 207, 10);
-		panel.add(panel_1);
-		panel_1.setLayout(null);
-		
-		JPanel panel_2 = new JPanel();
-		panel_2.setBounds(320, 23, 207, 60);
-		panel_4.add(panel_2);
-		panel_2.setLayout(null);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("");
-		lblNewLabel_1_1.setIcon(new ImageIcon("C:\\Users\\Cpu\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\BahreinBarra.png"));
-		lblNewLabel_1_1.setBounds(0, 50, 207, 10);
-		panel_2.add(lblNewLabel_1_1);
-		
-		JButton btn2 = new JButton("Red bull Ring");
-		btn2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btn2.setBackground(Color.WHITE);
-		btn2.setBounds(0, 0, 148, 49);
-		panel_2.add(btn2);
-		
-		JLabel bandera2 = new JLabel("");
-		bandera2.setIcon(new ImageIcon("C:\\Users\\Spetsnaz\\git\\TrabajoFormula1\\src\\Imagenes\\Paises\\Austria.png"));
-		bandera2.setBounds(147, 0, 60, 49);
-		panel_2.add(bandera2);
-		
-		JPanel panel_1_1 = new JPanel();
-		panel_1_1.setBounds(0, 50, 207, 10);
-		panel_2.add(panel_1_1);
-		panel_1_1.setLayout(null);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		lblNewLabel.setBounds(0, 0, 974, 539);
+		panelGrandesPremios.add(lblNewLabel);
 	}
 }

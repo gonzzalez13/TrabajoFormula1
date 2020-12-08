@@ -177,7 +177,7 @@ public class PruebaSimulacion extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PruebaInicio frame = new PruebaInicio();
+					PruebaSimulacion frame = new PruebaSimulacion();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

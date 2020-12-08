@@ -226,6 +226,7 @@ public class PruebaInicio extends JFrame {
 		panelNoticia3.add(lblNoticia3);
 		
 		JTextArea txtNoticia3 = new JTextArea();
+		txtNoticia3.setEditable(false);
 		txtNoticia3.setFont(new Font("Calibri", Font.PLAIN, 18));
 		txtNoticia3.setOpaque(false);
 		txtNoticia3.setWrapStyleWord(true);
@@ -239,5 +240,10 @@ public class PruebaInicio extends JFrame {
 		btnLeerMas3.setBorder(new CompoundBorder());
 		btnLeerMas3.setBounds(556, 182, 96, 32);
 		panelNoticia3.add(btnLeerMas3);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
+		lblNewLabel.setBounds(0, 0, 974, 539);
+		panelInicio.add(lblNewLabel);
 	}
 }

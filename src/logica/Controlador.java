@@ -7,6 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import vista.Inicio;
+import vista.Login;
+import vista.Noticia;
+import vista.Noticia2;
+import vista.Noticia3;
 import modelo.Escuderia;
 import modelo.Piloto;
 
@@ -17,6 +21,10 @@ public class Controlador implements ActionListener {
 	private Piloto piloto;
 	private ArrayList <Piloto> pilotos;
 	private Escuderia escuderia;
+	private Noticia noticia;
+	private Noticia2 noticia2;
+	private Noticia3 noticia3;
+	private Login login;
 	private String ruta;
 	
 	public Inicio getInicio() {
@@ -64,6 +72,22 @@ public class Controlador implements ActionListener {
 				inicio.setVisible(true);
 			
 			
+				break;
+				
+			case "Leer mas I":
+				salida="Leer mas I";
+				noticia.setVisible(true);
+				
+				break;
+			case "Leer mas II":
+				salida="Leer mas II";
+				noticia2.setVisible(true);
+				
+				break;
+			case "Leer mas III":
+				salida="Leer mas III";
+				noticia3.setVisible(true);
+				
 				break;
 				
 			case "1":
@@ -269,11 +293,25 @@ public class Controlador implements ActionListener {
 			case "Clasificacion":
 				
 				salida="Clasificacion";
-				inicio.clasificacion(this);;
+				inicio.clasificacion(this);
 				inicio.setVisible(true);
 			
 			
 				break;
+				
+			case "Gran Premio":	
+				salida="Gran Premio";
+				inicio.GrandesPremios(this);
+				inicio.setVisible(true);
+				
+				break;
+				
+			case "Login":
+				salida="Login";
+				login.setVisible(true);
+
+				break;	
+				
 			default:
 				
 				break;
