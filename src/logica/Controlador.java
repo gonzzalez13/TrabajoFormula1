@@ -77,11 +77,6 @@ public class Controlador implements ActionListener {
 			
 				break;
 				
-			case "Simulacion":	
-				salida=e.getActionCommand();
-				sacarTPremios();
-				
-				break;
 			case "Leer mas I":
 				salida=e.getActionCommand();
 				noticia.setVisible(true);
@@ -436,6 +431,17 @@ public class Controlador implements ActionListener {
 				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"abudhabi.png";
 				sacarPremio(e.getActionCommand(),circuito);
 				break;
+				
+			case "Simulacion":	
+				salida=e.getActionCommand();
+				sacarTPremios();
+				
+				break;
+				
+			case "Simular carrera":	
+				salida=e.getActionCommand();
+				Carrera carrera = new Carrera(inicio.getComboListaCircuitos(),inicio.getComboTiempo(),inicio.getVueltas());
+				
 				
 				
 			

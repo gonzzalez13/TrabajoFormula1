@@ -42,8 +42,8 @@ public class Inicio extends Cabecera {
 	private JTextPane txtBiblio;
 	private JButton btnPiloto1,btnPiloto2;
 	private JTextField textNombre,textNacionalidad,textBase,textAño,textPremios,textJefeE,textJefeT,textPiloto1,textPiloto2;
-	
-
+	private int vueltas;
+	private JComboBox comboListaCircuitos,comboTiempo;
 	private JTextField textLogitud;
 	private JTextField textCurvas;
 	private JTextField textPrimerAño;
@@ -2543,7 +2543,7 @@ public class Inicio extends Cabecera {
 		contentPane.add(panelSimulacion);
 		panelSimulacion.setLayout(null);
 		
-		JComboBox comboListaCircuitos = new JComboBox();
+		comboListaCircuitos = new JComboBox();
 		comboListaCircuitos.setBounds(634, 45, 200, 20);
 		for(int i=0;i<premios.size();i++) {
 			comboListaCircuitos.addItem(premios.get(i).getCircuito());
@@ -2566,6 +2566,7 @@ public class Inicio extends Cabecera {
 		slider.setForeground(Color.RED);
 		slider.setBackground(new Color(119, 29, 28));
 		slider.setBounds(634, 269, 200, 26);
+		vueltas= slider.getValue();
 		panelSimulacion.add(slider);
 		
 		JLabel lblCircuito = new JLabel("Gran Premio:");
@@ -2578,6 +2579,7 @@ public class Inicio extends Cabecera {
 		JButton btnSimularCarrera = new JButton("Simular carrera");
 		btnSimularCarrera.setForeground(Color.RED);
 		btnSimularCarrera.setFont(new Font("Microsoft PhagsPa", Font.BOLD, 12));
+		btnSimularCarrera.addActionListener(controlador);
 		btnSimularCarrera.setBackground(Color.WHITE);
 		btnSimularCarrera.setBounds(816, 467, 135, 34);
 		panelSimulacion.add(btnSimularCarrera);
@@ -2589,7 +2591,7 @@ public class Inicio extends Cabecera {
 		lblTiempo.setBounds(494, 153, 126, 26);
 		panelSimulacion.add(lblTiempo);
 		
-		JComboBox comboTiempo = new JComboBox();
+		comboTiempo = new JComboBox();
 		comboTiempo.setBounds(634, 157, 200, 20);
 		comboTiempo.addItem("Soleado");
 		comboTiempo.addItem("Lluvioso");
@@ -2612,5 +2614,22 @@ public class Inicio extends Cabecera {
 		menu(controlador);
 		
 	}
+
+	public JComboBox getComboListaCircuitos() {
+		return comboListaCircuitos;
+	}
+
+	public JComboBox getComboTiempo() {
+		return comboTiempo;
+	}
+
+	public int getVueltas() {
+		return vueltas;
+	}
+
+	
+	
+	
+	
 
 }
