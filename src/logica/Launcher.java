@@ -10,6 +10,8 @@ public class Launcher {
 		
 		Controlador c =new Controlador(new Inicio(),"Inicio",new ConectionHelper());
 		
+		
+		
 		c.getInicio().inicio(c);
 		c.getInicio().setVisible(true);
 //		ConectionHelper connection = new ConectionHelper();

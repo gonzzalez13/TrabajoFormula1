@@ -2,10 +2,18 @@ package modelo;
 
 import java.sql.Date;
 
-public class Piloto {
+public class Piloto implements Comparable<Piloto>{
 	private String Nombre, nacionalidad, palmares, estado, bibliografia;
 	private long idPiloto, idEscuderia;
-	private int podios;
+	private int podios,posicion,media;
+	public int getMedia() {
+		return media;
+	}
+
+	public void setMedia(int media) {
+		this.media = media;
+	}
+
 	private Date fechaNacimiento;
 
 	@Override
@@ -89,6 +97,19 @@ public class Piloto {
 
 	public Piloto() {
 
+	}
+
+	@Override
+	public int compareTo(Piloto piloto) {
+		return this.getPosicion()-piloto.getPosicion();
+	}
+
+	public int getPosicion() {
+		return posicion;
+	}
+
+	public void setPosicion(int posicion) {
+		this.posicion = posicion;
 	}
 
 }

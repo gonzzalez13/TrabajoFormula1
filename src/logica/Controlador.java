@@ -6,6 +6,7 @@ import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import modelo.Carrera;
 import modelo.Escuderia;
 import modelo.GranPremio;
 import modelo.Piloto;
@@ -440,10 +441,20 @@ public class Controlador implements ActionListener {
 				
 			case "Simular carrera":	
 				salida=e.getActionCommand();
-				Carrera carrera = new Carrera(inicio.getComboListaCircuitos(),inicio.getComboTiempo(),inicio.getVueltas());
+				Carrera carrera = new Carrera(inicio.getVueltas(),inicio.getComboListaCircuitos().getSelectedItem().toString(),inicio.getComboTiempo().getSelectedItem().toString());
+				Simulacion sim=null;
+				try {
+					sim=new Simulacion(concetion.consultaTPiloto(),carrera);
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				sim.main();
 				
-				
-				
+				break;
 			
 				
 			case "Login":
