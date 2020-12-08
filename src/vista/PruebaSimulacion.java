@@ -44,131 +44,131 @@ public class PruebaSimulacion extends JFrame {
 	private JTextField Fila191;
 	private JTextField Fila181;
 	private JTextField txtPiloto;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	private JTextField textField_11;
-	private JTextField textField_12;
-	private JTextField textField_13;
-	private JTextField textField_14;
-	private JTextField textField_15;
-	private JTextField textField_16;
-	private JTextField textField_17;
-	private JTextField textField_18;
-	private JTextField textField_19;
-	private JTextField textField_20;
+	private JTextField Fila12;
+	private JTextField Fila22;
+	private JTextField Fila32;
+	private JTextField Fila42;
+	private JTextField Fila52;
+	private JTextField Fila62;
+	private JTextField Fila72;
+	private JTextField Fila82;
+	private JTextField Fila92;
+	private JTextField Fila102;
+	private JTextField Fila122;
+	private JTextField Fila112;
+	private JTextField Fila132;
+	private JTextField Fila142;
+	private JTextField Fila152;
+	private JTextField Fila162;
+	private JTextField Fila172;
+	private JTextField Fila182;
+	private JTextField Fila192;
+	private JTextField Fila202;
 	private JTextField txtEscuderia;
-	private JTextField textField_21;
-	private JTextField textField_22;
-	private JTextField textField_23;
-	private JTextField textField_24;
-	private JTextField textField_25;
-	private JTextField textField_26;
-	private JTextField textField_27;
-	private JTextField textField_28;
-	private JTextField textField_29;
-	private JTextField textField_30;
-	private JTextField textField_31;
-	private JTextField textField_32;
-	private JTextField textField_33;
-	private JTextField textField_34;
-	private JTextField textField_35;
-	private JTextField textField_36;
-	private JTextField textField_37;
-	private JTextField textField_38;
-	private JTextField textField_39;
-	private JTextField textField_40;
-	private JTextField textField;
-	private JTextField textField_41;
-	private JTextField textField_42;
-	private JTextField textField_43;
-	private JTextField textField_44;
-	private JTextField textField_45;
-	private JTextField textField_46;
-	private JTextField textField_47;
-	private JTextField textField_48;
-	private JTextField textField_49;
-	private JTextField textField_50;
-	private JTextField textField_51;
-	private JTextField textField_52;
-	private JTextField textField_53;
-	private JTextField textField_54;
-	private JTextField textField_55;
-	private JTextField textField_56;
-	private JTextField textField_57;
-	private JTextField textField_58;
-	private JTextField textField_59;
-	private JTextField textField_60;
+	private JTextField Fila13;
+	private JTextField Fila23;
+	private JTextField Fila33;
+	private JTextField Fila43;
+	private JTextField Fila53;
+	private JTextField Fila63;
+	private JTextField Fila73;
+	private JTextField Fila83;
+	private JTextField Fila93;
+	private JTextField Fila103;
+	private JTextField Fila123;
+	private JTextField Fila113;
+	private JTextField Fila133;
+	private JTextField Fila143;
+	private JTextField Fila163;
+	private JTextField Fila153;
+	private JTextField Fila173;
+	private JTextField Fila183;
+	private JTextField Fila193;
+	private JTextField Fila203;
+	private JTextField txtTiempo;
+	private JTextField Fila14;
+	private JTextField Fila24;
+	private JTextField Fila34;
+	private JTextField Fila44;
+	private JTextField Fila54;
+	private JTextField Fila64;
+	private JTextField Fila74;
+	private JTextField Fila84;
+	private JTextField Fila94;
+	private JTextField Fila104;
+	private JTextField Fila114;
+	private JTextField Fila124;
+	private JTextField Fila134;
+	private JTextField Fila144;
+	private JTextField Fila154;
+	private JTextField Fila164;
+	private JTextField Fila174;
+	private JTextField Fila184;
+	private JTextField Fila204;
+	private JTextField Fila194;
 	private JTextField txtVueltas;
-	private JTextField textField_62;
-	private JTextField textField_63;
-	private JTextField textField_64;
-	private JTextField textField_65;
-	private JTextField textField_66;
-	private JTextField textField_67;
-	private JTextField textField_68;
-	private JTextField textField_69;
-	private JTextField textField_70;
-	private JTextField textField_71;
-	private JTextField textField_72;
-	private JTextField textField_73;
-	private JTextField textField_74;
-	private JTextField textField_75;
-	private JTextField textField_76;
-	private JTextField textField_77;
-	private JTextField textField_78;
-	private JTextField textField_79;
-	private JTextField textField_80;
-	private JTextField textField_81;
+	private JTextField Fila15;
+	private JTextField Fila25;
+	private JTextField Fila35;
+	private JTextField Fila45;
+	private JTextField Fila55;
+	private JTextField Fila65;
+	private JTextField Fila75;
+	private JTextField Fila85;
+	private JTextField Fila95;
+	private JTextField Fila105;
+	private JTextField Fila115;
+	private JTextField Fila125;
+	private JTextField Fila136;
+	private JTextField Fila145;
+	private JTextField Fila155;
+	private JTextField Fila165;
+	private JTextField Fila175;
+	private JTextField Fila185;
+	private JTextField Fila205;
+	private JTextField Fila195;
 	private JTextField txtSector;
-	private JTextField textField_83;
-	private JTextField textField_84;
-	private JTextField textField_85;
-	private JTextField textField_86;
-	private JTextField textField_87;
-	private JTextField textField_88;
-	private JTextField textField_89;
-	private JTextField textField_90;
-	private JTextField textField_91;
-	private JTextField textField_92;
-	private JTextField textField_93;
-	private JTextField textField_94;
-	private JTextField textField_95;
-	private JTextField textField_96;
-	private JTextField textField_97;
-	private JTextField textField_98;
-	private JTextField textField_99;
-	private JTextField textField_100;
-	private JTextField textField_101;
-	private JTextField textField_102;
+	private JTextField Fila16;
+	private JTextField Fila26;
+	private JTextField Fila36;
+	private JTextField Fila46;
+	private JTextField Fila56;
+	private JTextField Fila66;
+	private JTextField Fila76;
+	private JTextField Fila86;
+	private JTextField Fila96;
+	private JTextField Fila106;
+	private JTextField Fila116;
+	private JTextField Fila126;
+	private JTextField Fila137;
+	private JTextField Fila146;
+	private JTextField Fila156;
+	private JTextField Fila166;
+	private JTextField Fila176;
+	private JTextField Fila186;
+	private JTextField Fila206;
+	private JTextField Fila196;
 	private JTextField txtVueltaRapida;
-	private JTextField textField_82;
-	private JTextField textField_103;
-	private JTextField textField_104;
-	private JTextField textField_105;
-	private JTextField textField_106;
-	private JTextField textField_107;
-	private JTextField textField_108;
-	private JTextField textField_109;
-	private JTextField textField_110;
-	private JTextField textField_111;
-	private JTextField textField_112;
-	private JTextField textField_113;
-	private JTextField textField_114;
-	private JTextField textField_115;
-	private JTextField textField_116;
-	private JTextField textField_117;
-	private JTextField textField_118;
-	private JTextField textField_119;
-	private JTextField textField_120;
-	private JTextField textField_121;
+	private JTextField Fila17;
+	private JTextField Fila27;
+	private JTextField Fila37;
+	private JTextField Fila47;
+	private JTextField Fila57;
+	private JTextField Fila67;
+	private JTextField Fila77;
+	private JTextField Fila87;
+	private JTextField Fila97;
+	private JTextField Fila107;
+	private JTextField Fila117;
+	private JTextField Fila127;
+	private JTextField Fila138;
+	private JTextField Fila147;
+	private JTextField Fila157;
+	private JTextField Fila167;
+	private JTextField Fila177;
+	private JTextField Fila187;
+	private JTextField Fila207;
+	private JTextField Fila197;
 
 	/**
 	 * Launch the application.
@@ -265,7 +265,7 @@ public class PruebaSimulacion extends JFrame {
 		
 		Fila1Pos = new JTextField();
 		Fila1Pos.setHorizontalAlignment(SwingConstants.CENTER);
-		Fila1Pos.setText("POS");
+		Fila1Pos.setText("POS.");
 		Fila1Pos.setBounds(10, 11, 40, 20);
 		panel.add(Fila1Pos);
 		Fila1Pos.setColumns(10);
@@ -377,105 +377,105 @@ public class PruebaSimulacion extends JFrame {
 		txtPiloto.setBounds(50, 11, 124, 20);
 		panel.add(txtPiloto);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(50, 31, 124, 20);
-		panel.add(textField_1);
+		Fila12 = new JTextField();
+		Fila12.setColumns(10);
+		Fila12.setBounds(50, 31, 124, 20);
+		panel.add(Fila12);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(50, 51, 124, 20);
-		panel.add(textField_2);
+		Fila22 = new JTextField();
+		Fila22.setColumns(10);
+		Fila22.setBounds(50, 51, 124, 20);
+		panel.add(Fila22);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(50, 71, 124, 20);
-		panel.add(textField_3);
+		Fila32 = new JTextField();
+		Fila32.setColumns(10);
+		Fila32.setBounds(50, 71, 124, 20);
+		panel.add(Fila32);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(50, 91, 124, 20);
-		panel.add(textField_4);
+		Fila42 = new JTextField();
+		Fila42.setColumns(10);
+		Fila42.setBounds(50, 91, 124, 20);
+		panel.add(Fila42);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(50, 111, 124, 20);
-		panel.add(textField_5);
+		Fila52 = new JTextField();
+		Fila52.setColumns(10);
+		Fila52.setBounds(50, 111, 124, 20);
+		panel.add(Fila52);
 		
-		textField_6 = new JTextField();
-		textField_6.setColumns(10);
-		textField_6.setBounds(50, 131, 124, 20);
-		panel.add(textField_6);
+		Fila62 = new JTextField();
+		Fila62.setColumns(10);
+		Fila62.setBounds(50, 131, 124, 20);
+		panel.add(Fila62);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		textField_7.setBounds(50, 151, 124, 20);
-		panel.add(textField_7);
+		Fila72 = new JTextField();
+		Fila72.setColumns(10);
+		Fila72.setBounds(50, 151, 124, 20);
+		panel.add(Fila72);
 		
-		textField_8 = new JTextField();
-		textField_8.setColumns(10);
-		textField_8.setBounds(50, 171, 124, 20);
-		panel.add(textField_8);
+		Fila82 = new JTextField();
+		Fila82.setColumns(10);
+		Fila82.setBounds(50, 171, 124, 20);
+		panel.add(Fila82);
 		
-		textField_9 = new JTextField();
-		textField_9.setColumns(10);
-		textField_9.setBounds(50, 191, 124, 20);
-		panel.add(textField_9);
+		Fila92 = new JTextField();
+		Fila92.setColumns(10);
+		Fila92.setBounds(50, 191, 124, 20);
+		panel.add(Fila92);
 		
-		textField_10 = new JTextField();
-		textField_10.setColumns(10);
-		textField_10.setBounds(50, 211, 124, 20);
-		panel.add(textField_10);
+		Fila102 = new JTextField();
+		Fila102.setColumns(10);
+		Fila102.setBounds(50, 211, 124, 20);
+		panel.add(Fila102);
 		
-		textField_11 = new JTextField();
-		textField_11.setColumns(10);
-		textField_11.setBounds(50, 251, 124, 20);
-		panel.add(textField_11);
+		Fila122 = new JTextField();
+		Fila122.setColumns(10);
+		Fila122.setBounds(50, 251, 124, 20);
+		panel.add(Fila122);
 		
-		textField_12 = new JTextField();
-		textField_12.setColumns(10);
-		textField_12.setBounds(50, 231, 124, 20);
-		panel.add(textField_12);
+		Fila112 = new JTextField();
+		Fila112.setColumns(10);
+		Fila112.setBounds(50, 231, 124, 20);
+		panel.add(Fila112);
 		
-		textField_13 = new JTextField();
-		textField_13.setColumns(10);
-		textField_13.setBounds(50, 271, 124, 20);
-		panel.add(textField_13);
+		Fila132 = new JTextField();
+		Fila132.setColumns(10);
+		Fila132.setBounds(50, 271, 124, 20);
+		panel.add(Fila132);
 		
-		textField_14 = new JTextField();
-		textField_14.setColumns(10);
-		textField_14.setBounds(50, 291, 124, 20);
-		panel.add(textField_14);
+		Fila142 = new JTextField();
+		Fila142.setColumns(10);
+		Fila142.setBounds(50, 291, 124, 20);
+		panel.add(Fila142);
 		
-		textField_15 = new JTextField();
-		textField_15.setColumns(10);
-		textField_15.setBounds(50, 311, 124, 20);
-		panel.add(textField_15);
+		Fila152 = new JTextField();
+		Fila152.setColumns(10);
+		Fila152.setBounds(50, 311, 124, 20);
+		panel.add(Fila152);
 		
-		textField_16 = new JTextField();
-		textField_16.setColumns(10);
-		textField_16.setBounds(50, 331, 124, 20);
-		panel.add(textField_16);
+		Fila162 = new JTextField();
+		Fila162.setColumns(10);
+		Fila162.setBounds(50, 331, 124, 20);
+		panel.add(Fila162);
 		
-		textField_17 = new JTextField();
-		textField_17.setColumns(10);
-		textField_17.setBounds(50, 351, 124, 20);
-		panel.add(textField_17);
+		Fila172 = new JTextField();
+		Fila172.setColumns(10);
+		Fila172.setBounds(50, 351, 124, 20);
+		panel.add(Fila172);
 		
-		textField_18 = new JTextField();
-		textField_18.setColumns(10);
-		textField_18.setBounds(50, 371, 124, 20);
-		panel.add(textField_18);
+		Fila182 = new JTextField();
+		Fila182.setColumns(10);
+		Fila182.setBounds(50, 371, 124, 20);
+		panel.add(Fila182);
 		
-		textField_19 = new JTextField();
-		textField_19.setColumns(10);
-		textField_19.setBounds(50, 391, 124, 20);
-		panel.add(textField_19);
+		Fila192 = new JTextField();
+		Fila192.setColumns(10);
+		Fila192.setBounds(50, 391, 124, 20);
+		panel.add(Fila192);
 		
-		textField_20 = new JTextField();
-		textField_20.setColumns(10);
-		textField_20.setBounds(50, 411, 124, 20);
-		panel.add(textField_20);
+		Fila202 = new JTextField();
+		Fila202.setColumns(10);
+		Fila202.setBounds(50, 411, 124, 20);
+		panel.add(Fila202);
 		
 		txtEscuderia = new JTextField();
 		txtEscuderia.setText("ESCUDERIA");
@@ -484,212 +484,212 @@ public class PruebaSimulacion extends JFrame {
 		txtEscuderia.setBounds(174, 11, 124, 20);
 		panel.add(txtEscuderia);
 		
-		textField_21 = new JTextField();
-		textField_21.setColumns(10);
-		textField_21.setBounds(174, 31, 124, 20);
-		panel.add(textField_21);
+		Fila13 = new JTextField();
+		Fila13.setColumns(10);
+		Fila13.setBounds(174, 31, 124, 20);
+		panel.add(Fila13);
 		
-		textField_22 = new JTextField();
-		textField_22.setColumns(10);
-		textField_22.setBounds(174, 51, 124, 20);
-		panel.add(textField_22);
+		Fila23 = new JTextField();
+		Fila23.setColumns(10);
+		Fila23.setBounds(174, 51, 124, 20);
+		panel.add(Fila23);
 		
-		textField_23 = new JTextField();
-		textField_23.setColumns(10);
-		textField_23.setBounds(174, 71, 124, 20);
-		panel.add(textField_23);
+		Fila33 = new JTextField();
+		Fila33.setColumns(10);
+		Fila33.setBounds(174, 71, 124, 20);
+		panel.add(Fila33);
 		
-		textField_24 = new JTextField();
-		textField_24.setColumns(10);
-		textField_24.setBounds(174, 91, 124, 20);
-		panel.add(textField_24);
+		Fila43 = new JTextField();
+		Fila43.setColumns(10);
+		Fila43.setBounds(174, 91, 124, 20);
+		panel.add(Fila43);
 		
-		textField_25 = new JTextField();
-		textField_25.setColumns(10);
-		textField_25.setBounds(174, 111, 124, 20);
-		panel.add(textField_25);
+		Fila53 = new JTextField();
+		Fila53.setColumns(10);
+		Fila53.setBounds(174, 111, 124, 20);
+		panel.add(Fila53);
 		
-		textField_26 = new JTextField();
-		textField_26.setColumns(10);
-		textField_26.setBounds(174, 131, 124, 20);
-		panel.add(textField_26);
+		Fila63 = new JTextField();
+		Fila63.setColumns(10);
+		Fila63.setBounds(174, 131, 124, 20);
+		panel.add(Fila63);
 		
-		textField_27 = new JTextField();
-		textField_27.setColumns(10);
-		textField_27.setBounds(174, 151, 124, 20);
-		panel.add(textField_27);
+		Fila73 = new JTextField();
+		Fila73.setColumns(10);
+		Fila73.setBounds(174, 151, 124, 20);
+		panel.add(Fila73);
 		
-		textField_28 = new JTextField();
-		textField_28.setColumns(10);
-		textField_28.setBounds(174, 171, 124, 20);
-		panel.add(textField_28);
+		Fila83 = new JTextField();
+		Fila83.setColumns(10);
+		Fila83.setBounds(174, 171, 124, 20);
+		panel.add(Fila83);
 		
-		textField_29 = new JTextField();
-		textField_29.setColumns(10);
-		textField_29.setBounds(174, 191, 124, 20);
-		panel.add(textField_29);
+		Fila93 = new JTextField();
+		Fila93.setColumns(10);
+		Fila93.setBounds(174, 191, 124, 20);
+		panel.add(Fila93);
 		
-		textField_30 = new JTextField();
-		textField_30.setColumns(10);
-		textField_30.setBounds(174, 211, 124, 20);
-		panel.add(textField_30);
+		Fila103 = new JTextField();
+		Fila103.setColumns(10);
+		Fila103.setBounds(174, 211, 124, 20);
+		panel.add(Fila103);
 		
-		textField_31 = new JTextField();
-		textField_31.setColumns(10);
-		textField_31.setBounds(174, 251, 124, 20);
-		panel.add(textField_31);
+		Fila123 = new JTextField();
+		Fila123.setColumns(10);
+		Fila123.setBounds(174, 251, 124, 20);
+		panel.add(Fila123);
 		
-		textField_32 = new JTextField();
-		textField_32.setColumns(10);
-		textField_32.setBounds(174, 231, 124, 20);
-		panel.add(textField_32);
+		Fila113 = new JTextField();
+		Fila113.setColumns(10);
+		Fila113.setBounds(174, 231, 124, 20);
+		panel.add(Fila113);
 		
-		textField_33 = new JTextField();
-		textField_33.setColumns(10);
-		textField_33.setBounds(174, 271, 124, 20);
-		panel.add(textField_33);
+		Fila133 = new JTextField();
+		Fila133.setColumns(10);
+		Fila133.setBounds(174, 271, 124, 20);
+		panel.add(Fila133);
 		
-		textField_34 = new JTextField();
-		textField_34.setColumns(10);
-		textField_34.setBounds(174, 291, 124, 20);
-		panel.add(textField_34);
+		Fila143 = new JTextField();
+		Fila143.setColumns(10);
+		Fila143.setBounds(174, 291, 124, 20);
+		panel.add(Fila143);
 		
-		textField_35 = new JTextField();
-		textField_35.setColumns(10);
-		textField_35.setBounds(174, 331, 124, 20);
-		panel.add(textField_35);
+		Fila163 = new JTextField();
+		Fila163.setColumns(10);
+		Fila163.setBounds(174, 331, 124, 20);
+		panel.add(Fila163);
 		
-		textField_36 = new JTextField();
-		textField_36.setColumns(10);
-		textField_36.setBounds(174, 311, 124, 20);
-		panel.add(textField_36);
+		Fila153 = new JTextField();
+		Fila153.setColumns(10);
+		Fila153.setBounds(174, 311, 124, 20);
+		panel.add(Fila153);
 		
-		textField_37 = new JTextField();
-		textField_37.setColumns(10);
-		textField_37.setBounds(174, 351, 124, 20);
-		panel.add(textField_37);
+		Fila173 = new JTextField();
+		Fila173.setColumns(10);
+		Fila173.setBounds(174, 351, 124, 20);
+		panel.add(Fila173);
 		
-		textField_38 = new JTextField();
-		textField_38.setColumns(10);
-		textField_38.setBounds(174, 371, 124, 20);
-		panel.add(textField_38);
+		Fila183 = new JTextField();
+		Fila183.setColumns(10);
+		Fila183.setBounds(174, 371, 124, 20);
+		panel.add(Fila183);
 		
-		textField_39 = new JTextField();
-		textField_39.setColumns(10);
-		textField_39.setBounds(174, 391, 124, 20);
-		panel.add(textField_39);
+		Fila193 = new JTextField();
+		Fila193.setColumns(10);
+		Fila193.setBounds(174, 391, 124, 20);
+		panel.add(Fila193);
 		
-		textField_40 = new JTextField();
-		textField_40.setColumns(10);
-		textField_40.setBounds(174, 411, 124, 20);
-		panel.add(textField_40);
+		Fila203 = new JTextField();
+		Fila203.setColumns(10);
+		Fila203.setBounds(174, 411, 124, 20);
+		panel.add(Fila203);
 		
-		textField = new JTextField();
-		textField.setText("ESCUDERIA");
-		textField.setHorizontalAlignment(SwingConstants.CENTER);
-		textField.setColumns(10);
-		textField.setBounds(298, 11, 62, 20);
-		panel.add(textField);
+		txtTiempo = new JTextField();
+		txtTiempo.setText("TIEMPO");
+		txtTiempo.setHorizontalAlignment(SwingConstants.CENTER);
+		txtTiempo.setColumns(10);
+		txtTiempo.setBounds(298, 11, 62, 20);
+		panel.add(txtTiempo);
 		
-		textField_41 = new JTextField();
-		textField_41.setColumns(10);
-		textField_41.setBounds(298, 31, 62, 20);
-		panel.add(textField_41);
+		Fila14 = new JTextField();
+		Fila14.setColumns(10);
+		Fila14.setBounds(298, 31, 62, 20);
+		panel.add(Fila14);
 		
-		textField_42 = new JTextField();
-		textField_42.setColumns(10);
-		textField_42.setBounds(298, 51, 62, 20);
-		panel.add(textField_42);
+		Fila24 = new JTextField();
+		Fila24.setColumns(10);
+		Fila24.setBounds(298, 51, 62, 20);
+		panel.add(Fila24);
 		
-		textField_43 = new JTextField();
-		textField_43.setColumns(10);
-		textField_43.setBounds(298, 71, 62, 20);
-		panel.add(textField_43);
+		Fila34 = new JTextField();
+		Fila34.setColumns(10);
+		Fila34.setBounds(298, 71, 62, 20);
+		panel.add(Fila34);
 		
-		textField_44 = new JTextField();
-		textField_44.setColumns(10);
-		textField_44.setBounds(298, 91, 62, 20);
-		panel.add(textField_44);
+		Fila44 = new JTextField();
+		Fila44.setColumns(10);
+		Fila44.setBounds(298, 91, 62, 20);
+		panel.add(Fila44);
 		
-		textField_45 = new JTextField();
-		textField_45.setColumns(10);
-		textField_45.setBounds(298, 111, 62, 20);
-		panel.add(textField_45);
+		Fila54 = new JTextField();
+		Fila54.setColumns(10);
+		Fila54.setBounds(298, 111, 62, 20);
+		panel.add(Fila54);
 		
-		textField_46 = new JTextField();
-		textField_46.setColumns(10);
-		textField_46.setBounds(298, 131, 62, 20);
-		panel.add(textField_46);
+		Fila64 = new JTextField();
+		Fila64.setColumns(10);
+		Fila64.setBounds(298, 131, 62, 20);
+		panel.add(Fila64);
 		
-		textField_47 = new JTextField();
-		textField_47.setColumns(10);
-		textField_47.setBounds(298, 151, 62, 20);
-		panel.add(textField_47);
+		Fila74 = new JTextField();
+		Fila74.setColumns(10);
+		Fila74.setBounds(298, 151, 62, 20);
+		panel.add(Fila74);
 		
-		textField_48 = new JTextField();
-		textField_48.setColumns(10);
-		textField_48.setBounds(298, 171, 62, 20);
-		panel.add(textField_48);
+		Fila84 = new JTextField();
+		Fila84.setColumns(10);
+		Fila84.setBounds(298, 171, 62, 20);
+		panel.add(Fila84);
 		
-		textField_49 = new JTextField();
-		textField_49.setColumns(10);
-		textField_49.setBounds(298, 191, 62, 20);
-		panel.add(textField_49);
+		Fila94 = new JTextField();
+		Fila94.setColumns(10);
+		Fila94.setBounds(298, 191, 62, 20);
+		panel.add(Fila94);
 		
-		textField_50 = new JTextField();
-		textField_50.setColumns(10);
-		textField_50.setBounds(298, 211, 62, 20);
-		panel.add(textField_50);
+		Fila104 = new JTextField();
+		Fila104.setColumns(10);
+		Fila104.setBounds(298, 211, 62, 20);
+		panel.add(Fila104);
 		
-		textField_51 = new JTextField();
-		textField_51.setColumns(10);
-		textField_51.setBounds(298, 231, 62, 20);
-		panel.add(textField_51);
+		Fila114 = new JTextField();
+		Fila114.setColumns(10);
+		Fila114.setBounds(298, 231, 62, 20);
+		panel.add(Fila114);
 		
-		textField_52 = new JTextField();
-		textField_52.setColumns(10);
-		textField_52.setBounds(298, 251, 62, 20);
-		panel.add(textField_52);
+		Fila124 = new JTextField();
+		Fila124.setColumns(10);
+		Fila124.setBounds(298, 251, 62, 20);
+		panel.add(Fila124);
 		
-		textField_53 = new JTextField();
-		textField_53.setColumns(10);
-		textField_53.setBounds(298, 271, 62, 20);
-		panel.add(textField_53);
+		Fila134 = new JTextField();
+		Fila134.setColumns(10);
+		Fila134.setBounds(298, 271, 62, 20);
+		panel.add(Fila134);
 		
-		textField_54 = new JTextField();
-		textField_54.setColumns(10);
-		textField_54.setBounds(298, 291, 62, 20);
-		panel.add(textField_54);
+		Fila144 = new JTextField();
+		Fila144.setColumns(10);
+		Fila144.setBounds(298, 291, 62, 20);
+		panel.add(Fila144);
 		
-		textField_55 = new JTextField();
-		textField_55.setColumns(10);
-		textField_55.setBounds(298, 311, 62, 20);
-		panel.add(textField_55);
+		Fila154 = new JTextField();
+		Fila154.setColumns(10);
+		Fila154.setBounds(298, 311, 62, 20);
+		panel.add(Fila154);
 		
-		textField_56 = new JTextField();
-		textField_56.setColumns(10);
-		textField_56.setBounds(298, 331, 62, 20);
-		panel.add(textField_56);
+		Fila164 = new JTextField();
+		Fila164.setColumns(10);
+		Fila164.setBounds(298, 331, 62, 20);
+		panel.add(Fila164);
 		
-		textField_57 = new JTextField();
-		textField_57.setColumns(10);
-		textField_57.setBounds(298, 351, 62, 20);
-		panel.add(textField_57);
+		Fila174 = new JTextField();
+		Fila174.setColumns(10);
+		Fila174.setBounds(298, 351, 62, 20);
+		panel.add(Fila174);
 		
-		textField_58 = new JTextField();
-		textField_58.setColumns(10);
-		textField_58.setBounds(298, 371, 62, 20);
-		panel.add(textField_58);
+		Fila184 = new JTextField();
+		Fila184.setColumns(10);
+		Fila184.setBounds(298, 371, 62, 20);
+		panel.add(Fila184);
 		
-		textField_59 = new JTextField();
-		textField_59.setColumns(10);
-		textField_59.setBounds(298, 411, 62, 20);
-		panel.add(textField_59);
+		Fila204 = new JTextField();
+		Fila204.setColumns(10);
+		Fila204.setBounds(298, 411, 62, 20);
+		panel.add(Fila204);
 		
-		textField_60 = new JTextField();
-		textField_60.setColumns(10);
-		textField_60.setBounds(298, 391, 62, 20);
-		panel.add(textField_60);
+		Fila194 = new JTextField();
+		Fila194.setColumns(10);
+		Fila194.setBounds(298, 391, 62, 20);
+		panel.add(Fila194);
 		
 		txtVueltas = new JTextField();
 		txtVueltas.setText("VUELTAS");
@@ -698,105 +698,105 @@ public class PruebaSimulacion extends JFrame {
 		txtVueltas.setBounds(360, 11, 98, 20);
 		panel.add(txtVueltas);
 		
-		textField_62 = new JTextField();
-		textField_62.setColumns(10);
-		textField_62.setBounds(360, 31, 98, 20);
-		panel.add(textField_62);
+		Fila15 = new JTextField();
+		Fila15.setColumns(10);
+		Fila15.setBounds(360, 31, 98, 20);
+		panel.add(Fila15);
 		
-		textField_63 = new JTextField();
-		textField_63.setColumns(10);
-		textField_63.setBounds(360, 51, 98, 20);
-		panel.add(textField_63);
+		Fila25 = new JTextField();
+		Fila25.setColumns(10);
+		Fila25.setBounds(360, 51, 98, 20);
+		panel.add(Fila25);
 		
-		textField_64 = new JTextField();
-		textField_64.setColumns(10);
-		textField_64.setBounds(360, 71, 98, 20);
-		panel.add(textField_64);
+		Fila35 = new JTextField();
+		Fila35.setColumns(10);
+		Fila35.setBounds(360, 71, 98, 20);
+		panel.add(Fila35);
 		
-		textField_65 = new JTextField();
-		textField_65.setColumns(10);
-		textField_65.setBounds(360, 91, 98, 20);
-		panel.add(textField_65);
+		Fila45 = new JTextField();
+		Fila45.setColumns(10);
+		Fila45.setBounds(360, 91, 98, 20);
+		panel.add(Fila45);
 		
-		textField_66 = new JTextField();
-		textField_66.setColumns(10);
-		textField_66.setBounds(360, 111, 98, 20);
-		panel.add(textField_66);
+		Fila55 = new JTextField();
+		Fila55.setColumns(10);
+		Fila55.setBounds(360, 111, 98, 20);
+		panel.add(Fila55);
 		
-		textField_67 = new JTextField();
-		textField_67.setColumns(10);
-		textField_67.setBounds(360, 131, 98, 20);
-		panel.add(textField_67);
+		Fila65 = new JTextField();
+		Fila65.setColumns(10);
+		Fila65.setBounds(360, 131, 98, 20);
+		panel.add(Fila65);
 		
-		textField_68 = new JTextField();
-		textField_68.setColumns(10);
-		textField_68.setBounds(360, 151, 98, 20);
-		panel.add(textField_68);
+		Fila75 = new JTextField();
+		Fila75.setColumns(10);
+		Fila75.setBounds(360, 151, 98, 20);
+		panel.add(Fila75);
 		
-		textField_69 = new JTextField();
-		textField_69.setColumns(10);
-		textField_69.setBounds(360, 171, 98, 20);
-		panel.add(textField_69);
+		Fila85 = new JTextField();
+		Fila85.setColumns(10);
+		Fila85.setBounds(360, 171, 98, 20);
+		panel.add(Fila85);
 		
-		textField_70 = new JTextField();
-		textField_70.setColumns(10);
-		textField_70.setBounds(360, 191, 98, 20);
-		panel.add(textField_70);
+		Fila95 = new JTextField();
+		Fila95.setColumns(10);
+		Fila95.setBounds(360, 191, 98, 20);
+		panel.add(Fila95);
 		
-		textField_71 = new JTextField();
-		textField_71.setColumns(10);
-		textField_71.setBounds(360, 211, 98, 20);
-		panel.add(textField_71);
+		Fila105 = new JTextField();
+		Fila105.setColumns(10);
+		Fila105.setBounds(360, 211, 98, 20);
+		panel.add(Fila105);
 		
-		textField_72 = new JTextField();
-		textField_72.setColumns(10);
-		textField_72.setBounds(360, 231, 98, 20);
-		panel.add(textField_72);
+		Fila115 = new JTextField();
+		Fila115.setColumns(10);
+		Fila115.setBounds(360, 231, 98, 20);
+		panel.add(Fila115);
 		
-		textField_73 = new JTextField();
-		textField_73.setColumns(10);
-		textField_73.setBounds(360, 251, 98, 20);
-		panel.add(textField_73);
+		Fila125 = new JTextField();
+		Fila125.setColumns(10);
+		Fila125.setBounds(360, 251, 98, 20);
+		panel.add(Fila125);
 		
-		textField_74 = new JTextField();
-		textField_74.setColumns(10);
-		textField_74.setBounds(360, 271, 98, 20);
-		panel.add(textField_74);
+		Fila136 = new JTextField();
+		Fila136.setColumns(10);
+		Fila136.setBounds(360, 271, 98, 20);
+		panel.add(Fila136);
 		
-		textField_75 = new JTextField();
-		textField_75.setColumns(10);
-		textField_75.setBounds(360, 291, 98, 20);
-		panel.add(textField_75);
+		Fila145 = new JTextField();
+		Fila145.setColumns(10);
+		Fila145.setBounds(360, 291, 98, 20);
+		panel.add(Fila145);
 		
-		textField_76 = new JTextField();
-		textField_76.setColumns(10);
-		textField_76.setBounds(360, 311, 98, 20);
-		panel.add(textField_76);
+		Fila155 = new JTextField();
+		Fila155.setColumns(10);
+		Fila155.setBounds(360, 311, 98, 20);
+		panel.add(Fila155);
 		
-		textField_77 = new JTextField();
-		textField_77.setColumns(10);
-		textField_77.setBounds(360, 331, 98, 20);
-		panel.add(textField_77);
+		Fila165 = new JTextField();
+		Fila165.setColumns(10);
+		Fila165.setBounds(360, 331, 98, 20);
+		panel.add(Fila165);
 		
-		textField_78 = new JTextField();
-		textField_78.setColumns(10);
-		textField_78.setBounds(360, 351, 98, 20);
-		panel.add(textField_78);
+		Fila175 = new JTextField();
+		Fila175.setColumns(10);
+		Fila175.setBounds(360, 351, 98, 20);
+		panel.add(Fila175);
 		
-		textField_79 = new JTextField();
-		textField_79.setColumns(10);
-		textField_79.setBounds(360, 371, 98, 20);
-		panel.add(textField_79);
+		Fila185 = new JTextField();
+		Fila185.setColumns(10);
+		Fila185.setBounds(360, 371, 98, 20);
+		panel.add(Fila185);
 		
-		textField_80 = new JTextField();
-		textField_80.setColumns(10);
-		textField_80.setBounds(360, 411, 98, 20);
-		panel.add(textField_80);
+		Fila205 = new JTextField();
+		Fila205.setColumns(10);
+		Fila205.setBounds(360, 411, 98, 20);
+		panel.add(Fila205);
 		
-		textField_81 = new JTextField();
-		textField_81.setColumns(10);
-		textField_81.setBounds(360, 391, 98, 20);
-		panel.add(textField_81);
+		Fila195 = new JTextField();
+		Fila195.setColumns(10);
+		Fila195.setBounds(360, 391, 98, 20);
+		panel.add(Fila195);
 		
 		txtSector = new JTextField();
 		txtSector.setText("SECTOR");
@@ -805,105 +805,105 @@ public class PruebaSimulacion extends JFrame {
 		txtSector.setBounds(458, 11, 96, 20);
 		panel.add(txtSector);
 		
-		textField_83 = new JTextField();
-		textField_83.setColumns(10);
-		textField_83.setBounds(458, 31, 96, 20);
-		panel.add(textField_83);
+		Fila16 = new JTextField();
+		Fila16.setColumns(10);
+		Fila16.setBounds(458, 31, 96, 20);
+		panel.add(Fila16);
 		
-		textField_84 = new JTextField();
-		textField_84.setColumns(10);
-		textField_84.setBounds(458, 51, 96, 20);
-		panel.add(textField_84);
+		Fila26 = new JTextField();
+		Fila26.setColumns(10);
+		Fila26.setBounds(458, 51, 96, 20);
+		panel.add(Fila26);
 		
-		textField_85 = new JTextField();
-		textField_85.setColumns(10);
-		textField_85.setBounds(458, 71, 96, 20);
-		panel.add(textField_85);
+		Fila36 = new JTextField();
+		Fila36.setColumns(10);
+		Fila36.setBounds(458, 71, 96, 20);
+		panel.add(Fila36);
 		
-		textField_86 = new JTextField();
-		textField_86.setColumns(10);
-		textField_86.setBounds(458, 91, 96, 20);
-		panel.add(textField_86);
+		Fila46 = new JTextField();
+		Fila46.setColumns(10);
+		Fila46.setBounds(458, 91, 96, 20);
+		panel.add(Fila46);
 		
-		textField_87 = new JTextField();
-		textField_87.setColumns(10);
-		textField_87.setBounds(458, 111, 96, 20);
-		panel.add(textField_87);
+		Fila56 = new JTextField();
+		Fila56.setColumns(10);
+		Fila56.setBounds(458, 111, 96, 20);
+		panel.add(Fila56);
 		
-		textField_88 = new JTextField();
-		textField_88.setColumns(10);
-		textField_88.setBounds(458, 131, 96, 20);
-		panel.add(textField_88);
+		Fila66 = new JTextField();
+		Fila66.setColumns(10);
+		Fila66.setBounds(458, 131, 96, 20);
+		panel.add(Fila66);
 		
-		textField_89 = new JTextField();
-		textField_89.setColumns(10);
-		textField_89.setBounds(458, 151, 96, 20);
-		panel.add(textField_89);
+		Fila76 = new JTextField();
+		Fila76.setColumns(10);
+		Fila76.setBounds(458, 151, 96, 20);
+		panel.add(Fila76);
 		
-		textField_90 = new JTextField();
-		textField_90.setColumns(10);
-		textField_90.setBounds(458, 171, 96, 20);
-		panel.add(textField_90);
+		Fila86 = new JTextField();
+		Fila86.setColumns(10);
+		Fila86.setBounds(458, 171, 96, 20);
+		panel.add(Fila86);
 		
-		textField_91 = new JTextField();
-		textField_91.setColumns(10);
-		textField_91.setBounds(458, 191, 96, 20);
-		panel.add(textField_91);
+		Fila96 = new JTextField();
+		Fila96.setColumns(10);
+		Fila96.setBounds(458, 191, 96, 20);
+		panel.add(Fila96);
 		
-		textField_92 = new JTextField();
-		textField_92.setColumns(10);
-		textField_92.setBounds(458, 211, 96, 20);
-		panel.add(textField_92);
+		Fila106 = new JTextField();
+		Fila106.setColumns(10);
+		Fila106.setBounds(458, 211, 96, 20);
+		panel.add(Fila106);
 		
-		textField_93 = new JTextField();
-		textField_93.setColumns(10);
-		textField_93.setBounds(458, 231, 96, 20);
-		panel.add(textField_93);
+		Fila116 = new JTextField();
+		Fila116.setColumns(10);
+		Fila116.setBounds(458, 231, 96, 20);
+		panel.add(Fila116);
 		
-		textField_94 = new JTextField();
-		textField_94.setColumns(10);
-		textField_94.setBounds(458, 251, 96, 20);
-		panel.add(textField_94);
+		Fila126 = new JTextField();
+		Fila126.setColumns(10);
+		Fila126.setBounds(458, 251, 96, 20);
+		panel.add(Fila126);
 		
-		textField_95 = new JTextField();
-		textField_95.setColumns(10);
-		textField_95.setBounds(458, 271, 96, 20);
-		panel.add(textField_95);
+		Fila137 = new JTextField();
+		Fila137.setColumns(10);
+		Fila137.setBounds(458, 271, 96, 20);
+		panel.add(Fila137);
 		
-		textField_96 = new JTextField();
-		textField_96.setColumns(10);
-		textField_96.setBounds(458, 291, 96, 20);
-		panel.add(textField_96);
+		Fila146 = new JTextField();
+		Fila146.setColumns(10);
+		Fila146.setBounds(458, 291, 96, 20);
+		panel.add(Fila146);
 		
-		textField_97 = new JTextField();
-		textField_97.setColumns(10);
-		textField_97.setBounds(458, 311, 96, 20);
-		panel.add(textField_97);
+		Fila156 = new JTextField();
+		Fila156.setColumns(10);
+		Fila156.setBounds(458, 311, 96, 20);
+		panel.add(Fila156);
 		
-		textField_98 = new JTextField();
-		textField_98.setColumns(10);
-		textField_98.setBounds(458, 331, 96, 20);
-		panel.add(textField_98);
+		Fila166 = new JTextField();
+		Fila166.setColumns(10);
+		Fila166.setBounds(458, 331, 96, 20);
+		panel.add(Fila166);
 		
-		textField_99 = new JTextField();
-		textField_99.setColumns(10);
-		textField_99.setBounds(458, 351, 96, 20);
-		panel.add(textField_99);
+		Fila176 = new JTextField();
+		Fila176.setColumns(10);
+		Fila176.setBounds(458, 351, 96, 20);
+		panel.add(Fila176);
 		
-		textField_100 = new JTextField();
-		textField_100.setColumns(10);
-		textField_100.setBounds(458, 371, 96, 20);
-		panel.add(textField_100);
+		Fila186 = new JTextField();
+		Fila186.setColumns(10);
+		Fila186.setBounds(458, 371, 96, 20);
+		panel.add(Fila186);
 		
-		textField_101 = new JTextField();
-		textField_101.setColumns(10);
-		textField_101.setBounds(458, 411, 96, 20);
-		panel.add(textField_101);
+		Fila206 = new JTextField();
+		Fila206.setColumns(10);
+		Fila206.setBounds(458, 411, 96, 20);
+		panel.add(Fila206);
 		
-		textField_102 = new JTextField();
-		textField_102.setColumns(10);
-		textField_102.setBounds(458, 391, 96, 20);
-		panel.add(textField_102);
+		Fila196 = new JTextField();
+		Fila196.setColumns(10);
+		Fila196.setBounds(458, 391, 96, 20);
+		panel.add(Fila196);
 		
 		txtVueltaRapida = new JTextField();
 		txtVueltaRapida.setText("VUELTA RAPIDA");
@@ -912,104 +912,104 @@ public class PruebaSimulacion extends JFrame {
 		txtVueltaRapida.setBounds(554, 11, 90, 20);
 		panel.add(txtVueltaRapida);
 		
-		textField_82 = new JTextField();
-		textField_82.setColumns(10);
-		textField_82.setBounds(554, 31, 90, 20);
-		panel.add(textField_82);
+		Fila17 = new JTextField();
+		Fila17.setColumns(10);
+		Fila17.setBounds(554, 31, 90, 20);
+		panel.add(Fila17);
 		
-		textField_103 = new JTextField();
-		textField_103.setColumns(10);
-		textField_103.setBounds(554, 51, 90, 20);
-		panel.add(textField_103);
+		Fila27 = new JTextField();
+		Fila27.setColumns(10);
+		Fila27.setBounds(554, 51, 90, 20);
+		panel.add(Fila27);
 		
-		textField_104 = new JTextField();
-		textField_104.setColumns(10);
-		textField_104.setBounds(554, 71, 90, 20);
-		panel.add(textField_104);
+		Fila37 = new JTextField();
+		Fila37.setColumns(10);
+		Fila37.setBounds(554, 71, 90, 20);
+		panel.add(Fila37);
 		
-		textField_105 = new JTextField();
-		textField_105.setColumns(10);
-		textField_105.setBounds(554, 91, 90, 20);
-		panel.add(textField_105);
+		Fila47 = new JTextField();
+		Fila47.setColumns(10);
+		Fila47.setBounds(554, 91, 90, 20);
+		panel.add(Fila47);
 		
-		textField_106 = new JTextField();
-		textField_106.setColumns(10);
-		textField_106.setBounds(554, 111, 90, 20);
-		panel.add(textField_106);
+		Fila57 = new JTextField();
+		Fila57.setColumns(10);
+		Fila57.setBounds(554, 111, 90, 20);
+		panel.add(Fila57);
 		
-		textField_107 = new JTextField();
-		textField_107.setColumns(10);
-		textField_107.setBounds(554, 131, 90, 20);
-		panel.add(textField_107);
+		Fila67 = new JTextField();
+		Fila67.setColumns(10);
+		Fila67.setBounds(554, 131, 90, 20);
+		panel.add(Fila67);
 		
-		textField_108 = new JTextField();
-		textField_108.setColumns(10);
-		textField_108.setBounds(554, 151, 90, 20);
-		panel.add(textField_108);
+		Fila77 = new JTextField();
+		Fila77.setColumns(10);
+		Fila77.setBounds(554, 151, 90, 20);
+		panel.add(Fila77);
 		
-		textField_109 = new JTextField();
-		textField_109.setColumns(10);
-		textField_109.setBounds(554, 171, 90, 20);
-		panel.add(textField_109);
+		Fila87 = new JTextField();
+		Fila87.setColumns(10);
+		Fila87.setBounds(554, 171, 90, 20);
+		panel.add(Fila87);
 		
-		textField_110 = new JTextField();
-		textField_110.setColumns(10);
-		textField_110.setBounds(554, 191, 90, 20);
-		panel.add(textField_110);
+		Fila97 = new JTextField();
+		Fila97.setColumns(10);
+		Fila97.setBounds(554, 191, 90, 20);
+		panel.add(Fila97);
 		
-		textField_111 = new JTextField();
-		textField_111.setColumns(10);
-		textField_111.setBounds(554, 211, 90, 20);
-		panel.add(textField_111);
+		Fila107 = new JTextField();
+		Fila107.setColumns(10);
+		Fila107.setBounds(554, 211, 90, 20);
+		panel.add(Fila107);
 		
-		textField_112 = new JTextField();
-		textField_112.setColumns(10);
-		textField_112.setBounds(554, 231, 90, 20);
-		panel.add(textField_112);
+		Fila117 = new JTextField();
+		Fila117.setColumns(10);
+		Fila117.setBounds(554, 231, 90, 20);
+		panel.add(Fila117);
 		
-		textField_113 = new JTextField();
-		textField_113.setColumns(10);
-		textField_113.setBounds(554, 251, 90, 20);
-		panel.add(textField_113);
+		Fila127 = new JTextField();
+		Fila127.setColumns(10);
+		Fila127.setBounds(554, 251, 90, 20);
+		panel.add(Fila127);
 		
-		textField_114 = new JTextField();
-		textField_114.setColumns(10);
-		textField_114.setBounds(554, 271, 90, 20);
-		panel.add(textField_114);
+		Fila138 = new JTextField();
+		Fila138.setColumns(10);
+		Fila138.setBounds(554, 271, 90, 20);
+		panel.add(Fila138);
 		
-		textField_115 = new JTextField();
-		textField_115.setColumns(10);
-		textField_115.setBounds(554, 291, 90, 20);
-		panel.add(textField_115);
+		Fila147 = new JTextField();
+		Fila147.setColumns(10);
+		Fila147.setBounds(554, 291, 90, 20);
+		panel.add(Fila147);
 		
-		textField_116 = new JTextField();
-		textField_116.setColumns(10);
-		textField_116.setBounds(554, 311, 90, 20);
-		panel.add(textField_116);
+		Fila157 = new JTextField();
+		Fila157.setColumns(10);
+		Fila157.setBounds(554, 311, 90, 20);
+		panel.add(Fila157);
 		
-		textField_117 = new JTextField();
-		textField_117.setColumns(10);
-		textField_117.setBounds(554, 331, 90, 20);
-		panel.add(textField_117);
+		Fila167 = new JTextField();
+		Fila167.setColumns(10);
+		Fila167.setBounds(554, 331, 90, 20);
+		panel.add(Fila167);
 		
-		textField_118 = new JTextField();
-		textField_118.setColumns(10);
-		textField_118.setBounds(554, 351, 90, 20);
-		panel.add(textField_118);
+		Fila177 = new JTextField();
+		Fila177.setColumns(10);
+		Fila177.setBounds(554, 351, 90, 20);
+		panel.add(Fila177);
 		
-		textField_119 = new JTextField();
-		textField_119.setColumns(10);
-		textField_119.setBounds(554, 371, 90, 20);
-		panel.add(textField_119);
+		Fila187 = new JTextField();
+		Fila187.setColumns(10);
+		Fila187.setBounds(554, 371, 90, 20);
+		panel.add(Fila187);
 		
-		textField_120 = new JTextField();
-		textField_120.setColumns(10);
-		textField_120.setBounds(554, 411, 90, 20);
-		panel.add(textField_120);
+		Fila207 = new JTextField();
+		Fila207.setColumns(10);
+		Fila207.setBounds(554, 411, 90, 20);
+		panel.add(Fila207);
 		
-		textField_121 = new JTextField();
-		textField_121.setColumns(10);
-		textField_121.setBounds(554, 391, 90, 20);
-		panel.add(textField_121);
+		Fila197 = new JTextField();
+		Fila197.setColumns(10);
+		Fila197.setBounds(554, 391, 90, 20);
+		panel.add(Fila197);
 	}
 }
