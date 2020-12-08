@@ -59,7 +59,10 @@ public class Simulacion extends JFrame {
 		
 		JComboBox comboListaCircuitos = new JComboBox();
 		comboListaCircuitos.setBounds(634, 116, 200, 20);
-		contentPane.add(comboListaCircuitos);
+	/*	for(int i=0;i<premios.size();i++) {
+	comboListaCircuitos.addItem(premios.get(i));
+			} */
+ 		contentPane.add(comboListaCircuitos);
 		
 		JLabel lblFotoCircuito = new JLabel("");
 		lblFotoCircuito.setBounds(41, 112, 246, 254);
@@ -103,6 +106,7 @@ public class Simulacion extends JFrame {
 		JComboBox comboTiempo = new JComboBox();
 		comboTiempo.setBounds(634, 228, 200, 20);
 		contentPane.add(comboTiempo);
+		
 		
 		JPanel PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
