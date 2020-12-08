@@ -15,7 +15,7 @@ public Simulacion(ArrayList <Piloto> coches,Carrera carrera) {
 	
 }
 
-	public void main() {
+	public ArrayList<Piloto> main() {
 		
 		
 		
@@ -46,7 +46,8 @@ public Simulacion(ArrayList <Piloto> coches,Carrera carrera) {
 			}
 			
 		}
-
+		return coches;
 	}
+	
 
 }
