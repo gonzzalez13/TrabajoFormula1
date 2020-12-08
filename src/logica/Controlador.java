@@ -6,19 +6,21 @@ import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import modelo.Escuderia;
+import modelo.GranPremio;
+import modelo.Piloto;
 import vista.Inicio;
 import vista.Login;
 import vista.Noticia;
 import vista.Noticia2;
 import vista.Noticia3;
-import modelo.Escuderia;
-import modelo.Piloto;
 
 public class Controlador implements ActionListener {
 	private Inicio inicio;
 	private String salida;
 	private ConectionHelper concetion;
 	private Piloto piloto;
+	private GranPremio premio;
 	private ArrayList <Piloto> pilotos;
 	private Escuderia escuderia;
 	private Noticia noticia= new Noticia();
@@ -58,7 +60,7 @@ public class Controlador implements ActionListener {
 		
 			case "Escuderias":
 				
-				salida="Escuderias";
+				salida=e.getActionCommand();
 				
 				inicio.escuderia(this);
 				inicio.setVisible(true);
@@ -66,7 +68,7 @@ public class Controlador implements ActionListener {
 				break;
 			case "Inicio":
 				
-				salida="Inicio";
+				salida=e.getActionCommand();
 				
 				inicio.inicio(this);
 				inicio.setVisible(true);
@@ -75,17 +77,17 @@ public class Controlador implements ActionListener {
 				break;
 				
 			case "Leer mas I":
-				salida="Leer mas I";
+				salida=e.getActionCommand();
 				noticia.setVisible(true);
 				
 				break;
 			case "Leer mas II":
-				salida="Leer mas II";
+				salida=e.getActionCommand();
 				noticia2.setVisible(true);
 				
 				break;
 			case "Leer mas III":
-				salida="Leer mas III";
+				salida=e.getActionCommand();
 				noticia3.setVisible(true);
 				
 				break;
@@ -312,7 +314,7 @@ public class Controlador implements ActionListener {
 				
 			case "Clasificacion":
 				
-				salida="Clasificacion";
+				salida=e.getActionCommand();
 				inicio.clasificacion(this);
 				inicio.setVisible(true);
 			
@@ -320,14 +322,17 @@ public class Controlador implements ActionListener {
 				break;
 				
 			case "Gran Premio":	
-				salida="Gran Premio";
+				salida=e.getActionCommand();
 				inicio.GrandesPremios(this);
 				inicio.setVisible(true);
 				
 				break;
+			case"Monza":
+				sacarPremio(e.getActionCommand());
+				break;
 				
 			case "Login":
-				salida="Login";
+				salida=e.getActionCommand();
 				login.setVisible(true);
 
 				break;	
@@ -353,7 +358,14 @@ public class Controlador implements ActionListener {
 			e1.printStackTrace();
 		}
 	}
-
+	private void sacarPremio(String comando) {
+		try {
+			premio=concetion.consultaGranPremio(comando);
+			inicio.fichaGranPremio(premio, this);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
 	private void sacarEscuderia(int id,String ruta,String piloto1,String piloto2) {
 		try {
 			escuderia = concetion.selectEscuderia(id);

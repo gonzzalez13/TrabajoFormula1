@@ -26,6 +26,7 @@ import javax.swing.border.EmptyBorder;
 
 import logica.Controlador;
 import modelo.Escuderia;
+import modelo.GranPremio;
 import modelo.Piloto;
 
 public class Inicio extends Cabecera {
@@ -2435,7 +2436,7 @@ public class Inicio extends Cabecera {
 		menu(controlador);
 	}
 	
-	public void fichaGranPremio(Controlador controlador) {
+	public void fichaGranPremio(GranPremio premio,Controlador controlador) {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 990, 650);
