@@ -157,7 +157,7 @@ public class GranPremio extends JFrame {
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.png"));
-		lblNewLabel.setBounds(21, 63, 974, 540);
+		lblNewLabel.setBounds(0, 63, 995, 548);
 		contentPane.add(lblNewLabel);
 		
 		PanelMenu = new JPanel();
