@@ -190,7 +190,7 @@ public class ConectionHelper {
 		return pilotos;
 	}
 	public ArrayList<Piloto> consultaTPiloto() throws SQLException,ClassNotFoundException {
-		String sql="SELECT  P.NOMBRE,P.NACIONALIDAD,P.FECHA_NACIMIENTO,P.PALMARES,P.ESTADO,P.BIBLIOGRAFIA,P.PODIOS,P.ESCUDERIA_ID_ESCUDERIA , P.ID_PILOTO FROM PILOTO P";
+		String sql="SELECT  P.NOMBRE,P.NACIONALIDAD,P.FECHA_NACIMIENTO,P.PALMARES,P.ESTADO,P.BIBLIOGRAFIA,P.PODIOS,P.ESCUDERIA_ID_ESCUDERIA , P.ID_PILOTO ,P.MEDIA FROM PILOTO P";
 		Statement sentencia=null;
 		ResultSet resultado=null;
 		Connection conexion=null;
@@ -213,7 +213,7 @@ public class ConectionHelper {
 				piloto.setPodios(resultado.getInt(7));
 				piloto.setIdEscuderia(resultado.getLong(8));
 				piloto.setIdPiloto(resultado.getLong(9));
-				
+				piloto.setMedia(resultado.getInt(10));
 				pilotos.add(piloto);
 				
 			}

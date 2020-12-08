@@ -1,23 +1,19 @@
 package vista;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.Toolkit;
 import java.io.File;
+import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
-import javax.swing.ImageIcon;
-import javax.swing.JSeparator;
-import javax.swing.JTextArea;
-
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
 
 public class PruebaSimulacion extends JFrame {
 
@@ -879,6 +875,84 @@ public class PruebaSimulacion extends JFrame {
 		Fila194.setColumns(10);
 		Fila194.setBounds(363, 428, 100, 20);
 		panel.add(Fila194);
+		
+		ArrayList<JTextField> uno=new ArrayList<JTextField>();
+		uno.add(Fila11);
+		uno.add(Fila21);
+		uno.add(Fila31);
+		uno.add(Fila41);
+		uno.add(Fila51);
+		uno.add(Fila61);
+		uno.add(Fila71);
+		uno.add(Fila81);
+		uno.add(Fila91);
+		uno.add(Fila101);
+		uno.add(Fila111);
+		uno.add(Fila121);
+		uno.add(Fila131);
+		uno.add(Fila141);
+		uno.add(Fila151);
+		uno.add(Fila161);
+		uno.add(Fila171);
+		uno.add(Fila181);
+		uno.add(Fila191);
+		uno.add(Fila201);
+		
+		ArrayList<JTextField> dos=new ArrayList<JTextField>();
+		uno.add(Fila12);
+		uno.add(Fila22);
+		uno.add(Fila32);
+		uno.add(Fila42);
+		uno.add(Fila52);
+		uno.add(Fila62);
+		uno.add(Fila72);
+		uno.add(Fila82);
+		uno.add(Fila92);
+		uno.add(Fila102);
+		uno.add(Fila112);
+		uno.add(Fila122);
+		uno.add(Fila132);
+		uno.add(Fila142);
+		uno.add(Fila152);
+		uno.add(Fila162);
+		uno.add(Fila172);
+		uno.add(Fila182);
+		uno.add(Fila192);
+		uno.add(Fila202);
+		ArrayList<JTextField> tres=new ArrayList<JTextField>();
+		uno.add(Fila13);
+		uno.add(Fila23);
+		uno.add(Fila33);
+		uno.add(Fila43);
+		uno.add(Fila53);
+		uno.add(Fila63);
+		uno.add(Fila73);
+		uno.add(Fila83);
+		uno.add(Fila93);
+		uno.add(Fila103);
+		uno.add(Fila113);
+		uno.add(Fila123);
+		uno.add(Fila133);
+		uno.add(Fila143);
+		uno.add(Fila153);
+		uno.add(Fila163);
+		uno.add(Fila173);
+		uno.add(Fila183);
+		uno.add(Fila193);
+		uno.add(Fila203);
+		for (int i = 0; i < uno.size(); i++) {
+//			uno.get(i).setText(main.get(i).getPosicio()+"");
+//			
+		}
+		for (int i = 0; i < dos.size(); i++) {
+//			uno.get(i).setText(main.get(i).getNombre());
+//			
+		}
+		for (int i = 0; i < tres.size(); i++) {
+//			uno.get(i).setText(main.get(i).getIdEscuderia()+"");
+//			
+		}
+		
 		
 		JPanel PanelLabelCircuito = new JPanel();
 		PanelLabelCircuito.setBounds(495, 48, 443, 290);

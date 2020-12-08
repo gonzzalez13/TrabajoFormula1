@@ -452,8 +452,9 @@ public class Controlador implements ActionListener {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				sim.main();
 				
+				inicio.fichaSimulacion(this,sim.main());
+				inicio.setVisible(true);
 				break;
 			
 				

@@ -16,12 +16,11 @@ public Simulacion(ArrayList <Piloto> coches,Carrera carrera) {
 }
 
 	public ArrayList<Piloto> main() {
-		
-		
+	
 		
 	
 		for (int i = 0; i < carrera.getVueltas(); i++) {
-			
+		
 			for (int z = 0; z < coches.size(); ) {
 		
 				double uno=(Math.random()*coches.get(z).getMedia()+1);
