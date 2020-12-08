@@ -86,11 +86,6 @@ public class GranPremio {
 	public void setClasiSabado(Clasificacion clasiSabado) {
 		this.clasiSabado = clasiSabado;
 	}
-	@Override
-	public String toString() {
-		return "GranPremio [idGranPremio=" + idGranPremio + ", idEscuderia=" + idEscuderia + ", idCoche=" + idCoche
-				+ ", idPiloto=" + idPiloto + ", nombre=" + nombre + ", circuito=" + circuito + ", vueltas=" + vueltas
-				+ ", clasiGeneral=" + clasiGeneral.toString() + ", clasiSabado=" + clasiSabado.toString() + "]"+"\n";
-	}
+
 
 }

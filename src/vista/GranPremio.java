@@ -225,7 +225,7 @@ public class GranPremio extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblFoto = new JLabel("");
-		lblFoto.setBounds(10, 24, 335, 282);
+		lblFoto.setBounds(10, 11, 335, 282);
 		panel.add(lblFoto);
 		lblFoto.setIcon(new ImageIcon());
 		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);

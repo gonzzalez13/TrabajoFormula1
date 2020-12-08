@@ -22,12 +22,13 @@ public class Controlador implements ActionListener {
 	private Piloto piloto;
 	private GranPremio premio;
 	private ArrayList <Piloto> pilotos;
+	private ArrayList <GranPremio> premios;
 	private Escuderia escuderia;
 	private Noticia noticia= new Noticia();
 	private Noticia2 noticia2 = new Noticia2();
 	private Noticia3 noticia3 = new Noticia3();
 	private Login login = new Login();
-	private String ruta,piloto1,piloto2;
+	private String ruta,piloto1,piloto2,circuito;
 	
 	public Inicio getInicio() {
 		return inicio;
@@ -76,6 +77,11 @@ public class Controlador implements ActionListener {
 			
 				break;
 				
+			case "Simulacion":	
+				salida=e.getActionCommand();
+				sacarTPremios();
+				
+				break;
 			case "Leer mas I":
 				salida=e.getActionCommand();
 				noticia.setVisible(true);
@@ -327,9 +333,112 @@ public class Controlador implements ActionListener {
 				inicio.setVisible(true);
 				
 				break;
-			case"Monza":
-				sacarPremio(e.getActionCommand());
+				
+			case"Red bull Ring I":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Red Bull Ring.png";
+				sacarPremio(e.getActionCommand(),circuito);
 				break;
+				
+			case"Red bull Ring II":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Red Bull Ring.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Hungaroring":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Hungaroring.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Silverstone I":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Silverstone.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Silverstone II":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Silverstone.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Barcelona":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"Barcelona.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Spa":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"span.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Monza":
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"monza.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+				
+			case"Sochi":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"sochi.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Nurburgring":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"nurburgring.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Portimao":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"portimao.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"La toscana":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"mugello.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Imola":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"lmola.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Instambul Park":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"istanbul.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Bahrain I":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"sakhir.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Bahrain II":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"sakhir2.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+			case"Yas Marinas":	
+				salida=e.getActionCommand();
+				circuito ="src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+"abudhabi.png";
+				sacarPremio(e.getActionCommand(),circuito);
+				break;
+				
+				
+			
 				
 			case "Login":
 				salida=e.getActionCommand();
@@ -346,6 +455,20 @@ public class Controlador implements ActionListener {
 	}
 
 
+	private void sacarTPremios() {
+		try {
+			premios = concetion.consultaPremios();
+			inicio.simulacion(this, premios);
+			inicio.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+
 	private void sacarPiloto(String comando,String ruta) {
 		try {
 			piloto=concetion.consultaPiloto(comando);
@@ -358,10 +481,10 @@ public class Controlador implements ActionListener {
 			e1.printStackTrace();
 		}
 	}
-	private void sacarPremio(String comando) {
+	private void sacarPremio(String comando,String circuito) {
 		try {
 			premio=concetion.consultaGranPremio(comando);
-			inicio.fichaGranPremio(premio, this);
+			inicio.fichaGranPremio(premio,this,circuito);
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}

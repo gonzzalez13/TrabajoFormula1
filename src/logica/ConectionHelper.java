@@ -292,7 +292,7 @@ public class ConectionHelper {
 		return granpremio;
 	}
 	public ArrayList<GranPremio> consultaPremios() throws SQLException,ClassNotFoundException {
-		String sql="SELECT NOMBRE,AÑO_PRIMER_GP,LONGITUD,DISTANCIA_GP,CURVAS,VUELTAS FROM GRAN_PREMIO";
+		String sql="SELECT NOMBRE,AÑO_PRIMER_GP,CIRCUITO,LONGITUD,DISTANCIA_GP,CURVAS,VUELTAS FROM GRAN_PREMIO";
 		Statement sentencia=null;
 		ResultSet resultado=null;
 		Connection conexion=null;
