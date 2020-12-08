@@ -64,6 +64,7 @@ CREATE TABLE IF NOT EXISTS coche (
 CREATE TABLE IF NOT EXISTS gran_premio (
   id_gran_premio INT NOT NULL AUTO_INCREMENT,
   nombre VARCHAR(45) NOT NULL,
+  circuito VARCHAR(45) NOT NULL,
   año_primer_gp INT NOT NULL,
   longitud INT NOT NULL,
   distancia_gp INT NOT NULL,
@@ -143,23 +144,23 @@ insert into piloto(nombre,nacionalidad,fecha_nacimiento,palmares,estado,bibliogr
 
 
 
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE AUSTRIA F1 2020",1964,4.326,307.146,9,71);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ESTIRIA F1 2020",2020,4.326,307.146,9,71);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE HUNGRÍA F1 2020",1986,4.381,306.670,14,70);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE GRAN BRETAÑA F1 2020",1950,5.891,306.332,18,52);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DEL 70º ANIVERSARIO F1",2020,5.891,306.332,18,52);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ESPAÑA F1 2020",1951,4.655,307.230,16,66);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE BÉLGICA F1 2020",1950,7.004,308.176,19,44);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ITALIA F1 2020",1950,5.793,307.029,11,53);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE LA TOSCANA F1 2020",2020,5.245,277.985,15,53);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE RUSIA F1 2020",2014,5.848,309.944,18,53);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE EIFEL F1 2020",2020,5.148,308.880,15,60);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE PORTUGAL F1 2020",1958,4.182,305.286,15,73);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE LA EMILIA ROMAÑA F1 2020",2020,4.909,309.267,21,63);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE TURQUÍA F1 2020",2005,5.338,309.604,14,58);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE BARÉIN F1 2020",2004,5.412,308.484,15,57);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE SAKHIR F1 2020",2020,3.543,308.241,11,87);
-insert into gran_premio(nombre,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ABU DHABI F1 2020",2009,5.554,305.355,21,55);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE AUSTRIA F1 2020","Red bull Ring I",1964,4.326,307.146,9,71);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ESTIRIA F1 2020","Red bull Ring II",2020,4.326,307.146,9,71);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE HUNGRÍA F1 2020","Hungaroring",1986,4.381,306.670,14,70);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE GRAN BRETAÑA F1 2020","Silverstone I",1950,5.891,306.332,18,52);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DEL 70º ANIVERSARIO F1","Silverstone II",2020,5.891,306.332,18,52);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ESPAÑA F1 2020","Barcelona",1951,4.655,307.230,16,66);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE BÉLGICA F1 2020","Spa",1950,7.004,308.176,19,44);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ITALIA F1 2020","Monza",1950,5.793,307.029,11,53);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE LA TOSCANA F1 2020","La toscana",2020,5.245,277.985,15,53);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE RUSIA F1 2020","Sochi",2014,5.848,309.944,18,53);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE EIFEL F1 2020","Nurburgring",2020,5.148,308.880,15,60);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE PORTUGAL F1 2020","Portimao",1958,4.182,305.286,15,73);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE LA EMILIA ROMAÑA F1 2020","Imola",2020,4.909,309.267,21,63);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE TURQUÍA F1 2020","Instambul Park",2005,5.338,309.604,14,58);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE BARÉIN F1 2020","Bahrain I",2004,5.412,308.484,15,57);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE SAKHIR F1 2020","Bahrain II",2020,3.543,308.241,11,87);
+insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ABU DHABI F1 2020","Yas Marinas",2009,5.554,305.355,21,55);
 
 
 
