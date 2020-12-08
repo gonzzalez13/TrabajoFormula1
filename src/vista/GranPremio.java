@@ -25,8 +25,20 @@ public class GranPremio extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
-	private JButton btnInicio,btnEscuderias,btnPilotos,btnGranPre,btnClasi,btnLogin,btnLogo;
 	private JButton btnSimular;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JLabel lblNewLabel;
+	private JPanel PanelMenu;
+	private JLabel lblLogo;
+	private JButton btnInicio_1;
+	private JButton btnEscuderias_1;
+	private JButton btnPilotos_1;
+	private JButton btnGranPre_1;
+	private JButton btnClasi_1;
+	private JButton btnLogin_1;
+	private JButton btnSimulacion;
 
 	/**
 	 * Launch the application.
@@ -49,7 +61,7 @@ public class GranPremio extends JFrame {
 	 */
 	public GranPremio() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 865, 650);
+		setBounds(100, 100, 990, 650);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -57,24 +69,19 @@ public class GranPremio extends JFrame {
 		
 		JLabel lblFoto = new JLabel("Foto Gran Premio");
 		lblFoto.setHorizontalAlignment(SwingConstants.CENTER);
-		lblFoto.setBounds(25, 85, 245, 282);
+		lblFoto.setBounds(25, 110, 245, 282);
 		contentPane.add(lblFoto);
-		
-		JLabel lblNewLabel_1 = new JLabel("BIOGRAFIA");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setBounds(25, 433, 385, 153);
-		contentPane.add(lblNewLabel_1);
 		
 		btnSimular = new JButton("Simular");
 		btnSimular.setForeground(Color.RED);
 		btnSimular.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnSimular.setBackground(Color.DARK_GRAY);
-		btnSimular.setBounds(693, 538, 94, 48);
+		btnSimular.setBounds(771, 541, 94, 48);
 		contentPane.add(btnSimular);
 		
 		JLabel lblNewLabel_2 = new JLabel("Nombre:");
 		lblNewLabel_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2.setBounds(545, 82, 65, 30);
+		lblNewLabel_2.setBounds(572, 112, 65, 30);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel label = new JLabel("");
@@ -83,18 +90,18 @@ public class GranPremio extends JFrame {
 		
 		JLabel lblNewLabel_2_1 = new JLabel("Longitud:");
 		lblNewLabel_2_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1.setBounds(545, 175, 65, 30);
+		lblNewLabel_2_1.setBounds(572, 194, 65, 30);
 		contentPane.add(lblNewLabel_2_1);
 		
 		JLabel lblNewLabel_2_1_1 = new JLabel("Curvas:");
 		lblNewLabel_2_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		lblNewLabel_2_1_1.setBounds(545, 278, 65, 30);
+		lblNewLabel_2_1_1.setBounds(587, 276, 50, 30);
 		contentPane.add(lblNewLabel_2_1_1);
 		
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.setBackground(SystemColor.control);
-		textField.setBounds(651, 88, 112, 20);
+		textField.setBounds(680, 118, 185, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
@@ -102,128 +109,115 @@ public class GranPremio extends JFrame {
 		textField_1.setEditable(false);
 		textField_1.setColumns(10);
 		textField_1.setBackground(SystemColor.menu);
-		textField_1.setBounds(651, 181, 112, 20);
+		textField_1.setBounds(680, 200, 185, 20);
 		contentPane.add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setEditable(false);
 		textField_2.setColumns(10);
 		textField_2.setBackground(SystemColor.menu);
-		textField_2.setBounds(651, 284, 112, 20);
+		textField_2.setBounds(680, 282, 185, 20);
 		contentPane.add(textField_2);
 		
-		JPanel PanelMenu = new JPanel();
+		JLabel lblNewLabel_2_1_2 = new JLabel("Primer a\u00F1o:");
+		lblNewLabel_2_1_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNewLabel_2_1_2.setBounds(554, 153, 83, 30);
+		contentPane.add(lblNewLabel_2_1_2);
+		
+		textField_3 = new JTextField();
+		textField_3.setEditable(false);
+		textField_3.setColumns(10);
+		textField_3.setBackground(SystemColor.menu);
+		textField_3.setBounds(680, 159, 185, 20);
+		contentPane.add(textField_3);
+		
+		JLabel lblNewLabel_2_1_3 = new JLabel("Distancia GP:");
+		lblNewLabel_2_1_3.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNewLabel_2_1_3.setBounds(541, 235, 96, 30);
+		contentPane.add(lblNewLabel_2_1_3);
+		
+		textField_4 = new JTextField();
+		textField_4.setEditable(false);
+		textField_4.setColumns(10);
+		textField_4.setBackground(SystemColor.menu);
+		textField_4.setBounds(680, 241, 185, 20);
+		contentPane.add(textField_4);
+		
+		JLabel lblNewLabel_2_1_1_1 = new JLabel("Vueltas:");
+		lblNewLabel_2_1_1_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		lblNewLabel_2_1_1_1.setBounds(587, 317, 65, 30);
+		contentPane.add(lblNewLabel_2_1_1_1);
+		
+		textField_5 = new JTextField();
+		textField_5.setEditable(false);
+		textField_5.setColumns(10);
+		textField_5.setBackground(SystemColor.menu);
+		textField_5.setBounds(680, 323, 185, 20);
+		contentPane.add(textField_5);
+		
+		lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.png"));
+		lblNewLabel.setBounds(0, 71, 974, 540);
+		contentPane.add(lblNewLabel);
+		
+		PanelMenu = new JPanel();
 		PanelMenu.setLayout(null);
-		PanelMenu.setBackground(Color.LIGHT_GRAY);
-		PanelMenu.setBounds(0, 0, 849, 71);
+		PanelMenu.setBackground(new Color(178, 29, 28));
+		PanelMenu.setBounds(0, 0, 974, 72);
 		contentPane.add(PanelMenu);
 		
-		btnInicio = new JButton("Inicio");
-		btnInicio.setForeground(Color.RED);
-		btnInicio.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnInicio.setBackground(Color.DARK_GRAY);
-		btnInicio.setBounds(144, 11, 74, 48);
-		PanelMenu.add(btnInicio);
+		lblLogo = new JLabel("");
+		lblLogo.setBounds(10, 11, 133, 48);
+		PanelMenu.add(lblLogo);
 		
-		btnEscuderias = new JButton("Escuderias");
-		btnEscuderias.setForeground(Color.RED);
-		btnEscuderias.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnEscuderias.setBackground(Color.DARK_GRAY);
-		btnEscuderias.setBounds(226, 11, 112, 48);
-		PanelMenu.add(btnEscuderias);
+		btnInicio_1 = new JButton("Inicio");
+		btnInicio_1.setForeground(Color.WHITE);
+		btnInicio_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnInicio_1.setBackground(new Color(59, 45, 45));
+		btnInicio_1.setBounds(144, 11, 74, 48);
+		PanelMenu.add(btnInicio_1);
 		
-		btnPilotos = new JButton("Pilotos");
-		btnPilotos.setForeground(Color.RED);
-		btnPilotos.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnPilotos.setBackground(Color.DARK_GRAY);
-		btnPilotos.setBounds(348, 11, 94, 48);
-		PanelMenu.add(btnPilotos);
+		btnEscuderias_1 = new JButton("Escuderias");
+		btnEscuderias_1.setForeground(Color.WHITE);
+		btnEscuderias_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnEscuderias_1.setBackground(new Color(59, 45, 45));
+		btnEscuderias_1.setBounds(226, 11, 112, 48);
+		PanelMenu.add(btnEscuderias_1);
 		
-		btnGranPre = new JButton("Gran Premio");
-		btnGranPre.setForeground(Color.RED);
-		btnGranPre.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnGranPre.setBackground(Color.DARK_GRAY);
-		btnGranPre.setBounds(452, 11, 130, 48);
-		PanelMenu.add(btnGranPre);
+		btnPilotos_1 = new JButton("Pilotos");
+		btnPilotos_1.setForeground(Color.WHITE);
+		btnPilotos_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnPilotos_1.setBackground(new Color(59, 45, 45));
+		btnPilotos_1.setBounds(348, 11, 94, 48);
+		PanelMenu.add(btnPilotos_1);
 		
-		btnClasi = new JButton("Clasificaciones");
-		btnClasi.setForeground(Color.RED);
-		btnClasi.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnClasi.setBackground(Color.DARK_GRAY);
-		btnClasi.setBounds(592, 11, 145, 48);
-		PanelMenu.add(btnClasi);
+		btnGranPre_1 = new JButton("Gran Premio");
+		btnGranPre_1.setForeground(Color.WHITE);
+		btnGranPre_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnGranPre_1.setBackground(new Color(59, 45, 45));
+		btnGranPre_1.setBounds(452, 11, 130, 48);
+		PanelMenu.add(btnGranPre_1);
 		
-		btnLogin = new JButton("Login");
-		btnLogin.setForeground(Color.RED);
-		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogin.setBackground(Color.DARK_GRAY);
-		btnLogin.setBounds(747, 11, 92, 48);
-		PanelMenu.add(btnLogin);
+		btnClasi_1 = new JButton("Clasificaciones");
+		btnClasi_1.setForeground(Color.WHITE);
+		btnClasi_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnClasi_1.setBackground(new Color(59, 45, 45));
+		btnClasi_1.setBounds(592, 11, 145, 48);
+		PanelMenu.add(btnClasi_1);
 		
-		btnLogo = new JButton("");
-		btnLogo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"F1-logo.png"));
-		btnLogo.setForeground(Color.LIGHT_GRAY);
-		btnLogo.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		btnLogo.setBorder(null);
-		btnLogo.setBackground(Color.LIGHT_GRAY);
-		btnLogo.setBounds(10, 11, 124, 48);
-		PanelMenu.add(btnLogo);
-	}
-
-	public JButton getBtnInicio() {
-		return btnInicio;
-	}
-
-	public void setBtnInicio(JButton btnInicio) {
-		this.btnInicio = btnInicio;
-	}
-
-	public JButton getBtnEscuderias() {
-		return btnEscuderias;
-	}
-
-	public void setBtnEscuderias(JButton btnEscuderias) {
-		this.btnEscuderias = btnEscuderias;
-	}
-
-	public JButton getBtnPilotos() {
-		return btnPilotos;
-	}
-
-	public void setBtnPilotos(JButton btnPilotos) {
-		this.btnPilotos = btnPilotos;
-	}
-
-	public JButton getBtnGranPre() {
-		return btnGranPre;
-	}
-
-	public void setBtnGranPre(JButton btnGranPre) {
-		this.btnGranPre = btnGranPre;
-	}
-
-	public JButton getBtnClasi() {
-		return btnClasi;
-	}
-
-	public void setBtnClasi(JButton btnClasi) {
-		this.btnClasi = btnClasi;
-	}
-
-	public JButton getBtnLogin() {
-		return btnLogin;
-	}
-
-	public void setBtnLogin(JButton btnLogin) {
-		this.btnLogin = btnLogin;
-	}
-
-	public JButton getBtnLogo() {
-		return btnLogo;
-	}
-
-	public void setBtnLogo(JButton btnLogo) {
-		this.btnLogo = btnLogo;
+		btnLogin_1 = new JButton("Login");
+		btnLogin_1.setForeground(Color.WHITE);
+		btnLogin_1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnLogin_1.setBackground(new Color(59, 45, 45));
+		btnLogin_1.setBounds(872, 11, 92, 48);
+		PanelMenu.add(btnLogin_1);
+		
+		btnSimulacion = new JButton("Simulacion");
+		btnSimulacion.setForeground(Color.WHITE);
+		btnSimulacion.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
+		btnSimulacion.setBackground(new Color(59, 45, 45));
+		btnSimulacion.setBounds(747, 11, 115, 48);
+		PanelMenu.add(btnSimulacion);
 	}
 
 	public JButton getBtnSimular() {
@@ -233,8 +227,4 @@ public class GranPremio extends JFrame {
 	public void setBtnSimular(JButton btnSimular) {
 		this.btnSimular = btnSimular;
 	}
-	
-	
-	
-	
 }
