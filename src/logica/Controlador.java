@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import vista.Inicio;
 import modelo.Escuderia;
@@ -14,6 +15,7 @@ public class Controlador implements ActionListener {
 	private String salida;
 	private ConectionHelper concetion;
 	private Piloto piloto;
+	private ArrayList <Piloto> pilotos;
 	private Escuderia escuderia;
 	private String ruta;
 	
@@ -184,10 +186,10 @@ public class Controlador implements ActionListener {
 				sacarPiloto(e.getActionCommand(),ruta);
 				
 				break;
-			case "Carlos Sainz":
+			case "Carlos Sainz JR":
 				salida=e.getActionCommand();
 				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"sainz.PNG";
-				sacarPiloto("Carlos Sainz JR",ruta);
+				sacarPiloto(e.getActionCommand(),ruta);
 				
 				break;
 				
@@ -297,8 +299,8 @@ public class Controlador implements ActionListener {
 	private void sacarEscuderia(int id,String ruta) {
 		try {
 			escuderia = concetion.selectEscuderia(id);
-			piloto = concetion.consultaPiloto(escuderia.getNombre());
-			inicio.FichaEscuderia(this, escuderia, piloto, ruta);
+			pilotos = concetion.consultaPilotoId(id);
+			inicio.FichaEscuderia(this, escuderia, pilotos, ruta);
 			inicio.setVisible(true);
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();

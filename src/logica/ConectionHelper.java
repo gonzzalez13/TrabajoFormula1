@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Properties;
 
 import modelo.Escuderia;
@@ -129,6 +130,61 @@ public class ConectionHelper {
 			disconnect(conexion);
 		}
 		return piloto;
+	}
+	public ArrayList<Piloto> consultaPilotoId(long id) throws SQLException,ClassNotFoundException {
+		String sql="SELECT  P.NOMBRE,P.NACIONALIDAD,P.FECHA_NACIMIENTO,P.PALMARES,P.ESTADO,P.BIBLIOGRAFIA,P.PODIOS,P.ESCUDERIA_ID_ESCUDERIA , P.ID_PILOTO FROM PILOTO P,ESCUDERIA E WHERE P.ESCUDERIA_ID_ESCUDERIA=E.ID_ESCUDERIA AND  E.ID_ESCUDERIA=?";
+		PreparedStatement sentencia=null;
+		ResultSet resultado=null;
+		Connection conexion=null;
+		ArrayList <Piloto> pilotos =new ArrayList<Piloto>();
+		
+		
+		try {
+			conexion = createConection();
+			sentencia=conexion.prepareStatement(sql);
+			sentencia.setLong(1, id);
+			resultado=sentencia.executeQuery();
+			
+			while (resultado.next()) {
+				Piloto piloto=new Piloto();
+				piloto.setNombre(resultado.getString(1));;
+				piloto.setNacionalidad(resultado.getString(2));
+				piloto.setFechaNacimiento(resultado.getDate(3));
+				piloto.setPalmares(resultado.getString(4));
+				piloto.setEstado(resultado.getString(5));
+				piloto.setBibliografia(resultado.getString(6));
+				piloto.setPodios(resultado.getInt(7));
+				piloto.setIdEscuderia(resultado.getLong(8));
+				piloto.setIdPiloto(resultado.getLong(9));
+				
+				pilotos.add(piloto);
+				
+			}
+			
+			conexion.commit();
+		} catch (SQLException | ClassNotFoundException e) {
+			conexion.rollback();
+			e.printStackTrace();
+			throw e;
+		}finally {
+			if (resultado != null) {
+				try {
+						resultado.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+				if (sentencia != null) {
+					try {
+						sentencia.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+			
+			disconnect(conexion);
+		}
+		return pilotos;
 	}
 	public Escuderia selectEscuderia(long id) throws SQLException ,ClassNotFoundException {
 		String sql="SELECT E.ID_ESCUDERIA,E.NOMBRE,E.COLOR,E.NACIONALIDAD,E.PALMARES,E.SEDE,E.JEFE_EQUIPO,E.JEFE_TECNICO,E.ESTRENADA_F1 FROM ESCUDERIA E WHERE E.ID_ESCUDERIA=? ";

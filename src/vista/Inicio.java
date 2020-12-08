@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.SystemColor;
 import java.io.File;
+import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -202,7 +203,7 @@ public class Inicio extends Cabecera {
 		menu(controlador);
 	}
 	
-	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, Piloto piloto, String ruta) {
+	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos, String ruta) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 990, 650);
 		contentPane = new JPanel();
@@ -312,27 +313,29 @@ public class Inicio extends Cabecera {
 		textJefeT.setBounds(205, 441, 200, 20);
 		panel_FichaEscuderia.add(textJefeT);
 		
-		btnPiloto1 = new JButton("");
+		btnPiloto1 = new JButton(pilotos.get(0).getNombre());
 		btnPiloto1.setBounds(440, 40, 232, 232);
+		btnPiloto1.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto1);
 		
 		textPiloto1 = new JTextField();
 		textPiloto1.setHorizontalAlignment(SwingConstants.CENTER);
 		textPiloto1.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		textPiloto1.setText(piloto.getNombre());
+		textPiloto1.setText(pilotos.get(0).getNombre());
 		textPiloto1.setEditable(false);
 		textPiloto1.setBounds(440, 283, 232, 30);
 		panel_FichaEscuderia.add(textPiloto1);
 		textPiloto1.setColumns(10);
 		
-		btnPiloto2 = new JButton("");
+		btnPiloto2 = new JButton(pilotos.get(1).getNombre());
 		btnPiloto2.setBounds(710, 40, 232, 232);
+		btnPiloto2.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto2);
 		
 		textPiloto2 = new JTextField();
 		textPiloto2.setHorizontalAlignment(SwingConstants.CENTER);
 		textPiloto2.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
-		textPiloto2.setText(piloto.getNombre());
+		textPiloto2.setText(pilotos.get(1).getNombre());
 		textPiloto2.setEditable(false);
 		textPiloto2.setColumns(10);
 		textPiloto2.setBounds(710, 283, 232, 30);
@@ -570,7 +573,7 @@ public class Inicio extends Cabecera {
 		panelSAINZ.setBounds(310, 165, 265, 60);
 		panelPilotos.add(panelSAINZ);
 		
-		JButton btnSAINZ = new JButton("Carlos Sainz");
+		JButton btnSAINZ = new JButton("Carlos Sainz JR");
 		btnSAINZ.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnSAINZ.setBorder(null);
 		btnSAINZ.setBackground(Color.WHITE);
