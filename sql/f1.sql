@@ -119,7 +119,7 @@ Ha logrado siete victorias, tres pole positions y treinta y un podios en Fórmul
 ",2,(select id_escuderia from escuderia where nombre='Renault DP World F1 TEAM'));
 insert into piloto(nombre,nacionalidad,fecha_nacimiento,palmares,estado,bibliografia,podios,escuderia_id_escuderia)values ("Esteban Ocon","Francia",19960917,"N/A","activo","Esteban Ocon (Évreux, Francia; 17 de septiembre de 1996) es un piloto francés de automovilismo de velocidad.​ Fue campeón de Fórmula 3 Europea y GP3 Series. Debutó en Fórmula 1 en 2016 con Manor y más tarde compitió para Force India/Racing Point. Luego de un año de desarrollo con Mercedes, volvió a este campeonato de la mano de Renault.
 ",0,(select id_escuderia from escuderia where nombre='Renault DP World F1 TEAM'));
-insert into piloto(nombre,nacionalidad,fecha_nacimiento,palmares,estado,bibliografia,podios,escuderia_id_escuderia)values ("Carlos Sainz JR","Francia",19940901,"N/A","activo","Carlos Sainz Vázquez de Castro (Madrid, España; 1 de septiembre de 1994), más conocido como Carlos Sainz Jr. o simplemente Carlos Sainz, es un piloto de automovilismo español. En 2014 ganó el campeonato de Formula Renault 3.5 Series. Desde 2019 es titular del equipo McLaren. Es hijo del expiloto y campeón del Campeonato Mundial de Rally.
+insert into piloto(nombre,nacionalidad,fecha_nacimiento,palmares,estado,bibliografia,podios,escuderia_id_escuderia)values ("Carlos Sainz JR","España",19940901,"N/A","activo","Carlos Sainz Vázquez de Castro (Madrid, España; 1 de septiembre de 1994), más conocido como Carlos Sainz Jr. o simplemente Carlos Sainz, es un piloto de automovilismo español. En 2014 ganó el campeonato de Formula Renault 3.5 Series. Desde 2019 es titular del equipo McLaren. Es hijo del expiloto y campeón del Campeonato Mundial de Rally.
 ",2,(select id_escuderia from escuderia where nombre='McLaren F1 TEAM'));
 insert into piloto(nombre,nacionalidad,fecha_nacimiento,palmares,estado,bibliografia,podios,escuderia_id_escuderia)values ("Lando Norris","Reino Unido",19991113,"N/A","activo","Lando Norris (Brístol, Reino Unido; 13 de noviembre de 1999) es un piloto de automovilismo que compite bajo nacionalidad británica, aunque posee también nacionalidad belga.​ Fue campeón de Fórmula 3 Europea en 2017 y subcampeón de Fórmula 2 en 2018 con el equipo Carlin.
 Desde 2019 forma parte de la plantilla de pilotos de McLaren, junto a Carlos Sainz Jr.
@@ -162,9 +162,28 @@ insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,cur
 insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE SAKHIR F1 2020","Bahrain II",2020,3.543,308.241,11,87);
 insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ABU DHABI F1 2020","Yas Marinas",2009,5.554,305.355,21,55);
 
+alter table piloto add media int;
 
-
-
+update piloto set media=94 where id_piloto=1;
+update piloto set media=90 where id_piloto=2;
+update piloto set media=90 where id_piloto=3;
+update piloto set media=79 where id_piloto=4;
+update piloto set media=89 where id_piloto=5;
+update piloto set media=86 where id_piloto=6;
+update piloto set media=85 where id_piloto=7;
+update piloto set media=78 where id_piloto=8;
+update piloto set media=87 where id_piloto=9;
+update piloto set media=80 where id_piloto=10;
+update piloto set media=82 where id_piloto=11;
+update piloto set media=79 where id_piloto=12;
+update piloto set media=80 where id_piloto=13;
+update piloto set media=80 where id_piloto=14;
+update piloto set media=87 where id_piloto=15;
+update piloto set media=73 where id_piloto=16;
+update piloto set media=80 where id_piloto=17;
+update piloto set media=78 where id_piloto=18;
+update piloto set media=75 where id_piloto=19;
+update piloto set media=64 where id_piloto=20;
 
 
 
