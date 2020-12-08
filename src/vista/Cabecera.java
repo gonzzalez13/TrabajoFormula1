@@ -77,12 +77,7 @@ public class Cabecera extends JFrame {
 
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setForeground(new Color(255, 255, 255));
-		btnLogin.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Login login = new Login(controlador);
-				login.setVisible(true);
-			}
-		});
+		btnLogin.addActionListener(controlador);
 		btnLogin.setFont(new Font("Bauhaus 93", Font.PLAIN, 15));
 		btnLogin.setBackground(new Color(59, 45, 45));
 		btnLogin.setBounds(872, 11, 92, 48);

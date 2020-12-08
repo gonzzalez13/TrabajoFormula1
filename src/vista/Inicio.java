@@ -395,12 +395,7 @@ public class Inicio extends Cabecera {
 		
 		JButton btnLeerMas1 = new JButton("Leer mas I");
 		btnLeerMas1.setBorder(new CompoundBorder());
-		btnLeerMas1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				Noticia noticia = new Noticia();
-				noticia.setVisible(true);
-			}
-		});
+		btnLeerMas1.addActionListener(controlador);
 		btnLeerMas1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnLeerMas1.setBounds(223, 246, 95, 29);
 		panelNoticia1.add(btnLeerMas1);
@@ -427,12 +422,7 @@ public class Inicio extends Cabecera {
 		
 		JButton btnLeerMas2 = new JButton("Leer mas II");
 		btnLeerMas2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				Noticia2 noticia2 = new Noticia2();
-				noticia2.setVisible(true);
-			}
-		});
+		btnLeerMas2.addActionListener(controlador);
 		btnLeerMas2.setBorder(new CompoundBorder());
 		btnLeerMas2.setBounds(213, 238, 96, 32);
 		panelNoticia2.add(btnLeerMas2);
@@ -504,12 +494,7 @@ public class Inicio extends Cabecera {
 		
 		JButton btnLeerMas3 = new JButton("Leer mas III");
 		btnLeerMas3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				Noticia3 noticia3 = new Noticia3();
-				noticia3.setVisible(true);
-			}
-		});
+		btnLeerMas3.addActionListener(controlador);
 		btnLeerMas3.setBorder(new CompoundBorder());
 		btnLeerMas3.setBounds(556, 182, 96, 32);
 		panelNoticia3.add(btnLeerMas3);

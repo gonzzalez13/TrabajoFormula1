@@ -21,10 +21,10 @@ public class Controlador implements ActionListener {
 	private Piloto piloto;
 	private ArrayList <Piloto> pilotos;
 	private Escuderia escuderia;
-	private Noticia noticia;
-	private Noticia2 noticia2;
-	private Noticia3 noticia3;
-	private Login login;
+	private Noticia noticia= new Noticia();
+	private Noticia2 noticia2 = new Noticia2();
+	private Noticia3 noticia3 = new Noticia3();
+	private Login login = new Login();
 	private String ruta,piloto1,piloto2;
 	
 	public Inicio getInicio() {

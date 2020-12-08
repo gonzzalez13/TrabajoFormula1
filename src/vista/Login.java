@@ -32,7 +32,7 @@ public class Login extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	/*
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -45,11 +45,11 @@ public class Login extends JFrame {
 			}
 		});
 	}
-/*
+
 	/**
 	 * Create the frame.
 	 */
-	public Login(Controlador controlador) {
+	public Login() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("LogIn\r\n");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
