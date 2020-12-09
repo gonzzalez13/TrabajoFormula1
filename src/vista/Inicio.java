@@ -3532,6 +3532,8 @@ public class Inicio extends Cabecera {
 		panel.add(PanelLabelCircuito);
 
 		JLabel LabelCircuito = new JLabel("");
+		LabelCircuito.setIcon(new ImageIcon(
+				"src"+File.separator+"Imagenes"+File.separator+"Grandes Premios"+File.separator+"Circuitos"+File.separator+this.getComboListaCircuitos().getSelectedItem().toString()+".png"));
 		PanelLabelCircuito.add(LabelCircuito);
 
 		JLabel lblPanel = new JLabel("");
