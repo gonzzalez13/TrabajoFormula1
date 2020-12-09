@@ -41,7 +41,7 @@ public class Noticia2 extends JFrame {
 	 * Create the frame.
 	 */
 	public Noticia2() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Noticia2.class.getResource("/Imagenes/F1-logo-ventana.png")));
+		this.setIconImage(Toolkit.getDefaultToolkit().getImage(Noticia2.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("Mclaren reafirma su estrat\u00E9gia");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 461, 668);

@@ -41,7 +41,7 @@ public class Noticia3 extends JFrame {
 	 * Create the frame.
 	 */
 	public Noticia3() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo-ventana.png"));
+		this.setIconImage(Toolkit.getDefaultToolkit().getImage(Noticia2.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("Mercedes se llena de dudas con Bottas ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 461, 668);

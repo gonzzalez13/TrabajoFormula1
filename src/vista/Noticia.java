@@ -41,7 +41,7 @@ public class Noticia extends JFrame {
 	 * Create the frame.
 	 */
 	public Noticia() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("E:\\Users\\Usuaio\\Interfaces\\TrabajoFormula1\\src\\Imagenes\\F1-logo-ventana.png"));
+		this.setIconImage(Toolkit.getDefaultToolkit().getImage(Noticia2.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("Bottas");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 461, 668);

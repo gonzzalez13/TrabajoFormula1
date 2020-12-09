@@ -163,13 +163,8 @@ public class Inicio extends Cabecera {
 	 */
 
 	public void escuderia(Controlador controlador) {
-
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		
+		menu(controlador);
 
 		JPanel panelEscuderia = new JPanel();
 		panelEscuderia.setBounds(0, 72, 974, 539);
@@ -312,17 +307,12 @@ public class Inicio extends Cabecera {
 		lblFondo.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 
-		menu(controlador);
+		
 	}
 
 	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos, String ruta,
 			String piloto1, String piloto2) {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
 
 		JPanel panel_FichaEscuderia = new JPanel();
 		panel_FichaEscuderia.setBounds(0, 70, 974, 541);
@@ -461,17 +451,13 @@ public class Inicio extends Cabecera {
 		lblFondo.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 
-		menu(controlador);
+		
 	}
 
 	public void inicio(Controlador controlador) {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
-
+		menu(controlador);
+		
+		
 		JPanel panelInicio = new JPanel();
 		panelInicio.setBounds(0, 72, 974, 539);
 		contentPane.add(panelInicio);
@@ -615,17 +601,12 @@ public class Inicio extends Cabecera {
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 		lblNewLabel.setBounds(0, 0, 974, 539);
 		panelInicio.add(lblNewLabel);
-		menu(controlador);
+		
 
 	}
 
 	public void piloto(Controlador controlador) {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+
 
 		menu(controlador);
 
@@ -1124,13 +1105,7 @@ public class Inicio extends Cabecera {
 	}
 
 	public void fichaPilotos(Controlador controlador, Piloto piloto, Escuderia escuderia, String ruta) {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBackground(Color.WHITE);
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
 
 		JPanel panel_FichaPiloto = new JPanel();
 		panel_FichaPiloto.setBounds(0, 72, 974, 539);
@@ -1271,12 +1246,7 @@ public class Inicio extends Cabecera {
 
 	public void clasificacion(Controlador controlador) {
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
 
 		JPanel panelClasi = new JPanel();
 		panelClasi.setBounds(0, 70, 974, 541);
@@ -2076,18 +2046,13 @@ public class Inicio extends Cabecera {
 		lblFondo.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 
-		menu(controlador);
+		
 
 	}
 
 	public void GrandesPremios(Controlador controlador) {
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);;
 
 		JPanel panelGrandesPremios = new JPanel();
 		panelGrandesPremios.setBounds(0, 71, 974, 540);
@@ -2543,17 +2508,12 @@ public class Inicio extends Cabecera {
 		lblNewLabel.setBounds(0, 0, 974, 539);
 		panelGrandesPremios.add(lblNewLabel);
 
-		menu(controlador);
+		
 	}
 
 	public void fichaGranPremio(GranPremio premio, Controlador controlador, String circuito) {
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
 
 		JPanel panelFichaPremio = new JPanel();
 		panelFichaPremio.setBounds(0, 71, 974, 540);
@@ -2664,17 +2624,12 @@ public class Inicio extends Cabecera {
 		panelFichaPremio.add(lblFondo);
 		lblFondo.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
-		menu(controlador);
+		
 	}
 
 	public void simulacion(Controlador controlador, ArrayList<GranPremio> premios) {
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
 
 		JPanel panelSimulacion = new JPanel();
 		panelSimulacion.setBounds(0, 71, 974, 540);
@@ -2750,18 +2705,15 @@ public class Inicio extends Cabecera {
 		lblFondo.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 		panelSimulacion.add(lblFondo);
-		menu(controlador);
+		
 
 	}
 
 	public void fichaSimulacion(Controlador controlador, ArrayList<Piloto> main, ConectionHelper concetion) {
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 990, 650);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		menu(controlador);
+		
+		
 		JPanel panel = new JPanel();
 		panel.setBounds(0, 72, 974, 539);
 		contentPane.add(panel);
@@ -3541,7 +3493,7 @@ public class Inicio extends Cabecera {
 		lblPanel.setIcon(new ImageIcon(
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 		panel.add(lblPanel);
-		menu(controlador);
+	
 
 	}
 
