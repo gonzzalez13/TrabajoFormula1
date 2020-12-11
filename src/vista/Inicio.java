@@ -1241,7 +1241,7 @@ public class Inicio extends Cabecera {
 				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
 		lblFondo.setBounds(0, 0, 974, 539);
 		panel_FichaPiloto.add(lblFondo);
-		menu(controlador);
+		
 	}
 
 	public void clasificacion(Controlador controlador) {

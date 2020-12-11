@@ -7,6 +7,7 @@ import vista.Inicio;
 public class Launcher {
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+
 		
 		Controlador c =new Controlador(new Inicio(),"Inicio",new ConectionHelper());
 		
