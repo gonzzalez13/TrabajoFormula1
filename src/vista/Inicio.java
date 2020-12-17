@@ -455,35 +455,10 @@ public class Inicio extends Cabecera {
 	public void inicio(Controlador controlador) {
 		menu(controlador);
 		
-		
 		JPanel panelInicio = new JPanel();
 		panelInicio.setBounds(0, 72, 974, 549);
 		contentPane.add(panelInicio);
 		panelInicio.setLayout(null);
-
-		JPanel panelNoticia1 = new JPanel();
-		panelNoticia1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia1.setBounds(10, 11, 662, 517);
-		panelInicio.add(panelNoticia1);
-		panelNoticia1.setLayout(null);
-		
-		JTextPane txtTituloNoticia = new JTextPane();
-		txtTituloNoticia.setEditable(false);
-		txtTituloNoticia.setFont(new Font("Bauhaus 93", Font.PLAIN, 25));
-		txtTituloNoticia.setText("Bottas: Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota");
-		txtTituloNoticia.setOpaque(false);
-		txtTituloNoticia.setBounds(10, 11, 642, 160);
-		panelNoticia1.add(txtTituloNoticia);
-		
-		JTextArea txtCuerpoNoticia = new JTextArea();
-		txtCuerpoNoticia.setFont(new Font("Bookman Old Style", Font.PLAIN, 15));
-		txtCuerpoNoticia.setWrapStyleWord(true);
-		txtCuerpoNoticia.setLineWrap(true);
-		txtCuerpoNoticia.setText("Valtteri Bottas sab\u00EDa que iba a tener mucha presi\u00F3n en el Gran Premio de Sakhir. Desde el mismo momento que se hizo oficial que Lewis Hamilton hab\u00EDa positivo por coronavirus, el finland\u00E9s era consciente de que se jugaba mucho en el trazado alternativo del Circuito Internacional de Bahr\u00E9in. Si Russell me supera, obviamente voy a quedar mal, admiti\u00F3. A la postre, ha quedado mal el finland\u00E9s... y Mercedes. El que ha salido reforzado es un George Russell, que ha demostrado madera de campe\u00F3n.");
-		txtCuerpoNoticia.setOpaque(false);
-		txtCuerpoNoticia.setEditable(false);
-		txtCuerpoNoticia.setBounds(10, 223, 642, 283);
-		panelNoticia1.add(txtCuerpoNoticia);
 
 		JPanel panel = new JPanel();
 		panel.setBounds(682, 11, 282, 332);
@@ -492,12 +467,10 @@ public class Inicio extends Cabecera {
 		
 		JButton btnPremio = new JButton("Yas Marinas");
 		btnPremio.setIcon(new ImageIcon("src" + File.separator + "Imagenes" + File.separator + "Grandes Premios"+ File.separator + "Portada" + File.separator + "Abudhabi.png"));
-		btnPremio.addActionListener(controlador);
 		btnPremio.setBounds(10, 11, 262, 310);
 		panel.add(btnPremio);
 		
 		JButton btnNoticias = new JButton("Insertar");
-		btnNoticias.addActionListener(controlador);
 		btnNoticias.setBounds(781, 363, 89, 23);
 		panelInicio.add(btnNoticias);
 		
@@ -508,6 +481,30 @@ public class Inicio extends Cabecera {
 		JButton btnSiguiente = new JButton("Siguiente");
 		btnSiguiente.setBounds(854, 484, 110, 44);
 		panelInicio.add(btnSiguiente);
+				
+		JTextArea txtCuerpoNoticia = new JTextArea();
+		txtCuerpoNoticia.setForeground(Color.WHITE);
+		txtCuerpoNoticia.setBounds(10, 245, 642, 283);
+		panelInicio.add(txtCuerpoNoticia);
+		txtCuerpoNoticia.setFont(new Font("Bookman Old Style", Font.PLAIN, 15));
+		txtCuerpoNoticia.setWrapStyleWord(true);
+		txtCuerpoNoticia.setLineWrap(true);
+		txtCuerpoNoticia.setText("Valtteri Bottas sab\u00EDa que iba a tener mucha presi\u00F3n en el Gran Premio de Sakhir. Desde el mismo momento que se hizo oficial que Lewis Hamilton hab\u00EDa positivo por coronavirus, el finland\u00E9s era consciente de que se jugaba mucho en el trazado alternativo del Circuito Internacional de Bahr\u00E9in. Si Russell me supera, obviamente voy a quedar mal, admiti\u00F3. A la postre, ha quedado mal el finland\u00E9s... y Mercedes. El que ha salido reforzado es un George Russell, que ha demostrado madera de campe\u00F3n.");
+		txtCuerpoNoticia.setOpaque(false);
+		txtCuerpoNoticia.setEditable(false);
+				
+		JTextPane txtTituloNoticia = new JTextPane();
+		txtTituloNoticia.setForeground(Color.WHITE);
+		txtTituloNoticia.setBounds(10, 74, 642, 160);
+		panelInicio.add(txtTituloNoticia);
+		txtTituloNoticia.setEditable(false);
+		txtTituloNoticia.setFont(new Font("Bauhaus 93", Font.PLAIN, 25));
+		txtTituloNoticia.setText("Bottas: Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota");
+		txtTituloNoticia.setOpaque(false);
+				
+		
+		
+	
 		
 				JLabel lblNewLabel = new JLabel("");
 				lblNewLabel.setIcon(new ImageIcon(
