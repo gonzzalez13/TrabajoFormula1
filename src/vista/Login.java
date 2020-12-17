@@ -17,39 +17,41 @@ import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
 
 import logica.Controlador;
+import modelo.Usuario;
 
 import javax.swing.JPasswordField;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextPane;
 
 public class Login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField tFUsuario;
-	private JPasswordField passwordField;
+	private JPasswordField passwordField ;
 
 	/**
 	 * Launch the application.
 	 */
 	
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Login frame = new Login();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+//	public static void main(String[] args) {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					Login frame = new Login();
+//					frame.setVisible(true);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//	}
 
 	/**
 	 * Create the frame.
 	 */
-	public Login() {
+	public Login(Controlador controlador) {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Imagenes/F1-logo-ventana.png")));
 		setTitle("LogIn\r\n");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -68,11 +70,7 @@ public class Login extends JFrame {
 		contentPane.add(passwordField);
 		
 		JButton btnCancelar = new JButton("CANCELAR");
-		btnCancelar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-			}
-		});
+		btnCancelar.addActionListener(controlador);
 		btnCancelar.setForeground(Color.WHITE);
 		btnCancelar.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btnCancelar.setBackground(Color.DARK_GRAY);
@@ -81,6 +79,7 @@ public class Login extends JFrame {
 		
 		JButton btIniciarSesion = new JButton("INICIAR SESION");
 		btIniciarSesion.setForeground(Color.WHITE);
+		btIniciarSesion.addActionListener(controlador);
 		btIniciarSesion.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btIniciarSesion.setBackground(Color.DARK_GRAY);
 		btIniciarSesion.setBounds(10, 429, 170, 42);
@@ -126,5 +125,66 @@ public class Login extends JFrame {
 		lblFondo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/Fondos/Fondo6.PNG")));
 		lblFondo.setBounds(-12, 0, 461, 498);
 		contentPane.add(lblFondo);
+		
+		
+	}
+
+	public JTextField gettFUsuario() {
+		return tFUsuario;
+	}
+
+	public void settFUsuario(JTextField tFUsuario) {
+		this.tFUsuario = tFUsuario;
+	}
+
+	public JPasswordField getPasswordField() {
+		return passwordField;
+	}
+
+	public void setPasswordField(JPasswordField passwordField) {
+		this.passwordField = passwordField;
+	}
+
+	public void inicio(Controlador controlador,Usuario user) {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Login.class.getResource("/Imagenes/F1-logo-ventana.png")));
+		setTitle("LogIn\r\n");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 452, 518);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnCancelar = new JButton("CANCELAR");
+		btnCancelar.addActionListener(controlador);
+		
+		JLabel lblBienvenido = new JLabel("Bienvenido "+user.getNombre());
+		lblBienvenido.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		lblBienvenido.setBounds(114, 200, 202, 78);
+		contentPane.add(lblBienvenido);
+		btnCancelar.setForeground(Color.WHITE);
+		btnCancelar.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
+		btnCancelar.setBackground(Color.DARK_GRAY);
+		btnCancelar.setBounds(315, 429, 113, 42);
+		contentPane.add(btnCancelar);
+		
+		JButton btnNewButton = new JButton("AYUDA");
+		btnNewButton.setBackground(Color.DARK_GRAY);
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
+		btnNewButton.setBounds(10, 10, 101, 42);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblLogo = new JLabel("");
+		lblLogo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/F1-logo.png")));
+		lblLogo.setBounds(134, 59, 149, 104);
+		contentPane.add(lblLogo);
+		
+		JLabel lblFondo = new JLabel("");
+		lblFondo.setHorizontalAlignment(SwingConstants.CENTER);
+		lblFondo.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/Fondos/Fondo6.PNG")));
+		lblFondo.setBounds(-12, 0, 461, 498);
+		contentPane.add(lblFondo);
+		
 	}
 }

@@ -10,8 +10,9 @@ import java.util.ArrayList;
 import modelo.Carrera;
 import modelo.Escuderia;
 import modelo.GranPremio;
-import modelo.Piloto;
+import modelo.Usuario;
 import modelo.Noticia;
+import modelo.Piloto;
 import vista.Inicio;
 import vista.Login;
 
@@ -25,7 +26,7 @@ public class Controlador implements ActionListener {
 	private ArrayList <GranPremio> premios;
 	private Escuderia escuderia;
 	private ArrayList<Noticia> noticias;
-	private Login login = new Login();
+	private Login login = new Login(this);
 	private String circuito;
 	
 	public Inicio getInicio() {
@@ -392,6 +393,23 @@ public class Controlador implements ActionListener {
 				login.setVisible(true);
 
 				break;	
+			case"CANCELAR":
+				salida=e.getActionCommand();
+				login.setVisible(false);
+				break;
+			case "INICIAR SESION":
+				salida=e.getActionCommand();
+				Usuario user=new Usuario();
+				String nombre=login.gettFUsuario().getText();
+				String pass=login.getPasswordField().getText();
+				System.out.println(nombre+"   "+pass);
+				
+				try {
+					user=concetion.consultaUser(nombre, pass);
+				} catch (Exception e2) {
+				}
+				login.inicio(this,user);
+				login.setVisible(true);
 				
 			default:
 				

@@ -2,10 +2,11 @@ package modelo;
 
 import java.sql.Date;
 
-public class Piloto implements Comparable<Piloto>{
-	private String Nombre, nacionalidad, palmares, estado, bibliografia,foto_perfil,foto_escuderia;
+public class Piloto implements Comparable<Piloto> {
+	private String Nombre, nacionalidad, palmares, estado, bibliografia, foto_perfil, foto_escuderia;
 	private long idPiloto, idEscuderia;
-	private int podios,posicion,media;
+	private int podios, posicion, media;
+
 	public int getMedia() {
 		return media;
 	}
@@ -20,7 +21,7 @@ public class Piloto implements Comparable<Piloto>{
 	public String toString() {
 		return "Piloto [Nombre=" + Nombre + ", nacionalidad=" + nacionalidad + ", palmares=" + palmares + ", estado="
 				+ estado + ", bibliografia=" + bibliografia + ", idPiloto=" + idPiloto + ", idEscuderia=" + idEscuderia
-				+ ", podios=" + podios + ", fechaNacimiento=" + fechaNacimiento + "]"+"\n";
+				+ ", podios=" + podios + ", fechaNacimiento=" + fechaNacimiento + "]" + "\n";
 	}
 
 	public String getBibliografia() {
@@ -95,13 +96,9 @@ public class Piloto implements Comparable<Piloto>{
 		this.idEscuderia = idEscuderia;
 	}
 
-	public Piloto() {
-
-	}
-
 	@Override
 	public int compareTo(Piloto piloto) {
-		return this.getPosicion()-piloto.getPosicion();
+		return this.getPosicion() - piloto.getPosicion();
 	}
 
 	public int getPosicion() {
@@ -128,5 +125,4 @@ public class Piloto implements Comparable<Piloto>{
 		this.foto_escuderia = foto_escuderia;
 	}
 
-	
 }
