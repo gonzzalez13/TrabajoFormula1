@@ -2,7 +2,7 @@ package modelo;
 
 public class Escuderia {
 	private long idEscuderia;
-	private String nombre, color, nacionalidad,palmares,sede,jEquipo,jTecnico,estrenadaF1;
+	private String nombre, color, nacionalidad,palmares,sede,jEquipo,jTecnico,estrenadaF1,foto_escuderia,foto_piloto1,foto_piloto2;
 	
 	@Override
 	public String toString() {
@@ -65,6 +65,26 @@ public void setPalmares(String palmares) {
 	this.palmares = palmares;
 }
 
+
+
+	public String getFoto_escuderia() {
+	return foto_escuderia;
+}
+public void setFoto_escuderia(String foto_escuderia) {
+	this.foto_escuderia = foto_escuderia;
+}
+public String getFoto_piloto1() {
+	return foto_piloto1;
+}
+public void setFoto_piloto1(String foto_piloto1) {
+	this.foto_piloto1 = foto_piloto1;
+}
+public String getFoto_piloto2() {
+	return foto_piloto2;
+}
+public void setFoto_piloto2(String foto_piloto2) {
+	this.foto_piloto2 = foto_piloto2;
+}
 	public Escuderia() {
 	}
 

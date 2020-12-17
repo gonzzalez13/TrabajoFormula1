@@ -83,7 +83,7 @@ public class Login extends JFrame {
 		btIniciarSesion.setForeground(Color.WHITE);
 		btIniciarSesion.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btIniciarSesion.setBackground(Color.DARK_GRAY);
-		btIniciarSesion.setBounds(10, 429, 139, 42);
+		btIniciarSesion.setBounds(10, 429, 170, 42);
 		contentPane.add(btIniciarSesion);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("CONTRASE\u00D1A");

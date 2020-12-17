@@ -310,8 +310,7 @@ public class Inicio extends Cabecera {
 		
 	}
 
-	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos, String ruta,
-			String piloto1, String piloto2) {
+	public void FichaEscuderia(Controlador controlador, Escuderia escuderia, ArrayList<Piloto> pilotos) {
 		menu(controlador);
 
 		JPanel panel_FichaEscuderia = new JPanel();
@@ -320,7 +319,7 @@ public class Inicio extends Cabecera {
 		panel_FichaEscuderia.setLayout(null);
 
 		JLabel lblMarca = new JLabel("");
-		lblMarca.setIcon(new ImageIcon(ruta));
+		lblMarca.setIcon(new ImageIcon(escuderia.getFoto_escuderia()));
 		lblMarca.setBounds(53, 17, 300, 191);
 		panel_FichaEscuderia.add(lblMarca);
 
@@ -417,7 +416,7 @@ public class Inicio extends Cabecera {
 
 		btnPiloto1 = new JButton(pilotos.get(0).getNombre());
 		btnPiloto1.setBounds(440, 40, 232, 232);
-		btnPiloto1.setIcon(new ImageIcon(piloto1));
+		btnPiloto1.setIcon(new ImageIcon(escuderia.getFoto_piloto1()));
 		btnPiloto1.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto1);
 
@@ -432,7 +431,7 @@ public class Inicio extends Cabecera {
 
 		btnPiloto2 = new JButton(pilotos.get(1).getNombre());
 		btnPiloto2.setBounds(710, 40, 232, 232);
-		btnPiloto2.setIcon(new ImageIcon(piloto2));
+		btnPiloto2.setIcon(new ImageIcon(escuderia.getFoto_piloto2()));
 		btnPiloto2.addActionListener(controlador);
 		panel_FichaEscuderia.add(btnPiloto2);
 
@@ -459,148 +458,58 @@ public class Inicio extends Cabecera {
 		
 		
 		JPanel panelInicio = new JPanel();
-		panelInicio.setBounds(0, 72, 974, 539);
+		panelInicio.setBounds(0, 72, 974, 549);
 		contentPane.add(panelInicio);
 		panelInicio.setLayout(null);
 
 		JPanel panelNoticia1 = new JPanel();
 		panelNoticia1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia1.setBounds(27, 11, 328, 285);
+		panelNoticia1.setBounds(10, 11, 662, 517);
 		panelInicio.add(panelNoticia1);
 		panelNoticia1.setLayout(null);
-
-		JTextArea txtrNoticia1 = new JTextArea();
-		txtrNoticia1.setEditable(false);
-		txtrNoticia1.setFont(new Font("Consolas", Font.BOLD, 15));
-		txtrNoticia1.setOpaque(false);
-		txtrNoticia1.setLineWrap(true);
-		txtrNoticia1.setWrapStyleWord(true);
-		txtrNoticia1.setText(
-				"Bottas: \"Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota\"");
-		txtrNoticia1.setBounds(31, 175, 270, 61);
-		panelNoticia1.add(txtrNoticia1);
-
-		JLabel lblNoticia1 = new JLabel("");
-		lblNoticia1.setIcon(new ImageIcon(
-				"src" + File.separator + "Imagenes" + File.separator + "Noticias" + File.separator + "Noticia.jpg"));
-		lblNoticia1.setBounds(31, 21, 270, 144);
-		panelNoticia1.add(lblNoticia1);
-
-		JButton btnLeerMas1 = new JButton("Leer mas I");
-		btnLeerMas1.setBorder(new CompoundBorder());
-		btnLeerMas1.addActionListener(controlador);
-		btnLeerMas1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas1.setBounds(223, 246, 95, 29);
-		panelNoticia1.add(btnLeerMas1);
-
-		JPanel panelNoticia2 = new JPanel();
-		panelNoticia2.setLayout(null);
-		panelNoticia2.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia2.setBounds(370, 11, 319, 285);
-		panelInicio.add(panelNoticia2);
-
-		JTextArea txtrNoticia2 = new JTextArea();
-		txtrNoticia2.setEditable(false);
-		txtrNoticia2.setWrapStyleWord(true);
-		txtrNoticia2.setText("McLaren reafirma su estrategia");
-		txtrNoticia2.setOpaque(false);
-		txtrNoticia2.setFont(new Font("Consolas", Font.BOLD, 17));
-		txtrNoticia2.setBounds(16, 188, 293, 25);
-		panelNoticia2.add(txtrNoticia2);
-
-		JLabel lblNoticia2 = new JLabel("");
-		lblNoticia2.setIcon(new ImageIcon(
-				"src" + File.separator + "Imagenes" + File.separator + "Noticias" + File.separator + "Noticia2.jpg"));
-		lblNoticia2.setBounds(27, 26, 270, 152);
-		panelNoticia2.add(lblNoticia2);
-
-		JButton btnLeerMas2 = new JButton("Leer mas II");
-		btnLeerMas2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas2.addActionListener(controlador);
-		btnLeerMas2.setBorder(new CompoundBorder());
-		btnLeerMas2.setBounds(213, 238, 96, 32);
-		panelNoticia2.add(btnLeerMas2);
+		
+		JTextPane txtTituloNoticia = new JTextPane();
+		txtTituloNoticia.setEditable(false);
+		txtTituloNoticia.setFont(new Font("Bauhaus 93", Font.PLAIN, 25));
+		txtTituloNoticia.setText("Bottas: Los que no saben de F1 podr\u00EDan pensar que he quedado como un completo idiota");
+		txtTituloNoticia.setOpaque(false);
+		txtTituloNoticia.setBounds(10, 11, 642, 160);
+		panelNoticia1.add(txtTituloNoticia);
+		
+		JTextArea txtCuerpoNoticia = new JTextArea();
+		txtCuerpoNoticia.setFont(new Font("Bookman Old Style", Font.PLAIN, 15));
+		txtCuerpoNoticia.setWrapStyleWord(true);
+		txtCuerpoNoticia.setLineWrap(true);
+		txtCuerpoNoticia.setText("Valtteri Bottas sab\u00EDa que iba a tener mucha presi\u00F3n en el Gran Premio de Sakhir. Desde el mismo momento que se hizo oficial que Lewis Hamilton hab\u00EDa positivo por coronavirus, el finland\u00E9s era consciente de que se jugaba mucho en el trazado alternativo del Circuito Internacional de Bahr\u00E9in. Si Russell me supera, obviamente voy a quedar mal, admiti\u00F3. A la postre, ha quedado mal el finland\u00E9s... y Mercedes. El que ha salido reforzado es un George Russell, que ha demostrado madera de campe\u00F3n.");
+		txtCuerpoNoticia.setOpaque(false);
+		txtCuerpoNoticia.setEditable(false);
+		txtCuerpoNoticia.setBounds(10, 223, 642, 283);
+		panelNoticia1.add(txtCuerpoNoticia);
 
 		JPanel panel = new JPanel();
-		panel.setBounds(699, 11, 265, 332);
+		panel.setBounds(682, 11, 282, 332);
 		panelInicio.add(panel);
 		panel.setLayout(null);
-
-		JLabel lblGP = new JLabel("");
-		lblGP.setIcon(new ImageIcon("src" + File.separator + "Imagenes" + File.separator + "Grandes Premios"
-				+ File.separator + "Portada" + File.separator + "Abudhabi.png"));
-		lblGP.setBounds(10, 11, 245, 180);
-		panel.add(lblGP);
-
-		JPanel pC3 = new JPanel();
-		pC3.setBackground(new Color(255, 159, 0));
-		pC3.setBounds(10, 202, 15, 17);
-		panel.add(pC3);
-
-		JLabel lblTitulo = new JLabel("PR\u00D3XIMO GP DE F\u00D3RMULA 1");
-		lblTitulo.setBounds(35, 202, 220, 17);
-		panel.add(lblTitulo);
-
-		JLabel lblNewLabel_2 = new JLabel("GP DE ABU DHABI");
-		lblNewLabel_2.setFont(new Font("Bauhaus 93", Font.PLAIN, 25));
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setBounds(10, 245, 245, 103);
-		panel.add(lblNewLabel_2);
-
-		JSeparator separator = new JSeparator();
-		separator.setBounds(10, 311, 245, 10);
-		panel.add(separator);
-
-		JLabel lblFecha = new JLabel("13 DE DICIEMBRE");
-		lblFecha.setHorizontalAlignment(SwingConstants.CENTER);
-		lblFecha.setBounds(57, 230, 116, 14);
-		panel.add(lblFecha);
-
-		JPanel panelNoticia3 = new JPanel();
-		panelNoticia3.setLayout(null);
-		panelNoticia3.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panelNoticia3.setBounds(27, 305, 662, 224);
-		panelInicio.add(panelNoticia3);
-
-		JTextArea txtrNoticia3 = new JTextArea();
-		txtrNoticia3.setWrapStyleWord(true);
-		txtrNoticia3.setText("Mercedes se llena de dudas con Bottas y salpican a Hamilton");
-		txtrNoticia3.setOpaque(false);
-		txtrNoticia3.setLineWrap(true);
-		txtrNoticia3.setFont(new Font("Consolas", Font.BOLD, 19));
-		txtrNoticia3.setEditable(false);
-		txtrNoticia3.setBounds(287, 23, 350, 52);
-		panelNoticia3.add(txtrNoticia3);
-
-		JLabel lblNoticia3 = new JLabel("");
-		lblNoticia3.setIcon(new ImageIcon(
-				"src" + File.separator + "Imagenes" + File.separator + "Noticias" + File.separator + "Noticia3.jpg"));
-		lblNoticia3.setBounds(21, 47, 241, 136);
-		panelNoticia3.add(lblNoticia3);
-
-		JTextArea txtNoticia3 = new JTextArea();
-		txtNoticia3.setEditable(false);
-		txtNoticia3.setFont(new Font("Calibri", Font.PLAIN, 18));
-		txtNoticia3.setOpaque(false);
-		txtNoticia3.setWrapStyleWord(true);
-		txtNoticia3.setLineWrap(true);
-		txtNoticia3.setText(
-				"El a\u00F1o de los r\u00E9cords termina repleto de dudas en el garaje de Mercedes, y eso que una concatenaci\u00F3n de errores dej\u00F3 sin victoria a Russell con el coche de Hamilton. ");
-		txtNoticia3.setBounds(287, 81, 350, 102);
-		panelNoticia3.add(txtNoticia3);
-
-		JButton btnLeerMas3 = new JButton("Leer mas III");
-		btnLeerMas3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		btnLeerMas3.addActionListener(controlador);
-		btnLeerMas3.setBorder(new CompoundBorder());
-		btnLeerMas3.setBounds(556, 182, 96, 32);
-		panelNoticia3.add(btnLeerMas3);
-
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(
-				"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
-		lblNewLabel.setBounds(0, 0, 974, 539);
-		panelInicio.add(lblNewLabel);
+		
+		JButton btnPremio = new JButton("Yas Marinas");
+		btnPremio.setIcon(new ImageIcon("src" + File.separator + "Imagenes" + File.separator + "Grandes Premios"+ File.separator + "Portada" + File.separator + "Abudhabi.png"));
+		btnPremio.addActionListener(controlador);
+		btnPremio.setBounds(10, 11, 262, 310);
+		panel.add(btnPremio);
+		
+		JButton btnAnterior = new JButton("Anterior");
+		btnAnterior.setBounds(682, 484, 110, 44);
+		panelInicio.add(btnAnterior);
+		
+		JButton btnSiguiente = new JButton("Siguiente");
+		btnSiguiente.setBounds(854, 484, 110, 44);
+		panelInicio.add(btnSiguiente);
+		
+				JLabel lblNewLabel = new JLabel("");
+				lblNewLabel.setIcon(new ImageIcon(
+						"src" + File.separator + "Imagenes" + File.separator + "Fondos" + File.separator + "Fondo6.PNG"));
+				lblNewLabel.setBounds(0, 0, 974, 550);
+				panelInicio.add(lblNewLabel);
 		
 
 	}
@@ -1104,7 +1013,7 @@ public class Inicio extends Cabecera {
 		panelPilotos.add(lblFondo);
 	}
 
-	public void fichaPilotos(Controlador controlador, Piloto piloto, Escuderia escuderia, String ruta) {
+	public void fichaPilotos(Controlador controlador, Piloto piloto, Escuderia escuderia) {
 		menu(controlador);
 
 		JPanel panel_FichaPiloto = new JPanel();
@@ -1113,7 +1022,7 @@ public class Inicio extends Cabecera {
 		panel_FichaPiloto.setLayout(null);
 
 		JLabel lblFtoFicha = new JLabel("");
-		lblFtoFicha.setIcon(new ImageIcon(ruta));
+		lblFtoFicha.setIcon(new ImageIcon(piloto.getFoto_perfil()));
 		lblFtoFicha.setBounds(27, 21, 268, 298);
 		panel_FichaPiloto.add(lblFtoFicha);
 
@@ -1235,6 +1144,12 @@ public class Inicio extends Cabecera {
 		txtBiblio.setText(piloto.getBibliografia());
 		txtBiblio.setBounds(27, 429, 771, 87);
 		panel_FichaPiloto.add(txtBiblio);
+		
+		JButton btnNewButton = new JButton(piloto.getIdEscuderia()+"");
+		btnNewButton.setIcon(new ImageIcon(piloto.getFoto_escuderia()));
+		btnNewButton.addActionListener(controlador);
+		btnNewButton.setBounds(850, 429, 120, 87);
+		panel_FichaPiloto.add(btnNewButton);
 
 		JLabel lblFondo = new JLabel();
 		lblFondo.setIcon(new ImageIcon(

@@ -13,6 +13,7 @@ import java.util.Properties;
 
 import modelo.Escuderia;
 import modelo.GranPremio;
+import modelo.Noticia;
 import modelo.Piloto;
 
 
@@ -31,7 +32,7 @@ public class ConectionHelper {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			c=DriverManager.getConnection("jdbc:mysql://localhost:3306/f1?serverTimezone=UTC","root","root");
 			
-			// set autocommit false
+			// set autocommit falseS
 			c.setAutoCommit(false);
 			System.out.println("Connection successful");
 			
@@ -83,7 +84,7 @@ public class ConectionHelper {
 	}
 	
 	public Piloto consultaPiloto(String nombre) throws SQLException,ClassNotFoundException {
-		String sql="SELECT  P.NOMBRE,P.NACIONALIDAD,P.FECHA_NACIMIENTO,P.PALMARES,P.ESTADO,P.BIBLIOGRAFIA,P.PODIOS,P.ESCUDERIA_ID_ESCUDERIA , P.ID_PILOTO FROM PILOTO P,ESCUDERIA E WHERE P.ESCUDERIA_ID_ESCUDERIA=E.ID_ESCUDERIA AND  P.NOMBRE=?";
+		String sql="SELECT  P.NOMBRE,P.NACIONALIDAD,P.FECHA_NACIMIENTO,P.PALMARES,P.ESTADO,P.BIBLIOGRAFIA,P.PODIOS,P.FOTO_ESCUDERIA,P.FOTO_PERFIL,P.ESCUDERIA_ID_ESCUDERIA , P.ID_PILOTO FROM PILOTO P,ESCUDERIA E WHERE P.ESCUDERIA_ID_ESCUDERIA=E.ID_ESCUDERIA AND  P.NOMBRE=?";
 		PreparedStatement sentencia=null;
 		ResultSet resultado=null;
 		Connection conexion=null;
@@ -97,15 +98,17 @@ public class ConectionHelper {
 			resultado=sentencia.executeQuery();
 			
 			if (resultado.next()) {
-				piloto.setNombre(resultado.getString(1));;
-				piloto.setNacionalidad(resultado.getString(2));
-				piloto.setFechaNacimiento(resultado.getDate(3));
-				piloto.setPalmares(resultado.getString(4));
-				piloto.setEstado(resultado.getString(5));
-				piloto.setBibliografia(resultado.getString(6));
-				piloto.setPodios(resultado.getInt(7));
-				piloto.setIdEscuderia(resultado.getLong(8));
-				piloto.setIdPiloto(resultado.getLong(9));
+				piloto.setNombre(resultado.getString("NOMBRE"));;
+				piloto.setNacionalidad(resultado.getString("NACIONALIDAD"));
+				piloto.setFechaNacimiento(resultado.getDate("FECHA_NACIMIENTO"));
+				piloto.setPalmares(resultado.getString("PALMARES"));
+				piloto.setEstado(resultado.getString("ESTADO"));
+				piloto.setBibliografia(resultado.getString("BIBLIOGRAFIA"));
+				piloto.setPodios(resultado.getInt("PODIOS"));
+				piloto.setFoto_escuderia(resultado.getString("FOTO_ESCUDERIA"));
+				piloto.setFoto_perfil(resultado.getString("FOTO_PERFIL"));
+				piloto.setIdEscuderia(resultado.getLong("ESCUDERIA_ID_ESCUDERIA"));
+				piloto.setIdPiloto(resultado.getLong("ID_PILOTO"));
 				
 			}
 			
@@ -244,12 +247,12 @@ public class ConectionHelper {
 		return pilotos;
 	}
 	public Escuderia selectEscuderia(long id) throws SQLException ,ClassNotFoundException {
-		String sql="SELECT E.ID_ESCUDERIA,E.NOMBRE,E.COLOR,E.NACIONALIDAD,E.PALMARES,E.SEDE,E.JEFE_EQUIPO,E.JEFE_TECNICO,E.ESTRENADA_F1 FROM ESCUDERIA E WHERE E.ID_ESCUDERIA=? ";
+		String sql="SELECT E.ID_ESCUDERIA,E.NOMBRE,E.COLOR,E.NACIONALIDAD,E.PALMARES,E.SEDE,E.JEFE_EQUIPO,E.JEFE_TECNICO,E.ESTRENADA_F1,E.FOTO_ESCUDERIA,E.FOTO_PILOTO1,E.FOTO_PILOTO2 FROM ESCUDERIA E WHERE E.ID_ESCUDERIA=? ";
 	
 		PreparedStatement sentencia=null;
 		ResultSet resultado=null;
 		Escuderia escuderia=new Escuderia();
-		Connection conexion = null;
+		Connection conexion = null;	
 		
 		try {
 			conexion=createConection();
@@ -258,15 +261,18 @@ public class ConectionHelper {
 			resultado=sentencia.executeQuery();
 			
 			if (resultado.next()) {
-				escuderia.setIdEscuderia(resultado.getLong(1));
-				escuderia.setNombre(resultado.getString(2));
-				escuderia.setColor(resultado.getString(3));
-				escuderia.setNacionalidad(resultado.getString(4));
-				escuderia.setPalmares(resultado.getString(5));
-				escuderia.setSede(resultado.getString(6));
-				escuderia.setjEquipo(resultado.getString(7));
-				escuderia.setjTecnico(resultado.getString(8));
-				escuderia.setEstrenadaF1(resultado.getString(9));
+				escuderia.setIdEscuderia(resultado.getLong("ID_ESCUDERIA"));
+				escuderia.setNombre(resultado.getString("NOMBRE"));
+				escuderia.setColor(resultado.getString("COLOR"));
+				escuderia.setNacionalidad(resultado.getString("NACIONALIDAD"));
+				escuderia.setPalmares(resultado.getString("PALMARES"));
+				escuderia.setSede(resultado.getString("SEDE"));
+				escuderia.setjEquipo(resultado.getString("JEFE_EQUIPO"));
+				escuderia.setjTecnico(resultado.getString("JEFE_TECNICO"));
+				escuderia.setEstrenadaF1(resultado.getString("ESTRENADA_F1"));
+				escuderia.setFoto_escuderia(resultado.getString("FOTO_ESCUDERIA"));
+				escuderia.setFoto_piloto1(resultado.getString("FOTO_PILOTO1"));
+				escuderia.setFoto_piloto2(resultado.getString("FOTO_PILOTO2"));
 				
 			}
 			
@@ -397,4 +403,55 @@ public class ConectionHelper {
 		}
 		return premios;
 	}
+	
+	public ArrayList<Noticia> consultaNoticia() throws SQLException,ClassNotFoundException {
+		String sql="SELECT TITULO,CUERPO FROM NOTICIA";
+		Statement sentencia=null;
+		ResultSet resultado=null;
+		Connection conexion=null;
+		ArrayList <Noticia> noticias =new ArrayList<Noticia>();
+		
+		
+		try {
+			conexion = createConection();
+			sentencia= conexion.createStatement();
+			resultado=sentencia.executeQuery(sql);
+			
+			while (resultado.next()) {
+				Noticia noticia = new Noticia();
+				
+				noticia.setTitulo(resultado.getString("TITULO"));
+				noticia.setCuerpo(resultado.getString("CUERPO"));
+				
+				noticias.add(noticia);
+			}
+			
+			conexion.commit();
+		} catch (SQLException | ClassNotFoundException e) {
+			conexion.rollback();
+			e.printStackTrace();
+			throw e;
+		}finally {
+			if (resultado != null) {
+				try {
+						resultado.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+				if (sentencia != null) {
+					try {
+						sentencia.close();
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+			
+			disconnect(conexion);
+		}
+		return noticias;
+	}
+	
+	
+	
 }

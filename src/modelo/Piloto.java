@@ -3,7 +3,7 @@ package modelo;
 import java.sql.Date;
 
 public class Piloto implements Comparable<Piloto>{
-	private String Nombre, nacionalidad, palmares, estado, bibliografia;
+	private String Nombre, nacionalidad, palmares, estado, bibliografia,foto_perfil,foto_escuderia;
 	private long idPiloto, idEscuderia;
 	private int podios,posicion,media;
 	public int getMedia() {
@@ -112,4 +112,21 @@ public class Piloto implements Comparable<Piloto>{
 		this.posicion = posicion;
 	}
 
+	public String getFoto_perfil() {
+		return foto_perfil;
+	}
+
+	public void setFoto_perfil(String foto_perfil) {
+		this.foto_perfil = foto_perfil;
+	}
+
+	public String getFoto_escuderia() {
+		return foto_escuderia;
+	}
+
+	public void setFoto_escuderia(String foto_escuderia) {
+		this.foto_escuderia = foto_escuderia;
+	}
+
+	
 }

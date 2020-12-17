@@ -1,6 +1,7 @@
 package logica;
 
 import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.sql.SQLException;
@@ -10,24 +11,21 @@ import modelo.Carrera;
 import modelo.Escuderia;
 import modelo.GranPremio;
 import modelo.Piloto;
+import modelo.Noticia;
 import vista.Inicio;
 import vista.Login;
-import vista.Noticia;
-import vista.Noticia2;
-import vista.Noticia3;
 
 public class Controlador implements ActionListener {
 	private Inicio inicio;
 	private String salida;
 	private ConectionHelper concetion;
 	private Piloto piloto;
+	private Noticia noticia;
 	private GranPremio premio;
 	private ArrayList <Piloto> pilotos;
 	private ArrayList <GranPremio> premios;
 	private Escuderia escuderia;
-	private Noticia noticia= new Noticia();
-	private Noticia2 noticia2 = new Noticia2();
-	private Noticia3 noticia3 = new Noticia3();
+	private ArrayList<Noticia> noticias;
 	private Login login = new Login();
 	private String ruta,piloto1,piloto2,circuito;
 	
@@ -71,116 +69,70 @@ public class Controlador implements ActionListener {
 			case "Inicio":
 				
 				salida=e.getActionCommand();
-				
 				inicio.inicio(this);
 				inicio.setVisible(true);
+				sacarNoticias();
 			
 			
-				break;
-				
-			case "Leer mas I":
-				salida=e.getActionCommand();
-				noticia.setVisible(true);
-				
-				break;
-			case "Leer mas II":
-				salida=e.getActionCommand();
-				noticia2.setVisible(true);
-				
-				break;
-			case "Leer mas III":
-				salida=e.getActionCommand();
-				noticia3.setVisible(true);
-				
 				break;
 				
 			case "1":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Mercedes.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"LewisHamilton.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"ValtteriBottas.jpg";
-				sacarEscuderia(1, ruta,piloto1,piloto2);
+				sacarEscuderia(1);
 				
 				break;
 				
 			case "2":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Ferrari.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"CharlesLeclerc.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"SebastianVettel.jpg";
-				sacarEscuderia(2, ruta,piloto1,piloto2);
+				sacarEscuderia(2);
 				
 				break;
 				
 			case "3":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"RedBull.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"MaxVerstappen.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"AlexanderAlbon.jpg";
-				sacarEscuderia(3, ruta,piloto1,piloto2);
+				sacarEscuderia(3);
 				
 				break;
 				
 			case "4":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"RacingPoint.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"SergioPerez.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"LanceStroll.jpg";
-				sacarEscuderia(4, ruta,piloto1,piloto2);
+				sacarEscuderia(4);
 				
 				break;
 				
 			case "5":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Mclaren.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"CarlosSainz.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"LandoNorris.jpg";
-				sacarEscuderia(5, ruta,piloto1,piloto2);
+				sacarEscuderia(5);
 				
 				break;
 				
 			case "6":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Reanult.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"DanielRicciardo.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"EstebanOcon.jpg";
-				sacarEscuderia(6, ruta,piloto1,piloto2);
+				sacarEscuderia(6);
 				
 				break;
 				
 			case "7":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"AlphaTauri.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"DaniilKvyat.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"PierreGasly.jpg";
-				sacarEscuderia(7, ruta,piloto1,piloto2);
+				sacarEscuderia(7);
 				
 				break;
 				
 			case "8":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"AlfaRomeo.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"KimiRaikkonen.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"AntonioGiovinazzi.jpg";
-				sacarEscuderia(8, ruta,piloto1,piloto2);
+				sacarEscuderia(8);
 				
 				break;
 				
 			case "9":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Haas.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"RomainGrosjean.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"KevinMagnussen.jpg";
-				sacarEscuderia(9, ruta,piloto1,piloto2);
+				sacarEscuderia(9);
 				
 				break;
 				
 			case "10":
 				salida =e.getActionCommand();
-				ruta="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Logos"+File.separator+"Williams.jpg";
-				piloto1="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"NicholasLatifi.jpg";
-				piloto2="src"+File.separator+"Imagenes"+File.separator+"FichaEscuderia"+File.separator+"Pilotos"+File.separator+"GeorgeRussell.jpg";
-				sacarEscuderia(10, ruta,piloto1,piloto2);
+				sacarEscuderia(10);
 				
 				break;
 				
@@ -192,125 +144,105 @@ public class Controlador implements ActionListener {
 				break;
 			case "Daniel Ricciardo":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"ricciardo.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				break;
 			
 			case "Lewis Hamilton":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"Hamilton.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				
 				break;
 			case "Valtteri Bottas":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"bottas.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 				
 			case "Max Verstappen":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"verstappen.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Charles Leclerc":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"leclerc.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Sergio Perez":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"perez.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Lando Norris":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"norris.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Carlos Sainz JR":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"sainz.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 				
 			case "Alexander Albon":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"albon.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Pierre Gasly":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"gasly.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Lance Stroll":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"stroll.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Esteban Ocon":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"ocon.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Daniil Kvyat":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"kvyat.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Sebastian Vettel":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"vettel.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Kevin Magnussen":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"magnussen.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Kimi Raikkonen":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"raikkonen.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Antonio Giovinazzi":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"giovinnazzi.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Romain Grosjean":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"grosjean.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "Nicholas Latifi":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"latifi.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 			case "George Russell":
 				salida=e.getActionCommand();
-				ruta ="src"+File.separator+"Imagenes"+File.separator+"FichasPilotos"+File.separator+"russell.PNG";
-				sacarPiloto(e.getActionCommand(),ruta);
+				sacarPiloto(e.getActionCommand());
 				
 				break;
 				
@@ -487,11 +419,11 @@ public class Controlador implements ActionListener {
 	}
 
 
-	private void sacarPiloto(String comando,String ruta) {
+	private void sacarPiloto(String comando) {
 		try {
 			piloto=concetion.consultaPiloto(comando);
 			escuderia =concetion.selectEscuderia(piloto.getIdEscuderia());
-			inicio.fichaPilotos(this, piloto,escuderia,ruta);
+			inicio.fichaPilotos(this, piloto,escuderia);
 			inicio.setVisible(true);
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
@@ -507,11 +439,11 @@ public class Controlador implements ActionListener {
 			e.printStackTrace();
 		}
 	}
-	private void sacarEscuderia(int id,String ruta,String piloto1,String piloto2) {
+	private void sacarEscuderia(int id) {
 		try {
 			escuderia = concetion.selectEscuderia(id);
 			pilotos = concetion.consultaPilotoId(id);
-			inicio.FichaEscuderia(this, escuderia, pilotos, ruta,piloto1,piloto2);
+			inicio.FichaEscuderia(this, escuderia, pilotos);
 			inicio.setVisible(true);
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
@@ -519,6 +451,19 @@ public class Controlador implements ActionListener {
 		
 		
 	}
+	
+	private void sacarNoticias() {
+		try {
+			
+			noticias = concetion.consultaNoticia();
+			inicio.inicio(this);
+			inicio.setVisible(true);			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 	public Controlador(Inicio inicio,String s,ConectionHelper conection) {
 		super();
