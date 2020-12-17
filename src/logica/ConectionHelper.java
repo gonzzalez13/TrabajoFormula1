@@ -453,7 +453,7 @@ public class ConectionHelper {
 	}
 
 	public Usuario consultaUser(String nombre,String pass) throws SQLException, ClassNotFoundException {
-		String sql = "SELECT * FROM USUARIO WHERE NOMBRE=? AND CONTRASEÑA=?";
+		String sql = "SELECT * FROM USUARIO WHERE NOMBRE=? AND PASSWORD=?";
 		PreparedStatement sentencia = null;
 		ResultSet resultado = null;
 		Connection conexion = null;
@@ -467,7 +467,7 @@ public class ConectionHelper {
 
 			if (resultado.next()) {
 				user.setNombre(resultado.getString("NOMBRE"));
-				user.setPassword(resultado.getString("CONTRASEÑA"));
+				user.setPassword(resultado.getString("PASSWORD"));
 				user.setAdmin(resultado.getBoolean("ADMIN"));
 			}
 

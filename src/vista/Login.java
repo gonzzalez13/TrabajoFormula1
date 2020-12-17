@@ -159,9 +159,12 @@ public class Login extends JFrame {
 		btnCancelar.addActionListener(controlador);
 		
 		JLabel lblBienvenido = new JLabel("Bienvenido "+user.getNombre());
-		lblBienvenido.setFont(new Font("Times New Roman", Font.PLAIN, 17));
+		lblBienvenido.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		lblBienvenido.setForeground(Color.WHITE);
 		lblBienvenido.setBounds(114, 200, 202, 78);
 		contentPane.add(lblBienvenido);
+		
+		
 		btnCancelar.setForeground(Color.WHITE);
 		btnCancelar.setFont(new Font("Bauhaus 93", Font.BOLD, 14));
 		btnCancelar.setBackground(Color.DARK_GRAY);

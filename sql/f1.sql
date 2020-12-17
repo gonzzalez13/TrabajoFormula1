@@ -101,6 +101,17 @@ cuerpo TEXT NOT NULL,
 CONSTRAINT PK_id_noticias PRIMARY KEY (id_noticias)
 );
 
+ -----------------------------------------------------
+-- Table Noticias
+-- -----------------------------------------------------
+
+Create TABLE IF NOT EXISTS usuario (
+id_usuario INT NOT NULL auto_increment,
+nombre VARCHAR(45) NOT NULL,
+password VARCHAR(45) NOT NULL,
+admin bit NOT NULL,
+CONSTRAINT PK_id_usuario PRIMARY KEY (id_usuario)
+);
 
 
 insert into escuderia(nombre,color,nacionalidad,palmares,sede,jefe_equipo,jefe_tecnico,estrenada_f1,foto_escuderia,foto_piloto1,foto_piloto2) values ("Mercedes AMG Petronas F1 TEAM","Blanco/verde","Reino Unido",7,"Brackley/Brixworth, Gran Bretania","Toto Wolff","James Allison","1970","src/Imagenes/FichaEscuderia/Logos/Mercedes.jpg","src/Imagenes/FichaEscuderia/Pilotos/LewisHamilton.jpg","src/Imagenes/FichaEscuderia/Pilotos/ValtteriBottas.jpg");
@@ -187,7 +198,7 @@ insert into noticias(titulo,cuerpo) values ("McLaren reafirma su estrategia","Mc
 insert into noticias(titulo,cuerpo) values ("Mercedes se llena de dudas con Bottas y salpican a Hamilton","El año de los récords termina repleto de dudas en el garaje de Mercedes, y eso que una concatenación de errores dejó sin victoria a Russell con el coche de Hamilton. Le pusieron las ruedas de Bottas (lo corrigieron en la vuelta siguiente, pero la multa es de 20.000 euros) y al finlandés no le cambiaron las suyas. El octavo y noveno final no representa lo que se vivió en el GP de Sakhir: el novato inglés fue más rápido que el veterano finlandés en todas las situaciones y eso abre la caja de Pandora: ¿por qué no está ya en Mercedes? ¿Podría hacer sombra a Hamilton?");
 
 
-
+insert into usuario(nombre,password,admin) values("admin","admin",1);
 
 
 
