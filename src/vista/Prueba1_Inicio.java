@@ -138,6 +138,7 @@ public class Prueba1_Inicio extends JFrame {
 		panel.add(btnPremio);
 		
 		JButton btnNoticias = new JButton("Insertar");
+		btnNoticias.setVisible(false);
 		btnNoticias.setBounds(781, 363, 89, 23);
 		panelInicio.add(btnNoticias);
 		

@@ -452,7 +452,7 @@ public class Inicio extends Cabecera {
 		
 	}
 
-	public void inicio(Controlador controlador) {
+	public void inicio(Controlador controlador,Boolean admin) {
 		menu(controlador);
 		
 		JPanel panelInicio = new JPanel();
@@ -469,10 +469,13 @@ public class Inicio extends Cabecera {
 		btnPremio.setIcon(new ImageIcon("src" + File.separator + "Imagenes" + File.separator + "Grandes Premios"+ File.separator + "Portada" + File.separator + "Abudhabi.png"));
 		btnPremio.setBounds(10, 11, 262, 310);
 		panel.add(btnPremio);
-		
+	
 		JButton btnNoticias = new JButton("Insertar");
 		btnNoticias.setBounds(781, 363, 89, 23);
+		btnNoticias.setVisible(admin);
+		btnNoticias.addActionListener(controlador);
 		panelInicio.add(btnNoticias);
+		
 		
 		JButton btnAnterior = new JButton("Anterior");
 		btnAnterior.setBounds(682, 484, 110, 44);

@@ -11,9 +11,9 @@ public class Launcher {
 		
 		Controlador c =new Controlador(new Inicio(),"Inicio",new ConectionHelper());
 		
+		boolean admin = false;
 		
-		
-		c.getInicio().inicio(c);
+		c.getInicio().inicio(c,admin);
 		c.getInicio().setVisible(true);
 
 	}

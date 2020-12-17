@@ -30,6 +30,7 @@ public class Controlador implements ActionListener {
 	private Noticia2 noticias2 = new Noticia2(this);
 	private Login login = new Login(this);
 	private String circuito;
+	boolean admin;
 	
 	public Inicio getInicio() {
 		return inicio;
@@ -71,7 +72,8 @@ public class Controlador implements ActionListener {
 			case "Inicio":
 				
 				salida=e.getActionCommand();
-				inicio.inicio(this);
+				admin = true;
+				inicio.inicio(this,admin);
 				inicio.setVisible(true);
 				sacarNoticias();
 			
@@ -427,6 +429,12 @@ public class Controlador implements ActionListener {
 				login.inicio(this,user);
 				login.setVisible(true);
 				
+				salida=e.getActionCommand();
+				admin = true;
+				inicio.inicio(this,admin);
+				inicio.setVisible(true);
+				sacarNoticias();
+				
 			default:
 				
 				break;
@@ -486,7 +494,7 @@ public class Controlador implements ActionListener {
 	private void sacarNoticias() {
 		try {
 			noticias = concetion.consultaNoticia();
-			inicio.inicio(this);
+			inicio.inicio(this,admin);
 			inicio.setVisible(true);			
 		} catch (Exception e) {
 			e.printStackTrace();
