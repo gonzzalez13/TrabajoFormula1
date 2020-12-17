@@ -496,5 +496,37 @@ public class ConectionHelper {
 		}
 		return user;
 	}
+	
+	public void insertEmpleado(String TITULO,String CUERPO) throws SQLException, ClassNotFoundException {
+		 String INSERT_Noticias = "INSERT INTO NOTICIA (TITULO,CUERPO) VALUES (?,?)";
+		 
+		Connection conexion = null; 
+		PreparedStatement sentencia = null;
+		try {
+			conexion = createConection();
+			
+			sentencia = conexion.prepareStatement(INSERT_Noticias);
+			sentencia.setString(1, TITULO);
+			sentencia.setString(2, CUERPO);
+			
+			sentencia.executeUpdate();
+			conexion.commit();
+		} catch (SQLException  e) {
+			conexion.rollback();
+			e.printStackTrace();
+			throw e;
+		} finally {
+			if (sentencia != null) {
+				try {
+					sentencia.close();
+				} catch (Exception e2) {
+					e2.printStackTrace();
+				}
+			}
+
+			disconnect(conexion);
+		}
+	}
+	
 
 }

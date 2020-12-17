@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import logica.Controlador;
+
 import java.awt.Color;
 import javax.swing.JTextArea;
 import java.awt.Font;
@@ -16,14 +19,18 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import javax.swing.SwingConstants;
+import javax.swing.JTextField;
 
 public class Noticia2 extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField txtTituloNoticias;
+	private JTextArea textCuerpoNoticia;
 
 	/**
 	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -37,12 +44,12 @@ public class Noticia2 extends JFrame {
 		});
 	}
 
-	/**
+	
 	 * Create the frame.
 	 */
-	public Noticia2() {
+	public Noticia2(Controlador controlador) {
 		this.setIconImage(Toolkit.getDefaultToolkit().getImage(Noticia2.class.getResource("/Imagenes/F1-logo-ventana.png")));
-		setTitle("Mclaren reafirma su estrat\u00E9gia");
+		setTitle("Noticias");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 461, 668);
 		contentPane = new JPanel();
@@ -51,44 +58,55 @@ public class Noticia2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JTextArea txtrMclarenReafirmaSu = new JTextArea();
-		txtrMclarenReafirmaSu.setForeground(Color.WHITE);
-		txtrMclarenReafirmaSu.setEditable(false);
-		txtrMclarenReafirmaSu.setWrapStyleWord(true);
-		txtrMclarenReafirmaSu.setText("McLaren reafirma su estrategia");
-		txtrMclarenReafirmaSu.setOpaque(false);
-		txtrMclarenReafirmaSu.setLineWrap(true);
-		txtrMclarenReafirmaSu.setFont(new Font("Bauhaus 93", Font.PLAIN, 25));
-		txtrMclarenReafirmaSu.setBounds(46, 21, 352, 41);
-		contentPane.add(txtrMclarenReafirmaSu);
-		
-		JLabel lblImagen1 = new JLabel("");
-		lblImagen1.setIcon(new ImageIcon(Noticia2.class.getResource("/Imagenes/Noticias/Noticia2.jpg")));
-		lblImagen1.setBounds(79, 72, 270, 152);
-		contentPane.add(lblImagen1);
-		
-		JTextArea txtrMclarenSeDespide = new JTextArea();
-		txtrMclarenSeDespide.setEditable(false);
-		txtrMclarenSeDespide.setWrapStyleWord(true);
-		txtrMclarenSeDespide.setText("McLaren se despide, pr\u00E1cticamente, del tercer puesto en constructores despu\u00E9s de que P\u00E9rez (1\u00BA) y Stroll (3\u00BA) subieran al podio de Sakhir. Desde el muro de Woking fijaron su estrategia en contener a Kvyat y Ricciardo, pero a Carlos Sainz se le escaparon el mexicano, su compa\u00F1ero y Ocon, y otro podio que pudo ser y no fue. El madrile\u00F1o, aun as\u00ED, termin\u00F3 satisfecho con su carrera en Bahr\u00E9in. Pero da la sensaci\u00F3n de que, una vez m\u00E1s, no capitalizaron una carrera loca a su favor por no tomar ciertos riesgos a la hora de efectuar los pit stop.");
-		txtrMclarenSeDespide.setOpaque(false);
-		txtrMclarenSeDespide.setLineWrap(true);
-		txtrMclarenSeDespide.setForeground(Color.WHITE);
-		txtrMclarenSeDespide.setFont(new Font("Calibri", Font.PLAIN, 19));
-		txtrMclarenSeDespide.setBounds(21, 235, 405, 292);
-		contentPane.add(txtrMclarenSeDespide);
-		
-		JButton btnNewButton = new JButton("ATRAS");
-		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setForeground(Color.WHITE);
+		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				setVisible(false);
 			}
 		});
-		btnNewButton.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
-		btnNewButton.setBackground(Color.BLACK);
-		btnNewButton.setBounds(21, 588, 93, 30);
-		contentPane.add(btnNewButton);
+		btnCancelar.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
+		btnCancelar.setBackground(Color.BLACK);
+		btnCancelar.setBounds(10, 588, 93, 30);
+		contentPane.add(btnCancelar);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		btnGuardar.setForeground(Color.WHITE);
+		btnGuardar.setFont(new Font("Bauhaus 93", Font.PLAIN, 13));
+		btnGuardar.addActionListener(controlador);
+		btnGuardar.setBackground(Color.BLACK);
+		btnGuardar.setBounds(342, 592, 93, 30);
+		contentPane.add(btnGuardar);
+		
+		JLabel lblTitulo = new JLabel("Insertar Noticias");
+		lblTitulo.setForeground(Color.WHITE);
+		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTitulo.setFont(new Font("Bauhaus 93", Font.PLAIN, 20));
+		lblTitulo.setBounds(10, 11, 425, 39);
+		contentPane.add(lblTitulo);
+		
+		JLabel lblTituloNoticia = new JLabel("Titulo  Noticia");
+		lblTituloNoticia.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTituloNoticia.setForeground(Color.WHITE);
+		lblTituloNoticia.setFont(new Font("Bauhaus 93", Font.PLAIN, 20));
+		lblTituloNoticia.setBounds(10, 95, 425, 30);
+		contentPane.add(lblTituloNoticia);
+		
+		txtTituloNoticias = new JTextField();
+		txtTituloNoticias.setBounds(35, 136, 380, 30);
+		contentPane.add(txtTituloNoticias);
+		txtTituloNoticias.setColumns(10);
+		
+		JLabel lblCuerpoNoticia = new JLabel("Cuerpo  Noticia");
+		lblCuerpoNoticia.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCuerpoNoticia.setForeground(Color.WHITE);
+		lblCuerpoNoticia.setFont(new Font("Bauhaus 93", Font.PLAIN, 20));
+		lblCuerpoNoticia.setBounds(10, 227, 425, 30);
+		contentPane.add(lblCuerpoNoticia);
+		
+		textCuerpoNoticia = new JTextArea();
+		textCuerpoNoticia.setBounds(35, 279, 380, 210);
+		contentPane.add(textCuerpoNoticia);
 		
 		JLabel lblFondo = new JLabel("");
 		lblFondo.setIcon(new ImageIcon("src"+File.separator+"Imagenes"+File.separator+"Fondos"+File.separator+"Fondo6.PNG"));
@@ -96,4 +114,22 @@ public class Noticia2 extends JFrame {
 		contentPane.add(lblFondo);
 	}
 
+	public JTextField getTxtTituloNoticias() {
+		return txtTituloNoticias;
+	}
+
+	public void setTxtTituloNoticias(JTextField txtTituloNoticias) {
+		this.txtTituloNoticias = txtTituloNoticias;
+	}
+
+	public JTextArea getTextCuerpoNoticia() {
+		return textCuerpoNoticia;
+	}
+
+	public void setTextCuerpoNoticia(JTextArea textCuerpoNoticia) {
+		this.textCuerpoNoticia = textCuerpoNoticia;
+	}
+	
+	
+	
 }

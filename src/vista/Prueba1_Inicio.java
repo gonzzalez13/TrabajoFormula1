@@ -21,6 +21,8 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Prueba1_Inicio extends JFrame {
 	protected JButton btnInicio, btnEscuderias, btnPilotos, btnGranPre, btnClasi, btnLogin, btnLogo;
@@ -158,6 +160,10 @@ public class Prueba1_Inicio extends JFrame {
 		btnPremio.setIcon(new ImageIcon("src" + File.separator + "Imagenes" + File.separator + "Grandes Premios"+ File.separator + "Portada" + File.separator + "Abudhabi.png"));
 		btnPremio.setBounds(10, 11, 262, 310);
 		panel.add(btnPremio);
+		
+		JButton btnNoticias = new JButton("Insertar");
+		btnNoticias.setBounds(781, 363, 89, 23);
+		panelInicio.add(btnNoticias);
 		
 		JButton btnAnterior = new JButton("Anterior");
 		btnAnterior.setBounds(682, 484, 110, 44);

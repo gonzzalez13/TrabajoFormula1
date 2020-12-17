@@ -94,11 +94,11 @@ CREATE TABLE IF NOT EXISTS campeonato (
 -- Table Noticias
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS noticias (
-id_noticias INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS noticia (
+id_noticia INT NOT NULL AUTO_INCREMENT,
 titulo VARCHAR(100) NOT NULL,
 cuerpo TEXT NOT NULL,
-CONSTRAINT PK_id_noticias PRIMARY KEY (id_noticias)
+CONSTRAINT PK_id_noticias PRIMARY KEY (id_noticia)
 );
 
  -----------------------------------------------------
@@ -193,9 +193,9 @@ insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,cur
 insert into gran_premio(nombre,circuito,año_primer_gp,longitud,distancia_gp,curvas,vueltas) values ("GP DE ABU DHABI F1 2020","Yas Marinas",2009,5.554,305.355,21,55);
 
 
-insert into noticias(titulo,cuerpo) values ("Bottas: Los que no saben de F1 podrían pensar que he quedado como un completo idiota","Valtteri Bottas sabía que iba a tener mucha presión en el Gran Premio de Sakhir. Desde el mismo momento que se hizo oficial que Lewis Hamilton había positivo por coronavirus, el finlandés era consciente de que se jugaba mucho en el trazado alternativo del Circuito Internacional de Bahréin. Si Russell me supera, obviamente voy a quedar mal, admitió. A la postre, ha quedado mal el finlandés... y Mercedes. El que ha salido reforzado es un George Russell, que ha demostrado madera de campeón.");
-insert into noticias(titulo,cuerpo) values ("McLaren reafirma su estrategia","McLaren se despide, prácticamente, del tercer puesto en constructores después de que Pérez (1º) y Stroll (3º) subieran al podio de Sakhir. Desde el muro de Woking fijaron su estrategia en contener a Kvyat y Ricciardo, pero a Carlos Sainz se le escaparon el mexicano, su compañero y Ocon, y otro podio que pudo ser y no fue. El madrileño, aun así, terminó satisfecho con su carrera en Bahréin. Pero da la sensación de que, una vez más, no capitalizaron una carrera loca a su favor por no tomar ciertos riesgos a la hora de efectuar los pit stop.");
-insert into noticias(titulo,cuerpo) values ("Mercedes se llena de dudas con Bottas y salpican a Hamilton","El año de los récords termina repleto de dudas en el garaje de Mercedes, y eso que una concatenación de errores dejó sin victoria a Russell con el coche de Hamilton. Le pusieron las ruedas de Bottas (lo corrigieron en la vuelta siguiente, pero la multa es de 20.000 euros) y al finlandés no le cambiaron las suyas. El octavo y noveno final no representa lo que se vivió en el GP de Sakhir: el novato inglés fue más rápido que el veterano finlandés en todas las situaciones y eso abre la caja de Pandora: ¿por qué no está ya en Mercedes? ¿Podría hacer sombra a Hamilton?");
+insert into noticia(titulo,cuerpo) values ("Bottas: Los que no saben de F1 podrían pensar que he quedado como un completo idiota","Valtteri Bottas sabía que iba a tener mucha presión en el Gran Premio de Sakhir. Desde el mismo momento que se hizo oficial que Lewis Hamilton había positivo por coronavirus, el finlandés era consciente de que se jugaba mucho en el trazado alternativo del Circuito Internacional de Bahréin. Si Russell me supera, obviamente voy a quedar mal, admitió. A la postre, ha quedado mal el finlandés... y Mercedes. El que ha salido reforzado es un George Russell, que ha demostrado madera de campeón.");
+insert into noticia(titulo,cuerpo) values ("McLaren reafirma su estrategia","McLaren se despide, prácticamente, del tercer puesto en constructores después de que Pérez (1º) y Stroll (3º) subieran al podio de Sakhir. Desde el muro de Woking fijaron su estrategia en contener a Kvyat y Ricciardo, pero a Carlos Sainz se le escaparon el mexicano, su compañero y Ocon, y otro podio que pudo ser y no fue. El madrileño, aun así, terminó satisfecho con su carrera en Bahréin. Pero da la sensación de que, una vez más, no capitalizaron una carrera loca a su favor por no tomar ciertos riesgos a la hora de efectuar los pit stop.");
+insert into noticia(titulo,cuerpo) values ("Mercedes se llena de dudas con Bottas y salpican a Hamilton","El año de los récords termina repleto de dudas en el garaje de Mercedes, y eso que una concatenación de errores dejó sin victoria a Russell con el coche de Hamilton. Le pusieron las ruedas de Bottas (lo corrigieron en la vuelta siguiente, pero la multa es de 20.000 euros) y al finlandés no le cambiaron las suyas. El octavo y noveno final no representa lo que se vivió en el GP de Sakhir: el novato inglés fue más rápido que el veterano finlandés en todas las situaciones y eso abre la caja de Pandora: ¿por qué no está ya en Mercedes? ¿Podría hacer sombra a Hamilton?");
 
 
 insert into usuario(nombre,password,admin) values("admin","admin",1);

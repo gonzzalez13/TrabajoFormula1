@@ -15,6 +15,7 @@ import modelo.Noticia;
 import modelo.Piloto;
 import vista.Inicio;
 import vista.Login;
+import vista.Noticia2;
 
 public class Controlador implements ActionListener {
 	private Inicio inicio;
@@ -26,6 +27,7 @@ public class Controlador implements ActionListener {
 	private ArrayList <GranPremio> premios;
 	private Escuderia escuderia;
 	private ArrayList<Noticia> noticias;
+	private Noticia2 noticias2 = new Noticia2(this);
 	private Login login = new Login(this);
 	private String circuito;
 	
@@ -386,8 +388,22 @@ public class Controlador implements ActionListener {
 				inicio.fichaSimulacion(this,sim.main(),concetion);
 				inicio.setVisible(true);
 				break;
-			
 				
+			case "Insertar":
+				salida=e.getActionCommand();
+				noticias2.setVisible(true);
+				break;
+				
+			case "Guardar":
+				String titulo = noticias2.getTxtTituloNoticias().getText();
+				String cuerpo = noticias2.getTextCuerpoNoticia().getText();
+				try {
+					concetion.insertEmpleado(titulo, cuerpo);
+				} catch (Exception e2) {
+					e2.printStackTrace();
+				}
+				
+				break;
 			case "Login":
 				salida=e.getActionCommand();
 				login.setVisible(true);
@@ -469,7 +485,6 @@ public class Controlador implements ActionListener {
 	
 	private void sacarNoticias() {
 		try {
-			
 			noticias = concetion.consultaNoticia();
 			inicio.inicio(this);
 			inicio.setVisible(true);			

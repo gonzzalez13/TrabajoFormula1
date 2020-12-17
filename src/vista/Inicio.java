@@ -496,6 +496,11 @@ public class Inicio extends Cabecera {
 		btnPremio.setBounds(10, 11, 262, 310);
 		panel.add(btnPremio);
 		
+		JButton btnNoticias = new JButton("Insertar");
+		btnNoticias.addActionListener(controlador);
+		btnNoticias.setBounds(781, 363, 89, 23);
+		panelInicio.add(btnNoticias);
+		
 		JButton btnAnterior = new JButton("Anterior");
 		btnAnterior.setBounds(682, 484, 110, 44);
 		panelInicio.add(btnAnterior);
