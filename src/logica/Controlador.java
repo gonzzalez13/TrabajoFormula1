@@ -20,14 +20,13 @@ public class Controlador implements ActionListener {
 	private String salida;
 	private ConectionHelper concetion;
 	private Piloto piloto;
-	private Noticia noticia;
 	private GranPremio premio;
 	private ArrayList <Piloto> pilotos;
 	private ArrayList <GranPremio> premios;
 	private Escuderia escuderia;
 	private ArrayList<Noticia> noticias;
 	private Login login = new Login();
-	private String ruta,piloto1,piloto2,circuito;
+	private String circuito;
 	
 	public Inicio getInicio() {
 		return inicio;
@@ -378,10 +377,8 @@ public class Controlador implements ActionListener {
 				try {
 					sim=new Simulacion(concetion.consultaTPiloto(),carrera);
 				} catch (ClassNotFoundException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				} catch (SQLException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 				

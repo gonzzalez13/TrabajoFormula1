@@ -37,15 +37,14 @@ public class Inicio extends Cabecera {
 				+ "coches" + File.separator + "F1-logo-ventana.png"));
 	}
 
-	private JButton btnAlfaRomeo, btnAlphaTauri, btnNFerrari, btnHaas, btnMclaren, btnMercedes, btnRacingPonit,
-			btnRedBull, btnRenault, btnWilliams;
+
 	private JTextField txtNombre, txtNacionalidad, txtNacimiento, txtPalmares, txtEscuderia, txtEstado, txtPodios;
 	private JTextPane txtBiblio;
 	private JButton btnPiloto1, btnPiloto2;
 	private JTextField textNombre, textNacionalidad, textBase, textAño, textPremios, textJefeE, textJefeT, textPiloto1,
 			textPiloto2;
 	private int vueltas;
-	private JComboBox comboListaCircuitos, comboTiempo;
+	private JComboBox<String> comboListaCircuitos, comboTiempo;
 	private JTextField textLogitud;
 	private JTextField textCurvas;
 	private JTextField textPrimerAño;
@@ -1148,7 +1147,7 @@ public class Inicio extends Cabecera {
 		JButton btnNewButton = new JButton(piloto.getIdEscuderia()+"");
 		btnNewButton.setIcon(new ImageIcon(piloto.getFoto_escuderia()));
 		btnNewButton.addActionListener(controlador);
-		btnNewButton.setBounds(850, 429, 120, 87);
+		btnNewButton.setBounds(850, 429, 90, 70);
 		panel_FichaPiloto.add(btnNewButton);
 
 		JLabel lblFondo = new JLabel();

@@ -15,7 +15,7 @@ public class Launcher {
 		
 		c.getInicio().inicio(c);
 		c.getInicio().setVisible(true);
-//	
+
 	}
 	
 
